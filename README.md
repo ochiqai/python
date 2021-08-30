@@ -1,6 +1,4 @@
-# ajoyib-python
-
-## Maqsad
+# Python
 
 <p align="center">
   <a href="https://github.com/Elyorcv/ajoyib-python/blob/main/README.md" target="_blank">
