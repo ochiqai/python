@@ -1,6 +1,5 @@
 <div align="center">
-<h1><img width="6
-0" src="./images/logo.png">&nbsp;<a href="https://ochiqai.com/">Ochiq AI</a></h1>
+<h1><img width="60" src="./images/logo.png">&nbsp;<a href="https://ochiqai.com/">Ochiq AI</a></h1>
 <br>
 </div>
 
