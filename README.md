@@ -1,10 +1,9 @@
-<div align="center">
-<h1><img width="60" src="./images/logo.png">&nbsp;<a href="https://ochiqai.com/">Ochiq AI</a></h1>
-<br>
-</div>
+<p align="center">
+<a href="ochiqai.com">
+<img src="./images/logo.png" width=64 height=64>
+</a>
+<h3 align="center">Pytohn</h3>
 
-
-# Python
 
 <p align="center">
   <a href="https://github.com/Elyorcv/ajoyib-python/blob/main/README.md" target="_blank">
