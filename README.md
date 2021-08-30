@@ -3,8 +3,7 @@
 <br>
 </div>
 
-<br>
-![](.README_images/logo.png)
+
 # Python
 
 <p align="center">
