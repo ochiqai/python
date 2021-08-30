@@ -1,4 +1,4 @@
-# Tapl 
+# Tuple 
 
 `tapl` (tuple) listga juda o'xshaydi. Eng asosiy farqi `list` `o'zgaradigan` strukturaga
 kiradi. `tapl` esa `o'zgarmaydigan` struktura. Yana bir farqi `tapl` `()` qavsga olinib yoziladi. 
