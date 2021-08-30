@@ -1,8 +1,8 @@
 <p align="center">
 <a href="ochiqai.com">
-<img src="./images/logo.png" width=64 height=64>
+<img src="./images/logo.png" width=64>
 </a>
-<h3 align="center">Pytohn</h3>
+<h3 align="center">Python</h3>
 
 
 <p align="center">
