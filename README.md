@@ -7,7 +7,8 @@
 </p>
 
 
-## **Darsga qatnashish odobi:**
+<details> <summary>Eslatma</summary>
+
 - Teacherga quloq solish
 - Teacher aytganini qilish
 - Vazifalarni o'z vaqtida bajarish
@@ -21,6 +22,7 @@
 
 Agar yuqoridagilar bajrailmasa, **3 marta** hayfsan beriladi, va darsdan ozod qilinadi.
 
+</details>
 
 ## Kunlar
  - [x] [01. Programma nima?](https://github.com/Elyorcv/ajoyib-python/blob/main/kunlar/01-kun/01-kun.md) 
@@ -73,11 +75,20 @@ Agar yuqoridagilar bajrailmasa, **3 marta** hayfsan beriladi, va darsdan ozod qi
 
 
 MD2PDF
+
+<details>
+
 ```shell
 pandoc 01-kun.md -o 01-kun.pdf
 ```
 
+</details>
+
+
 Rasmlar bilan ishlaganda
+
+<details>
+
 ```shell
 typora
 ```
@@ -85,3 +96,4 @@ typora
 Kitob muqovasi
 [link](https://www.canva.com/design/DAEiT7wSccI/k1lIUCWVy4Gb1WZ6w_1XzA/edit)
 
+</details>
