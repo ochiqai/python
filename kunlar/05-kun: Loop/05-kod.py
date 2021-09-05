@@ -30,25 +30,25 @@
 
 #+ increment
 #- decrement
-x = 0
-x = x + 1
-print(x)
+# x = 0
+# x = x + 1
+# print(x)
+#
+# x = 0
+# x = x * 1
+# print(x)
 
-x = 0
-x = x * 1
-print(x)
-
-print("\n\n\n")
-print(1)
-print(2)
-print(3)
-print(4)
-print(5)
-print(6)
-print(7)
-print(8)
-print(9)
-print(10)
+# print("\n\n\n")
+# print(1)
+# print(2)
+# print(3)
+# print(4)
+# print(5)
+# print(6)
+# print(7)
+# print(8)
+# print(9)
+# print(10)
 
 # while False:
 #     print("salom")
@@ -99,36 +99,52 @@ print(10)
 #     print(x)
 #     x = x + 1
 
-print("FOR loop")
-for x in range(1, 51):
-    if x % 2 != 0:
-        print(x)
+# print("FOR loop")
+# for x in range(1, 51):
+#     if x % 2 != 0:
+#         print(x)
+#
 
-
-print("random")
+# print("random")
 import random
 
-ixtoyoriy_son = random.choice([1,2,3,4,5,6,7,8,9,10])
-print(ixtoyoriy_son)
+# ixtoyoriy_son = random.choice([1,2,3,4,5,6,7,8,9,10])
+# print(ixtoyoriy_son)
 
 
 
+# 1. sonlarni qabul qilsin
+# 2. agar harf kiritlsa, 'son kiriting' deb chiqar
+# 3. davom at: 1 va 2 ga bor
+# 4. agar 'tamom' yozsang, umumiy sonni chiqar
 
+# sum = 0
+# while True:
+#     yozuv = input("Sonni kiriting: ")
+#     if yozuv == 'tamom':
+#         break
+#     try:
+#         son_int = int(yozuv)
+#         sum = sum + son_int
+#     except:
+#         print("Sonni kiriting iltimos")
+#         continue
+#
+# print(sum)
 
+# a = "12" + "5"
+# b = 12 + 5
 
+# a = input("Sonni kiriting: ")
+# print(a, type(a))
+# print(12, type(12))
+#
+# print("Siz kiritgan narsa: ", a)
 
-
-
-
-
-
-
-
-
-
-
-
-
+print("x  pow(x,2) pow(x,3) Farqi")
+print("-  -------- -------- ------")
+print("1 1.0      1.0      0.0")
+print("2.0 4.0 8.0 4.0")
 
 
 
