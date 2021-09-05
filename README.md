@@ -1,6 +1,6 @@
 <p align="center">
 <a href="ochiqai.com">
-<img src="./images/logo2.svg" width=84>
+<img src="./images/logo_simple4.png" width=84>
 </a>
 <h1 align="center">Python</h1>
 
