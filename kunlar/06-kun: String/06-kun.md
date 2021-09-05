@@ -448,4 +448,3 @@ keyin uni haqiqiy songe `float` dan foydalanib o'tkazing. NAtijani konsolga chiq
 ```python
 massa = "Kompyuter:6.78 kg"
 ```
-

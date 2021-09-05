@@ -147,7 +147,7 @@ else:
 
 print(ism.replace('tashkent', 'samarqand'))
 
-
+print("👋")
 
 
 

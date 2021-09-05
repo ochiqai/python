@@ -59,9 +59,10 @@ Agar yuqoridagilar bajrailmasa, **3 marta** hayfsan beriladi, va darsdan ozod qi
  - [x] [04. If](https://github.com/Elyorcv/ajoyib-python/blob/main/kunlar/04-kun/04-kun-git.md)
  - [x] [05. Loop](https://github.com/ochiqai/python/blob/main/kunlar/05-kun:%20Loop/05-kun-git.md)
  - [x] [06. String](https://github.com/ochiqai/python/blob/main/kunlar/06-kun:%20String/06-kun.md) 
-- [ ] [07. List] 
-- [ ] [08. Dictionary] 
-- [ ] [09. Problems] 
+ - [ ] [07. List] 
+ - [ ] [08. Dictionary] 
+ - [ ] [09. Tuple] 
+ - - [ ] [10. Mashqlar]
 
 <!-- - [ ] [11. Fayl]
 
