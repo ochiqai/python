@@ -62,7 +62,7 @@ Agar yuqoridagilar bajrailmasa, **3 marta** hayfsan beriladi, va darsdan ozod qi
  - [ ] [07. List] 
  - [ ] [08. Dictionary] 
  - [ ] [09. Tuple] 
- - - [ ] [10. Mashqlar]
+ - [ ] [10. Mashqlar]
 
 <!-- - [ ] [11. Fayl]
 
