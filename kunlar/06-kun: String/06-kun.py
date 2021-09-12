@@ -149,6 +149,27 @@ print(ism.replace('tashkent', 'samarqand'))
 
 print("👋")
 
+# \n - yangi qator
+# \t -
+
+yozuv = "salom"
+print(yozuv)
+yozuv = "salom\t".strip()
+print(yozuv)
+yozuv = "salom\n"
+print(yozuv)
+
+def harqanday_kichikharf(s):
+    for eshak in s:
+        if eshak.isupper():
+            return False
+
+    return True
+
+yozuv = "salom"
+result = harqanday_kichikharf(yozuv)
+print(result)
+
 
 
 
