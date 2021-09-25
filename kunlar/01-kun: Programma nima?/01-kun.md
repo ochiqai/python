@@ -69,7 +69,7 @@ Umuman olganda,
 |----------------------------------------------------|:----------------------------:|
 | Kompyuterga "Salom, Pythonjon!" yozuvini chiqargin | `print("Salom, Pythonjon!")` |
 
-## Oddiy arifmetika
+## Oddiy arifmetika [UI:MUAMMO: muammo shundaki oddiy so'z shart emas deb o'ylayman, chunk arifmetika degani o'zi oddiy degani]
 
 Prompt kuchli narsa. Misol uchun biz u yerda oddiy arifmetik amallardan
 tortib murakkab amallarni bajarishimiz mumkin. Masalan kundalik
