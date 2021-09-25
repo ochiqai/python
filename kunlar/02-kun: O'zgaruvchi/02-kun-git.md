@@ -35,7 +35,7 @@ O'zgaruvchi deyilishiga sabab shundaki, qutiga biz boshqa narsa ham solishimiz m
 masalan
 
 - Tarvuzni qutiga yukla
-- Qo'yni qutiga yukla
+- Anorni qutiga yukla
 
 Bunda qutiga nima yuklanishiga qarab quti o'zgarayapti. Olma yuklansa olma bo'ladi, 
 qo'y yuklansa qo'y bo'ladi va hokazo.
