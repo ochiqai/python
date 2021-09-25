@@ -13,7 +13,7 @@ qo'shish yoki xujjatdan kerakli so'zlarni qidirish yoki rasm va
 videolarga ishlov berish va hokazo. Pragramma quyidagi oddiy
 ko'rsatmalardan tashkil topishi mumkin:
 
--   Kiritish: klaviaturadan.
+-   Kiritish: Klaviaturadan.
 -   Chiqarish: Malumotlarni ekranga chiqarish.
 -   Hisoblash: Amallarni bajarish, qo'shish, ayirishga o'xshash.
 -   Tekshirish: Kodni to'g'r'iligni tekshirish.
