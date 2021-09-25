@@ -14,7 +14,7 @@ videolarga ishlov berish va hokazo. Pragramma quyidagi oddiy
 ko'rsatmalardan tashkil topishi mumkin:
 
 -   Kiritish: Klaviaturadan.
--   Chiqarish: Malumotlarni ekranga chiqarish.
+-   Chiqarish: Ma'lumotlarni ekranga chiqarish.
 -   Hisoblash: Amallarni bajarish, qo'shish, ayirishga o'xshash.
 -   Tekshirish: Kodni to'g'r'iligni tekshirish.
 -   Takrorlash: Biron-bir ko'rsatmani qayta-qayta qilish.
