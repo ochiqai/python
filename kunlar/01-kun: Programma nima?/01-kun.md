@@ -16,7 +16,7 @@ ko'rsatmalardan tashkil topishi mumkin:
 -   Kiritish: Klaviaturadan.
 -   Chiqarish: Ma'lumotlarni ekranga chiqarish.
 -   Hisoblash: Amallarni bajarish, qo'shish, ayirishga o'xshash.
--   Tekshirish: Kodni to'g'r'iligni tekshirish.
+-   Tekshirish: Kodni to'g'riligini tekshirish.
 -   Takrorlash: Biron-bir ko'rsatmani qayta-qayta qilish.
 
 Quvonarlisi shundaki, deyarli shu ko'rsatmalar siz ishlatgan yoki siz
