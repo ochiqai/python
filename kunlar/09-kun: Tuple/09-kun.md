@@ -104,7 +104,7 @@ Shu paytgacha biz `list`, `dkshnri` va `tapl`larni ko'rdik. Ular `data struktura
 
 - **data struktura**: bir-biriga bogliq qiymatlarning to'plami, Mn: `list`, `dkshnri`, `tapl`.
 - **tapl**: o'zgarmaydigan va ketma ket tartibda kelgan elementlar.
-- **tapl yuklash**: birdan ortiq o'zgaruvvhilarga bir daniga qiymat yuklash.
+- **tapl yuklash**: birdan ortiq o'zgaruvchilarga bir daniga qiymat yuklash.
 
 
 ## Problem solving
