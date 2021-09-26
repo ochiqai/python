@@ -38,7 +38,7 @@ masalan
 - Anorni qutiga yukla
 
 Bunda qutiga nima yuklanishiga qarab quti o'zgarayapti. Olma yuklansa olma bo'ladi, 
-qo'y yuklansa qo'y bo'ladi va hokazo.
+anor yuklansa anor bo'ladi va hokazo.
 
 Avvalgi darsimizda biz `"Salom, Python!"` ni konsolga chiqargan edik. Unda `print` ko'rsatmasidan
 foydalangan edik
