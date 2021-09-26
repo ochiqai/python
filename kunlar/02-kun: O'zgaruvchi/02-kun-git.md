@@ -28,7 +28,7 @@ quti = 'olma'
 ```
 
 Bu yerda '=' belgisi `yuklash` ni bildiradi. Ona tilimizga tarjima qilsak: 'olmani qutiga yukla' deb ko'rsatma 
-berayapmiz. E'tibor qilishimiz kerakki, biz chapdan o'ngga qarab o'qiyapmiz. 
+berayapmiz. E'tibor qilishimiz kerakki, biz o'ngdan chapga qarab o'qiyapmiz. 
 
 Bu yerda `olma` **qiymat** deb ataladi. `Quti` esa **o'zgaruvchi** deb ataladi. 
 O'zgaruvchi deyilishiga sabab shundaki, qutiga biz boshqa narsa ham solishimiz mumkin, 
