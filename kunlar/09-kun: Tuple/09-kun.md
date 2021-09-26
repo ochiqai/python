@@ -50,7 +50,7 @@ Bu xato `tapl`ga qiymat yuklab bo'lmaydi degani.
 
 ## `tapl` o'zgaruvchilari
 
-Aytaylik, ushbu `list` berilgan `x = ['A', 'B]`. Topshiriq shundayki, listning ikkala elementni
+Aytaylik, ushbu `list` berilgan `x = ['A', 'B']`. Topshiriq shundayki, listning ikkala elementni
 ikkita o'zgaruvchiga joylashtirish. Xo'sh qanday qilamiz? `tapl` yordamga keladi,
 
 ```python
