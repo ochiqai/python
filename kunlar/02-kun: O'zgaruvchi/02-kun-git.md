@@ -345,7 +345,7 @@ fahmlab olishimiz juda oson.
 x = 11 # 11 soni x ga yuklanayapti
 ```
 
-Foydali kommentga misol sifatida, quyidagini keltirishimiz mumkin. Yani, biz `x` ning qanday o'zgaruvchi
+Foydali kommentga misol sifatida, quyidagini keltirishimiz mumkin. Ya'ni, biz `x` ning qanday o'zgaruvchi
 ekanligini aytib o'tayapmiz. Keyinchalik, bu o'zgaruvchi nima uchun kerak edi deyishdan saqlanish uchun!?
 
 ```python
