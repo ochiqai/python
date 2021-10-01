@@ -610,7 +610,7 @@
 
 92. `s = 'Mergan'` string berilgan. `s[0] = 'T'` qilsak nima bo'ladi?
 
-93. Quyidagining natijasi nima bo'ladi? `print('2**4)`
+93. Quyidagining natijasi nima bo'ladi? `print(2**4)`
 
 94. Konsolga nima chiqadi? 
 
