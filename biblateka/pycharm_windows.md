@@ -1,7 +1,9 @@
 # PyCharm dasturini windowsga o’rnatishni o’rganasiz.
 https://www.jetbrains.com/pycharm/download/#section=windows
 **Bu saytdan biz pycharm dasturini yuklab olamiz.**
-![image](https://user-images.githubusercontent.com/85432617/135710586-9ffe0d9f-fd25-40f5-b53c-d009fafb36b8.png)
+
+<img src="https://user-images.githubusercontent.com/85432617/135710586-9ffe0d9f-fd25-40f5-b53c-d009fafb36b8.png" width=600>
+
 ![image](https://user-images.githubusercontent.com/85432617/135710611-71bfbf66-034f-4015-b39a-1d68f3eefd61.png)
 
 Yuklab bo’lgach quyidagi ketma-ketliklarni bajaramiz.
