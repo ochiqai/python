@@ -136,7 +136,7 @@ uchun pythonga tegishli `type` so'zidan foydalanamiz:
 
 Natijalarga qarasak, 4 ga int ko'rsatilayapti. Bu butun son (integer
 inglizchada). Bu yerda `class` turi degani. 0.8 floatni ko'rsatayapti
-yani haqiqiy son. `'Salom, Pythonjon''` str (yani string
+yani haqiqiy son. `'Salom, Pythonjon'` str (yani string
 qisqartirilgani) turiga tegishli.
 
 E'tibor beringki biz qiymatlarni quyidagicha yozishimiz ham mumkin '4'
