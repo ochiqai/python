@@ -22,7 +22,13 @@ Yangi project yaratamiz
 Yangi fayl yartamiz va birinchi dasturimizni yozib o`tamiz.
 
 ![image](https://user-images.githubusercontent.com/85432617/135710904-f715ab18-5e1c-4b58-b1b0-ea0692a27a6c.png)
+
+<br>
+
 ![image](https://user-images.githubusercontent.com/85432617/135710910-0f7aec0f-f102-482b-8e4e-456a5ff239c2.png)
+
+<br>
+
 ![image](https://user-images.githubusercontent.com/85432617/135710914-9476a4b2-814e-49ae-aa6c-1b267d41ab7e.png)
 
 
