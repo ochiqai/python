@@ -294,7 +294,7 @@ o'zgarishlar bilan.
 
 3.  Mana shunday qilib yozsak programmaga nima bo'ladi 4+-4? 4++4 chi?
 
-4.  python primptida 1 deb yozing va Enterni bosing. Keyin, 01?
+4.  python promptida 1 deb yozing va Enterni bosing. Keyin, 01?
     0099? Nima bo'ldi?
 
 5.  `2+2` ni ishlating. `2 2` ni ishlating. Nima bo'ldi?
