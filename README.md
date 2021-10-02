@@ -57,7 +57,7 @@ Agar yuqoridagilar bajrailmasa, **3 marta** hayfsan beriladi, va darsdan ozod qi
     - [ ] Problem solving & testing (Ulugbek)
     - [x] Cards (Nuriddin)
     - [ ] Tests (Nuriddin)
- - [x] [04. If](https://github.com/Elyorcv/ajoyib-python/blob/main/kunlar/04-kun/04-kun-git.md)
+ - [x] [04. If](https://github.com/ochiqai/python/blob/main/kunlar/04-kun:%20Agar/04-kun.md)
  - [x] [05. Loop](https://github.com/ochiqai/python/blob/main/kunlar/05-kun:%20Loop/05-kun-git.md)
  - [x] [06. String](https://github.com/ochiqai/python/blob/main/kunlar/06-kun:%20String/06-kun.md) 
  - [x] [07. List] 
