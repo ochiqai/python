@@ -178,7 +178,7 @@ topilgan. Masalan, yo'l harakati uchun til mavjud, yani yo'lda
 ketayotganda biz har xil belgilarni ko'ramiz. Ularni o'zbekistonning
 qaysi joyiga bormang -- bir xil. O'zbek, ingliz yoki tojik millati
 bo'lsin hamma haydovchi uchun tushunarli. Bu yo'l tili insonlar
-tomonidan malum meyorlar asosida ishlab chiqilgan. Va yo'ldagi
+tomonidan ma'lum meyorlar asosida ishlab chiqilgan. Va yo'ldagi
 holatlarni haydovchiga ko'rsatma berib ('aytib') turadi.
 
 **Xuddi shunga o'xshash python ham rasmiy til bo'lib u insonlar
