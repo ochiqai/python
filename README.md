@@ -60,7 +60,7 @@ Agar yuqoridagilar bajrailmasa, **3 marta** hayfsan beriladi, va darsdan ozod qi
  - [x] [04. If](https://github.com/ochiqai/python/blob/main/kunlar/04-kun:%20Agar/04-kun.md)
  - [x] [05. Loop](https://github.com/ochiqai/python/blob/main/kunlar/05-kun:%20Loop/05-kun.md)
  - [x] [06. String](https://github.com/ochiqai/python/blob/main/kunlar/06-kun:%20String/06-kun.md) 
- - [x] [07. List](https://github.com/ochiqai/python/blob/main/kunlar/07-kun:%20List/07-kun.md) 
+ - [x] [07. List] (https://github.com/ochiqai/python/blob/main/kunlar/07-kun:%20List/07-kun.md) 
  - [x] [08. Dictionary] 
  - [x] [09. Tuple] (https://github.com/ochiqai/python/blob/main/kunlar/09-kun:%20Tuple/09-kun.md)
  - [ ] [10. Mashqlar](https://github.com/ochiqai/python/blob/main/kunlar/10-kun:%20Mashqlar/10-kun.md)
