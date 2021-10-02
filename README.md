@@ -39,7 +39,7 @@ Agar yuqoridagilar bajrailmasa, **3 marta** hayfsan beriladi, va darsdan ozod qi
     - [x] Pycharm install windows (Nuriddin)
     - [ ] Pycharm install linux (Elyor)
     - [ ] Pycharm install Mac (Elyor)
- - [x] [02. O'zgaruvchi](https://github.com/Elyorcv/ajoyib-python/blob/main/kunlar/02-kun/02-kun-git.md)
+ - [x] [02. O'zgaruvchi](https://github.com/ochiqai/python/blob/main/kunlar/02-kun:%20O'zgaruvchi/02-kun-git.md)
    [PDF](https://github.com/Elyorcv/ajoyib-python/blob/main/kunlar/02-kun/02-kun-git.pdf)
     - [x] 01-kun o'qish, xatolar va takliflar berish (Ulugbek)
     - [x] 01-kun o'qish, xatolar va takliflar berish (Nuriddin)
