@@ -269,7 +269,7 @@ bilishim shart. O'rni kelganda ko'rasiz.
 -   **string**: belgilar ketma ketligini ifodalash uchun tur: "Salom,
     Pythonjon".
 -   **Syntax**: programmada ifodalar yozilishining umumiy qoidalari.
--   bug: programmadagi hato (bug inglizchada) deb ataladi.
+-   **bug**: programmadagi hato (bug inglizchada) deb ataladi.
 -   **debugging**: xatolarni topish va ularni to'g'irlash.
 -   **print**: python tiliga hos so'z. Qiymatni ekranga chiqarish uchun
     ishlatiladi.
