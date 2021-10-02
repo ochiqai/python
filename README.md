@@ -63,7 +63,7 @@ Agar yuqoridagilar bajrailmasa, **3 marta** hayfsan beriladi, va darsdan ozod qi
  - [x] [07. List] 
  - [x] [08. Dictionary] 
  - [x] [09. Tuple] 
- - [ ] [10. Mashqlar]
+ - [ ] [10. Mashqlar](https://github.com/ochiqai/python/blob/main/kunlar/10-kun:%20Mashqlar/10-kun.md)
 
 <!-- - [ ] [11. Fayl]
 
