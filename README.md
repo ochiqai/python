@@ -31,7 +31,7 @@ Agar yuqoridagilar bajrailmasa, **3 marta** hayfsan beriladi, va darsdan ozod qi
 
 ## Kunlar
  - [ ] 00. PyCharm o'rnatish [Win](https://github.com/ochiqai/python/blob/main/biblateka/pycharm_windows.md) [Linux]()
- - [x] [01. Programma nima?](https://github.com/Elyorcv/ajoyib-python/blob/main/kunlar/01-kun/01-kun.md) 
+ - [x] [01. Programma nima?](https://github.com/ochiqai/python/blob/main/kunlar/01-kun:%20Programma%20nima%3F/01-kun.md) 
    [PDF](https://github.com/Elyorcv/ajoyib-python/blob/main/kunlar/01-kun/01-kun.pdf)
     - [x] Problem solving (Ulugbek va Nuriddin)
     - [x] Cards (Nuriddin)
