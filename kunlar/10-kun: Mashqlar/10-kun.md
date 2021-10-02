@@ -58,7 +58,7 @@
     ```python
     # foydalanuvchidan so'rang
     ism = input("Iltimos ismni kiriting: ")
-    familiyas = input("Iltimos familiyani kiriting: ")
+    familiya = input("Iltimos familiyani kiriting: ")
     yosh = input("Iltimos yoshingizni kiriting: ")
     ```
 
