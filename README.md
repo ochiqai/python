@@ -49,7 +49,7 @@ Agar yuqoridagilar bajrailmasa, **3 marta** hayfsan beriladi, va darsdan ozod qi
     - [ ] Problem solving & testing (Ulugbek)q
     - [x] Cards (Nuriddin)
     - [x] Tests (Nuriddin)
- - [x] [03. Funksiya](https://github.com/Elyorcv/ajoyib-python/blob/main/kunlar/03-kun/03-kun-git.md) 
+ - [x] [03. Funksiya](https://github.com/ochiqai/python/blob/main/kunlar/03-kun:%20Funksiya/03-kun.md) 
    [PDF](https://github.com/Elyorcv/ajoyib-python/blob/main/kunlar/03-kun/03-kun-git.pdf)
     - [ ] o'qish, xatolar va takliflar berish (Ulugbek)
     - [x] o'qish, xatolar va takliflar berish (Nuriddin)  
