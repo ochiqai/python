@@ -429,7 +429,7 @@
         return total
     ```
 
-73. Berilgan `fruits = {'banana':12, 'papaya':5, 'mango':10, 'apple':100)`. Tekshiring `a, *b, c = fruits`?
+73. Berilgan `fruits = {'banana':12, 'papaya':5, 'mango':10, 'apple':100}`. Tekshiring `a, *b, c = fruits`?
 
 74. Berilgan `sonlar = [1, 4, 6, 22, 3, 5, 4, 3, 6, 2, 1, 51, 3, 1]`. Shunday qilingki, faqat sonlar bir martadan ishtirok etsin va ketma-ketlik saqlanib qolsin. Mn, `[1, 4, 6, 22, 3, 5, 2, 51]`.
 
