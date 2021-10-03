@@ -30,7 +30,9 @@ Agar yuqoridagilar bajrailmasa, **3 marta** hayfsan beriladi, va darsdan ozod qi
 </details>
 <details><summary>Maslahat</summary>
   
-[Samaradorlokni oshirish](https://github.com/ochiqai/python/blob/main/biblateka/pomidor_texnikasi.md)  
+- [Samaradorlokni oshirish](https://github.com/ochiqai/python/blob/main/biblateka/pomidor_texnikasi.md)  
+
+</details>
 
 ## Kunlar
  - [ ] 00. PyCharm o'rnatish [Win](https://github.com/ochiqai/python/blob/main/biblateka/pycharm_windows.md) [Linux]()
