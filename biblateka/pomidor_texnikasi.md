@@ -24,5 +24,5 @@
 #### Foydalanilgan resurslar 
 * [Vikipediya](https://ru.wikipedia.org/wiki/%D0%9C%D0%B5%D1%82%D0%BE%D0%B4_%D0%BF%D0%BE%D0%BC%D0%B8%D0%B4%D0%BE%D1%80%D0%B0#%D0%91%D0%B0%D0%B7%D0%BE%D0%B2%D1%8B%D0%B5_%D0%BF%D1%80%D0%B8%D0%BD%D1%86%D0%B8%D0%BF%D1%8B)
 * [Davron Turdiyev](https://www.youtube.com/watch?v=q29XIQs56Tg&t=5088s)
-* [olingan rasm joyi](https://gadgetshelp.com/proizvoditelnost/luchshie-prilozheniia-pomodoro-timer-dlia-povysheniia-proizvoditelnosti/)
+* [Olingan rasm joyi](https://gadgetshelp.com/proizvoditelnost/luchshie-prilozheniia-pomodoro-timer-dlia-povysheniia-proizvoditelnosti/)
 
