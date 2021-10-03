@@ -15,4 +15,13 @@
 ### Izoh:
  *	Cirillo har qanday chalg'itishni 20-25 daqiqaga kechiktirish mumkinligini ta'kidladi va taymerni to'xtatib turishni tavsiya qilmadi. Agar siz kuta olmasangiz, taymerni o'chirib qo'yishingiz, kerakli ishni qilishingiz va taymerni boshidan boshlash orqali yana ishga qaytishingiz kerak.
  *	Kechiktirishning oldini olish uchun, aniq vazifani bajarish tugagandan so'ng ham, taymerni oldinroq o'chirish tavsiya etilmaydi: siz keyingi savol yoki keyingi rejalashtirish bilan shug'ullanishingiz kerak.
- *	
+
+
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/85783257/135746779-a413076d-2d7c-4917-8fd5-ea2724a49d22.png" height=200>
+</p>
+
+#### Foydalanilgan resurslar 
+1. [Vikipediya](https://ru.wikipedia.org/wiki/%D0%9C%D0%B5%D1%82%D0%BE%D0%B4_%D0%BF%D0%BE%D0%BC%D0%B8%D0%B4%D0%BE%D1%80%D0%B0#%D0%91%D0%B0%D0%B7%D0%BE%D0%B2%D1%8B%D0%B5_%D0%BF%D1%80%D0%B8%D0%BD%D1%86%D0%B8%D0%BF%D1%8B)
+
+
