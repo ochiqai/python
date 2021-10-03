@@ -28,6 +28,9 @@
 Agar yuqoridagilar bajrailmasa, **3 marta** hayfsan beriladi, va darsdan ozod qilinadi.
 
 </details>
+<details><summary>Maslahat</summary>
+  
+[Samaradorlokni oshirish](  
 
 ## Kunlar
  - [ ] 00. PyCharm o'rnatish [Win](https://github.com/ochiqai/python/blob/main/biblateka/pycharm_windows.md) [Linux]()
