@@ -767,7 +767,7 @@
 
 128. `yulduzlar` nomli funksiya yarating. Va u `qator` nomili parameter olsin. Agar `qator`ga 6 berilsa. Quyidagini chiqarsin:
 
-     * 
+    * 
     **
     ***
     ****
