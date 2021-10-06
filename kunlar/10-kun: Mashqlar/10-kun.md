@@ -774,7 +774,7 @@
     *****
     ******
 
-128. `yulduzkam` nomli funksiya yarating. Va u `qator` nomili parameter olsin. Agar `qator`ga 6 berilsa. Quyidagini chiqarsin:
+129. `yulduzkam` nomli funksiya yarating. Va u `qator` nomili parameter olsin. Agar `qator`ga 6 berilsa. Quyidagini chiqarsin:
 
     ******
     *****
@@ -783,7 +783,7 @@
     **
     *
 
-129. `yulduzchak` nomli funksiya yarating. Va u `qator` nomili parameter olsin. Agar `qator`ga 6 berilsa. Quyidagini chiqarsin:
+130. `yulduzchak` nomli funksiya yarating. Va u `qator` nomili parameter olsin. Agar `qator`ga 6 berilsa. Quyidagini chiqarsin:
 
     ******
     ******
@@ -792,7 +792,7 @@
     ******
     ******
 
-130. Create a function that takes two numbers as arguments and return their sum.
+131. Create a functi	on that takes two numbers as arguments and return their sum.
 
     Examples
     addition(3, 2) ➞ 5
@@ -801,14 +801,14 @@
     
     addition(7, 3) ➞ 10
 
-131. Create a function that takes a number as an argument, increments the number by +1 and returns the result.
+132. Create a function that takes a number as an argument, increments the number by +1 and returns the result.
 
     Examples
     addition(0) ➞ 1 
     addition(9) ➞ 10
     addition(-3) ➞ -2
 
-132. Quyidagi kodni ishlating. Agar ishlamasa to'g'irlang.
+133. Quyidagi kodni ishlating. Agar ishlamasa to'g'irlang.
 
     ```python
     def cubes(a):
