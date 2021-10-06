@@ -109,3 +109,7 @@ Kitob muqovasi
 [link](https://www.canva.com/design/DAEiT7wSccI/k1lIUCWVy4Gb1WZ6w_1XzA/edit)
 
 </details>
+
+
+**References**
+ - SE: https://web.eecs.utk.edu/~azh/cosc340fall2021/index.html
