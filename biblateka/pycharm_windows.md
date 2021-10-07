@@ -3,7 +3,7 @@ Mana bu saytga boramiz [www.jetbrains.com](https://www.jetbrains.com/pycharm/dow
 
 Keyin, pycharm dasturini yuklab olamiz.
 
-Quyidagilar rasmda ko'rsatilgan ko'rsatmalarni qiling:
+Quyidagi rasmlarda ko'rsatilgan ko'rsatmalarni qiling:
 
 <details><summary>Ko'rsatmalar</summary>
 1.pycharmni yuklab olish <br>
