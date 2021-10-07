@@ -763,7 +763,7 @@
         3 Toq
     ```
 
-127. `sonlar` nomli funksiya yarating. Va `chegara` degan parameter olsin. Shunday qilsinki, funskiya 0 dan `chegara`gacha bo'lgan sonlarning faqat 3 va 5 ga bo'linadiganlarini qaytarsin. Va ularning girindisini ham qaytarsin. Mn, `chegara=20` it should return the sum of 3, 5, 6, 9, 10, 12, 15, 18, 20.
+127. `sonlar` nomli funksiya yarating. Va `chegara` degan parameter olsin. Shunday qilsinki, funskiya 0 dan `chegara`gacha bo'lgan sonlarning faqat 3 va 5 ga bo'linadiganlarini qaytarsin. Va ularning yig'indisini ham qaytarsin. Mn, `chegara=20` it should return the sum of 3, 5, 6, 9, 10, 12, 15, 18, 20.
 
 128. `yulduzlar` nomli funksiya yarating. Va u `qator` nomili parameter olsin. Agar `qator`ga 6 berilsa. Quyidagini chiqarsin:
 
