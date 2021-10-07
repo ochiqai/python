@@ -50,4 +50,6 @@ sichqonchaning o’ng tugmasini bosib Run qismini tanlaymiz va kodimizni ishlati
 <img src="https://user-images.githubusercontent.com/85432617/135710801-95dce6d9-1c57-4a0c-9d49-8e88e0bf4280.png" width=600>
 <img src="https://user-images.githubusercontent.com/85432617/135710806-e28589f3-0a9e-4be4-82ec-6ab30c97d2c7.png" width=600>
 
+#### Foydalanilgan resurslar 
 
+* [www.jetbrains.com]
