@@ -6,8 +6,11 @@ Keyin, pycharm dasturini yuklab olamiz.
 Quyidagilar rasmda ko'rsatilgan ko'rsatmalarni qiling:
 
 <details><summary>Ko'rsatmalar</summary>
-A
-B
+1.pycharmni yuklab olish <br>
+2.yuklab bo'lgach uni o'rnatish <br>
+3.yangi proyekt (project) yaratish <br>
+4.python faylini yaratish <br>
+5.Birinchi kodimizni yozib ko'rish 
 </details>
 
 <img src="https://user-images.githubusercontent.com/85432617/135710586-9ffe0d9f-fd25-40f5-b53c-d009fafb36b8.png" width=600>
