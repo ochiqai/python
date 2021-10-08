@@ -325,8 +325,8 @@
     ```
     {
         'kitob': 'book',
-        'bu': this,
-        'qimmat': expensive
+        'bu': 'this',
+        'qimmat': 'expensive'
     }
     ```
     `uz_ingliz` nomli funksiya yarating. Va argumentga `Bu kitob qimmat` ni olsinda o'zbekcha tarjimasini qaytarsin.
