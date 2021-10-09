@@ -414,9 +414,9 @@
 71. Berilgan `nums = (1, 2)`. Quyidagi holatlarni tekshiring. 
 
     ```python
-    `a, b, c = nums`
-    `a, *b, c = nums`
-    `*a, *b = nums`
+    a, b, c = nums
+    a, *b, c = nums
+    *a, *b = nums
     ```
 
 72. Quyidagi funksiya nima qiladi?
