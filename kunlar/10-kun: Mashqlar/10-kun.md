@@ -583,13 +583,13 @@
 88. Quyidagi dictionaryning birinchi elementini oling.
 
     ```python
-        alifbedan_songa = {'a', 1, 'b', 2}
+    alifbedan_songa = {'a', 1, 'b', 2}
     ```
 
 89. Quyidagi dictionaryni kengaytiring. Yani, `c` kalit yaratib unga `3` qiymatini yuklab uni dictionaryga qo'shing.
 
     ```python
-        alifbedan_songa = {'a', 1, 'b', 2}
+    alifbedan_songa = {'a', 1, 'b', 2}
     ```
 
 90. Quyidagini konsolga for loopdan foydalanib ekranga chiqaring.
