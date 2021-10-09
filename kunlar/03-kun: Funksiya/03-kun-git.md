@@ -379,7 +379,7 @@ Keltirilgan sabablar kelgusi kunlarda oydinlashib boraveradi.
 
 ## Foydali terminlar
 
-- **funksiya**: Nomga qga ko'rsatmarlar (kommandalar) to'plami. Funksiyalar natija qaytarishligi
+- **funksiya**: Nomga ega ko'rsatmarlar (kommandalar) to'plami. Funksiyalar natija qaytarishligi
   yoki qaytarmasligi ham mumkin. 
 - **mevali funksiya**: Agar funsksiya qiymat qaytarsa, mevali funsksiya.
 - **mevasiz funksiya**: Agar funsksiya qiymat qaytarmasa, mevasiz funsksiya.
