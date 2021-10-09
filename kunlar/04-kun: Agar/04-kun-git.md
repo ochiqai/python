@@ -296,7 +296,7 @@ ZeroDivisionError: division by zero
 
 
 
-## Mantiqiy amalllarda qisqa tutashuv
+## Mantiqiy amallarda qisqa tutashuv
 
 Aytaylik bizga quyidagi, manqtiqiy ifoda berilgan:
 
