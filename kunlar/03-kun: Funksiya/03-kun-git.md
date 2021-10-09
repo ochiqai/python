@@ -22,7 +22,7 @@ uchun -- **funksiyadan** foydalanamiz.
 
 Dehqonchasiga, funksiya shunday narsaki, u o'ziga biron nima oladida, uning ustida biron narsa bajaradi. 
 Va natijani chiqaradi. Masalan o'rik sharbati tayyorlash mashinasi olaylik. Uning vazifasi (funksiyasi)
-o'rikni olib sharbat qilib chiqarishdir. Sharbatni ayanan qanday qilish jarayoni bizga hozircha 
+o'rikni olib sharbat qilib chiqarishdir. Sharbatni aynan qanday qilish jarayoni bizga hozircha 
 muhim emas. Biz o'rikni beramiz, u sharbat **qaytaradi**:
 
 
