@@ -50,7 +50,7 @@ Boshqa taqqoslash operatorlari quyidagilar:
 E'tibor bering `=` belgisi yuklash demakdir, `==` esa tenglik/solishtirish belgisi.
 
 
-## Mantiqli operatorlar
+## Mantiqiy operatorlar
 
 Mantiqiy operatorlar 3 ta: `and`, `or` va `not`. 
 
