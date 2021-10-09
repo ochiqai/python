@@ -83,7 +83,7 @@ x = float('3.14568568')
 
 ### `str` funksiyasi
 
-Stringni songa o'tkazadigan funksiya. Bildik. Endi sonni stringga
+Stringni songa o'tkazadigan funksiyani bildik. Endi sonni stringga
 o'tkazadigan funksiyalar ham bormi? Albatta, u `str`.
 
 ```python
