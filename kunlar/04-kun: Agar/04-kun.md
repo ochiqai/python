@@ -371,7 +371,7 @@ Butun songa konvert qilindi: 12
 - **boolean ifoda**: `True` (to'g'ri) yoki `False` (noto'g'ri) qiymatga ega bo'ladi.
 - **zanjirli holat (chained conditional)**: bir biriga bog'liq turli xil holatlarni 
   tekshiruvi
-- **taqqoslash operatori (comparison operator)**: `>, <, ==, >=, <=, 1=`
+- **taqqoslash operatori (comparison operator)**: `>, <, ==, >=, <=, !=`
 - **holat (condition)**: programma holatga qarab kerakli qatorni ishlatishga ko'rsatma 
   beradi
 - **mantiqiy operatorlar (logical operators)**: `and, or, not`
