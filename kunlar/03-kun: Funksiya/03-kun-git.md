@@ -60,7 +60,7 @@ ishlatsak
 <class 'int''>
 ```
 
-### `int` funksiyasi- butunlar sonlar
+### `int` funksiyasi- butun sonlar
 Bazida stringni butun songa o'tkazishga to'g'ri 
 keladi. Masalan, `999` stringni songa o'tkazish uchun quyidagicha `int` funksiyasidan foydalanamiz.
 
