@@ -185,7 +185,7 @@ else:
 ```
 
 Bu yerda `elif` `else if` ning qisqartirilgani. Yuqoridagi programmada 3 ta holat 
-bo'layapti, lekin programmda faqat ulardan biri to'g'ri bo'ladi va ishlaydi. Holatlar
+bo'layapti, lekin programmada faqat ulardan biri to'g'ri bo'ladi va ishlaydi. Holatlar
 yana birin ketin yuqoridan pastga qarab solishtirilib boriladi. Va qanoatlantirgan joydagi
 tanaga kirib o'sha joy ishlaydi holos, qolganlari ishlamaydi.
 
