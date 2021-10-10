@@ -1,6 +1,6 @@
 # If
 
-[PDF](https://github.com/ochiqai/python/blob/main/kunlar/04-kun-Agar/04-kun-git.pdf)
+
 
 ## Boolean ifodalari
 
