@@ -415,7 +415,7 @@ Butun songa konvert qilindi: 12
 7. Holat tana qismi nima?
 8. Zanjirli (chain) holat nima?
 9. Ichki (nested) holatlar nima?
-10. Interaktive kiritish qanqa bo'ladi?
+10. Interaktive kiritish qanaqa bo'ladi?
 11. Mantiqiy amallarda qisqa tutashuv hodisasini tushuntiring?
 12. Odatdagidan tashqari holat yani "try/except" ni tushuntiring.
 13. Necha xil boolean ifodalar bor?
