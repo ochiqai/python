@@ -183,7 +183,7 @@ olmayman.
 
 ## Zanjirli holatlar
 
-Bazida bizga ikkitadan ko'p holatlarni tekshirihga to'g'ri keladi. O'sha vaqtda bizga 
+Bazida bizga ikkitadan ko'p holatlarni tekshirishga to'g'ri keladi. O'sha vaqtda bizga 
 zanjirli holatlardan foydalanishga to'g'ri keladi.
 
 
