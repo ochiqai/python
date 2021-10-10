@@ -7,7 +7,7 @@ __tartibda__ kelgan belgilardir.
 
 String bu ketma-ket kelgan belgilardir. Belgilardan xoxlaganinigiz bilan ishlash uchun 
 braket `[]` operatori orqali bo'ladi. 
-Masalan:
+Masalan
 
 ```python
 ism = `Nuriddin`
