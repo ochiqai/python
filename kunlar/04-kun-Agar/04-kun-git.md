@@ -1,6 +1,6 @@
 # If
 
-[PDF](https://github.com/Elyorcv/ajoyib-python/blob/main/kunlar/04-kun/04-kun-git.pdf)
+[PDF](https://github.com/ochiqai/python/blob/main/kunlar/04-kun-Agar/04-kun-git.pdf)
 
 ## Boolean ifodalari
 
