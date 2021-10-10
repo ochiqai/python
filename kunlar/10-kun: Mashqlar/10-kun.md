@@ -58,7 +58,7 @@
     ```python
     # foydalanuvchidan so'rang
     ism = input("Iltimos ismni kiriting: ")
-    familiyas = input("Iltimos familiyani kiriting: ")
+    familiya = input("Iltimos familiyani kiriting: ")
     yosh = input("Iltimos yoshingizni kiriting: ")
     ```
 
@@ -325,8 +325,8 @@
     ```
     {
         'kitob': 'book',
-        'bu': this,
-        'qimmat': expensive
+        'bu': 'this',
+        'qimmat': 'expensive'
     }
     ```
     `uz_ingliz` nomli funksiya yarating. Va argumentga `Bu kitob qimmat` ni olsinda o'zbekcha tarjimasini qaytarsin.
@@ -414,9 +414,9 @@
 71. Berilgan `nums = (1, 2)`. Quyidagi holatlarni tekshiring. 
 
     ```python
-    `a, b, c = nums`
-    `a, *b, c = nums`
-    `*a, *b = nums`
+    a, b, c = nums
+    a, *b, c = nums
+    *a, *b = nums
     ```
 
 72. Quyidagi funksiya nima qiladi?
@@ -429,7 +429,7 @@
         return total
     ```
 
-73. Berilgan `fruits = {'banana':12, 'papaya':5, 'mango':10, 'apple':100)`. Tekshiring `a, *b, c = fruits`?
+73. Berilgan `fruits = {'banana':12, 'papaya':5, 'mango':10, 'apple':100}`. Tekshiring `a, *b, c = fruits`?
 
 74. Berilgan `sonlar = [1, 4, 6, 22, 3, 5, 4, 3, 6, 2, 1, 51, 3, 1]`. Shunday qilingki, faqat sonlar bir martadan ishtirok etsin va ketma-ketlik saqlanib qolsin. Mn, `[1, 4, 6, 22, 3, 5, 2, 51]`.
 
@@ -583,13 +583,13 @@
 88. Quyidagi dictionaryning birinchi elementini oling.
 
     ```python
-        alifbedan_songa = {'a', 1, 'b', 2}
+    alifbedan_songa = {'a', 1, 'b', 2}
     ```
 
 89. Quyidagi dictionaryni kengaytiring. Yani, `c` kalit yaratib unga `3` qiymatini yuklab uni dictionaryga qo'shing.
 
     ```python
-        alifbedan_songa = {'a', 1, 'b', 2}
+    alifbedan_songa = {'a', 1, 'b', 2}
     ```
 
 90. Quyidagini konsolga for loopdan foydalanib ekranga chiqaring.
@@ -610,7 +610,7 @@
 
 92. `s = 'Mergan'` string berilgan. `s[0] = 'T'` qilsak nima bo'ladi?
 
-93. Quyidagining natijasi nima bo'ladi? `print('2**4)`
+93. Quyidagining natijasi nima bo'ladi? `print(2**4)`
 
 94. Konsolga nima chiqadi? 
 
@@ -763,18 +763,18 @@
         3 Toq
     ```
 
-127. `sonlar` nomli funksiya yarating. Va `chegara` degan parameter olsin. Shunday qilsinki, funskiya 0 dan `chegara`gacha bo'lgan sonlarning faqat 3 va 5 ga bo'linadiganlarini qaytarsin. Va ularning girindisini ham qaytarsin. Mn, `chegara=20` it should return the sum of 3, 5, 6, 9, 10, 12, 15, 18, 20.
+127. `sonlar` nomli funksiya yarating. Va `chegara` degan parameter olsin. Shunday qilsinki, funskiya 0 dan `chegara`gacha bo'lgan sonlarning faqat 3 va 5 ga bo'linadiganlarini qaytarsin. Va ularning yig'indisini ham qaytarsin. Mn, `chegara=20` it should return the sum of 3, 5, 6, 9, 10, 12, 15, 18, 20.
 
 128. `yulduzlar` nomli funksiya yarating. Va u `qator` nomili parameter olsin. Agar `qator`ga 6 berilsa. Quyidagini chiqarsin:
 
-     * 
+    * 
     **
     ***
     ****
     *****
     ******
 
-128. `yulduzkam` nomli funksiya yarating. Va u `qator` nomili parameter olsin. Agar `qator`ga 6 berilsa. Quyidagini chiqarsin:
+129. `yulduzkam` nomli funksiya yarating. Va u `qator` nomili parameter olsin. Agar `qator`ga 6 berilsa. Quyidagini chiqarsin:
 
     ******
     *****
@@ -783,7 +783,7 @@
     **
     *
 
-129. `yulduzchak` nomli funksiya yarating. Va u `qator` nomili parameter olsin. Agar `qator`ga 6 berilsa. Quyidagini chiqarsin:
+130. `yulduzchak` nomli funksiya yarating. Va u `qator` nomili parameter olsin. Agar `qator`ga 6 berilsa. Quyidagini chiqarsin:
 
     ******
     ******
@@ -792,7 +792,7 @@
     ******
     ******
 
-130. Create a function that takes two numbers as arguments and return their sum.
+131. Create a functi	on that takes two numbers as arguments and return their sum.
 
     Examples
     addition(3, 2) ➞ 5
@@ -801,14 +801,14 @@
     
     addition(7, 3) ➞ 10
 
-131. Create a function that takes a number as an argument, increments the number by +1 and returns the result.
+132. Create a function that takes a number as an argument, increments the number by +1 and returns the result.
 
     Examples
     addition(0) ➞ 1 
     addition(9) ➞ 10
     addition(-3) ➞ -2
 
-132. Quyidagi kodni ishlating. Agar ishlamasa to'g'irlang.
+133. Quyidagi kodni ishlating. Agar ishlamasa to'g'irlang.
 
     ```python
     def cubes(a):

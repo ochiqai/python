@@ -22,7 +22,7 @@ uchun -- **funksiyadan** foydalanamiz.
 
 Dehqonchasiga, funksiya shunday narsaki, u o'ziga biron nima oladida, uning ustida biron narsa bajaradi. 
 Va natijani chiqaradi. Masalan o'rik sharbati tayyorlash mashinasi olaylik. Uning vazifasi (funksiyasi)
-o'rikni olib sharbat qilib chiqarishdir. Sharbatni ayanan qanday qilish jarayoni bizga hozircha 
+o'rikni olib sharbat qilib chiqarishdir. Sharbatni aynan qanday qilish jarayoni bizga hozircha 
 muhim emas. Biz o'rikni beramiz, u sharbat **qaytaradi**:
 
 
@@ -60,7 +60,7 @@ ishlatsak
 <class 'int''>
 ```
 
-### `int` funksiyasi- butunlar sonlar
+### `int` funksiyasi- butun sonlar
 Bazida stringni butun songa o'tkazishga to'g'ri 
 keladi. Masalan, `999` stringni songa o'tkazish uchun quyidagicha `int` funksiyasidan foydalanamiz.
 
@@ -83,7 +83,7 @@ x = float('3.14568568')
 
 ### `str` funksiyasi
 
-Stringni songa o'tkazadigan funksiya. Bildik. Endi sonni stringga
+Stringni songa o'tkazadigan funksiyani bildik. Endi sonni stringga
 o'tkazadigan funksiyalar ham bormi? Albatta, u `str`.
 
 ```python
@@ -379,7 +379,7 @@ Keltirilgan sabablar kelgusi kunlarda oydinlashib boraveradi.
 
 ## Foydali terminlar
 
-- **funksiya**: Nomga qga ko'rsatmarlar (kommandalar) to'plami. Funksiyalar natija qaytarishligi
+- **funksiya**: Nomga ega ko'rsatmarlar (kommandalar) to'plami. Funksiyalar natija qaytarishligi
   yoki qaytarmasligi ham mumkin. 
 - **mevali funksiya**: Agar funsksiya qiymat qaytarsa, mevali funsksiya.
 - **mevasiz funksiya**: Agar funsksiya qiymat qaytarmasa, mevasiz funsksiya.

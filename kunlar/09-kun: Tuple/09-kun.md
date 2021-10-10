@@ -50,7 +50,7 @@ Bu xato `tapl`ga qiymat yuklab bo'lmaydi degani.
 
 ## `tapl` o'zgaruvchilari
 
-Aytaylik, ushbu `list` berilgan `x = ['A', 'B]`. Topshiriq shundayki, listning ikkala elementni
+Aytaylik, ushbu `list` berilgan `x = ['A', 'B']`. Topshiriq shundayki, listning ikkala elementni
 ikkita o'zgaruvchiga joylashtirish. Xo'sh qanday qilamiz? `tapl` yordamga keladi,
 
 ```python
@@ -104,7 +104,7 @@ Shu paytgacha biz `list`, `dkshnri` va `tapl`larni ko'rdik. Ular `data struktura
 
 - **data struktura**: bir-biriga bogliq qiymatlarning to'plami, Mn: `list`, `dkshnri`, `tapl`.
 - **tapl**: o'zgarmaydigan va ketma ket tartibda kelgan elementlar.
-- **tapl yuklash**: birdan ortiq o'zgaruvvhilarga bir daniga qiymat yuklash.
+- **tapl yuklash**: birdan ortiq o'zgaruvchilarga bir daniga qiymat yuklash.
 
 
 ## Problem solving

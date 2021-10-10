@@ -50,7 +50,7 @@ Boshqa taqqoslash operatorlari quyidagilar:
 E'tibor bering `=` belgisi yuklash demakdir, `==` esa tenglik/solishtirish belgisi.
 
 
-## Mantiqli operatorlar
+## Mantiqiy operatorlar
 
 Mantiqiy operatorlar 3 ta: `and`, `or` va `not`. 
 
@@ -185,7 +185,7 @@ else:
 ```
 
 Bu yerda `elif` `else if` ning qisqartirilgani. Yuqoridagi programmada 3 ta holat 
-bo'layapti, lekin programmda faqat ulardan biri to'g'ri bo'ladi va ishlaydi. Holatlar
+bo'layapti, lekin programmada faqat ulardan biri to'g'ri bo'ladi va ishlaydi. Holatlar
 yana birin ketin yuqoridan pastga qarab solishtirilib boriladi. Va qanoatlantirgan joydagi
 tanaga kirib o'sha joy ishlaydi holos, qolganlari ishlamaydi.
 
@@ -284,7 +284,7 @@ ZeroDivisionError: division by zero
 
 
 
-## Mantiqiy amalllarda qisqa tutashuv
+## Mantiqiy amallarda qisqa tutashuv
 
 Aytaylik bizga quyidagi, manqtiqiy ifoda berilgan:
 
@@ -371,7 +371,7 @@ Butun songa konvert qilindi: 12
 - **boolean ifoda**: `True` (to'g'ri) yoki `False` (noto'g'ri) qiymatga ega bo'ladi.
 - **zanjirli holat (chained conditional)**: bir biriga bog'liq turli xil holatlarni 
   tekshiruvi
-- **taqqoslash operatori (comparison operator)**: `>, <, ==, >=, <=, 1=`
+- **taqqoslash operatori (comparison operator)**: `>, <, ==, >=, <=, !=`
 - **holat (condition)**: programma holatga qarab kerakli qatorni ishlatishga ko'rsatma 
   beradi
 - **mantiqiy operatorlar (logical operators)**: `and, or, not`

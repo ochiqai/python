@@ -13,10 +13,10 @@ qo'shish yoki xujjatdan kerakli so'zlarni qidirish yoki rasm va
 videolarga ishlov berish va hokazo. Pragramma quyidagi oddiy
 ko'rsatmalardan tashkil topishi mumkin:
 
--   Kiritish: klaviaturadan.
--   Chiqarish: Malumotlarni ekranga chiqarish.
+-   Kiritish: Klaviaturadan.
+-   Chiqarish: Ma'lumotlarni ekranga chiqarish.
 -   Hisoblash: Amallarni bajarish, qo'shish, ayirishga o'xshash.
--   Tekshirish: Kodni to'g'r'iligni tekshirish.
+-   Tekshirish: Kodni to'g'riligini tekshirish.
 -   Takrorlash: Biron-bir ko'rsatmani qayta-qayta qilish.
 
 Quvonarlisi shundaki, deyarli shu ko'rsatmalar siz ishlatgan yoki siz
@@ -69,7 +69,7 @@ Umuman olganda,
 |----------------------------------------------------|:----------------------------:|
 | Kompyuterga "Salom, Pythonjon!" yozuvini chiqargin | `print("Salom, Pythonjon!")` |
 
-## Oddiy arifmetika
+## Oddiy arifmetika [UI:MUAMMO: muammo shundaki oddiy so'z shart emas deb o'ylayman, chunk arifmetika degani o'zi oddiy degani]
 
 Prompt kuchli narsa. Misol uchun biz u yerda oddiy arifmetik amallardan
 tortib murakkab amallarni bajarishimiz mumkin. Masalan kundalik
@@ -136,7 +136,7 @@ uchun pythonga tegishli `type` so'zidan foydalanamiz:
 
 Natijalarga qarasak, 4 ga int ko'rsatilayapti. Bu butun son (integer
 inglizchada). Bu yerda `class` turi degani. 0.8 floatni ko'rsatayapti
-yani haqiqiy son. `'Salom, Pythonjon''` str (yani string
+yani haqiqiy son. `'Salom, Pythonjon'` str (yani string
 qisqartirilgani) turiga tegishli.
 
 E'tibor beringki biz qiymatlarni quyidagicha yozishimiz ham mumkin '4'
@@ -178,7 +178,7 @@ topilgan. Masalan, yo'l harakati uchun til mavjud, yani yo'lda
 ketayotganda biz har xil belgilarni ko'ramiz. Ularni o'zbekistonning
 qaysi joyiga bormang -- bir xil. O'zbek, ingliz yoki tojik millati
 bo'lsin hamma haydovchi uchun tushunarli. Bu yo'l tili insonlar
-tomonidan malum meyorlar asosida ishlab chiqilgan. Va yo'ldagi
+tomonidan ma'lum meyorlar asosida ishlab chiqilgan. Va yo'ldagi
 holatlarni haydovchiga ko'rsatma berib ('aytib') turadi.
 
 **Xuddi shunga o'xshash python ham rasmiy til bo'lib u insonlar
@@ -269,7 +269,7 @@ bilishim shart. O'rni kelganda ko'rasiz.
 -   **string**: belgilar ketma ketligini ifodalash uchun tur: "Salom,
     Pythonjon".
 -   **Syntax**: programmada ifodalar yozilishining umumiy qoidalari.
--   bug: programmadagi hato (bug inglizchada) deb ataladi.
+-   **bug**: programmadagi hato (bug inglizchada) deb ataladi.
 -   **debugging**: xatolarni topish va ularni to'g'irlash.
 -   **print**: python tiliga hos so'z. Qiymatni ekranga chiqarish uchun
     ishlatiladi.
@@ -294,7 +294,7 @@ o'zgarishlar bilan.
 
 3.  Mana shunday qilib yozsak programmaga nima bo'ladi 4+-4? 4++4 chi?
 
-4.  python primptida 1 deb yozing va Enterni bosing. Keyin, 01?
+4.  python promptida 1 deb yozing va Enterni bosing. Keyin, 01?
     0099? Nima bo'ldi?
 
 5.  `2+2` ni ishlating. `2 2` ni ishlating. Nima bo'ldi?

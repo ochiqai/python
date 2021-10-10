@@ -28,17 +28,17 @@ quti = 'olma'
 ```
 
 Bu yerda '=' belgisi `yuklash` ni bildiradi. Ona tilimizga tarjima qilsak: 'olmani qutiga yukla' deb ko'rsatma 
-berayapmiz. E'tibor qilishimiz kerakki, biz chapdan o'ngga qarab o'qiyapmiz. 
+berayapmiz. E'tibor qilishimiz kerakki, biz o'ngdan chapga qarab o'qiyapmiz. 
 
 Bu yerda `olma` **qiymat** deb ataladi. `Quti` esa **o'zgaruvchi** deb ataladi. 
 O'zgaruvchi deyilishiga sabab shundaki, qutiga biz boshqa narsa ham solishimiz mumkin, 
 masalan
 
 - Tarvuzni qutiga yukla
-- Qo'yni qutiga yukla
+- Anorni qutiga yukla
 
 Bunda qutiga nima yuklanishiga qarab quti o'zgarayapti. Olma yuklansa olma bo'ladi, 
-qo'y yuklansa qo'y bo'ladi va hokazo.
+anor yuklansa anor bo'ladi va hokazo.
 
 Avvalgi darsimizda biz `"Salom, Python!"` ni konsolga chiqargan edik. Unda `print` ko'rsatmasidan
 foydalangan edik
@@ -345,7 +345,7 @@ fahmlab olishimiz juda oson.
 x = 11 # 11 soni x ga yuklanayapti
 ```
 
-Foydali kommentga misol sifatida, quyidagini keltirishimiz mumkin. Yani, biz `x` ning qanday o'zgaruvchi
+Foydali kommentga misol sifatida, quyidagini keltirishimiz mumkin. Ya'ni, biz `x` ning qanday o'zgaruvchi
 ekanligini aytib o'tayapmiz. Keyinchalik, bu o'zgaruvchi nima uchun kerak edi deyishdan saqlanish uchun!?
 
 ```python

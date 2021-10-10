@@ -1,6 +1,6 @@
 <p align="center">
 <a href="ochiqai.com">
-<img src="./images/logo_simple4.png" width=84>
+<img src="./images/logo_simple4.png" width=200>
 </a>
 <h1 align="center">Python</h1>
 
@@ -28,9 +28,15 @@
 Agar yuqoridagilar bajrailmasa, **3 marta** hayfsan beriladi, va darsdan ozod qilinadi.
 
 </details>
+<details><summary>Maslahat</summary>
+  
+- [Samaradorlokni oshirish](https://github.com/ochiqai/python/blob/main/biblateka/pomidor_texnikasi.md)  
+
+</details>
 
 ## Kunlar
- - [x] [01. Programma nima?](https://github.com/Elyorcv/ajoyib-python/blob/main/kunlar/01-kun/01-kun.md) 
+ - [ ] 00. PyCharm o'rnatish [Win](https://github.com/ochiqai/python/blob/main/biblateka/pycharm_windows.md) [Linux]()
+ - [x] [01. Programma nima?](https://github.com/ochiqai/python/blob/main/kunlar/01-kun:%20Programma%20nima%3F/01-kun.md) 
    [PDF](https://github.com/Elyorcv/ajoyib-python/blob/main/kunlar/01-kun/01-kun.pdf)
     - [x] Problem solving (Ulugbek va Nuriddin)
     - [x] Cards (Nuriddin)
@@ -38,7 +44,7 @@ Agar yuqoridagilar bajrailmasa, **3 marta** hayfsan beriladi, va darsdan ozod qi
     - [x] Pycharm install windows (Nuriddin)
     - [ ] Pycharm install linux (Elyor)
     - [ ] Pycharm install Mac (Elyor)
- - [x] [02. O'zgaruvchi](https://github.com/Elyorcv/ajoyib-python/blob/main/kunlar/02-kun/02-kun-git.md)
+ - [x] [02. O'zgaruvchi](https://github.com/ochiqai/python/blob/main/kunlar/02-kun:%20O'zgaruvchi/02-kun-git.md)
    [PDF](https://github.com/Elyorcv/ajoyib-python/blob/main/kunlar/02-kun/02-kun-git.pdf)
     - [x] 01-kun o'qish, xatolar va takliflar berish (Ulugbek)
     - [x] 01-kun o'qish, xatolar va takliflar berish (Nuriddin)
@@ -48,7 +54,7 @@ Agar yuqoridagilar bajrailmasa, **3 marta** hayfsan beriladi, va darsdan ozod qi
     - [ ] Problem solving & testing (Ulugbek)q
     - [x] Cards (Nuriddin)
     - [x] Tests (Nuriddin)
- - [x] [03. Funksiya](https://github.com/Elyorcv/ajoyib-python/blob/main/kunlar/03-kun/03-kun-git.md) 
+ - [x] [03. Funksiya](https://github.com/ochiqai/python/blob/main/kunlar/03-kun:%20Funksiya/03-kun-git.md) 
    [PDF](https://github.com/Elyorcv/ajoyib-python/blob/main/kunlar/03-kun/03-kun-git.pdf)
     - [ ] o'qish, xatolar va takliflar berish (Ulugbek)
     - [x] o'qish, xatolar va takliflar berish (Nuriddin)  
@@ -56,17 +62,17 @@ Agar yuqoridagilar bajrailmasa, **3 marta** hayfsan beriladi, va darsdan ozod qi
     - [ ] Problem solving & testing (Ulugbek)
     - [x] Cards (Nuriddin)
     - [ ] Tests (Nuriddin)
- - [x] [04. If](https://github.com/Elyorcv/ajoyib-python/blob/main/kunlar/04-kun/04-kun-git.md)
- - [x] [05. Loop](https://github.com/ochiqai/python/blob/main/kunlar/05-kun:%20Loop/05-kun-git.md)
+ - [x] [04. If](https://github.com/ochiqai/python/blob/main/kunlar/04-kun:%20Agar/04-kun.md)
+ - [x] [05. Loop](https://github.com/ochiqai/python/blob/main/kunlar/05-kun:%20Loop/05-kun.md)
  - [x] [06. String](https://github.com/ochiqai/python/blob/main/kunlar/06-kun:%20String/06-kun.md) 
- - [ ] [07. List] 
- - [ ] [08. Dictionary] 
- - [ ] [09. Tuple] 
- - [ ] [10. Mashqlar]
+ - [x] [07. List](https://github.com/ochiqai/python/blob/main/kunlar/07-kun:%20List/07-kun.md) 
+ - [x] [08. Dictionary](https://github.com/ochiqai/python/blob/main/kunlar/08-kun:%20Dictionary/08-kun.md)
+ - [x] [09. Tuple](https://github.com/ochiqai/python/blob/main/kunlar/09-kun:%20Tuple/09-kun.md)
+ - [ ] [10. Mashqlar](https://github.com/ochiqai/python/blob/main/kunlar/10-kun:%20Mashqlar/10-kun.md)
 
 <!-- - [ ] [11. Fayl]
 
-- [ ] [12. Regular expression]
+- [x] [12. Regular expression]
 
 - [ ] [13. Network]
 
@@ -103,3 +109,7 @@ Kitob muqovasi
 [link](https://www.canva.com/design/DAEiT7wSccI/k1lIUCWVy4Gb1WZ6w_1XzA/edit)
 
 </details>
+
+
+**References**
+ - SE: https://web.eecs.utk.edu/~azh/cosc340fall2021/index.html
