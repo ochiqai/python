@@ -81,7 +81,7 @@ print(uzunligi)
 8
 ```
 
-Stringdagi oxirgi begini olish uchun nima qilgan bo'lardingiz? 
+Stringdagi oxirgi belgini olish uchun nima qilgan bo'lardingiz? 
 
 Odatda, shoshilib biz quyidagicha qilishimiz mumkin,
 
