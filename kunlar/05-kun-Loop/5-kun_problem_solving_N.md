@@ -74,7 +74,26 @@
    Raqam kiriting: tamom
    soni: 4
    ```
-
+   <details> <summary>Javob</summary>
+     
+   ```python
+      sana=0
+      while True:
+          son=input("son kiriting: ")
+          if son=="tamom":
+              break
+          try:
+              son_int=int(son)
+              sana=sana+1
+              print(son_int)
+          except:
+              print("Iltimos, son kiriting!")
+              continue
+      print(f"yigindi: {sana}") 
+   ```    
+   
+   </details> 
+   
 8. Shunday programma yozingki, u foydalanuvchidan sonlarni qabul qilsin agar son kiritilmay 
    harf kiritilsa, foydalanuvchiga "son kiriting" deb ogohlantirsin va davom etsin. Qachonki 
    foydalanuvchi `tamom` deb yozsa. O'shanda, shu paytgacha kirtilgan sonlar o'rtachasini 
