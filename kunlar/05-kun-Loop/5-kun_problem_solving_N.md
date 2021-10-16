@@ -134,22 +134,22 @@
    
 9. Shunday programma tuzingki konsolga quyiga chiqsin.
 
-```commandline
-x    pow(x, 2)  pow(x, 3)   Farqi
--    ---------  ---------   -----
-1.0  1.0        1.0         0.0
-2.0  4.0        8.0         4.0  
-```
-
-   <details> <summary>Javob</summary>
-     
-   ```python
-      print(" x    pow(x,2)    pow(x,3)  Farqi")
-      print(" -    -------     --------  -----")
-      x=1.0
-      while x<=2:
-          print(f"{x}    {pow(x, 2)}         {pow(x, 3)}       {pow(x, 3) - pow(x, 2)}")
-          x=x+1
-   ```    
+   ```commandline
+   x    pow(x, 2)  pow(x, 3)   Farqi
+   -    ---------  ---------   -----
+   1.0  1.0        1.0         0.0
+   2.0  4.0        8.0         4.0  
+   ```
    
-   </details> 
+      <details> <summary>Javob</summary>
+        
+      ```python
+         print(" x    pow(x,2)    pow(x,3)  Farqi")
+         print(" -    -------     --------  -----")
+         x=1.0
+         while x<=2:
+             print(f"{x}    {pow(x, 2)}         {pow(x, 3)}       {pow(x, 3) - pow(x, 2)}")
+             x=x+1
+      ```    
+      
+      </details> 
