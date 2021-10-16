@@ -4,16 +4,26 @@
 2. Dekriment nima?
 3. O'zgaruvchilarni yangilash nima?
 4. `while` yordamida 30 dan 0 gacha bo'lgan sonlarni chiqaring, kamayish tartibida.
+      
    <details> <summary>Javob</summary>
-   
-   ```python
-   i=30
-   while i>0:
-       print(i, end=" ")
-       i=i-1
-   ```
-   </details> 
+      
+      ```python
+      i=30
+      while i>0:
+          print(i, end=" ")
+          i=i-1
+      ```
+      </details> 
 5. `for` yordamidan 1 dan 15 gacha bo'lgan sonlarni chiqaring.
+   
+   <details> <summary>Javob</summary>
+     
+   ```python
+      for c in range(1,16,1):
+          print(c, end=" ")
+      ```    
+   
+   </details> 
 6. Shunday programma yozingki, u foydalanuvchidan sonlarni qabul qilsin agar son kiritilmay 
    harf kiritilsa, foydalanuvchiga "son kiriting" deb ogohlantirsin va davom etsin. Qachonki 
    foydalanuvchi `tamom` deb yozsa. O'shanda, shu paytgacha bo'lgan sonlarni hammasi qo'shib 
