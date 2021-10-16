@@ -392,7 +392,7 @@ Agar birinchi belgi (`'d'`) `ism` da mavjud bo'lsa `True` aks holda `False` qayt
    Kun, Biz, ajoyib, yashil 
    ```
   
-Ko'pincha biz stringlarni solishtirishdandan oldin, hammasini katta harfga yoki kichik harfga 
+Ko'pincha biz stringlarni solishtirishdan oldin, hammasini katta harfga yoki kichik harfga 
 o'tkazib olamiz.
 
 
