@@ -102,7 +102,7 @@ Sabab shundaki, `ism` qiymatining 8-indeksida belgi yo'q. Chunki, pythonda sanas
 0 dan toki 7 gacha bo'ladi. Oxirgi belgini olish uchun butun uzunlikdan `1` ni ayirishimiz kerak,
 
 ```python
-oxirgi_belgi = ism[uzunligi]
+oxirgi_belgi = ism[uzunligi-1]
 print(oxirgi_belgi)
 ```
 ```commandline
