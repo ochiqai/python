@@ -10,7 +10,6 @@
    6. 2017
 
 2. Konsolga `"Salom Python"` deb chiqaring.
-
    <details> <summary>Javob</summary>
    ```python
    print("Salom Python")
