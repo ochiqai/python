@@ -10,9 +10,15 @@
    6. 2017
 
 2. Konsolga `"Salom Python"` deb chiqaring.
+
+<details> <summary>Eslatma</summary>
+
 ```python
 print("Salom Python")
 ```
+
+</details> 
+ 
 3. Konsolga `"Salom 'Python'"` deb chiqaring.
 ```python
 print("Salom 'Python'")
