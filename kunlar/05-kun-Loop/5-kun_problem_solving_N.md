@@ -39,6 +39,26 @@
    yigindi: 20
    ```
 
+   <details> <summary>Javob</summary>
+     
+   ```python
+      summa=0
+      while True:
+          son=input("son kiriting: ")
+          if son=="tamom":
+              break
+          try:
+              son_int=int(son)
+              summa=summa+son_int
+              print(son_int)
+          except:
+              print("Iltimos, son kiriting!")
+              continue
+      print(f"yigindi: {summa}") 
+   ```    
+   
+   </details> 
+   
 7. Shunday programma yozingki, u foydalanuvchidan sonlarni qabul qilsin agar son kiritilmay 
    harf kiritilsa, foydalanuvchiga "son kiriting" deb ogohlantirsin va davom etsin. Qachonki 
    foydalanuvchi `tamom` deb yozsa. O'shanda, shu paytgacha kirtilgan sonlar umumiysini 
