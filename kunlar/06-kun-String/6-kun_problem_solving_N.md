@@ -21,18 +21,15 @@
    <details> <summary>Javob</summary>
       
       ```python
-          def palindrom(x):
-              if x==x[::-1]:
-                  result="palindrom"
-              else:
-                  result="palindrom emas"
-              return result
-   
-          print(palindrom("katak"))
-   
+      def palindrom(x):
+          if x==x[::-1]:
+              natija="palindrom"
+          else:
+              natija="palindrom emas"
+          return natija
+      print(palindrom("katak"))
       ```
-      </details> 
-
+      </details>     
 15. Mana bu funksiya nima qiladi?
 
    ```python
