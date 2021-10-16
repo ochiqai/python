@@ -10,7 +10,7 @@ braket `[]` operatori orqali bo'ladi.
 Masalan
 
 ```python
-ism = `Nuriddin`
+ism = 'Nuriddin'
 belgi = ism[1]
 ```
 
