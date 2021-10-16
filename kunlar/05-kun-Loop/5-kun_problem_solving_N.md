@@ -107,8 +107,30 @@
    son kiriting
    Raqam kiriting: 10
    Raqam kiriting: tamom
-   soni: 5
+   soni: 6.25
    ```
+   
+   <details> <summary>Javob</summary>
+     
+   ```python
+      sana=0
+      yigindi=0
+      while True:
+          son=input("son kiriting: ")
+          if son=="tamom":
+              break
+          try:
+              son_int=int(son)
+              yigindi=yigindi+son_int
+              sana=sana+1
+              print(son_int)
+          except:
+              print("Iltimos, son kiriting!")
+              continue
+      print(f"o`rtacha qiymat: {yigindi/sana}") 
+   ```    
+   
+   </details> 
    
 9. Shunday programma tuzingki konsolga quyiga chiqsin.
 
