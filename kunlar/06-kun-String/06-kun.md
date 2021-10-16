@@ -275,12 +275,12 @@ for belgi in ism:
     if belgi == 'r':
         sana = sana + 1
 
-print(count)
+print(sana)
 ```
 
 ```commandline
 --
-6
+2
 ```
 
 Bu programma programistlar ko'p ishlatadigan yana bir ko'nikmaga misoldir. Bu `counter` (kaunter, sanash) 
