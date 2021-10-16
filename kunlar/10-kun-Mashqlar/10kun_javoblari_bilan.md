@@ -11,13 +11,13 @@
 
 2. Konsolga `"Salom Python"` deb chiqaring.
 
-<details> <summary>Eslatma</summary>
+   <details> <summary>Javob</summary>
 
-```python
-print("Salom Python")
-```
+   ```python
+   print("Salom Python")
+   ```
 
-</details> 
+   </details> 
  
 3. Konsolga `"Salom 'Python'"` deb chiqaring.
 ```python
