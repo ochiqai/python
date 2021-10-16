@@ -89,7 +89,7 @@
           except:
               print("Iltimos, son kiriting!")
               continue
-      print(f"yigindi: {sana}") 
+      print(f"soni: {sana}") 
    ```    
    
    </details> 
