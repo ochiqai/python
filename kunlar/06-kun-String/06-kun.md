@@ -71,7 +71,7 @@ Tarjimasi: Turda xato ketayapti: string indekslari butun son bo'lishi shart.
 Bu funksiya stringda nechta belgi borligini hisoblab qaytaradi.
 
 ```python
-ism = `Nuriddin`
+ism = 'Nuriddin'
 uzunligi = len(ism)
 print(uzunligi)
 ```
