@@ -312,7 +312,7 @@ bu metod hech qanday argumentlar olmasligini bildiradi.
 Metodlarni bunday chaqirish **invocation** deb ataladi. Yani, biz `ism`ga `upper` methodini 
 chaqirayapmiz.  
 
-Qiziq, stringda biz yuqirida ko'rib o'tgan **qidir** funksiyasiga o'xshash metod bor. U `find` deb
+Qiziq, stringda biz yuqorida ko'rib o'tgan **qidir** funksiyasiga o'xshash metod bor. U `find` deb
 ataladi. 
 
 ```python
