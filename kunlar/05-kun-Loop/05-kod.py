@@ -141,10 +141,14 @@ import random
 #
 # print("Siz kiritgan narsa: ", a)
 
-print("x  pow(x,2) pow(x,3) Farqi")
-print("-  -------- -------- ------")
-print("1 1.0      1.0      0.0")
-print("2.0 4.0 8.0 4.0")
+# print("x  pow(x,2) pow(x,3) Farqi")
+# print("-  -------- -------- ------")
+# print("1 1.0      1.0      0.0")
+# print("2.0 4.0 8.0 4.0")
+
+
+
+
 
 
 

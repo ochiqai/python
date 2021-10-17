@@ -38,7 +38,7 @@ o'zgarishlar bilan.
     <details> <summary>Javob</summary>
 
     ```python
-       x = (2**10)/555
+       x = (2**10)/55
        print(x)
     ```
     </details>

@@ -10,6 +10,7 @@
    6. 2017
 
 2. Konsolga `"Salom Python"` deb chiqaring.
+<<<<<<< HEAD
   
     <details> <summary>Javob</summary>
    
@@ -18,6 +19,15 @@
       ```
       
       </details> 
+=======
+   
+   <details> <summary>Javob</summary>
+   
+   ```python
+   print("Salom Python")
+   ```
+   </details> 
+>>>>>>> ac3ba83b4487858c640d243c401c535afe8af279
  
 3. Konsolga `"Salom 'Python'"` deb chiqaring.
 ```python
