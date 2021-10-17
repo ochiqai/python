@@ -1,4 +1,4 @@
-## Problem solving
+## Problem solving javoblari
 1. Sequence nima? Javobni konsolga chiqaring.
    ```python
    print("Javob: ketma-ket tartibda kelgan beligilar to'plami")
