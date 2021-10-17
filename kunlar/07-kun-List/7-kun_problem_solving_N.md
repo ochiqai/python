@@ -31,6 +31,19 @@ print(min(x))
 </details> 
 
 11. `x = [103, 32, 3, 40, 5, 6]` barcha elementlar yig'indisini toping.
+
+<details> <summary>Javob</summary>
+
+```python
+x = [103, 32, 3, 40, 5, 6]
+summa=0
+for c in x:
+   summa=summa+c
+print(summa)
+```
+   
+</details> 
+
 12. `x = [103, 32, 3, 40, 5, 6]` barcha elementlar ko'paytmasini toping.
 13. `s = ['a', 'b', 'c']` 2-elementni `B` ga konvert qiling.
 14. `s = ['a', 'b', 'c']` 2-elementni `2` ga konvert qiling.
