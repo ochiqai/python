@@ -17,10 +17,19 @@
 13. string methodlaridan biri bo'lmish `count` nima qiladi?
 14. palindrom degan funksiya programmasini tuzing. Palindrom degani bir so'zning
     to'g'ri va teskarisi bir zil degani. Masalan , katak, bob.
-
-    <details>
     
-    </details>
+   <details> <summary>Javob</summary>
+
+   ```python
+   def palindrom(x):
+       if x == x[::-1]:
+           natija = "palindrom"
+       else:
+           natija = "palindrom emas"
+   return natija
+   print(palindrom("katak"))
+   ```
+   </details> 
 15. Mana bu funksiya nima qiladi?
 
    ```python
