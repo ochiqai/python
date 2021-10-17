@@ -51,7 +51,7 @@ massa = "Kompyuter:6.78 kg"
    ```python
       massa = "Kompyuter:6.78 kg"
       x=massa.find("6")
-      a=float(massa[x:14])
+      a=float(massa[x:x+4])
       print(a)
    ```
    </details> 
