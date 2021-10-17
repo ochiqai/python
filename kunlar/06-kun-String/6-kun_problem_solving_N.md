@@ -1,7 +1,7 @@
 ## Problem solving
 1. Sequence nima? Javobni konsolga chiqaring.
    ```python
-print("Javob: ketma-ket tartibda kelgan beligilar to'plami")
+   print("Javob: ketma-ket tartibda kelgan beligilar to'plami")
    ```   
 2. Immutable nima? Javobni konsolga chiqaring.
 3. search nima? Javobni konsolga chiqaring.
