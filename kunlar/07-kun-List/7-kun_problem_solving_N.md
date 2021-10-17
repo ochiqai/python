@@ -45,6 +45,19 @@ print(summa)
 </details> 
 
 12. `x = [103, 32, 3, 40, 5, 6]` barcha elementlar ko'paytmasini toping.
+
+<details> <summary>Javob</summary>
+
+```python
+x = [103, 32, 3, 40, 5, 6]
+kopaytma=1
+for c in x:
+   kopaytma=kopaytma*c
+print(kopaytma)
+```
+   
+</details> 
+
 13. `s = ['a', 'b', 'c']` 2-elementni `B` ga konvert qiling.
 14. `s = ['a', 'b', 'c']` 2-elementni `2` ga konvert qiling.
 15. List oxirgi elementini o'chiradigan funksiya tuzing.
