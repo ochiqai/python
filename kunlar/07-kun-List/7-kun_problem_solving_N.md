@@ -59,7 +59,42 @@ print(kopaytma)
 </details> 
 
 13. `s = ['a', 'b', 'c']` 2-elementni `B` ga konvert qiling.
+
+<details> <summary>Javob</summary>
+
+```python
+s = ['a', 'b', 'c']
+s[1]='B'
+print(s)
+```
+   
+</details> 
+
 14. `s = ['a', 'b', 'c']` 2-elementni `2` ga konvert qiling.
+
+<details> <summary>Javob</summary>
+
+```python
+s = ['a', 'b', 'c']
+s[1]='2'
+print(s)
+```
+   
+</details> 
+
 15. List oxirgi elementini o'chiradigan funksiya tuzing.
+
+<details> <summary>Javob</summary>
+
+```python
+def oxirgi_element(c):
+    del c[-1]
+sonlar=[44,666,768,59]
+oxirgi_element(sonlar)
+print(sonlar)
+```
+   
+</details> 
+
 16. `range` funsksiyasi nima qiladi?
 17. `len` funksiyasi nima qiladi?
