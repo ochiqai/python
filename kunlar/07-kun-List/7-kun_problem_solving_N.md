@@ -20,6 +20,16 @@ print(max(x))
 </details> 
    
 10. `x = [103, 32, 3, 40, 5, 6]` eng kichik qiymatni toping.
+
+<details> <summary>Javob</summary>
+
+```python
+x = [103, 32, 3, 40, 5, 6]
+print(min(x))
+```
+   
+</details> 
+
 11. `x = [103, 32, 3, 40, 5, 6]` barcha elementlar yig'indisini toping.
 12. `x = [103, 32, 3, 40, 5, 6]` barcha elementlar ko'paytmasini toping.
 13. `s = ['a', 'b', 'c']` 2-elementni `B` ga konvert qiling.
