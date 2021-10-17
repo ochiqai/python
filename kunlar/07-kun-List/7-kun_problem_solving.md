@@ -13,10 +13,8 @@
 <details> <summary>Javob</summary>
 
 ```python
-massa = "Kompyuter:6.78 kg"
-x=massa.find("6")
-a=float(massa[x:14])
-print(a)
+x = [103, 32, 3, 40, 5, 6]
+print(max(x))
 ```
    
 </details> 
