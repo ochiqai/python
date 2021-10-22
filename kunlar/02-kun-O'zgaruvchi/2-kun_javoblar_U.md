@@ -20,40 +20,181 @@
      ```
     </details>
  3. `x = y = z = 111` ishlating va `x, y, z` larni ekranga chiqaring.
+   
+    <details><summary>Javob</summary>
+
+     ```python
+      
+      x = 111
+      y = 111
+      z = 111
+      print(x, y,z)
+
+     ```
+    </details>
+
 
 
  4. `x = 5;` ishlating va natijani tushuntiring?
+    <details><summary>Javob</summary>
+
+     ```python
+      
+       x = 5;
+     
+      print(x)
+
+     ```
+    </details>
+
  5. `x = 1` va `y = 2` ikkita o'zgaruvchni ko'paytiring, bo'ling, qo'shing, ayiring, darajaga oshiring
     Natijalarni ekranga (konsolga) chiqaring.
+    <details><summary>Javob</summary>
+
+     ```python
+      
+     x = 1
+    y = 2
+    z = x * y
+    b = x / y
+    q = x + y
+    a = x - y
+    d = x ** y
+    print(z,b,q,a,d)
+
+     ```
+    </details>
  6. `a = 2, b = 1, c = 5` quyidagini hisoblang va konsolga chiqaring
     
     <p align="center">
     <img src="https://user-images.githubusercontent.com/24993718/122658278-2654ef00-d163-11eb-95be-817d63587a00.png" height=50>
     </p>
+
+    <details><summary>Javob</summary>
+
+     ```python
+      
+    a = 2
+    b = 1
+    c = 5
+    x = (-b + (b**2 - 4 * c * a)**(1/2)) / 2a
+    
+    y = (-b - (b**2 - 4 * c * a)**(1/2)) / 2a
+    
+    print(x,y)
+
+     ```
+    </details>
     
 
 
  7. 27 ning 15% ni toping, natijani 'miqdor' ga yuklang.
+    <details><summary>Javob</summary>
+
+     ```python
+      
+    a = 27
+    b = 15
+    miqdor = (a * b) / 100
+    print(miqdor)
+
+     ```
+    </details>
  8. 30 ni .25 ko'paytiring va natiajni `x` ga yuklang.
+    <details><summary>Javob</summary>
+
+     ```python
+      
+    b = 30
+    y = 25
+    b = 30 * 25
+    
+     
+      print(b)
+
+     ```
+    </details>
  9. Konsolga `Assalomu Alaykum` deb 100 marta chiqaring.
+    <details><summary>Javob</summary>
+
+     ```python
+      
+    x = "Assalomu Alaykum"
+    b = x *100
+     
+      print(b)
+
+     ```
+    </details>
+
  10. `s1="1"` va `s2="2"`. `z = s1 + s2`? `z = s2 + s1` ? `z = s2 * s1`? `z = s2 - s1`?
- 11. Quyigani ishlatish va tushuntiring?
+    <details><summary>Javob</summary>
+
+     ```python
+      
+       s1 = "1"
+       s2 = "2"
+       z = s1 + s2  12
+       z = s2 + s1  21
+       z = s2 * s1  kopaytirib bolmaydi
+       z = s1 - s2   ayirib bolmaydi
+     
+      print(x)
+
+     ```
+     </details>
+  
+ 12. Quyigani ishlatish va tushuntiring?
      
 ```python
 s = "salom"
 s = s + s
+print(s) 
+salomsalom
 ```
  12. Konsolga `oltin baliq` deb deb chiqaring.
- 13. Konsolga 'salom salom salom' deb chiqaring.
- 14. Operator bilan qiymatning nima farqi bor?
- 15. Quyidagilardan qaysi biri o'zgaruvchi va qaysi biri string?
+    <details><summary>Javob</summary>
+
+     ```python
+      
+     x = "oltin baliq"
+     
+      print(x)
+
+     ```
+    </details>
+
+ 14. Konsolga 'salom salom salom' deb chiqaring.
+    <details><summary>Javob</summary>
+
+     ```python
+      
+       x = "salom"
+       y = " "
+     z = (x + y) * 3
+     
+      print(x)
+     salom salom salom
+
+     ```
+    </details>
+ 15. Operator bilan qiymatning nima farqi bor?
 ```python
-yashik
-'yashik'
+4 + 5 = 9
+operator + 
+qiymat  9
+```
+
+ 17. Quyidagilardan qaysi biri o'zgaruvchi va qaysi biri string?
+```python
+yashik       ozgaruvchi
+'yashik'     string
 ```
 
  16. o'zgaruvchi turlarini sanang?
+ str float int
  17. Man bu programmani ishlating. Xato bo'lsa to'g'irlang.
 
    ```python
     print(2 + '2')
+togirlash print('2' + '2') # 22 yoki print(2 + 2) # 4

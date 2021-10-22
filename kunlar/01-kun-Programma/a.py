@@ -1,2 +1,1 @@
-x = 1/0
-print(x)
+print(2+ 2)
