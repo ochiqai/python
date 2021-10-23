@@ -1,7 +1,7 @@
 
 ## Problem solving
 
-0. Holat nima uchun kerak?
+0. Agar operatori nima uchun kerak?
 1. Programma yarating. Agar berilgan son 100 bo'lsa, 90 dan `"90 dan katta"` deb chiqsin,
 aks holda `90 dan kichik` deb chiqsin.
    
@@ -32,7 +32,7 @@ aks holda `90 dan kichik` deb chiqsin.
      ```
     </details>
 
-4. Programma tuzing. Foydalanuvchi faqat son kiritsin, agar string kiritsa. `Son kiriting, ilitmos`
+4. Programma tuzing. Foydalanuvchi faqat son kiritsin, agar string kiritsa. `Son kiriting, iltimos`
     deb chiqsin. `try\except` dan foydalaning.
 
 5. Programma tuzing. Agar, foydalanuvchi, 

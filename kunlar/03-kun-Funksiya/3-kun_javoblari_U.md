@@ -3,14 +3,13 @@
    <details><summary>Javob</summary>
 
      ```python
-      
      def add():
-    print("+")
-   add()
-    +
-
+         print("+")
+     add()
+     # +
      ```
     </details>
+
 2. `horizontal` nomli funksiya yarating. Va u konsolga quyidagini chiqarsin
    <details><summary>Javob</summary>
 
@@ -25,6 +24,13 @@
    
    
 3. `vertical` nomli funksiya yarating. Va u konsolga quyidagini chiqarsin
+    ```commandline
+       |
+       |
+       |
+       |
+       |
+     ```
 
    <details><summary>Javob</summary>
 
@@ -37,7 +43,7 @@
      ```
     </details>
    
-4. `deraza` nomli funksiya yarating. Va u konsolga quyidagini chiqarsin
+5. `deraza` nomli funksiya yarating. Va u konsolga quyidagini chiqarsin
 
     ```commandline
       +------+-------+

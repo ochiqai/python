@@ -1,69 +1,50 @@
- 1. O'rganganimizdek, o'zgaruvchilar quyidagicha elan qilinadi, `x = 12`. Agar. `12=x` 
+ 1. O'rganganimizdek, o'zgaruvchilar quyidagicha e'lon qilinadi, `x = 12`. Agar. `12=x` 
     qilinsa nima bo'ladi?
 
     <details><summary>Javob</summary>
-
-     ```python
-      
-      o'zgaruvchi son bolishi mumkin emas
-
-     ```
+        O'zgaruvchi nomi son bolishi mumkin emas.
     </details>
+    
  2. `x = 1/0` ishlating va natijani tushuntiring?
 
      <details><summary>Javob</summary>
 
-     ```python
-      
-      nolga bolish mumkin emas
+      Nolga bo'lish mumkin emas.
 
-     ```
     </details>
+ 
+ 
  3. `x = y = z = 111` ishlating va `x, y, z` larni ekranga chiqaring.
    
     <details><summary>Javob</summary>
 
      ```python
-      
-      x = 111
-      y = 111
-      z = 111
-      print(x, y,z)
-
+      x = y = z = 111
+      print(x, y, z)
      ```
+    `x, y, z` hammasi 111 ni oladi.
     </details>
 
-
-
- 4. `x = 5;` ishlating va natijani tushuntiring?
-    <details><summary>Javob</summary>
-
-     ```python
-      
-       x = 5;
-     
-      print(x)
-
-     ```
-    </details>
 
  5. `x = 1` va `y = 2` ikkita o'zgaruvchni ko'paytiring, bo'ling, qo'shing, ayiring, darajaga oshiring
     Natijalarni ekranga (konsolga) chiqaring.
     <details><summary>Javob</summary>
 
-     ```python
+    ```python
       
-     x = 1
+    x = 1
     y = 2
     z = x * y
     b = x / y
     q = x + y
     a = x - y
     d = x ** y
-    print(z,b,q,a,d)
+    print(z, b, q, a, d)
 
-     ```
+    ```
+    
     </details>
+    
  6. `a = 2, b = 1, c = 5` quyidagini hisoblang va konsolga chiqaring
     
     <p align="center">
@@ -73,16 +54,29 @@
     <details><summary>Javob</summary>
 
      ```python
-      
+    # 1-usul
     a = 2
-    b = 1
+    b = 10
     c = 5
-    x = (-b + (b**2 - 4 * c * a)**(1/2)) / 2a
+    x1 = -(-b + (b ** 2 - 4 * c * a) ** (1 / 2)) / (2 * a)
+    x2 = -(-b - (b ** 2 - 4 * c * a) ** (1 / 2)) / (2 * a)
     
-    y = (-b - (b**2 - 4 * c * a)**(1/2)) / 2a
+    print(x1, x2)
     
-    print(x,y)
-
+    # x1 = 0.5635083268962915 x2 = 4.436491673103708
+    
+    
+    # 2-usul
+    
+    ildiz = (b ** 2 - 4 * c * a) ** (1 / 2)
+    maxraj = 2 * a
+    
+    x1 = -(-b + ildiz)/maxraj
+    x2 = -(-b - ildiz)/maxraj
+    
+    print(x1, x2)
+    
+    # x1 = 0.5635083268962915 x2 = 4.436491673103708
      ```
     </details>
     
@@ -97,32 +91,30 @@
     b = 15
     miqdor = (a * b) / 100
     print(miqdor)
+    # 4.05
 
      ```
     </details>
- 8. 30 ni .25 ko'paytiring va natiajni `x` ga yuklang.
+ 
+
+ 8. 30 ni 0.25 ko'paytiring va natiajni `x` ga yuklang.
     <details><summary>Javob</summary>
 
      ```python
-      
-    b = 30
-    y = 25
-    b = 30 * 25
-    
-     
-      print(b)
-
+      x = 30 * 0.25
+      print(x)
      ```
     </details>
+ 
+
  9. Konsolga `Assalomu Alaykum` deb 100 marta chiqaring.
     <details><summary>Javob</summary>
 
      ```python
       
     x = "Assalomu Alaykum"
-    b = x *100
-     
-      print(b)
+    b = x * 100
+    print(b)
 
      ```
     </details>

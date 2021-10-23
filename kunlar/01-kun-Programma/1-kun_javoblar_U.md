@@ -22,26 +22,30 @@ o'zgarishlar bilan.
 
 
 
-6. `2+2` ni ishlating. `2 2` ni ishlating. Nima bo'ldi?
+5. `2+2` ni ishlating. `2 2` ni ishlating. Nima bo'ldi?
           
      <details><summary>Javob</summary>
 
      ```python
-      print('2+2')
-      print('2 2')
+      >>>  2+2  
      ```
+   4
+     ```python
+      >>>  2 2  
+     ```
+   Sintaks xato bo'ladi. Sonlar orasida bo'shliq bo'lishi mumkinmas.
     </details>
 
-7. `"Salom, Pythonjon!" + 1` ni ishlating. Nimaga
+6. `"Salom, Pythonjon!" + 1` ni ishlating. Nimaga
     ishlamaganligini ayting.
 
     <details> <summary>Javob</summary>
    
-     xato beradi chunki 1 int da turupdi
+     Xato beradi chunki 1 int turida. Ikkalasi ham bir xil turga mansub bo'lish kerak.
     
     </details>
 
-8. 6 soat 30 sekundni sekundga aylantiring.
+7. 6 soat 30 sekundni sekundga aylantiring.
     <details> <summary>Javob</summary>
 
     ```python
