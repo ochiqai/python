@@ -1,1 +1,3 @@
-print(2+ 2)
+x =input("sonni kiriting: ")
+if x==5:
+    print(alo)
