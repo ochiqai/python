@@ -12,16 +12,12 @@ o'zgarishlar bilan.
 
 2. print ga oid. Qo'shtirnoqlardan birini oling va programmani
     ishlating. 
-    
-    `>>> print("salom")`
+        `>>> print("salom")`
 
 3. Mana shunday qilib yozsak programmaga nima bo'ladi 4+-4? 4++4 chi?
 
 4. python promptida 1 deb yozing va Enterni bosing. Keyin, 01?
     0099? Nima bo'ldi?
-
-
-
 5. `2+2` ni ishlating. `2 2` ni ishlating. Nima bo'ldi?
           
      <details><summary>Javob</summary>
@@ -40,42 +36,32 @@ o'zgarishlar bilan.
     ishlamaganligini ayting.
 
     <details> <summary>Javob</summary>
-   
-     Xato beradi chunki 1 int turida. Ikkalasi ham bir xil turga mansub bo'lish kerak.
-    
-    </details>
-
+        Xato beradi chunki 1 int turida. Ikkalasi ham bir xil turga mansub bo'lish kerak.
+        </details>
 7. 6 soat 30 sekundni sekundga aylantiring.
     <details> <summary>Javob</summary>
-
     ```python
-       print(6*60*60+30)
+     >>> (6*60*60+30)
     ```
     </details>
 9. 2 ni 10 darajasini 555 ga bo'ling.
-   
-    <details> <summary>Javob</summary>
-
+       <details> <summary>Javob</summary>
     ```python
-        print((2**10)/555)
+     >>> ((2**10)/555)
     ```
     </details>
     
 10. Ekranga "Salom, Dunyo" deb chiqaring.
- 
-     <details> <summary>Javob</summary>
-     
-      ```python
-         print("Salom, Dunyo")
+      <details> <summary>Javob</summary>
+           ```python
+      >>>("Salom, Dunyo")
       ```
       </details>   
 11. Ekranga "Salom, Dunyo ingliz tilida 'Hello World' degani" deb
     chiqaring
-
       <details> <summary>Javob</summary>
-     
-     ```python
-        print("Salom, Dunyo ingliz tilida 'Hello World' degani")
+          ```python
+      >>>("Salom, Dunyo ingliz tilida 'Hello World' degani")
      ```
      </details> 
 
@@ -83,6 +69,4 @@ o'zgarishlar bilan.
 
 
 
-Pycharmni ishlatingda quyidagilarni bajaring: 
-1. Ekranga "Salom, Dunyo" deb chiqaring. 
-2. Ekranga "Salom, Dunyo ingliz tilida 'Hello World' degani" deb chiqaring.
+

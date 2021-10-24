@@ -14,16 +14,13 @@
    <details><summary>Javob</summary>
 
      ```python
-      
      def horizontal():
-    print("-"*10)
-   horizontal()
-
+          print("-"*10)
+     horizontal()
+     #----------
      ```
     </details>
-   
-   
-3. `vertical` nomli funksiya yarating. Va u konsolga quyidagini chiqarsin
+      3. `vertical` nomli funksiya yarating. Va u konsolga quyidagini chiqarsin
     ```commandline
        |
        |
@@ -36,9 +33,9 @@
 
      ```python
       
-     def horizontal():
-    print("-"*10)
-   horizontal()
+      def horizontal():
+             print("-"*10)
+      horizontal()
 
      ```
     </details>
@@ -60,28 +57,23 @@
    <details><summary>Javob</summary>
 
      ```python
-      
-   Yangi funksiya tuzish uchun
-
+        Yangi funksiya tuzish uchun
      ```
     </details>
-
 7. Quyidagi programma natijasi nima bo'ladi?
-
     ```python
-    def fred():
-        print("Zap")
-    def jane():
-        print("ABC")
-    jane()
-    fred()
-    jane()
+       def fred():
+           print("Zap")
+       def jane():
+           print("ABC")
+       jane()
+       fred()
+       jane()
    
-   ABC
-   Zap
-   ABC
+       ABC
+       Zap
+       ABC
     ```
-
 8. `baholar` degan funksiya yarating. Va u uni ishlaganimizda, quyidagilarni chiqarsin.
 
     ```commandline
@@ -89,11 +81,11 @@
     Ulugbek    3
     Nuriddin   5
    
-   def baholar():
-        print("Ism       Baho")
-        print("Ulugbek    3")
-        print("Nuriddin   5")
-   baholar()
+       def baholar():
+            print("Ism       Baho")
+            print("Ulugbek    3")
+            print("Nuriddin   5")
+       baholar()
    
     ```
 

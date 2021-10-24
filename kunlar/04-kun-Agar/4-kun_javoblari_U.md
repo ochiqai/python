@@ -6,29 +6,23 @@
 aks holda `90 dan kichik` deb chiqsin.
    
    <details><summary>Javob</summary>
-
      ```python
-      
-   x = 100
-   if x > 90:
-    print("90 dan katta")
-   else:
-    print("90 dan kichik")
-
+        x = 100
+        if x > 90:
+           print("90 dan katta")
+        else:
+           print("90 dan kichik")
      ```
     </details>
    
 2. Sonning juft yoki toqligini aniqlang.
    <details><summary>Javob</summary>
-
      ```python
-      
-   x = 7
-   if x % 2 == 0:
-    print("x juft son")
-   else:
-    print("x toq son")
-
+        x = 7
+        if x % 2 == 0:
+            print("x juft son")
+        else:
+        print("x toq son")
      ```
     </details>
 
@@ -40,9 +34,21 @@ aks holda `90 dan kichik` deb chiqsin.
    - 4 kiritsa `yaxshi`
    - 3 kiritsa `yomon`
    - 2 kiritsa `qoniqarsiz`
- 
-   deb chiqarsin 
+    deb chiqarsin 
+   <details><summary>Javob</summary>
 
+     ```python
+        x = int(input())
+        if x == 5:
+             print('alo')
+        if x == 4:
+             print('yaxshi')
+        if x == 3:
+             print(yomon)
+        if x == 2:
+             print('qoniqarsiz')
+     ```
+    </details>
 6. Boolean ifodalar ishlash yo'nalishi qanday? misol keltiring. 
 7. Holat bosh qismi nima?
 8. Holat tana qismi nima?
