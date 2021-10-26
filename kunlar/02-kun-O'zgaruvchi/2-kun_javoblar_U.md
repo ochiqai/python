@@ -80,96 +80,89 @@
     miqdor = (a * b) / 100
     print(miqdor)
     # 4.05
-
      ```
     </details>
-  7. 30 ni 0.25 ko'paytiring va natiajni `x` ga yuklang.
+ 7. 30 ni 0.25 ko'paytiring va natiajni `x` ga yuklang.
     <details><summary>Javob</summary>
 
-     ```python
-        x = 30 * 0.25
-        print(x)
-     ```
+    ```python
+       x = 30 * 0.25
+       print(x)
+    ```
     </details>
- 
-
  8. Konsolga `Assalomu Alaykum` deb 100 marta chiqaring.
     <details><summary>Javob</summary>
-
-     ```python
-      
-        x = "Assalomu Alaykum"
-        b = x * 100
-        print(b)
-
-     ```
+    ```python
+       x = "Assalomu Alaykum"
+       b = x * 100
+       print(b)
+    ```
     </details>
-
  9. `s1="1"` va `s2="2"`. `z = s1 + s2`? `z = s2 + s1` ? `z = s2 * s1`? `z = s2 - s1`?
     <details><summary>Javob</summary>
 
      ```python
-      
        s1 = "1"
        s2 = "2"
        z = s1 + s2  12
        z = s2 + s1  21
        z = s2 * s1  kopaytirib bolmaydi
        z = s1 - s2   ayirib bolmaydi
-     
-      print(x)
-
+       print(x)
      ```
      </details>
-  
  10. Quyigani ishlatish va tushuntiring?
-     
- ```python
-    s = "salom"
-    s = s + s
-    print(s) 
-    salomsalom
-```
+     <details><summary>Javob</summary> 
+ 
+        ```python
+          s = "salom"
+          s = s + s
+          print(s) 
+          salomsalom
+        ```
+     </details>
  11. Konsolga `oltin baliq` deb deb chiqaring.
     <details><summary>Javob</summary>
 
      ```python
-      
-     x = "oltin baliq"
-     
-      print(x)
-
+         x = "oltin baliq"
+         print(x)
      ```
-    </details>
-
+     </details>
  12. Konsolga 'salom salom salom' deb chiqaring.
     <details><summary>Javob</summary>
 
      ```python
-      
        x = "salom"
        y = " "
        z = (x + y) * 3
-     
-      print(x)
-      salom salom salom
-
+       print(x)
+       # salom salom salom
      ```
-    </details>
+     </details>
  13. Operator bilan qiymatning nima farqi bor?
-```python
-      4 + 5 = 9
-      operator + 
-      qiymat  9
-```
+     <details><summary>Javob</summary>
+ 
+      ```python
+         4 + 5 = 9
+         operator + 
+         qiymat  9
+      ```
+     </details>
  14. Quyidagilardan qaysi biri o'zgaruvchi va qaysi biri string?
-```python
-      yashik       ozgaruvchi
-     'yashik'     string
-```
+     <details><summary>Javob</summary>
+         yashik       ozgaruvchi
+        'yashik'     string
+     </details>
  15. o'zgaruvchi turlarini sanang?
+     <details><summary>Javob</summary>
       str float int
- 17. Man bu programmani ishlating. Xato bo'lsa to'g'irlang.
-   ```python
-      print(2 + '2')
-      togirlash print('2' + '2') # 22 yoki print(2 + 2) # 4
+     </details>
+ 16. Man bu programmani ishlating. Xato bo'lsa to'g'irlang.
+     <details><summary>Javob</summary>
+ 
+       ```python
+          print(2 + '2')
+         to'girlash print('2' + '2') # 22 yoki print(2 + 2) # 
+       ```
+     </details>
