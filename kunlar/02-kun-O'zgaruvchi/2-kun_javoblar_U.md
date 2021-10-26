@@ -162,17 +162,14 @@
       operator + 
       qiymat  9
 ```
-
  14. Quyidagilardan qaysi biri o'zgaruvchi va qaysi biri string?
 ```python
       yashik       ozgaruvchi
      'yashik'     string
 ```
-
  15. o'zgaruvchi turlarini sanang?
       str float int
  17. Man bu programmani ishlating. Xato bo'lsa to'g'irlang.
-
    ```python
       print(2 + '2')
       togirlash print('2' + '2') # 22 yoki print(2 + 2) # 4
