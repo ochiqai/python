@@ -50,7 +50,7 @@ o'zgarishlar bilan.
      ```python
       >>>  01  >>> 0099
      ```
-   Sintaks xato bo'ladi. Sonlar orasida bo'shliq bo'lishi mumkinmas.
+   Sintaks xato bo'ladi. 0 bo'lishi mumkin emas.
     </details>
 5. `2+2` ni ishlating. `2 2` ni ishlating. Nima bo'ldi?
           
