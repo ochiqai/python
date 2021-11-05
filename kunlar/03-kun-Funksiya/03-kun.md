@@ -368,7 +368,7 @@ konsolga chiqaradi xolos. Masalan quyidagi programma:
 
 ```python
 x = 'salom'
-print(y)
+print(x)
 ```
 ```shell
 -----
