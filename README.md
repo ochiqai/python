@@ -18,36 +18,31 @@
 * Hozircha eng muhim bo'lgan 10 kunlik darsni yozib chiqdik. 
 
 
-## Muhokama/Savol
-* Muhokama va savol javoblar uchun linkni bosing [link](https://github.com/ochiqai/python/discussions)
-
 
 ## Kunlar 
 
-  - [x] [01. Programma nima?](https://github.com/ochiqai/python/blob/main/kunlar/01-kun-Programma/01-kun.md)
-    - [ ] PyCharmni o'rnatish [Win](https://github.com/ochiqai/python/blob/main/biblateka/pycharm_windows.md) [LINUX](talabga qarab)
-    - [ ] Javoblar [link](https://github.com/ochiqai/python/blob/main/kunlar/01-kun-Programma/01-kun-javoblar.md)
-  - [ ] [02. O'zgaruvchi](https://github.com/ochiqai/python/blob/main/kunlar/02-kun-O'zgaruvchi/02-kun.md)
-    - [ ] Javoblar [link](https://github.com/ochiqai/python/blob/main/kunlar/02-kun-O'zgaruvchi/02-kun-javoblar.md)
-  - [ ] [03. Funksiya](https://github.com/ochiqai/python/blob/main/kunlar/03-kun-Funksiya/03-kun.md)
-    - [ ] Javoblar [link](https://github.com/ochiqai/python/blob/main/kunlar/03-kun-Funksiya/03-kun-javoblar.md)
-  - [ ] [04. If (Agar)](https://github.com/ochiqai/python/blob/main/kunlar/04-kun-Agar/04-kun.md)
-    - [ ] Javoblar [link](https://github.com/ochiqai/python/blob/main/kunlar/04-kun-Agar/04-kun-javoblar.md)
-  - [ ] [05. Loop](https://github.com/ochiqai/python/blob/main/kunlar/05-kun-Loop/05-kun.md)
-    - [ ] Javoblar [link](https://github.com/ochiqai/python/blob/main/kunlar/05-kun-Loop/05-kun-javoblar.md)
-  - [ ] [06. String](https://github.com/ochiqai/python/blob/main/kunlar/06-kun-String/06-kun.md)
-    - [ ] Javoblar [link](https://github.com/ochiqai/python/blob/main/kunlar/06-kun-String/06-kun-javoblar.md)
-  - [ ] [07. List](https://github.com/ochiqai/python/blob/main/kunlar/07-kun-List/07-kun.md)
-    - [ ] Javoblar [link](https://github.com/ochiqai/python/blob/main/kunlar/07-kun-List/07-kun-javoblar.md)
-  - [ ] [08. Dictionary](https://github.com/ochiqai/python/blob/main/kunlar/08-kun-Dictionary/08-kun.md)
-    - [ ] Javoblar [link](https://github.com/ochiqai/python/blob/main/kunlar/08-kun-Dictionary/08-kun-javoblar.md)
-  - [ ] [09. Tuple](https://github.com/ochiqai/python/blob/main/kunlar/09-kun-Tuple/09-kun.md)
-    - [ ] Javoblar [link](https://github.com/ochiqai/python/blob/main/kunlar/09-kun-Tuple/09-kun-javoblar.md)
-  - [ ] [10. Mashqlar](https://github.com/ochiqai/python/blob/main/kunlar/10-kun-Mashqlar/10-kun.md)
-    - [ ] Javoblar [link]()
+  [01. Programma nima?](https://github.com/ochiqai/python/blob/main/kunlar/01-kun-Programma/01-kun.md)
+    - PyCharmni o'rnatish [Win](https://github.com/ochiqai/python/blob/main/biblateka/pycharm_windows.md) [LINUX](talabga qarab)
+    - Javoblar [link](https://github.com/ochiqai/python/blob/main/kunlar/01-kun-Programma/01-kun-javoblar.md)
+  [02. O'zgaruvchi](https://github.com/ochiqai/python/blob/main/kunlar/02-kun-O'zgaruvchi/02-kun.md)
+    - Javoblar [link](https://github.com/ochiqai/python/blob/main/kunlar/02-kun-O'zgaruvchi/02-kun-javoblar.md)
+  [03. Funksiya](https://github.com/ochiqai/python/blob/main/kunlar/03-kun-Funksiya/03-kun.md)
+    - Javoblar [link](https://github.com/ochiqai/python/blob/main/kunlar/03-kun-Funksiya/03-kun-javoblar.md)
+  [04. If (Agar)](https://github.com/ochiqai/python/blob/main/kunlar/04-kun-Agar/04-kun.md)
+    - Javoblar [link](https://github.com/ochiqai/python/blob/main/kunlar/04-kun-Agar/04-kun-javoblar.md)
+  [05. Loop](https://github.com/ochiqai/python/blob/main/kunlar/05-kun-Loop/05-kun.md)
+    - Javoblar [link](https://github.com/ochiqai/python/blob/main/kunlar/05-kun-Loop/05-kun-javoblar.md)
+  [06. String](https://github.com/ochiqai/python/blob/main/kunlar/06-kun-String/06-kun.md)
+    - Javoblar [link](https://github.com/ochiqai/python/blob/main/kunlar/06-kun-String/06-kun-javoblar.md)
+  [07. List](https://github.com/ochiqai/python/blob/main/kunlar/07-kun-List/07-kun.md)
+    - Javoblar [link](https://github.com/ochiqai/python/blob/main/kunlar/07-kun-List/07-kun-javoblar.md)
+  [08. Dictionary](https://github.com/ochiqai/python/blob/main/kunlar/08-kun-Dictionary/08-kun.md)
+    - Javoblar [link](https://github.com/ochiqai/python/blob/main/kunlar/08-kun-Dictionary/08-kun-javoblar.md)
+  [09. Tuple](https://github.com/ochiqai/python/blob/main/kunlar/09-kun-Tuple/09-kun.md)
+    - Javoblar [link](https://github.com/ochiqai/python/blob/main/kunlar/09-kun-Tuple/09-kun-javoblar.md)
+  [10. Mashqlar](https://github.com/ochiqai/python/blob/main/kunlar/10-kun-Mashqlar/10-kun.md)
 
-## Savol va muhokama uchun [link](https://github.com/ochiqai/python/discussions)
-
+### Savol va muhokama uchun: [link](https://github.com/ochiqai/python/discussions)
 
 
 ## Maslahatlar
