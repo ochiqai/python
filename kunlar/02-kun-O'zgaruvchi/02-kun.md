@@ -414,7 +414,7 @@ esa programmistning o'zi algortmni (ko'rsatmalarni) xato tuzgan bo'ladi. Kompyut
  - **ifoda** (expression): Biron natija olish uchun birlashtirilgan o'zgaruvchilar, operatorlar va qiymatlar.
  - **ishlatish** (exucute): kodni ishlatish.
  - **birlashtirish** (concatenate): stringlarni birlashtirish.
- - **kommment** (comment): programmadagi foydali izoh. Bu programmist uchun, programma uchun emas. Agar boshqa programmistlar kodni ko'rsa tez tushunishliligi uchun. Programmada kommentlar ishlamaydi, ular odamlar uchun. 
+ - **komment** (comment): programmadagi foydali izoh. Bu programmist uchun, programma uchun emas. Agar boshqa programmistlar kodni ko'rsa tez tushunishliligi uchun. Programmada kommentlar ishlamaydi, ular odamlar uchun. 
 
 
 **Problem solving**

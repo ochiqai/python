@@ -315,7 +315,7 @@ def ayirish(a, b):
 y = ayirish(11, 6)
 ```
 
-`a va b` lar parameterlar deb ataladi, `10 va 20` esa argumentlar deb ataladi. Programma ishlaganda
+`a va b` lar parameterlar deb ataladi, `11 va 6` esa argumentlar deb ataladi. Programma ishlaganda
 `a=11` va `b=6` bo'lib funksiya ishlaydi.
 
 Umuman olganda, funksiya hosil qilinayotganda u o'zgaruvchilardan tashkil topsa, biz ularni parameterlar
@@ -368,7 +368,7 @@ konsolga chiqaradi xolos. Masalan quyidagi programma:
 
 ```python
 x = 'salom'
-print(y)
+print(x)
 ```
 ```shell
 -----
