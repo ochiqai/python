@@ -21,12 +21,12 @@
 
 ## Kunlar 
 
-  [01. Programma nima?](https://github.com/ochiqai/python/blob/main/kunlar/01-kun-Programma/01-kun.md)
+  [01. Programma nima?](https://github.com/ochiqai/python/blob/main/kunlar/01-kun-Programma/01-kun.md) <\br>
     - PyCharmni o'rnatish [Win](https://github.com/ochiqai/python/blob/main/biblateka/pycharm_windows.md) [LINUX](talabga qarab)
     - Javoblar [link](https://github.com/ochiqai/python/blob/main/kunlar/01-kun-Programma/01-kun-javoblar.md)
-  [02. O'zgaruvchi](https://github.com/ochiqai/python/blob/main/kunlar/02-kun-O'zgaruvchi/02-kun.md)
+  [02. O'zgaruvchi](https://github.com/ochiqai/python/blob/main/kunlar/02-kun-O'zgaruvchi/02-kun.md) <\br>
     - Javoblar [link](https://github.com/ochiqai/python/blob/main/kunlar/02-kun-O'zgaruvchi/02-kun-javoblar.md)
-  [03. Funksiya](https://github.com/ochiqai/python/blob/main/kunlar/03-kun-Funksiya/03-kun.md)
+  [03. Funksiya](https://github.com/ochiqai/python/blob/main/kunlar/03-kun-Funksiya/03-kun.md) <\br>
     - Javoblar [link](https://github.com/ochiqai/python/blob/main/kunlar/03-kun-Funksiya/03-kun-javoblar.md)
   [04. If (Agar)](https://github.com/ochiqai/python/blob/main/kunlar/04-kun-Agar/04-kun.md)
     - Javoblar [link](https://github.com/ochiqai/python/blob/main/kunlar/04-kun-Agar/04-kun-javoblar.md)
