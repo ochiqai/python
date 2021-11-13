@@ -42,6 +42,7 @@
     - Javoblar [link](https://github.com/ochiqai/python/blob/main/kunlar/09-kun-Tuple/09-kun-javoblar.md)
   [10. Mashqlar](https://github.com/ochiqai/python/blob/main/kunlar/10-kun-Mashqlar/10-kun.md)
 
+
 ### Savol va muhokama uchun: [link](https://github.com/ochiqai/python/discussions)
 
 
