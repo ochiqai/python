@@ -48,7 +48,7 @@
 
 ## Maslahatlar
 
-- [Pamidor foydasi](https://github.com/ochiqai/python/blob/main/biblateka/pomidor_texnikasi.md)  
+- [Pomidor foydasi](https://github.com/ochiqai/python/blob/main/biblateka/pomidor_texnikasi.md)  
 
 ## Taklif
 
