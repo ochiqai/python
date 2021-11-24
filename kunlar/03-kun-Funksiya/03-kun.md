@@ -326,7 +326,7 @@ argumentlar deb ataladi.
 ## Xo'roz inida qichqiradi 
 
 Biz o'zgaruvchi (variable) ni funksiya ichida yaratsak, u faqat funksiya ichidagina hizmat qiladi.
-Masalan, quyida funksiya ichida va tashqarisada bir xil nomli `a` o'zgaruvchisini hosil qilaylik:
+Masalan, quyida funksiya ichida va tashqarisida bir xil nomli `a` o'zgaruvchisini hosil qilaylik:
 
 ```python
 def ism():
