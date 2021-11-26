@@ -1,7 +1,7 @@
 # Problems
 > Ushbu mashqlar oson bajarganlar uchun koni foyda <br >
 > Asosiy maqsad ko'nikma hosil qilish 9 kun davomida o'rgangan narsalarni <br >
-> Mashqlar soni 133 ta, lekin oshib boraveradi vaqtga qarab. <br >
+> Mashqlar soni 134 ta, lekin oshib boraveradi vaqtga qarab. <br >
 
 1. Quyidagi qiymatlarning turlarini ayting?
 
@@ -51,35 +51,35 @@
 
 10. Programma tuzing. U foydalanuvchi ismi va qaysi mamlakatdan ekanligini so'rasin. Keyin konsolga quyidagini chiqarsin
 
-    ```python
-    Ali Qulov (UZ)
-    ```
+```python
+Ali Qulov (UZ)
+```
     Yordamchi funksiyalar: `input()` (foydalanuvchidan kiritishni so'rash uchun). `upper()` (harflarni katta qilish uchun).
  
 11. Quyidagi kodga qarang
 
-    ```python
-    # foydalanuvchidan so'rang
-    ism = input("Iltimos ismni kiriting: ")
-    familiya = input("Iltimos familiyani kiriting: ")
-    yosh = input("Iltimos yoshingizni kiriting: ")
-    ```
+```python
+# foydalanuvchidan so'rang
+ism = input("Iltimos ismni kiriting: ")
+familiya = input("Iltimos familiyani kiriting: ")
+yosh = input("Iltimos yoshingizni kiriting: ")
+```
 
-    ```shell
-    Iltimos ismni kiriting: Usmon  
-    Iltimos familiyani kiriting: Nosirov
-    Iltimos yoshingizni kiriting: 20
-    ```
+```shell
+Iltimos ismni kiriting: Usmon  
+Iltimos familiyani kiriting: Nosirov
+Iltimos yoshingizni kiriting: 20
+```
     
-    ```python
-    natija = familiya.upper()
-    natija = natija + ', '
-    natija = natija + ism
-    natija = natija + " ("
-    natija = natija + yosh
-    natija = natija + ")"
-    print(natija) 
-    ```
+```python
+natija = familiya.upper()
+natija = natija + ', '
+natija = natija + ism
+natija = natija + " ("
+natija = natija + yosh
+natija = natija + ")"
+print(natija) 
+```
 
     `natija` nima bo'ladi. Birinchi yodda bajaring. Keyin, kodni yozing va javoginzni solishtirich? 
 
@@ -87,9 +87,9 @@
 
 13. Foydanlanuchidan ism va fmiliyaisni so'rangda, quyidagicha konsolga chiqaring.
 
-    ```shell
-    Usmon Nosir [UN]
-    ```
+```shell
+Usmon Nosir [UN]
+```
 
     Yani, kiritilgan ism va familyani hamda ularning birinchi harflarini olingda to'rtburchak qavsga olib chiqaring - 1 qatorda chiqsin.
 
@@ -108,14 +108,14 @@
 
 16. Quyidagi kod berilgan:
 
-    ```python
-    son1 = 10
-    son2 = 20
-    son3 = 30
-    son4 = -10
-    son5 = 0.0
-    son6 = 9999
-    ```
+```python
+son1 = 10
+son2 = 20
+son3 = 30
+son4 = -10
+son5 = 0.0
+son6 = 9999
+```
 
     Solishtirish operatorlari orqali, quyidagilarni aniqlang,
 
@@ -128,14 +128,14 @@
 
 17. Quyidagi kod berilgan:
 
-    ```python
-    son1 = 10
-    son2 = 20
-    son3 = 30
-    son4 = -10
-    son5 = 0.0
-    son6 = 9999
-    ```
+```python
+son1 = 10
+son2 = 20
+son3 = 30
+son4 = -10
+son5 = 0.0
+son6 = 9999
+```
 
     Matematik library orqali, quyidagilarni bajaring.
 
@@ -149,10 +149,10 @@
 
     Eslatma, matematik modulni quyidagicha chaqirasiz va undan biron funksiyani quyidagicha chaqiramiz:
 
-    ```python
-    import math
-    x = math.sqrt(son1)
-    ```
+```python
+import math
+x = math.sqrt(son1)
+```
 
 18. Quyidagi formulalarga kod yozib, `y` ni hisoblang.
 
@@ -166,14 +166,14 @@
 
 20. Ushbu kod uchun 
 
-    ```python
-    son1 = 10
-    son2 = 20
-    son3 = 30
-    son4 = -10
-    son5 = 0.0
-    son6 = 9999
-    ```
+```python
+son1 = 10
+son2 = 20
+son3 = 30
+son4 = -10
+son5 = 0.0
+son6 = 9999
+```
 
     Quyidagilarni dilda bajaring. So'ngra kodda bajarib, dilingizdagi bilan solishtiring.
 
@@ -194,11 +194,11 @@
      
 26.  Quyidagi berilgan, 
 
-    ```python
-    viloyatlar = ['Samarqand', 'Toshkent', 'Surxondaryo', 'Qashqadaryo']
-    ```
+```python
+viloyatlar = ['Samarqand', 'Toshkent', 'Surxondaryo', 'Qashqadaryo']
+```
 
-   Konsolga:
+    Konsolga:
    - har bir elementni chiqaring.
    - faqat boshidagi 3 elementni chiqaring.
    - oxirgi elementni chiqaring.
@@ -208,135 +208,135 @@
      
 28. Quyidagi list berilgan
 
-    ```python
-    sonlar = [1, 2, 3, 4, 5]
-    ```
+```python
+sonlar = [1, 2, 3, 4, 5]
+```
 
     `append()` funksiyasi  yordamida, quyidagini hosil qiling:
 
-    ```python
-    [1, 2, 3, 4, 5, 6, 7, 8, 9]
-    ```
+```python
+[1, 2, 3, 4, 5, 6, 7, 8, 9]
+```
 
-28. Quyidagi list berilgan:
+29. Quyidagi list berilgan:
 
-    ```python
-    sonlar = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-    ```
+```python
+sonlar = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+```
     
     Programma qiling. U foydalanuvchidan son kiritishni so'rasin. Agar kiritlgan son listda mavjud bo'lsa, `"bor"` deb chiqsin, aks holda "`yo'q`" deb chiqsin.
 
-29. `while` takrorlash operatoridan foydalanib, konsolga `salom python` deb 50 marta chiqaring.
+30. `while` takrorlash operatoridan foydalanib, konsolga `salom python` deb 50 marta chiqaring.
      
-30. Quyidagi list berilgan,
+31. Quyidagi list berilgan,
 
-    ```python
-    sonlar = [2, 4, 6, 7, 10, 11]
-    ```
+```python
+sonlar = [2, 4, 6, 7, 10, 11]
+```
     
     `for` takrorlash operatori orqali list elementlarini konsolga chiqaring. 
 
-31. `while` takrorlovchi operatori orqali, shunday list hosil qilingki unda `1` dan `199` gacha bo'lgan sonlar bo'lsin. Eslatma, `append()` dan foydalanishingiz mumkin.
+32. `while` takrorlovchi operatori orqali, shunday list hosil qilingki unda `1` dan `199` gacha bo'lgan sonlar bo'lsin. Eslatma, `append()` dan foydalanishingiz mumkin.
      
-32. Programma qiling, foydalanuvchidan 5 ta yoqtirgan sonni so'rasin. Ularni `son` degan listga yuklab boring. `while` da foydalaning. 
+33. Programma qiling, foydalanuvchidan 5 ta yoqtirgan sonni so'rasin. Ularni `son` degan listga yuklab boring. `while` da foydalaning. 
      
-33. Shunday programma qilingki, unda list elementlari 1 dan 20 gacha bo'lgan sonlarning kvadrati bo'lsin. Mn, `[1, 4, 9, 16, 25, ...]`.
+34. Shunday programma qilingki, unda list elementlari 1 dan 20 gacha bo'lgan sonlarning kvadrati bo'lsin. Mn, `[1, 4, 9, 16, 25, ...]`.
      
-34.  Quyidagi list berilgan,
+35.  Quyidagi list berilgan,
 
-    ```python
-    sonlar = [.2, .4, .6, .7, .10, .11]
-    ```
+```python
+sonlar = [.2, .4, .6, .7, .10, .11]
+```
 
     List har bir elementini 100 ga ko'paytiring va konsolga chiqaring.     
 
-35.  Quyidagi list berilgan,
+36.  Quyidagi list berilgan,
 
-    ```python
-    sonlar = [.2, .4, .6, .7, .10, .11]
-    ```
+```python
+sonlar = [.2, .4, .6, .7, .10, .11]
+```
 
     `yangi_sonlar` degan list hosil qiling. Ammo, bunda 
     elementlar yuqoridagi list elemenlarini 100 ga ko'paytirishdan hosil qilinsin,
     Yani, `yangi_sonlar = [20, 40, 60, 70, 10, 110]`
 
-36. `salom_python()` nomli funksiya yarating. Chaqirilganda, konsolga `Salom Python` xabari chiqsin.
+37. `salom_python()` nomli funksiya yarating. Chaqirilganda, konsolga `Salom Python` xabari chiqsin.
      
-37. `foydalanuchikiritgan(x)` nomli funksiya yarating. Foydalanuvchi kiritganini olib, konsolga `Siz x ni kiritdingiz` deb chiqsin. 
+38. `foydalanuchikiritgan(x)` nomli funksiya yarating. Foydalanuvchi kiritganini olib, konsolga `Siz x ni kiritdingiz` deb chiqsin. 
 
-38. Quyidagi `yigindi(a, b, c, d)` nomli funksiya yarating. Va u argumentlar yig'indisini qaytarsin. Mn: `yigindi(1, 0, 2, 10)` deb chaqirilganda 13 ni qaytarsin.
+39. Quyidagi `yigindi(a, b, c, d)` nomli funksiya yarating. Va u argumentlar yig'indisini qaytarsin. Mn: `yigindi(1, 0, 2, 10)` deb chaqirilganda 13 ni qaytarsin.
 
-39. `yoshhisobi(yil)` nomli funksiya yarating. Va u `yil` parametri tug'ilgan yilni olsinda, yoshni qaytarsin. Mn: `1989` uchun `Siz 32 yoshdasiz` deb chiqarsin.  
+40. `yoshhisobi(yil)` nomli funksiya yarating. Va u `yil` parametri tug'ilgan yilni olsinda, yoshni qaytarsin. Mn: `1989` uchun `Siz 32 yoshdasiz` deb chiqarsin.  
 
-40. Sonlardan iborat list berilgan. Undan eng katta sonni qaytaring. Mn `a = [1, 30, 2]` uchun 30 qaytarsin.
+41. Sonlardan iborat list berilgan. Undan eng katta sonni qaytaring. Mn `a = [1, 30, 2]` uchun 30 qaytarsin.
      
-41. Sonlardan iborat list berilgan. Undan eng kichik sonni qaytaring. Mn `a = [1, 30, 2]` uchun 1 qaytarsin.
+42. Sonlardan iborat list berilgan. Undan eng kichik sonni qaytaring. Mn `a = [1, 30, 2]` uchun 1 qaytarsin.
 
-42. `ikki_max` nomli funksiya tuzing. Argument sifatida ikkita sonni olsin va ulardan kattasini qaytarsin. `if-else` dan foydalaning. (Bilamizki, Pythonda `max` degan funksiya mavjud, lekin undan foydalanmang).
+43. `ikki_max` nomli funksiya tuzing. Argument sifatida ikkita sonni olsin va ulardan kattasini qaytarsin. `if-else` dan foydalaning. (Bilamizki, Pythonda `max` degan funksiya mavjud, lekin undan foydalanmang).
 
-43. `uch_max` nomli funksiya yarating. Uchta argument olsin va eng kattasini qaytarsin.
+44. `uch_max` nomli funksiya yarating. Uchta argument olsin va eng kattasini qaytarsin.
 
-44. `uzunlik` nomli funksiya yarating. Argument sifatida `list` yoki `string` turiga tegishli o'zgaruvchi qabul qilib uning uzunligini qaytarsin. (Bilamizki, Pythonda `len` degan funksiya mavjud, lekin undan foydalanmang).
+45. `uzunlik` nomli funksiya yarating. Argument sifatida `list` yoki `string` turiga tegishli o'zgaruvchi qabul qilib uning uzunligini qaytarsin. (Bilamizki, Pythonda `len` degan funksiya mavjud, lekin undan foydalanmang).
 
-45. `unlimi` nomli funksiya yarating. Funksiya argumenti sifatida stringda bo'lgan bitta harf olsin mn., 'a', 'b'. Agar argument unli bo'lsa, funksiya `True` aks holda `False` qaytarsin. 
+46. `unlimi` nomli funksiya yarating. Funksiya argumenti sifatida stringda bo'lgan bitta harf olsin mn., 'a', 'b'. Agar argument unli bo'lsa, funksiya `True` aks holda `False` qaytarsin. 
 
-46. `tarjima` degan funksiya yarating. `book` deb argumentga berilganda `kitob` deb qaytarsin.
+47. `tarjima` degan funksiya yarating. `book` deb argumentga berilganda `kitob` deb qaytarsin.
 
-47. `yigindi` nomli funksiya yarating va u berilgan `list` yig'indisini topsin. Mn, `yigindi([1, 2, 4])` desak `7` qaytarish kerak. Shunga o'xshash, `kupaytma` degan funksiya ham yarating, va u verilgan list elementlarini bir-biriga ko'paytirsin. Mn, `kupaytma([1, 2, 3])`  `6` qaytarsin.  
+48. `yigindi` nomli funksiya yarating va u berilgan `list` yig'indisini topsin. Mn, `yigindi([1, 2, 4])` desak `7` qaytarish kerak. Shunga o'xshash, `kupaytma` degan funksiya ham yarating, va u verilgan list elementlarini bir-biriga ko'paytirsin. Mn, `kupaytma([1, 2, 3])`  `6` qaytarsin.  
 
-48. `teskarisi` nomli funksiya yarating. Argument sifatida string olsin, va uni teskarisini chiqarsin. Mn, `teskarisi('salom')` desak `molas` deb qaytarsin.
+49. `teskarisi` nomli funksiya yarating. Argument sifatida string olsin, va uni teskarisini chiqarsin. Mn, `teskarisi('salom')` desak `molas` deb qaytarsin.
 
-49. `palindrommi` nomli funksiya yarating. Palindrom deb o'ngga ham chapga ham bir xil o'qiladigan so'zlarga aytiladi; mn., katak, non. Funksiya argument sifatida  string olsin va uni palindrom ekanligini aniqlasin. Agar palindrom bo'lsa `True`, aks holda `False` qaytarsin.
+50. `palindrommi` nomli funksiya yarating. Palindrom deb o'ngga ham chapga ham bir xil o'qiladigan so'zlarga aytiladi; mn., katak, non. Funksiya argument sifatida  string olsin va uni palindrom ekanligini aniqlasin. Agar palindrom bo'lsa `True`, aks holda `False` qaytarsin.
 
-50. `azomi` nomli funksiya yarating. Bunda funksiya 2 ta argument qabul qilsin: biri list va ikkinchisi qiymat bo'lsin. Funksiya berilga qiymat listda bor yo'qligi aniqlansin. Agar bo'lsa `True` aks holda `False` qaytarsin. (Bilamizki mana xuddi shu maqsadda `in` operatori mavjud, lekin undan foydalanmang).
+51. `azomi` nomli funksiya yarating. Bunda funksiya 2 ta argument qabul qilsin: biri list va ikkinchisi qiymat bo'lsin. Funksiya berilga qiymat listda bor yo'qligi aniqlansin. Agar bo'lsa `True` aks holda `False` qaytarsin. (Bilamizki mana xuddi shu maqsadda `in` operatori mavjud, lekin undan foydalanmang).
 
-51. `bir_xil` nomli funksiya yarating. Argument sifatida 2 ta list olsin. Va ular ustida shunday amal bajarsinki, agar kamida 1 ta element ikkala listda ham bo'lsa funksiya `True` aks holda `False` qaytarsin. Bunda yuqorida `azomi` funksiyasidan foydalansangiz ham bo'ladi. Mn, `bir_xil([1,2,3], [10, 777, 1])` deb ishlatsak `True` qaytarsin.
+52. `bir_xil` nomli funksiya yarating. Argument sifatida 2 ta list olsin. Va ular ustida shunday amal bajarsinki, agar kamida 1 ta element ikkala listda ham bo'lsa funksiya `True` aks holda `False` qaytarsin. Bunda yuqorida `azomi` funksiyasidan foydalansangiz ham bo'ladi. Mn, `bir_xil([1,2,3], [10, 777, 1])` deb ishlatsak `True` qaytarsin.
 
-52. `n_takror_harf` nomli funksiya yarating. Argument sifatida butun son `n`, va string `harf` parametrlari bo'lsin. `n_takror_harf(5, 'a')` deb chaqirsak, `aaaaa` deb string qaytarsin. 
+53. `n_takror_harf` nomli funksiya yarating. Argument sifatida butun son `n`, va string `harf` parametrlari bo'lsin. `n_takror_harf(5, 'a')` deb chaqirsak, `aaaaa` deb string qaytarsin. 
 
-53. `histogram` degan funksiya yarating. U argument sifatida list olsin, va histogramni konsolga chiqarsin. Mn, histogram( [1, 3, 5, 2] ) uchun quyidagini chiqarsin:
+54. `histogram` degan funksiya yarating. U argument sifatida list olsin, va histogramni konsolga chiqarsin. Mn, histogram( [1, 3, 5, 2] ) uchun quyidagini chiqarsin:
 
-    ````
-    *
-    ***
-    *****
-    **
-    ````
+````
+*
+***
+*****
+**
+````
 
-54. Yuqorida, `ikki_max` va `uch_max` funksiyalari faqat 2 va 3 ta son uchun ishlaydi. Lekin tasavvur qiling bizda 100-1000 lab sonlar bor. Unda kattasini qanday qidiramiz (topamiz). `max_list` degan funksiya yarating, va u argumentga list olsinda, litsda elementlardan eng kattasini qaytarsin. Mn, `max_list( [1,20, 45, 90, 32, 100] )` desak 100 qaytarsin.
+55. Yuqorida, `ikki_max` va `uch_max` funksiyalari faqat 2 va 3 ta son uchun ishlaydi. Lekin tasavvur qiling bizda 100-1000 lab sonlar bor. Unda kattasini qanday qidiramiz (topamiz). `max_list` degan funksiya yarating, va u argumentga list olsinda, litsda elementlardan eng kattasini qaytarsin. Mn, `max_list( [1,20, 45, 90, 32, 100] )` desak 100 qaytarsin.
 
-55. `listdan_songa(list_suzlar)` nomli funksiya yarating. Va u har bir sonning uzunligini list qilib qaytarsin. Mn, `list_suzlar = ['salom', 'yaxshi', 'bir']` desak, `[5, 6, 3]` ni qaytarsin.
+56. `listdan_songa(list_suzlar)` nomli funksiya yarating. Va u har bir sonning uzunligini list qilib qaytarsin. Mn, `list_suzlar = ['salom', 'yaxshi', 'bir']` desak, `[5, 6, 3]` ni qaytarsin.
 
-56. `eng_uzun_suz` nomli funksiya yarating. Bunda funksiya argumentiga list olsin va eng uzun so'z uzunligini qaytarsin. Mn, `list_suzlar = ['salom', 'yaxshi', 'bir']` desak, `6` ni qaytarsin.
+57. `eng_uzun_suz` nomli funksiya yarating. Bunda funksiya argumentiga list olsin va eng uzun so'z uzunligini qaytarsin. Mn, `list_suzlar = ['salom', 'yaxshi', 'bir']` desak, `6` ni qaytarsin.
 
-57. `filter_uzun_suzlar` nomli funksiya yarating. Ikkita argument qabul qilsin. 1-si bir necha so'zlardan tashkil topgan list. 2-si butun son `n`. Funksiya uzunlig `n`dan katta bo'lgan so'zlar listini qayatarsin. Mn, `list_suzlar = ['salom', 'yaxshi', 'bir']` `filter_uzun_suzlar(list_suzlar, 3)` desak `['salom', 'yaxshi']` ni qaytarsin.
+58. `filter_uzun_suzlar` nomli funksiya yarating. Ikkita argument qabul qilsin. 1-si bir necha so'zlardan tashkil topgan list. 2-si butun son `n`. Funksiya uzunlig `n`dan katta bo'lgan so'zlar listini qayatarsin. Mn, `list_suzlar = ['salom', 'yaxshi', 'bir']` `filter_uzun_suzlar(list_suzlar, 3)` desak `['salom', 'yaxshi']` ni qaytarsin.
 
-58. `panagrammi` nomli funksiya yarating. Argumentga string olsin va agar berilgan string panagram bo'lsa `True`, aks holda `False` qaytarsin. Eslatma: panagram degani berilgan gapda hamma harflar ishtirok etgan bo'ladi. 
+59. `panagrammi` nomli funksiya yarating. Argumentga string olsin va agar berilgan string panagram bo'lsa `True`, aks holda `False` qaytarsin. Eslatma: panagram degani berilgan gapda hamma harflar ishtirok etgan bo'ladi. 
 
-59. Ekranga quyidagini chiqaring. 
-    ```
-    1 ta quy
-    2 ta quy
-    3 ta quy
-    4 ta quy
-    5 ta quy
-    6 ta quy
-    7 ta quy
-    ```
+60. Ekranga quyidagini chiqaring. 
+```
+1 ta quy
+2 ta quy
+3 ta quy
+4 ta quy
+5 ta quy
+6 ta quy
+7 ta quy
+```
 
-60. Quyidagi dictionary ni olingda 
-    ```
-    {
-        'kitob': 'book',
-        'bu': 'this',
-        'qimmat': 'expensive'
-    }
-    ```
+61. Quyidagi dictionary ni olingda 
+```
+{
+    'kitob': 'book',
+    'bu': 'this',
+    'qimmat': 'expensive'
+}
+```
     `uz_ingliz` nomli funksiya yarating. Va argumentga `Bu kitob qimmat` ni olsinda o'zbekcha tarjimasini qaytarsin.
 
-61. `harf_soni` nomli funksiya yarating. Berilgan stringdan harflarni necha martadan ishtirok etganini qaytarsin. dictionarydan foydalaning.  Mn, `harf_soni("aaaabbbc")` ni ishlatsak, `{'a': 4, 'b': 3, 'c': 1}` ni qaytarsin.
+62. `harf_soni` nomli funksiya yarating. Berilgan stringdan harflarni necha martadan ishtirok etganini qaytarsin. dictionarydan foydalaning.  Mn, `harf_soni("aaaabbbc")` ni ishlatsak, `{'a': 4, 'b': 3, 'c': 1}` ni qaytarsin.
 
-62. Kriptografiyada, Sezr sifri degan oddiy enkriptsiya usuli mavjud. Bunda, berilgan harf boshqa harf bilan almashtiriladi. Boshqa harf o'zidan keyingi 1 yoki ixtiyoriy harfdan keyin kelguvchi harf bilan almashtirilishi mumkin. Mn, `ada` so'zi `beb` sifrlanishi mumkin. Qadimda Sezr ushbu sifrlashni o'zining generallari bilan mahfiy muloqot qilish uchun ishlatgan. Vazifa shundan iboratki, quyidagi dictionary berilgan, bunda har bir harf keying 13 harfdan keyin kelguvchi harf bilan almashtirilishi ko'rsatilayapti. 
+63. Kriptografiyada, Sezr sifri degan oddiy enkriptsiya usuli mavjud. Bunda, berilgan harf boshqa harf bilan almashtiriladi. Boshqa harf o'zidan keyingi 1 yoki ixtiyoriy harfdan keyin kelguvchi harf bilan almashtirilishi mumkin. Mn, `ada` so'zi `beb` sifrlanishi mumkin. Qadimda Sezr ushbu sifrlashni o'zining generallari bilan mahfiy muloqot qilish uchun ishlatgan. Vazifa shundan iboratki, quyidagi dictionary berilgan, bunda har bir harf keying 13 harfdan keyin kelguvchi harf bilan almashtirilishi ko'rsatilayapti. 
 
     ```
     key = 
@@ -347,129 +347,129 @@
 
   2 ta funksiya yarating. Birini `enkoder` deb atang, bunda u quyidagi so'zni sifrlasin: `men ertaga qaytaman`. 2-sini esa `dekoder` deb atang, sifrlagan so'zingizni yana o'z holiga qaytarsin.
 
-63. `>, <, >=, <=` belgilarni int va stringlarni taqqoslash uchun ishlating. Nima bo'ldi?
+64. `>, <, >=, <=` belgilarni int va stringlarni taqqoslash uchun ishlating. Nima bo'ldi?
 
-64. Quyidagi arifmetik progressiyani  `while` orqali hosil qiling, 
+65. Quyidagi arifmetik progressiyani  `while` orqali hosil qiling, 
 
-    ```python
-    -2, 1, 4, 7, 10, 13
-    ```
+```python
+-2, 1, 4, 7, 10, 13
+```
 
-65. Quyifagi arifmetik progressiyani  `for` orqali hosil qiling, 
+66. Quyifagi arifmetik progressiyani  `for` orqali hosil qiling, 
 
-    ```python
-    -2, 1, 4, 7, 10, 13
-    ```
+```python
+-2, 1, 4, 7, 10, 13
+```
     
-66. Quyidagi arifmetik progressiyani  `range` orqali hosil qiling, 
+67. Quyidagi arifmetik progressiyani  `range` orqali hosil qiling, 
 
-    ```
-    -2, 1, 4, 7, 10, 13
-    ```
+```
+-2, 1, 4, 7, 10, 13
+```
 
-67. Quyidagi kodda nima sintaks xato? Ishlatmay topishga harakat qiling.
+68. Quyidagi kodda nima sintaks xato? Ishlatmay topishga harakat qiling.
 
-    ```
-    # snippet 1:
-    def greeting()
-        print('hello')
+```
+# snippet 1:
+def greeting()
+    print('hello')
 
-    # snippet 2:
-    num = 5
-    if num = 4:
-        print('what is going on?!')
+# snippet 2:
+num = 5
+if num = 4:
+    print('what is going on?!')
 
-    # snippet 3:
-    greeting = “hi”
-    ```
+# snippet 3:
+greeting = “hi”
+```
 
-68.  `son` nomli funksiya yarating. `int`, `float` va `str` turlarni argument sifatida olsin, qolgan turlar argument sifatida berilsa xato bersin. Mn,
+69.  `son` nomli funksiya yarating. `int`, `float` va `str` turlarni argument sifatida olsin, qolgan turlar argument sifatida berilsa xato bersin. Mn,
 
-    ```
-    # int 
-    >>> son(3)
-    3
-    # float 
-    >>> son(3.32)
-    3.32
-    # str 
-    >>> son('12')
-    12
+```
+# int 
+>>> son(3)
+3
+# float 
+>>> son(3.32)
+3.32
+# str 
+>>> son('12')
+12
 
-    # xato tur
-    >>> son(['1', '2.3'])
-    TypeError: not a valid input data type
+# xato tur
+>>> son(['1', '2.3'])
+TypeError: not a valid input data type
 
-    # string intga o'zgartira olinmaydi
-    >>> son('salom')
-    ValueError: could not convert string to int or float
-    ```
+# string intga o'zgartira olinmaydi
+>>> son('salom')
+ValueError: could not convert string to int or float
+```
 
-69. `harflar = tuple('salom')` berilgan. `harflar[0]` nima qaytaradi. `harflar[0] = S` qilsak nima bo'ladi?
+70. `harflar = tuple('salom')` berilgan. `harflar[0]` nima qaytaradi. `harflar[0] = S` qilsak nima bo'ladi?
 
-70. Berilgan `tub_sonlar = (2, 3, 5, 7, 11)`. Quyidagi holatlarni tekshiring.
+71. Berilgan `tub_sonlar = (2, 3, 5, 7, 11)`. Quyidagi holatlarni tekshiring.
 
     * nima bo'ladi agar `primes[5]`?
     * nima bo'ladi agar `primes[-6]`?
     * nima bo'ladi agar `primes[:5]`?
     * nima bo'ladi agar `primes[-6:]`?
 
-71. Berilgan `nums = (1, 2)`. Quyidagi holatlarni tekshiring. 
+72. Berilgan `nums = (1, 2)`. Quyidagi holatlarni tekshiring. 
 
-    ```python
-    a, b, c = nums
-    a, *b, c = nums
-    *a, *b = nums
-    ```
+```python
+a, b, c = nums
+a, *b, c = nums
+*a, *b = nums
+```
 
-72. Quyidagi funksiya nima qiladi?
+73. Quyidagi funksiya nima qiladi?
 
-    ```python
-    def sum_nums(args):
-        total = 0
-        for n in args:
-            total += n
-        return total
-    ```
+```python
+def sum_nums(args):
+    total = 0
+    for n in args:
+        total += n
+    return total
+```
 
-73. Berilgan `fruits = {'banana':12, 'papaya':5, 'mango':10, 'apple':100}`. Tekshiring `a, *b, c = fruits`?
+74. Berilgan `fruits = {'banana':12, 'papaya':5, 'mango':10, 'apple':100}`. Tekshiring `a, *b, c = fruits`?
 
-74. Berilgan `sonlar = [1, 4, 6, 22, 3, 5, 4, 3, 6, 2, 1, 51, 3, 1]`. Shunday qilingki, faqat sonlar bir martadan ishtirok etsin va ketma-ketlik saqlanib qolsin. Mn, `[1, 4, 6, 22, 3, 5, 2, 51]`.
+75. Berilgan `sonlar = [1, 4, 6, 22, 3, 5, 4, 3, 6, 2, 1, 51, 3, 1]`. Shunday qilingki, faqat sonlar bir martadan ishtirok etsin va ketma-ketlik saqlanib qolsin. Mn, `[1, 4, 6, 22, 3, 5, 2, 51]`.
 
-75. Quyidagining natijasi nima bo'ladi? `print('concatena'+'tion')`
+76. Quyidagining natijasi nima bo'ladi? `print('concatena'+'tion')`
 
-76. Quyidagi kodni o'qing va nimani konsolga chiqarishini toping. Keyin kodni pycharmda ishlating va o'zingizning natijangiz bilan taqqoslang.
+77. Quyidagi kodni o'qing va nimani konsolga chiqarishini toping. Keyin kodni pycharmda ishlating va o'zingizning natijangiz bilan taqqoslang.
 
-    ```python
-    spam_amount = 0
-    print(spam_amount)
+```python
+spam_amount = 0
+print(spam_amount)
 
-    # Ordering Spam, egg, Spam, Spam, bacon and Spam (4 more servings of Spam)
-    spam_amount = spam_amount + 4
+# Ordering Spam, egg, Spam, Spam, bacon and Spam (4 more servings of Spam)
+spam_amount = spam_amount + 4
 
-    if spam_amount > 0:
-        print("But I don't want ANY spam!")
+if spam_amount > 0:
+    print("But I don't want ANY spam!")
 
-    viking_song = "Spam " * spam_amount
-    print(viking_song)
-    ```
+viking_song = "Spam " * spam_amount
+print(viking_song)
+```
 
-77. Quyidagi kodning oltinchi qatorini kommentlang,
+78. Quyidagi kodning oltinchi qatorini kommentlang,
 
-    ```python
-    spam_amount = 0
-    print(spam_amount)
+```python
+spam_amount = 0
+print(spam_amount)
 
-    # Ordering Spam, egg, Spam, Spam, 
-    # bacon and Spam (4 more servings of Spam)
-    spam_amount = spam_amount + 4
+# Ordering Spam, egg, Spam, Spam, 
+# bacon and Spam (4 more servings of Spam)
+spam_amount = spam_amount + 4
 
-    if spam_amount > 0:
-        print("But I don't want ANY spam!")
+if spam_amount > 0:
+    print("But I don't want ANY spam!")
 
-    viking_song = "Spam " * spam_amount
-    print(viking_song)
-    ```
+viking_song = "Spam " * spam_amount
+print(viking_song)
+```
 
     Keyin ishlating, natija nima bo'ldi?
 
@@ -486,43 +486,43 @@
     | -a       | Negation       | The negative of a                              |
     
 
-78. Quyidagi programma natijasi nima bo'ladi
+79. Quyidagi programma natijasi nima bo'ladi
 
-    ```python
-    mystery = print()
-    print(mystery)
-    ```
+```python
+mystery = print()
+print(mystery)
+```
 
-79. Quyidagi ikki funksiyalarni natijasini ishlatmay toping. 
+80. Quyidagi ikki funksiyalarni natijasini ishlatmay toping. 
 
-    ```python
-    def add(a, b):
-        """
-        Add two numbers and
-        return the result 
-        """
-        result = a + b
-        return  result
+```python
+def add(a, b):
+    """
+    Add two numbers and
+    return the result 
+    """
+    result = a + b
+    return  result
 
-    result = add(2, 3) 
-    print(result)
+result = add(2, 3) 
+print(result)
 
-    def add_without_return(a, b):
-        """
-        Add two numbers and
-        return nothing
-        """
-        result = a + b
+def add_without_return(a, b):
+    """
+    Add two numbers and
+    return nothing
+    """
+    result = a + b
 
-    result = add_without_return(2, 3) 
-    print(result) 
-    ```
+result = add_without_return(2, 3) 
+print(result) 
+```
 
-80. Quyidagi amalning natijasi nima bo'ladi?
+81. Quyidagi amalning natijasi nima bo'ladi?
 
-    ```python
-    True or True and False
-    ```
+```python
+True or True and False
+```
 
 
     | Operation | Description               |   | Operation | Description                  |
@@ -531,244 +531,244 @@
     | a < b     | a less than b             |   | a > b     | a greater than b             |
     | a <= b    | a less than or equal to b |   | a >= b    | a greater than or equal to b |
 
-81 Quyidagining natijasi nima bo'ladi?
+82 Quyidagining natijasi nima bo'ladi?
+    
+```python
+print(3.0 == 3)
+print('3' == 3) 
+```   
 
-    ```python
-    print(3.0 == 3)
-    print('3' == 3) 
-    ```   
+83. Quyidagilarni natijasini ayting, Va natijani pycharmda ishlatib solishtiring.
 
-82. Quyidagilarni natijasini ayting, Va natijani pycharmda ishlatib solishtiring.
+```python
+print(bool("")) 
+print(bool(0))
+print(bool("abc"))
+print(bool(1))
+print(bool("A"))
+print(bool(6.2))
+```
 
-    ```python
-    print(bool("")) 
-    print(bool(0))
-    print(bool("abc"))
-    print(bool(1))
-    print(bool("A"))
-    print(bool(6.2))
-    ```
+84. Quyidagi kodni shunday o'zgartiringki, kodlar qatori kamaysin. Lekin, natija bir xil bo'lsin
 
-83. Quyidagi kodni shunday o'zgartiringki, kodlar qatori kamaysin. Lekin, natija bir xil bo'lsin
+```python
+def is_negative(number):
+if number < 0:
+    return True
+else:
+    return False
+```
 
-    ```python
-    def is_negative(number):
-    if number < 0:
-        return True
-    else:
-        return False
-    ```
+85. Quyidagi programmaini to'ldiring. Yani `pass` o'rniga shunday o'qzgaritish qilingki funksiya `L` listning 2-chi elementini qaytarsin.
 
-84. Quyidagi programmaini to'ldiring. Yani `pass` o'rniga shunday o'qzgaritish qilingki funksiya `L` listning 2-chi elementini qaytarsin.
+```python
+def ikkinchini_tanla(L):
+    
+    pass
+```      
 
-    ```python
-    def ikkinchini_tanla(L):
-        
-        pass
-    ```      
+86. List berilgan `L = ["Mario", "Bowser", "Luigi"]`. Shunday programma tuzingki, `["Luigi", "Bowser", "Mario"]` bo'lsin. Yani, birinchi va oxirgi elementlar almashsin.
 
-85. List berilgan `L = ["Mario", "Bowser", "Luigi"]`. Shunday programma tuzingki, `["Luigi", "Bowser", "Mario"]` bo'lsin. Yani, birinchi va oxirgi elementlar almashsin.
+87. Quyidagi listlarning uzunligini toping.
 
-86. Quyidagi listlarning uzunligini toping.
+```python
+a = [1, 2, 3]
+b = [1, [2, 3]]
+c = []
+d = [1, 2, 3][1:]
+```
 
-    ```python
-    a = [1, 2, 3]
-    b = [1, [2, 3]]
-    c = []
-    d = [1, 2, 3][1:]
-    ```
+88. Quyidagi kodda nima bo'layapti?
+```pthon
+[1, 2, 3, 4] > 2
+```
 
-87. Quyidagi kodda nima bo'layapti?
-    ```python
-    [1, 2, 3, 4] > 2
-    ```
+89. Quyidagi dictionaryning birinchi elementini oling.
 
-88. Quyidagi dictionaryning birinchi elementini oling.
+```python
+alifbedan_songa = {'a', 1, 'b', 2}
+```
 
-    ```python
-    alifbedan_songa = {'a', 1, 'b', 2}
-    ```
+90. Quyidagi dictionaryni kengaytiring. Yani, `c` kalit yaratib unga `3` qiymatini yuklab uni dictionaryga qo'shing.
 
-89. Quyidagi dictionaryni kengaytiring. Yani, `c` kalit yaratib unga `3` qiymatini yuklab uni dictionaryga qo'shing.
+```python
+alifbedan_songa = {'a', 1, 'b', 2}
+```
 
-    ```python
-    alifbedan_songa = {'a', 1, 'b', 2}
-    ```
+91. Quyidagini konsolga for loopdan foydalanib ekranga chiqaring.
 
-90. Quyidagini konsolga for loopdan foydalanib ekranga chiqaring.
+```python
+sonlar = {'bir':1, 'ikki':2, 'uch':3}
+```
 
-    ```python
-    sonlar = {'bir':1, 'ikki':2, 'uch':3}
-    ```
+92. Quyidagi stringlarning uzunligini toping. Keyin kodini pycharmda yozingda natijangizni solishtiring.
 
-91. Quyidagi stringlarning uzunligini toping. Keyin kodini pycharmda yozingda natijangizni solishtiring.
+```python
+a = ""
+b = ''
+c = "\n"
+d = 'it\'s ok'
+e = """ana"""
+```
 
-    ```python
-    a = ""
-    b = ''
-    c = "\n"
-    d = 'it\'s ok'
-    e = """ana"""
-    ```
+93. `s = 'Mergan'` string berilgan. `s[0] = 'T'` qilsak nima bo'ladi?
 
-92. `s = 'Mergan'` string berilgan. `s[0] = 'T'` qilsak nima bo'ladi?
+94. Quyidagining natijasi nima bo'ladi? `print(2**4)`
 
-93. Quyidagining natijasi nima bo'ladi? `print(2**4)`
+95. Konsolga nima chiqadi? 
 
-94. Konsolga nima chiqadi? 
-
-    ```
-    exampleVar = 55
-    print(exampleVar)
-    ```
-
-95. Quyidagini ishlatsak konsolga nima chiqadi:
-    ```python
-    condition = 1
-
-    while condition < 10:
-        print(condition)
-        condition += 1
-    ```
+```
+exampleVar = 55
+print(exampleVar)
+```
 
 96. Quyidagini ishlatsak konsolga nima chiqadi:
+```python
+condition = 1
 
-    ```
-    condition = '4'
-
-    while condition > 6:
-        print 'test'
-    ```    
+while condition < 10:
+    print(condition)
+    condition += 1
+```
 
 97. Quyidagini ishlatsak konsolga nima chiqadi:
 
-    ```python
-    while True:
-        print('doing stuff!!')
-    ```
+```
+condition = '4'
+
+while condition > 6:
+    print 'test'
+```    
 
 98. Quyidagini ishlatsak konsolga nima chiqadi:
 
-    ```python
-    exampleList = [1, 5, 6, 6, 2, 1, 5, 2, 1, 4]
-    for x in exampleList:
-        print(x)
-    ```
+```python
+while True:
+    print('doing stuff!!')
+```
 
 99. Quyidagini ishlatsak konsolga nima chiqadi:
 
-    ```python
-    for x in range(1, 11, 3):
-        print(x)
-    ```
+```python
+exampleList = [1, 5, 6, 6, 2, 1, 5, 2, 1, 4]
+for x in exampleList:
+    print(x)
+```
 
 100. Quyidagini ishlatsak konsolga nima chiqadi:
 
-     ```python
-     x = 5
-     y = 10
-     z = 22
+```python
+for x in range(1, 11, 3):
+    print(x)
+```
 
-     if x > y:
-         print('x is greater than y')
-     elif x == z:
-         print('x is less than z')
-     elif 5 == 2:
-         print('5 is greater than 2')
-     else:
-         print('if and elif(s) never ran')
-     ```
+101. Quyidagini ishlatsak konsolga nima chiqadi:
 
-101. Quyidagini ishlatsak ekranga nima chiqadi?
+ ```python
+ x = 5
+ y = 10
+ z = 22
 
-    ```python
-    x = 5
-    y = 8
+ if x > y:
+     print('x is greater than y')
+ elif x == z:
+     print('x is less than z')
+ elif 5 == 2:
+     print('5 is greater than 2')
+ else:
+     print('if and elif(s) never ran')
+ ```
 
-    if x < y:
-        print('x is greater than y')
-    if x > 55:
-        print('x is greater than 55')
-    else:
-        print('x is not greater than y or 55')
-    ```
+102. Quyidagini ishlatsak ekranga nima chiqadi?
 
-102. Ushbu funksiyani ishlating.
+```python
+x = 5
+y = 8
 
-    ```python
-    def example():
-        print('kodlar')
-        x = 13 + 19
-        print(x)
-    ```
+if x < y:
+    print('x is greater than y')
+if x > 55:
+    print('x is greater than 55')
+else:
+    print('x is not greater than y or 55')
+```
 
-103. Quyidagini ishlatmay natijani ayting. Keyin ishlating va solishtiring?
+103. Ushbu funksiyani ishlating.
 
-    ```python
-    def simple_addition(s1, s2):
-        javob = s1 + s2
-        print('s1: ', s1)
-        print(javob)
+```python
+def example():
+    print('kodlar')
+    x = 13 + 19
+    print(x)
+```
 
-    simple_addition(5,3)
-    ```
+104. Quyidagini ishlatmay natijani ayting. Keyin ishlating va solishtiring?
 
-104. Aytaylik, `name = "Ahmad Dilshodov"`, `name[1]` nima qaytaradi?  name[-2] chi? name[1:-1] chi?
+```python
+def simple_addition(s1, s2):
+    javob = s1 + s2
+    print('s1: ', s1)
+    print(javob)
 
-105. Qanday qilib ism uzunligni bilamiz?
+simple_addition(5,3)
+```
 
-106. Quyidagini natjasi nima bo'ladi `f"{2+2}+{10%3}"`?
+105. Aytaylik, `name = "Ahmad Dilshodov"`, `name[1]` nima qaytaradi?  name[-2] chi? name[1:-1] chi?
 
-107. Berilgan `name = "Ahmad Dilshodov"`, `name.title()` nima qaytaradi?
+106. Qanday qilib ism uzunligni bilamiz?
 
-108. Berilgan `name = "Ahmad Dilshodov"`, `name.strip()` nima qiladi?
+107. Quyidagini natjasi nima bo'ladi `f"{2+2}+{10%3}"`?
 
-109. Berilgan `name = "Ahmad Dilshodov"`, `name.find("Smith")` nima qaytaradi?
+108. Berilgan `name = "Ahmad Dilshodov"`, `name.title()` nima qaytaradi?
 
-110. Berilgan `name = "Ahmad Dilshodov"`, `name.replace("j", "k")` `name` qiymati o'zgardimi?
+109. Berilgan `name = "Ahmad Dilshodov"`, `name.strip()` nima qiladi?
 
-111. Berilgan `name = "Ahmad Dilshodov"`, qnday qilib `"Ahmad"` stringi `name` o'zgaruvchisida bor yo'qligini qanday tushuntiramiz?
+110. Berilgan `name = "Ahmad Dilshodov"`, `name.find("Smith")` nima qaytaradi?
 
-112. Quyidagilarning farqi nima `10 / 3` va `10 // 3`?
+111. Berilgan `name = "Ahmad Dilshodov"`, `name.replace("j", "k")` `name` qiymati o'zgardimi?
 
-113. `10 ** 6` natijasi qanday?
+112. Berilgan `name = "Ahmad Dilshodov"`, qnday qilib `"Ahmad"` stringi `name` o'zgaruvchisida bor yo'qligini qanday tushuntiramiz?
 
-114. Aytaylik `x = 2`, `x += 2`ning natijasi nima?
+113. Quyidagilarning farqi nima `10 / 3` va `10 // 3`?
 
-115. `float(1)` - natijasi nima?
+114. `10 ** 6` natijasi qanday?
 
-116. `bool("False")` - natijasi nima?
+115. Aytaylik `x = 2`, `x += 2`ning natijasi nima?
 
-117. `10 == "10"`
+116. `float(1)` - natijasi nima?
 
-118. "sen" > "men" natijasi nima?
+117. `bool("False")` - natijasi nima?
 
-119. `not(True or False)` natijasi nima?
+118. `10 == "10"`
 
-120. Qachon quyidagi ifoda `"18 <= age < 65"` `True` qaytaradi?
+119. "sen" > "men" natijasi nima?
 
-121. `range(1, 10, 2)` nima qaytaradi?
+120. `not(True or False)` natijasi nima?
 
-122. Parameter va argument farqini ayting.
+121. Qachon quyidagi ifoda `"18 <= age < 65"` `True` qaytaradi?
 
-123. Pythonda hamma funksiyalar nima qaytaradi?
+122. `range(1, 10, 2)` nima qaytaradi?
 
-124. `fizz_buzz` nomli funksiya yarating. Bitta parameterdan tashkil topsin. Agar argument `3` ga bo'linadigan bo'lsa, `"Fizz"` deb qaytarsin. Agar `5` ga bo'linsa `"Buzz"` ni qaytarsin. Agar ham `3` ham `5` ga bo'linadigan bo'lsa, `"FizzBuzz"` qaytarsin. Hech qanday shart bajarilmasa, argument qiymatining o'zini qaytarsin. 
+123. Parameter va argument farqini ayting.
 
-125. `tezlik` nomli funksiya yarating va u bitta parameter olsin tezlikni bildirish uchun. Agar berilgan tezlik `70` dan kichik bo'lsa `"OK."` deb qaytarsin. Agar tezlik `70` dan katta bo'lsa `"Ogohlantirish."` ni qaytarsin. Agar `80` dan katta bo'lsa, `"Litzensiyadan mahrum qilinsin."`
+124. Pythonda hamma funksiyalar nima qaytaradi?
 
-126. `sonlar` nomli funksiya yarating. Va `chegara` degan parameter olsin. Shunday qilsinki, funskiya 0 dan `chegara`gacha bo'lgan sonlarni qaytarsin va ularining toq yoki juftligini ham qaytarsin. Masalan `chegara` qiymati `3` bo'lsa, quyidagicha bo'lsin:
+125. `fizz_buzz` nomli funksiya yarating. Bitta parameterdan tashkil topsin. Agar argument `3` ga bo'linadigan bo'lsa, `"Fizz"` deb qaytarsin. Agar `5` ga bo'linsa `"Buzz"` ni qaytarsin. Agar ham `3` ham `5` ga bo'linadigan bo'lsa, `"FizzBuzz"` qaytarsin. Hech qanday shart bajarilmasa, argument qiymatining o'zini qaytarsin. 
 
-    ```shell
-        0 Juft
-        1 Toq
-        2 Juft
-        3 Toq
-    ```
+126. `tezlik` nomli funksiya yarating va u bitta parameter olsin tezlikni bildirish uchun. Agar berilgan tezlik `70` dan kichik bo'lsa `"OK."` deb qaytarsin. Agar tezlik `70` dan katta bo'lsa `"Ogohlantirish."` ni qaytarsin. Agar `80` dan katta bo'lsa, `"Litzensiyadan mahrum qilinsin."`
 
-127. `sonlar` nomli funksiya yarating. Va `chegara` degan parameter olsin. Shunday qilsinki, funskiya 0 dan `chegara`gacha bo'lgan sonlarning faqat 3 va 5 ga bo'linadiganlarini qaytarsin. Va ularning yig'indisini ham qaytarsin. Mn, `chegara=20` it should return the sum of 3, 5, 6, 9, 10, 12, 15, 18, 20.
+127. `sonlar` nomli funksiya yarating. Va `chegara` degan parameter olsin. Shunday qilsinki, funskiya 0 dan `chegara`gacha bo'lgan sonlarni qaytarsin va ularining toq yoki juftligini ham qaytarsin. Masalan `chegara` qiymati `3` bo'lsa, quyidagicha bo'lsin:
 
-128. `yulduzlar` nomli funksiya yarating. Va u `qator` nomili parameter olsin. Agar `qator`ga 6 berilsa. Quyidagini chiqarsin:
+```shell
+0 Juft
+1 Toq
+2 Juft
+3 Toq
+```
+
+128. `sonlar` nomli funksiya yarating. Va `chegara` degan parameter olsin. Shunday qilsinki, funskiya 0 dan `chegara`gacha bo'lgan sonlarning faqat 3 va 5 ga bo'linadiganlarini qaytarsin. Va ularning yig'indisini ham qaytarsin. Mn, `chegara=20` it should return the sum of 3, 5, 6, 9, 10, 12, 15, 18, 20.
+
+129. `yulduzlar` nomli funksiya yarating. Va u `qator` nomili parameter olsin. Agar `qator`ga 6 berilsa. Quyidagini chiqarsin:
 
     * 
     **
@@ -777,7 +777,7 @@
     *****
     ******
 
-129. `yulduzkam` nomli funksiya yarating. Va u `qator` nomili parameter olsin. Agar `qator`ga 6 berilsa. Quyidagini chiqarsin:
+130. `yulduzkam` nomli funksiya yarating. Va u `qator` nomili parameter olsin. Agar `qator`ga 6 berilsa. Quyidagini chiqarsin:
 
     ******
     *****
@@ -786,7 +786,7 @@
     **
     *
 
-130. `yulduzchak` nomli funksiya yarating. Va u `qator` nomili parameter olsin. Agar `qator`ga 6 berilsa. Quyidagini chiqarsin:
+131. `yulduzchak` nomli funksiya yarating. Va u `qator` nomili parameter olsin. Agar `qator`ga 6 berilsa. Quyidagini chiqarsin:
 
     ******
     ******
@@ -795,7 +795,7 @@
     ******
     ******
 
-131. Create a functi	on that takes two numbers as arguments and return their sum.
+132. Create a functi	on that takes two numbers as arguments and return their sum.
 
     Examples
     addition(3, 2) ➞ 5
@@ -804,19 +804,19 @@
     
     addition(7, 3) ➞ 10
 
-132. Create a function that takes a number as an argument, increments the number by +1 and returns the result.
+133. Create a function that takes a number as an argument, increments the number by +1 and returns the result.
 
     Examples
     addition(0) ➞ 1 
     addition(9) ➞ 10
     addition(-3) ➞ -2
 
-133. Quyidagi kodni ishlating. Agar ishlamasa to'g'irlang.
+134. Quyidagi kodni ishlating. Agar ishlamasa to'g'irlang.
 
-    ```python
-    def cubes(a):
-        retunr a ** 3
-    ```
+```python
+def cubes(a):
+    retunr a ** 3
+```
 
 
 
