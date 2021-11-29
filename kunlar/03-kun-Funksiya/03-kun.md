@@ -358,6 +358,7 @@ Va uni biron boshqa o'zgaruvchiga yuklab boshqa amallarni bajarsak bo'ladi:
 ```python
 import math
 
+
 x = math.sqrt(49)
 y = x + 3
 print(y)
