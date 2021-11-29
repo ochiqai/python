@@ -469,11 +469,11 @@
     
     viking_song = "Spam " * spam_amount
     print(viking_song)
+  
     ```
-
     Keyin ishlating, natija nima bo'ldi?
-
-
+    
+    ```shell
     | Operator | Name           | Description                                    |
     |----------|----------------|------------------------------------------------|
     | a + b    | Addition       | Sum of a and b                                 |
@@ -484,7 +484,7 @@
     | a % b    | Modulus        | Integer remainder after division of a by b     |
     | a ** b   | Exponentiation | a raised to the power of b                     |
     | -a       | Negation       | The negative of a                              |
-    
+    ```
 
 79. Quyidagi programma natijasi nima bo'ladi
 
@@ -532,14 +532,14 @@
     | a <= b    | a less than or equal to b |   | a >= b    | a greater than or equal to b |
 
 82 Quyidagining natijasi nima bo'ladi?
+
     
-    ```python
     print(3.0 == 3)
-    print('3' == 3) 
-    ```   
+    print('3' == 3)
 
+    
 83. Quyidagilarni natijasini ayting, Va natijani pycharmda ishlatib solishtiring.
-
+    
     ```python
     print(bool("")) 
     print(bool(0))
