@@ -33,18 +33,18 @@ Buning uchun qanday ishlarni amalga oshiramiz.
     https://github.com/ochiqai/python/pull/new/10-kun_xatosi
     ```
    
-<img src="1.png" width=600>
+    <img src="https://user-images.githubusercontent.com/85432617/144699521-c63f69e3-170c-45b1-8678-96ef44d9d645.png" width=600>
 
 8. Yuqoridagi manzilga kirganimizdan so'ng, qilgan ishimiz haqida izoh qoldiramiz. Write qismiga qanday tekshirish kerakligi haqida izoh qoldiramiz.
 
-<img src="2.png" width=600>
+    <img src="https://user-images.githubusercontent.com/85432617/144699595-fc26a7ef-2616-4310-a983-4177d648113a.png" width=600>
 
 9. `Create pull request`  tugmasini bosamiz.
 
 10. `Reviewers` qismiga borib kerakli odamlarni belgilaymiz.
 
-<img src="3.png" width=600> <br>
-<img src="4.png" width=600>
+    <img src="https://user-images.githubusercontent.com/85432617/144699650-de5fc569-a449-4292-875a-f81346b1e469.png" width=600> <br>
+    <img src="https://user-images.githubusercontent.com/85432617/144699653-2996a8a4-96ef-47e2-bbbd-2972aa4522ae.png" width=350>
 
    Xulosa: <br>
    Biz agar main branchdan xato topsak, yangi branch ochib olamizda xatoni to'g'irlab PR yuboramiz. Kegin Reviewerslar tekshiradi, to'g'ri bo'lsa merge qiladi.
