@@ -3,7 +3,7 @@
 
 Bugun fayllar bilan ishlashni o'rganamiz.
 
-* [Faylni o'qish](#faylni-o-qish)
+* [Faylni o'qish](#faylni-oqish)
 * [Fayl va `for`](#fayl-va-for)
 * [Faylga yozish](#faylga-yozish)
 * [`with` operatori](#-with--operatori)
@@ -21,7 +21,7 @@ Keyin aylanib keldim
 va boshqa narsalar
 ```
 
-Pythonda fayl ochish uchun `open` (ochish) funksiyasidan foydalanamiz. Yani's
+Pythonda fayl ochish uchun `open` (ochish) funksiyasidan foydalanamiz. Ya'ni quyidagicha
 
 ```python
 fayl_och = open(fayl_joylashgan_joy, 'r')
@@ -113,7 +113,7 @@ Shu paytgacha fayldan o'qishni ko'rdik, endi faylga yozishni ko'ramiz.
 
 ## Faylga yozish
 
-Fayl yozish uchun yuqoridagi `open` funksiyasiga bitta o'zgartishimiz kiritamiz xolos!
+Fayl yozish uchun yuqoridagi `open` funksiyasiga bitta o'zgartirish kiritamiz xolos!
 Ya'ni `r` o'rniga `w` qo'yamiz. `w` write ya'ni yozish demakdir. Misol,
 ```python
 fayl_och = open(r"tun.txt", "w")
