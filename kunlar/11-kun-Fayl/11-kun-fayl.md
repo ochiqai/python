@@ -4,7 +4,7 @@
 Bugun fayllar bilan ishlashni o'rganamiz.
 
 * [Faylni o'qish](#faylni-o-qish)
-* [Fayl va `for`](#fayl-va--for-)
+* [Fayl va `for`](#fayl-va-for)
 * [Faylga yozish](#faylga-yozish)
 * [`with` operatori](#-with--operatori)
 * [Xulosa](#xulosa)
