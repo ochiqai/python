@@ -41,6 +41,7 @@
   9. [Tuple](https://github.com/ochiqai/python/blob/main/kunlar/09-kun-Tuple/09-kun.md)
     - [Javoblar](https://github.com/ochiqai/python/blob/main/kunlar/09-kun-Tuple/09-kun-javoblar.md)
   10. [Mashqlar](https://github.com/ochiqai/python/blob/main/kunlar/10-kun-Mashqlar/10-kun.md)
+  11. [Fayllar bilan ishlash](https://github.com/ochiqai/python/blob/main/kunlar/11-kun-Fayl/11-kun-fayl.md)
 
 
 ### Savol va muhokama uchun: [link](https://github.com/ochiqai/python/discussions)
