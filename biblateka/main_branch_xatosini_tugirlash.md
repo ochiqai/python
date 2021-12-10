@@ -1,18 +1,17 @@
 #### Main branchdagi xatoni to'g'irlash
-Vazifa shundan iboratki biz main branchdan biror xatoni to'girlamoqchimiz (yoki main branchga o'zgartirish kiritmoqchimiz). <br>
+Vazifa shundan iboratki biz main branchdan biror xatoni to'g'irlamoqchimiz (yoki main branchga o'zgartirish kiritmoqchimiz). <br>
 Buning uchun qanday ishlarni amalga oshiramiz.
 
-1. Yangi branch ochib olamiz. 
+1. Yangi branch ochib olamiz. Quyidagi buyruq orqali yangi branch ochiladi va shu branchga o'tadi.  <br>
     ```codeline
     git checkout -b 10-kun_xatosi
     ```
-   Bu buyruq orqali 10-kun_xatosi nomli yangi branch hosil qilib oldik. <br>
 2. Xatoni to'g'irlaymiz.
 3. Quyidagi buyruqni bajarib, qilgan o'zgarishimizni ko'rishimiz mumkin.
     ```codeline
     git status 
     ```
-4. Quyidagi buyruqni bajarib, qilgan o'zgarishimizni 10-kun_xatosi nomli branchga qo'shamiz.
+4. Quyidagi buyruqni bajarib, o'zgartirganlarimizni branchga qo'shamiz.
     ```codeline
     git add --all
     ```
@@ -41,13 +40,14 @@ Buning uchun qanday ishlarni amalga oshiramiz.
 
 9. `Create pull request`  tugmasini bosamiz.
 
-10. `Reviewers` qismiga borib kerakli odamlarni belgilaymiz.
+10. `Reviewers` qismiga borib tekshiruvchilarni tanlaymiz.
 
     <img src="https://user-images.githubusercontent.com/85432617/144699650-de5fc569-a449-4292-875a-f81346b1e469.png" width=600> <br>
     <img src="https://user-images.githubusercontent.com/85432617/144699653-2996a8a4-96ef-47e2-bbbd-2972aa4522ae.png" width=350>
 
    Xulosa: <br>
    Biz agar main branchdan xato topsak, yangi branch ochib olamizda xatoni to'g'irlab PR yuboramiz. Kegin Reviewerslar tekshiradi, to'g'ri bo'lsa merge qiladi.
+   Nafaqat main branch, balki boshqa branchlarga ham shu tarzda ishlarni amalga oshiramiz. 
 
 
 
