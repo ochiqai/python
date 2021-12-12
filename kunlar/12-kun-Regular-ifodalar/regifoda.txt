@@ -312,7 +312,7 @@ X-DSPAM-Processed: Fri Jan  4 15:03:18 2008
 X-DSPAM-Confidence: 0.7626
 X-DSPAM-Probability: 0.0000
 
-Details: http://source.sakaiproject.org/viewsvn/?view=rev&rev=39766
+Details: http://source.sakaiproject.org/viewsvn/?view=rev&rev=3976623890457209834570293845029384579283457284592752478478457
 
 Author: zqian@umich.edu
 Date: 2008-01-04 15:01:37 -0500 (Fri, 04 Jan 2008)
