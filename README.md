@@ -43,6 +43,7 @@
   10. [Mashqlar](https://github.com/ochiqai/python/blob/main/kunlar/10-kun-Mashqlar/10-kun.md)
   11. [Fayllar bilan ishlash](https://github.com/ochiqai/python/blob/main/kunlar/11-kun-Fayl/11-kun-fayl.md)
 
+## 1-10 kunlar shpargalkasi [link](https://github.com/ochiqai/python/blob/shpargalka/biblateka/python_shpagralka.pdf)
 
 ### Savol va muhokama uchun: [link](https://github.com/ochiqai/python/discussions)
 

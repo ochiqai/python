@@ -630,10 +630,10 @@
         print(condition)
         condition += 1
     ```
-
+ 
 96. Quyidagini ishlatsak konsolga nima chiqadi:
 
-    ```
+    ```python
     condition = '4'
 
     while condition > 6:
