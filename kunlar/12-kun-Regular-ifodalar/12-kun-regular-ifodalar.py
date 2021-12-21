@@ -1,22 +1,22 @@
 import re
 
 
-# # ^ karet bilan ishlash, qator boshini bildiradi
-# fayl = open("regifoda.txt", 'r')
-# for qator in fayl.readlines():
-#     qator = qator.rstrip()
-#     if re.search("^Jumladan", qator):
-#         print(qator)
+# ^ karet bilan ishlash, qator boshini bildiradi
+fayl = open("regifoda.txt", 'r', encoding='utf8')
+for qator in fayl.readlines():
+    qator = qator.rstrip()
+    if re.search("^Jumladan", qator):
+        print(qator)
 
 # #  nuqtalar bilan ishlash, nuqtalar ixtiyoriy belgiga ruhsat borligini bildiradi
-# fayl = open("regifoda.txt", 'r')
+# fayl = open("regifoda.txt", 'r', encoding='utf8')
 # for qator in fayl.readlines():
 #     qator = qator.rstrip()
 #     if re.search("y..i", qator):
 #         print(qator)
 
 
-# fayl = open("regifoda.txt", 'r')
+# fayl = open("regifoda.txt", 'r', encoding='utf8')
 # for qator in fayl.readlines():
 #     qator = qator.rstrip()
 #     if re.search("^From:.+@", qator):
@@ -30,7 +30,7 @@ import re
 # lst = re.findall('\S+@\S+', s)
 # print(lst)
 #
-# fayl = open("regifoda.txt", 'r')
+# fayl = open("regifoda.txt", 'r', encoding='utf8')
 # for qator in fayl.readlines():
 #     qator = qator.rstrip()
 #     lst = re.findall('\S+@\S+', qator)
@@ -39,7 +39,7 @@ import re
 #
 #
 # tozaroq email addresslarni chiqarish
-# fayl = open("regifoda.txt", 'r')
+# fayl = open("regifoda.txt", 'r', encoding='utf8')
 # for qator in fayl.readlines():
 #     qator = qator.rstrip()
 #     lst = re.findall('[a-zA-Z0-9]\S*@\S*[a-zA-Z]', qator)
@@ -47,7 +47,7 @@ import re
 #         print(lst)
 
 # # tozaroq email addresslarni chiqarish
-# fayl = open("regifoda.txt", 'r')
+# fayl = open("regifoda.txt", 'r', encoding='utf8')
 # for qator in fayl.readlines():
 #     qator = qator.rstrip()
 #     # lst = re.search('^X\S*: [0-9.]+]', qator)
@@ -55,7 +55,7 @@ import re
 #         print(qator)
 
 
-# fayl = open("regifoda.txt", 'r')
+# fayl = open("regifoda.txt", 'r', encoding='utf8')
 # for qator in fayl.readlines():
 #     qator = qator.rstrip()
 #     lst = re.findall('^X\S*: ([0-9.]+)', qator)
@@ -63,7 +63,7 @@ import re
 #         print(lst)
 
 # # Details: http://source.sakaiproject.org/viewsvn/?view=rev&rev=39772
-# fayl = open("regifoda.txt", 'r')
+# fayl = open("regifoda.txt", 'r', encoding='utf8')
 # for qator in fayl.readlines():
 #     qator = qator.rstrip()
 #     lst = re.findall('^Details: \S*rev=([0-9]+)', qator)
@@ -71,7 +71,7 @@ import re
 #         print(lst)
 
 # Details: http://source.sakaiproject.org/viewsvn/?view=rev&rev=39772
-# fayl = open("regifoda.txt", 'r')
+# fayl = open("regifoda.txt", 'r', encoding='utf8')
 # for qator in fayl.readlines():
 #     qator = qator.rstrip()
 #     lst = re.findall('^From .* ([0-9][0-9]):', qator)
@@ -79,10 +79,10 @@ import re
 #         print(lst)
 
 # maxsus belgilar bilan ishlash uchun, \ (backslash) dan foydalanamiz
-x = 'We just received $10.00 for cookies.'
-lst = re.findall("$.[0-9.]+", x)
-print(lst)
-
+# x = 'We just received $10.00 for cookies.'
+# lst = re.findall("$.[0-9.]+", x)
+# print(lst)
+#
 
 
 

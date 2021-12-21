@@ -10,7 +10,7 @@ bu haqida xatto butun kitoblar yozilgan.
 
 ## `import re`
 
-Pythonda regular ifoda `import re` orqali bo'ladi. `re` (ko'rinib turgandek) kengaytmasi 
+Pythonda regular ifoda `import re` orqali bo'ladi. `re` (ko'rinib turganidek) kengaytmasi 
 regular expression deb ataladi. 
 
 Masalan quyidagi faylni olaylik, [regifoda.txt](regifoda.txt). Orginal tekst [manbai](http://www.py4inf.com/code/mbox-short.txt).  
@@ -81,7 +81,7 @@ o'sha qatorni ekranga konsolga chiqargin deyapmiz,
 # ^ karet bilan ishlash, qator boshini bildiradi
 import re
 
-fayl = open("regifoda.txt", 'r')
+fayl = open("regifoda.txt", 'r', encoding='utf8')
 for qator in fayl.readlines():
     qator = qator.rstrip()
     if re.search("^Jumladan", qator):
@@ -103,7 +103,7 @@ mumkinligini bildiradi. Buni quyidagi programmada qo'llasak,
 
 ```python
 #  nuqtalar bilan ishlash, nuqtalar ixtiyoriy belgiga ruhsat borligini bildiradi
-fayl = open("regifoda.txt", 'r')
+fayl = open("regifoda.txt", 'r', encoding='utf8')
 for qator in fayl.readlines():
     qator = qator.rstrip()
     if re.search("y..i", qator):
@@ -121,7 +121,7 @@ Subject: [sakai] svn commit: r39765 - in gradebook/trunk/app: business/src/java/
 Received: from eyewitness.mr.itd.umich.edu (eyewitness.mr.itd.umich.edu [141.211.93.142])
 	BY eyewitness.mr.itd.umich.edu ID 477D8300.AC098.32562 ;
 ```
-`y..i` ga o'shashso'zlar yuqoridagi qatorlarda quyidagicha kelgan:
+`y..i` ga o'xshash so'zlar yuqoridagi qatorlarda quyidagicha kelgan:
  - 1-qatorda `yoki` kelgan. Ikki nuqta o'rniga `ok` kelgan.
  - 2-qator 1-qatorga o'xshash
  - 3-qatorda `yewi`
@@ -136,7 +136,7 @@ bilsak. Lekin, ko'p hollarda biz bilmaymiz. Shunday vaqtda, `.+` belgisi qo'l ke
 ```python
 import re
 
-fayl = open("regifoda.txt", 'r')
+fayl = open("regifoda.txt", 'r', encoding='utf8')
 for qator in fayl.readlines():
     qator = qator.rstrip()
     if re.search("^From:.+@", qator):
@@ -209,7 +209,7 @@ Ishlatsak konsolga quyidagicha natija chiqadi:
 Xuddi shu maxsus belgilarni faylga qo'llasak, quyidagicha bo'ladi:
 
 ```python
-fayl = open("regifoda.txt", 'r')
+fayl = open("regifoda.txt", 'r', encoding='utf8')
 for qator in fayl.readlines():
     qator = qator.rstrip()
     lst = re.findall('\S+@\S+', qator)
@@ -232,11 +232,11 @@ Konsolga
 Yuqoridagi natija elektron adreslarni chiqarishdir. Lekin, etibor bersak
 bazilarida xar xil biz xoxlamaydigan belgilar mavjud xususan `<;>`. 
 
-> Qanday qilib, ushbu belgilarni olish tashlaymiz? 
+> Qanday qilib, ushbu belgilarni olib tashlaymiz? 
 
-Bunda bizga tor'burchak qavs yordamga keladi - `[]` to'rtburchak qavs. Bunda
+Bunda bizga to'rtburchak qavs yordamga keladi - `[]` to'rtburchak qavs. Bunda
 biz nimani xoxlashimizni oydinlashtirishimiz mumkin. Masalan, yuqoridagini aytishimiz mumkin
-faqat kichik, yoki katta yoki sonlardan tashkil topsin deb
+faqat kichik yoki katta harflar yoki sonlardan tashkil topsin deb
 
 ```python
 [a-zA-Z0-9]
@@ -246,11 +246,11 @@ Ya'ni
 - A-Z: A dan Z gacha bo'lgan harflar bo'lishi mumkin. Qisqacha hamma Katta harflar
 - 0-9: 0 dan 9 gacha bo'lgan sonlar bo'lishi mumkin
 
- Shundan foydalin quyidagi programmani yozishimiz mumkin
+ Shundan foydalanib quyidagi programmani yozishimiz mumkin
 
 ```python
-tozaroq elektron addresslarni chiqarish
-fayl = open("regifoda.txt", 'r')
+# 'tozaroq' elektron addresslarni chiqarish
+fayl = open("regifoda.txt", 'r', encoding='utf8')
 for qator in fayl.readlines():
     qator = qator.rstrip()
     lst = re.findall('[a-zA-Z0-9]\S*@\S*[a-zA-Z]', qator)
@@ -290,13 +290,13 @@ Konsolga:
 ## `()` Qavs
 
 Shunday holatlar bo'ladiki. Biz nafaqat biron nimani qidiramiz
-balki birion malumotni ajratib olishimizga ham to'g'ri keladi. Shunday holatlarda, qavs (`()`) dan 
+balki biron malumotni ajratib olishimizga ham to'g'ri keladi. Shunday holatlarda, qavs (`()`) dan 
 foydalanamiz. Keling birinchi quyidagi programmani ishlataylik. Bu yerda maxsus beligilar - 
 `^X\S*: [0-9.]+` shuni anglatadiki: qator boshi `X` bilan boshlansin, va undan keyin bo'shliq bo'lmagan
-bir necha belgilarkelsin toki `:`, va undan keyin ixtoyoriy haqiqiy sonlar kelsin [0-9.]+,
+bir necha belgilar kelsin toki `:`, va undan keyin ixtoyoriy haqiqiy sonlar kelsin [0-9.]+,
 
 ```python
-fayl = open("regifoda.txt", 'r')
+fayl = open("regifoda.txt", 'r', encoding='utf8')
 for qator in fayl.readlines():
     qator = qator.rstrip()
     lst = re.findall('^X\S*: [0-9.]+', qator)
@@ -323,7 +323,7 @@ Yuqoridagi natijadan qanday qilib sonlarni ajratib olish mumkin?
 `()` yordamida biz uni ajratib olishimiz mumkin, yani:
 
 ```python
-fayl = open("regifoda.txt", 'r')
+fayl = open("regifoda.txt", 'r', encoding='utf8')
 for qator in fayl.readlines():
     qator = qator.rstrip()
     lst = re.findall('^X\S*: ([0-9.]+)', qator)
@@ -358,7 +358,7 @@ print(lst)
 Konsolda,
 
 ```commandline
-['$10.00']
+['$100.00']
 ```
 
 Agar, `\`ni olib tashlasangiz natija bo'lmaydi
@@ -379,7 +379,7 @@ Konsolda,
 
  1. Quyidagini ishlating
     ```python
-    fayl = open("regifoda.txt", 'r')
+    fayl = open("regifoda.txt", 'r', encoding='utf8')
     for qator in fayl.readlines():
         qator = qator.rstrip()
         lst = re.findall('^Details: \S*rev=([0-9]+)', qator)
@@ -389,7 +389,7 @@ Konsolda,
 
  2. Quyidagini ishlating
     ```python
-    fayl = open("regifoda.txt", 'r')
+    fayl = open("regifoda.txt", 'r', encoding='utf8')
     for qator in fayl.readlines():
         qator = qator.rstrip()
         lst = re.findall('^From .* ([0-9][0-9]):', qator)
