@@ -17,12 +17,12 @@ def retrieve_file():
 
     mysocket.close()
 
-    print("GET http://data.pr4e.org/romeo123123.txt HTTP/1.0\r\n\r\n")
-
-
-    example1 = b'Hello world'
-    example2 = 'Hello world'.encode()
-    print(example1, ' ', example2)
+    # print("GET http://data.pr4e.org/romeo123123.txt HTTP/1.0\r\n\r\n")
+    #
+    #
+    # example1 = b'Hello world'
+    # example2 = 'Hello world'.encode()
+    # print(example1, ' ', example2)
 
 
 def retrieve_image():
@@ -90,14 +90,16 @@ def parse_html():
     ctx.check_hostname = False
     ctx.verify_mode = ssl.CERT_NONE
 
-    url = input('Enter - ')
+    url = input('URL addresni kiriting - ')
     html = urllib.request.urlopen(url, context=ctx).read()
     print(html)
     links = re.findall(b'href="(http[s]?://.*?)"', html)
     for link in links:
         print(link.decode())
 
-parse_html()
+
+
+
 
 
 
