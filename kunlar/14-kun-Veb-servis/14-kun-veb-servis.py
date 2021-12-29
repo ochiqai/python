@@ -1,6 +1,70 @@
 import xml.etree.ElementTree as ET
 
 
+def xml_malumot_olish():
+    import xml.etree.ElementTree as ET
+    malumot = '''
+    <odam>
+        <ismi>Ulug'bek</ismi>
+        <yili>1997</yili>
+        <tel_nomer type="intl">
+            +998930751753
+        </tel_nomer>
+    </odam>'''
+
+    daraxt = ET.fromstring(malumot)
+    print('Ismi:', daraxt.find('ismi').text)
+    print('Tel nomeri:', daraxt.find('tel_nomer').text.strip())
+
+def xml_loop_oila():
+    import xml.etree.ElementTree as ET
+    input = '''
+    <oila>
+        <bolalar>
+            <bola>
+                <nomer>1</nomer>
+                <ism>Ali</ism>
+            </bola>
+            <bola>
+                <nomer>2</nomer>
+                <ism>Vali</ism>
+            </bola>
+        </bolalar>
+    </oila>
+    '''
+    bolalar = ET.fromstring(input)
+    lst = bolalar.findall('bolalar/bola')
+    print('Bolalar soni:', len(lst))
+    print('-----------------------')
+    for element in lst:
+        print('Ism', element.find('ism').text)
+        print('Nomer', element.find('nomer').text)
+
+
+def json_malumot_olish():
+    import json
+
+    malumot = '''
+    [
+        {   
+            "nomer": "1",
+            "ism": "Ali"    
+        },
+        {   
+            "nomer": "2",
+            "ism": "Vali"    
+        }
+    ]
+    '''
+    olingan_data = json.loads(malumot)
+    print('Soni:', len(olingan_data))
+    print('------------------------')
+    for element in olingan_data:
+        print('Ism: ', element['ism'])
+        print('Nomeri: ', element['nomer'])
+
+json_malumot_olish()
+
 def bir():
     input = '''
     <stuff>
@@ -22,6 +86,8 @@ def bir():
     print('User count:', len(lst))
     lst2 = stuff.findall('user')
     print('User count:', len(lst2))
+
+
 
 def ikki_xml_fayl():
     data = ET.parse("misol_xml.xml")
@@ -108,5 +174,5 @@ def google_geocofing_api():
         print(location)
 
 
-google_geocofing_api()
+
 
