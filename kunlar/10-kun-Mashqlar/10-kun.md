@@ -65,7 +65,7 @@
     yosh = input("Iltimos yoshingizni kiriting: ")
     ```
 
-    ```shell
+    ```python
     Iltimos ismni kiriting: Usmon  
     Iltimos familiyani kiriting: Nosirov
     Iltimos yoshingizni kiriting: 20
@@ -87,7 +87,7 @@
 
 13. Foydanlanuchidan ism va fmiliyaisni so'rangda, quyidagicha konsolga chiqaring.
 
-    ```shell
+    ```python
     Usmon Nosir [UN]
     ```
 
@@ -296,12 +296,12 @@
 
 54. `histogram` degan funksiya yarating. U argument sifatida list olsin, va histogramni konsolga chiqarsin. Mn, histogram( [1, 3, 5, 2] ) uchun quyidagini chiqarsin:
 
-    ````
+    ```python
     *
     ***
     *****
     **
-    ````
+    ```
 
 55. Yuqorida, `ikki_max` va `uch_max` funksiyalari faqat 2 va 3 ta son uchun ishlaydi. Lekin tasavvur qiling bizda 100-1000 lab sonlar bor. Unda kattasini qanday qidiramiz (topamiz). `max_list` degan funksiya yarating, va u argumentga list olsinda, litsda elementlardan eng kattasini qaytarsin. Mn, `max_list( [1,20, 45, 90, 32, 100] )` desak 100 qaytarsin.
 
@@ -314,7 +314,7 @@
 59. `panagrammi` nomli funksiya yarating. Argumentga string olsin va agar berilgan string panagram bo'lsa `True`, aks holda `False` qaytarsin. Eslatma: panagram degani berilgan gapda hamma harflar ishtirok etgan bo'ladi. 
 
 60. Ekranga quyidagini chiqaring. 
-    ```
+    ```python
     1 ta quy
     2 ta quy
     3 ta quy
@@ -325,7 +325,7 @@
     ```
 
 61. Quyidagi dictionary ni olingda 
-    ```
+    ```python
     {
         'kitob': 'book',
         'bu': 'this',
@@ -338,7 +338,7 @@
 
 63. Kriptografiyada, Sezr sifri degan oddiy enkriptsiya usuli mavjud. Bunda, berilgan harf boshqa harf bilan almashtiriladi. Boshqa harf o'zidan keyingi 1 yoki ixtiyoriy harfdan keyin kelguvchi harf bilan almashtirilishi mumkin. Mn, `ada` so'zi `beb` sifrlanishi mumkin. Qadimda Sezr ushbu sifrlashni o'zining generallari bilan mahfiy muloqot qilish uchun ishlatgan. Vazifa shundan iboratki, quyidagi dictionary berilgan, bunda har bir harf keying 13 harfdan keyin kelguvchi harf bilan almashtirilishi ko'rsatilayapti. 
 
-    ```
+    ```python
     key = 
     {
     'a':'n', 'b':'o', 'c':'p', 'd':'q', 'e':'r', 'f':'s', 'g':'t', 'h':'u','i':'v', 'j':'w', 'k':'x', 'l':'y', 'm':'z', 'n':'a', 'o':'b', 'p':'c', 'q':'d', 'r':'e', 's':'f', 't':'g', 'u':'h', 'v':'i', 'w':'j', 'x':'k', 'y':'l', 'z':'m', 'A':'N', 'B':'O', 'C':'P', 'D':'Q', 'E':'R', 'F':'S', 'G':'T', 'H':'U', 'I':'V', 'J':'W', 'K':'X', 'L':'Y', 'M':'Z', 'N':'A', 'O':'B', 'P':'C', 'Q':'D', 'R':'E', 'S':'F', 'T':'G', 'U':'H', 'V':'I', 'W':'J', 'X':'K', 'Y':'L', 'Z':'M'
@@ -363,7 +363,7 @@
     
 67. Quyidagi arifmetik progressiyani  `range` orqali hosil qiling, 
 
-    ```
+    ```python
     -2, 1, 4, 7, 10, 13
     ```
 
@@ -531,15 +531,15 @@
     | a < b     | a less than b             |   | a > b     | a greater than b             |
     | a <= b    | a less than or equal to b |   | a >= b    | a greater than or equal to b |
 
-82 Quyidagining natijasi nima bo'ladi?
 
-    
-    print(3.0 == 3)
-    print('3' == 3)
+82 Quyidagining natijasi nima bo'ladi? 
 
-    
+ ```python
+ print(3.0 == 3)
+ print('3' == 3)
+```
 83. Quyidagilarni natijasini ayting, Va natijani pycharmda ishlatib solishtiring.
-    
+
     ```python
     print(bool("")) 
     print(bool(0))
@@ -759,7 +759,7 @@
 
 127. `sonlar` nomli funksiya yarating. Va `chegara` degan parameter olsin. Shunday qilsinki, funskiya 0 dan `chegara`gacha bo'lgan sonlarni qaytarsin va ularining toq yoki juftligini ham qaytarsin. Masalan `chegara` qiymati `3` bo'lsa, quyidagicha bo'lsin:
 
-    ```shell
+    ```python
     0 Juft
     1 Toq
     2 Juft
@@ -769,7 +769,7 @@
 128. `sonlar` nomli funksiya yarating. Va `chegara` degan parameter olsin. Shunday qilsinki, funskiya 0 dan `chegara`gacha bo'lgan sonlarning faqat 3 va 5 ga bo'linadiganlarini qaytarsin. Va ularning yig'indisini ham qaytarsin. Mn, `chegara=20` it should return the sum of 3, 5, 6, 9, 10, 12, 15, 18, 20.
 
 129. `yulduzlar` nomli funksiya yarating. Va u `qator` nomili parameter olsin. Agar `qator`ga 6 berilsa. Quyidagini chiqarsin:
-     ```shell
+     ```python
      * 
      **
      ***
@@ -780,7 +780,7 @@
 
 
 130. `yulduzkam` nomli funksiya yarating. Va u `qator` nomili parameter olsin. Agar `qator`ga 6 berilsa. Quyidagini chiqarsin:
-        ```shell
+        ```python
         ******
         *****
         ****
@@ -789,7 +789,7 @@
         *
         ```
 131. `yulduzchak` nomli funksiya yarating. Va u `qator` nomili parameter olsin. Agar `qator`ga 6 berilsa. Quyidagini chiqarsin:
-        ```shell
+        ```python
         ******
         ******
         ******
@@ -798,7 +798,7 @@
         ******
         ```
 132. Create a functi	on that takes two numbers as arguments and return their sum.
-        ```shell
+        ```python
         Examples
         addition(3, 2) ➞ 5
         
@@ -807,7 +807,7 @@
         addition(7, 3) ➞ 10
         ```
 133. Create a function that takes a number as an argument, increments the number by +1 and returns the result.
-        ```shell
+        ```python
         Examples
         addition(0) ➞ 1 
         addition(9) ➞ 10
