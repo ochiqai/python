@@ -36,7 +36,7 @@ Mana shu malumotni XML formatda quyidagicha yozishimiz mumkin,
 Ko'rinib turganidek bunda malumot ancha o'zgarib ketdi. Umuman olganda strukturaga ega bo'ldi. 
 Yuqorida oddiy tekstda esa shunchaki tekst. 
 
-Endi, yozilishiga nazar solsak. XMLda _element_ tushunchasi mavjud. Bundga misol sifatida 
+Endi, yozilishiga nazar solsak. XMLda _element_ tushunchasi mavjud. Misol sifatida 
 `<odam>` ochilish tagi deb ataladi va `</odam>` yopilish tagi deb ataladi. Tagni nomi bu yerda **odam**.
 `<odam></odam` bu bitta element hisoblanadi. Har bir element biror tekst, attribute va bothqa ichma-ich elementlardan 
 tashkil topadi. Masalan, `<odam></odam>` 3 ta ichki elementdan tashkil topgan: `<ism>, <yili> <tel_nomer>`.
@@ -178,7 +178,7 @@ malumot = '''
     {   
         "nomer": "2",
         "ism": "Vali"    
-    },
+    }
 ]
 '''
 ```
@@ -214,7 +214,7 @@ for element in olingan_data:
 
 Bu yerda eng muhim eslab qolinishi kerak bo'ladigan metod `json.loads` hisoblanadi. Bu metodga malumot berilganda
 u malumotni protsess qiladida Python list qaytaradi. Listning xar bir elementi esa dictionary bo'ladi. 
-Listning olganimizdan so'ng undagi har bir elementni `for loop` orqali o'qib chiqarayapmiz.
+Listni olganimizdan so'ng undagi har bir elementni `for loop` orqali o'qib chiqarayapmiz.
 
 Natija, 
 
@@ -250,8 +250,8 @@ SOA usulida qilingan programmalarni biz internetda juda ko'p ko'rishimiz mumkin.
 veb sahifadan ham dollar kursini ham ob-havo malumotlarini ham yangiliklarni ko'rishimiz mumkin. Bunda
 har bir malumot uch joydan API orqali keladi. Yani, uchta kompaniya bor biri dollar kursi haqida malumot
 beruvchi servis qilgan, ikkinchisi, obhavo malumoti uchun servis yaratgan. Uchunchisi, yangiliklar servisini
-taqdim qilgan. Biz shunday programma tuzganmizki, uchala servisdan foydalanib bitta veb sahida hammasini
-ko'rishimiz mumkin. Quyida figuraga qarang.
+taqdim qilgan. Biz shunday programma tuzganmizki, uchala servisdan foydalanib bitta veb sahifada hammasini
+ko'rishimiz mumkin. Quyidagi figuraga qarang.
 
 
 <p align="center">
@@ -280,10 +280,10 @@ malumot topishingiz mumkin.
 ## Eslatma
 - **API**: Application Program Interface - ikkita programma komponenetlarining qanday qilib bog'lanishi haqida 
    kontrakt/nizom.
-- **XML**: Interda malumot almashish uchun faydalaniladigan format
-- **JSON**: Interda malumot almashish uchun faydalaniladigan format 
-- **SOA**: Service-oriented architechture. Programmaning bazi qismlar internetdaga boshqa programmalar 
-    bilan malumot almashishi
+- **XML**: Internetda malumot almashish uchun foydalaniladigan format
+- **JSON**: Interda malumot almashish uchun foydalaniladigan format 
+- **SOA**: Service-oriented architechture. Programmaning bazi qismlari internetdagi boshqa programmalarga bog'liq 
+    bo'ladi. Yani dasturchi programmaning hamma qismini o'zi tuzmaydida, tayyor programmalardan foydalanadi.
 - **ElementTree**: XML malumotni pars qilish uchun Python biblioteka
 - **json**: json formatidagi malumotni pars qilish uchun Python biblioteka
 
