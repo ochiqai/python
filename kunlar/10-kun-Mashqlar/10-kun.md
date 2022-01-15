@@ -192,17 +192,16 @@
      
 25. Shunday list yanarating, unda siz yoqtirgan 3 ta mamlakat yoki kitob yoki ism yoki sonlar bo'lsin. Va u listni `print()` orqali konsolga chiqaring.
      
-26.  Quyidagi berilgan, 
+26. Quyidagi berilgan
+	```python
+	viloyatlar = ['Samarqand', 'Toshkent', 'Surxondaryo', 'Qashqadaryo']
+	```
 
-    ```python
-    viloyatlar = ['Samarqand', 'Toshkent', 'Surxondaryo', 'Qashqadaryo']
-    ```
-
-    Konsolga:
-   - har bir elementni chiqaring.
-   - faqat boshidagi 3 elementni chiqaring.
-   - oxirgi elementni chiqaring.
-   - Birinchi elementni `"Andijon"` ga o'zgartiring.
+	Konsolga:
+	- har bir elementni chiqaring.
+	- faqat boshidagi 3 elementni chiqaring.
+	- oxirgi elementni chiqaring.
+	- Birinchi elementni `"Andijon"` ga o'zgartiring.
 
 27. 26-mashqda listni biz birdaniga yaratdik, to'rtburchak `[]` va `,` lardan foydalanib. Endi listni `append` funksiyasi orqali qiling. Keyin, listni hamma elementlarini konsolga chiqaring.
      
