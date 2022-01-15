@@ -693,13 +693,15 @@
     ```
 
 103. Ushbu funksiyani ishlating.
+    
+```python
 
-    ```python
-    def example():
-        print('kodlar')
-        x = 13 + 19
-        print(x)
-    ```
+def example():
+print('kodlar')
+x = 13 + 19
+print(x)
+
+```
 
 104. Quyidagini ishlatmay natijani ayting. Keyin ishlating va solishtiring?
 
