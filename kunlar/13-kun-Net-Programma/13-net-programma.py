@@ -98,11 +98,3 @@ def parse_html():
         print(link.decode())
 
 
-
-
-
-
-
-
-
-

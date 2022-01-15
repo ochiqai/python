@@ -4,14 +4,14 @@ Shu paytgacha biz programma tuzganimizda. Ular malumotni kompyuter o'zidan o'qid
 ishlaganimizda fayllar kompyuterimizda turgan edi. Lekin, internetga esa malumotlar ko'p manba'lardan kelishi 
 mumkin. 
 
-Bugin, biz o'zimiz web brovser (google chrome, opera, safari) rolini o'ynaymiz. Va veb sahifalarni HTTP 
+Bugun, biz o'zimiz web brovser (google chrome, opera, safari) rolini o'ynaymiz. Va veb sahifalarni HTTP 
 (Hypertext Transfer Protocol) orqali olamiz. Keyin ulardan malumotlarni o'qib, ulardan keraklisini ajratib olamiz (parse).
 
 
 
 ## HTTP Protokol
 Veb sahifani ishlatadigan netvork protokoli aslida juda oson. Pythonda `socket` degan biblioteka bor. Bu biblioteka
-netvork aloqalarni taminlashni va soketlardan maumotlarni olishni juda osonlashtiradi.
+netvork aloqalarni taminlashni va soketlardan malumotlarni olishni juda osonlashtiradi.
 
 Soket bu xuddi faylga o'xshaydi. Farqli tarafi shundaki, bitta soket ikki programma o'rtasida ikki tomonlama aloqani
 taminlaydi. Agar, soketga biron malumot yozilsa, u programmaga yuboriladi. Agar malumotni soketdan o'qisangiz
@@ -24,13 +24,14 @@ demak u malumotni boshqa programma yuborganini bildiradi.  Quyidagicha tasvirlas
 
 Aytaylik soketga hech qanday programma malumot yubormagan, unda sizni programmangiz baribir malumot kelishini shunchaki kutadi.
 Aytaylik 2 ta programma soketga hech qanday malumot yubormay uzoq vaqt malumot yubormasa, ular bir birini juda uzoq kutib qoladi. 
-Shuning uchun internat orqali aloqa qiladigan programmalar uchun protokol joriy qilingan.
+Shuning uchun internet orqali aloqa qiladigan programmalar uchun protokol joriy qilingan.
 
 Protokol bu aniq qoidalar to'plamiki bunda qaysi programma birinchi malumot yuboradi, nima qiladi,va keyin malumotga
 qanaqa javob bo'lish kerak, keyingi malumotni kim yuboradi va hokazo. Shundayki, 2 ta programma bir biri bilan
-skoet orqali navbatma va navbat aloqa qilishdir. 
+soket orqali navbatma va navbat aloqa qilishdir. 
 
-Hozrida juda ko'p protokollar mavjud. Shulardan HTTP quyidagi linkda berilgan 
+Hozirda juda ko'p protokollar mavjud. Shulardan biri HTTP va to'liq malumot quyidagi linkda berilgan:
+
 [HTTP protokol](https://www.w3.org/Protocols/rfc2616/rfc2616.txt)
 
 Bu ko'p varaqli dokument hisoblanadi (176 bet). o'qimochi bo'lganlar o'qishi mumkin. Lekin, hozir 36 betga qarasangiz 
@@ -117,7 +118,7 @@ tugaganligini bildiradi. Keyin `remeo.txt` fayli tekstini yuboradi.
 
 Programmadan, `encode` va `decode` funksiyalarini ko'rishimiz mumkin. HTTP protokol malumotlarni ikkilik (binary) ko'rinishida
 yuborishligini taqozo qiladi. `encode` va `decode` funksiyalari o'shalarni taminlaydi. `encode` ikkilikga o'tkazadi. 
-Va `decode` asliga qaytaradi -- yani stringga qaytaradi. Programma illustratsiyasi quyidagicha 
+Va `decode` asliga qaytaradi -- yani stringga qaytaradi. Programma illustratsiyasi (grafik ko'rinishda) quyidagicha: 
 
 
 
@@ -134,8 +135,8 @@ Rasmlarni HTTP orqali olish ham shunda o'xshash bo'ladi.
 Yuqorida biz HTTPdan `socket` bibliotekasi orqali malumotni yuborish va qabul qiloishni ko'rdik. Lekin bunday qilish
 keng tarqalganiligi uchun, Pythonda ana shuni ancha osonlashtirilgan. Ya'ni `urrlib` bibliotekasi qilingan.
 
-`urllib`dan foydalanganda, veb sahifani xuddi faylxa o'xshatsak bo'ladi. Oddiygina qilib qaysi veb sahifani
-ochmoqchiligingizni aytasiz va `urllib` qolgan hamma HTTP protokol va qo'shimcha malumotlarni amalga ochiradi.
+`urllib`dan foydalanganda, veb sahifani xuddi faylga o'xshatsak bo'ladi. Oddiygina qilib qaysi veb sahifani
+ochmoqchiligingizni aytasiz va `urllib` qolgan hamma HTTP protokol va qo'shimcha malumotlarni amalga oshiradi.
 
 Yuqoridagi `romeo.txt` ni o'qishini quyidagicha yozishimiz mumkin
 
@@ -231,15 +232,15 @@ https://twitter.com/KunUzNews
 https://www.instagram.com/kun.uz
 ```
 
-Regular ifodalar HTML uchun faqat HTML juda yaxshi trukturaga ega bo'lsa yaxshi ishlaydi. Lekin
+Regular ifodalar HTML uchun faqat HTML juda yaxshi strukturaga ega bo'lsa yaxshi ishlaydi. Lekin
 aslida ko'p HTML sahifalar noodatiy narsalarga ega bo'ladi. O'shaning uchun boshqa bibliotekalar ham mavjud. 
 Masalan, BeatifulSoup. Hozir bu haqida to'xtalmaymiz.
 
 Eslatma:
 
 - **socket** bir biriga malumot yuboradigan va qabul qiladigan ikkita programmaning tarmoqda bog'lanishi.
-- **port** bu shunday nomerki, sket orqali serverga bog'lanayotganda qaysi programmaga bog'lanishlikni 
-bildiradi. Veb traffik uchun 80. Elektron pochtalar uchun esa 25.
+- **port** bu shunday nomerki, soket orqali serverga bog'lanayotganda qaysi programmaga bog'lanishlikni 
+bildiradi. Masalan, Veb traffik uchun 80. Elektron pochtalar uchun esa 25.
 
 
 
