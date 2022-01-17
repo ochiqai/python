@@ -243,17 +243,18 @@
      
 35.  Quyidagi list berilgan,
 
-    ```python
-    sonlar = [.2, .4, .6, .7, .10, .11]
-    ```
+
+```python
+sonlar = [.2, .4, .6, .7, .10, .11]
+```
 
     List har bir elementini 100 ga ko'paytiring va konsolga chiqaring.     
 
 36.  Quyidagi list berilgan,
 
-    ```python
-    sonlar = [.2, .4, .6, .7, .10, .11]
-    ```
+```python
+sonlar = [.2, .4, .6, .7, .10, .11]
+```
 
     `yangi_sonlar` degan list hosil qiling. Ammo, bunda 
     elementlar yuqoridagi list elemenlarini 100 ga ko'paytirishdan hosil qilinsin,
@@ -384,25 +385,25 @@
 
 69.  `son` nomli funksiya yarating. `int`, `float` va `str` turlarni argument sifatida olsin, qolgan turlar argument sifatida berilsa xato bersin. Mn,
 
-    ```python
-    # int 
-    >>> son(3)
-    3
-    # float 
-    >>> son(3.32)
-    3.32
-    # str 
-    >>> son('12')
-    12
-    
-    # xato tur
-    >>> son(['1', '2.3'])
-    TypeError: not a valid input data type
-    
-    # string intga o'zgartira olinmaydi
-    >>> son('salom')
-    ValueError: could not convert string to int or float
-    ```
+	    ```python
+	    # int 
+	    >>> son(3)
+	    3
+	    # float 
+	    >>> son(3.32)
+	    3.32
+	    # str 
+	    >>> son('12')
+	    12
+
+	    # xato tur
+	    >>> son(['1', '2.3'])
+	    TypeError: not a valid input data type
+
+	    # string intga o'zgartira olinmaydi
+	    >>> son('salom')
+	    ValueError: could not convert string to int or float
+	    ```
 
 70. `harflar = tuple('salom')` berilgan. `harflar[0]` nima qaytaradi. `harflar[0] = S` qilsak nima bo'ladi?
 
@@ -656,10 +657,10 @@
 
 100. Quyidagini ishlatsak konsolga nima chiqadi:
 
-    ```python
-    for x in range(1, 11, 3):
-        print(x)
-    ```
+	    ```python
+	    for x in range(1, 11, 3):
+		print(x)
+	    ```
 
 101. Quyidagini ishlatsak konsolga nima chiqadi:
 
@@ -680,39 +681,39 @@
 
 102. Quyidagini ishlatsak ekranga nima chiqadi?
 
-    ```python
-    x = 5
-    y = 8
-    
-    if x < y:
-        print('x is greater than y')
-    if x > 55:
-        print('x is greater than 55')
-    else:
-        print('x is not greater than y or 55')
-    ```
+	    ```python
+	    x = 5
+	    y = 8
+
+	    if x < y:
+		print('x is greater than y')
+	    if x > 55:
+		print('x is greater than 55')
+	    else:
+		print('x is not greater than y or 55')
+	    ```
 
 103. Ushbu funksiyani ishlating.
     
-```python
+		```python
 
-def example():
-print('kodlar')
-x = 13 + 19
-print(x)
+		def example():
+		print('kodlar')
+		x = 13 + 19
+		print(x)
 
-```
+		```
 
 104. Quyidagini ishlatmay natijani ayting. Keyin ishlating va solishtiring?
 
-    ```python
-    def simple_addition(s1, s2):
-        javob = s1 + s2
-        print('s1: ', s1)
-        print(javob)
-    
-    simple_addition(5,3)
-    ```
+	    ```python
+	    def simple_addition(s1, s2):
+		javob = s1 + s2
+		print('s1: ', s1)
+		print(javob)
+
+	    simple_addition(5,3)
+	    ```
 
 105. Aytaylik, `name = "Ahmad Dilshodov"`, `name[1]` nima qaytaradi?  name[-2] chi? name[1:-1] chi?
 
@@ -760,12 +761,12 @@ print(x)
 
 127. `sonlar` nomli funksiya yarating. Va `chegara` degan parameter olsin. Shunday qilsinki, funskiya 0 dan `chegara`gacha bo'lgan sonlarni qaytarsin va ularining toq yoki juftligini ham qaytarsin. Masalan `chegara` qiymati `3` bo'lsa, quyidagicha bo'lsin:
 
-    ```python
-    0 Juft
-    1 Toq
-    2 Juft
-    3 Toq
-    ```
+		```python
+		0 Juft
+		1 Toq
+		2 Juft
+		3 Toq
+		```
 
 128. `sonlar` nomli funksiya yarating. Va `chegara` degan parameter olsin. Shunday qilsinki, funskiya 0 dan `chegara`gacha bo'lgan sonlarning faqat 3 va 5 ga bo'linadiganlarini qaytarsin. Va ularning yig'indisini ham qaytarsin. Mn, `chegara=20` it should return the sum of 3, 5, 6, 9, 10, 12, 15, 18, 20.
 
