@@ -3,7 +3,7 @@ from ishchi import Ishchi
 
 
 # baza yaratish
-conn = sqlite3.connect("ishchilar_baza:")
+conn = sqlite3.connect("ishchilar_baza")
 cur = conn.cursor()
 
 def jadval_yaratish():
