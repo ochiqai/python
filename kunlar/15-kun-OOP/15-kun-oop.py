@@ -1,67 +1,68 @@
-def dars_1():
-    l = list()
-    l.append("olma") # method, metod
-    l.append("anor") # # method, metod
-    l.sort() # method, metod
-    print(l[0]) # retrieve, olish
-    print(l.__getitem__(0)) # retrieve, olish
-    print(list.__getitem__(l, 0)) # retrieve, olish
+# list obyekti
+mashinalar = list()
+mashinalar.append("Neksiya")
+mashinalar.append("Tiko")
+mashinalar.append("Damas")
+mashinalar.sort()
+print(mashinalar[0])
 
-    # capabilities
-    print(dir(list))
-    print(len(dir(list)))
+# hamma imkoniyatlari
+mashinalar = list()
+print(dir(mashinalar))
 
-    # class
-    class PartyAnimal:
-        x = 10
-        def party(self) :
-            self.x = self.x + 1
-            print("So far", self.x)
+# class
+class Ishchi:
+    def __init__(self, ism, familiya, sharif, yosh):
+        self.ism = ism
+        self.familiya = familiya
+        self.sharif = sharif
+        self.yosh = yosh
 
-    an = PartyAnimal()
-    an.party()
-    an.party()
-    an.party()
-    PartyAnimal.party(an)
-
-    print("Type: ", type(an))
-    print("Dir: ", dir(an))
-    print("Type: ", type(an.x))
-    print("Type: ", type(an.party))
+    def fish(self):
+        print("{} {} {}, {} yoshda".format(self.familiya, self.ism, self.sharif, self.yosh))
 
 
-
-from kutubxona import Calculator
-
-class NurCalculator(Calculator):
-    def __init__(self):
-        print("Nuriddin Kalkulator yaratildi")
-    def ayirish(self, x, y):
-        return x - y
-
-    def __str__(self):
-        return "Nuriddin kalkulyator obyekti"
+# metodni chaqirish
+ishchi = Ishchi("Ahmad", "Aliyev", "Shakar o'gli", 25)
+ishchi.fish()
 
 
-
-cal = Calculator()
-print(cal.x)
-print(cal.qushish(10, 20))
-print(cal.x)
-
-print("Orginal Kalkulyator imkoniyatlari: ", dir(cal))
-
-nurcal = NurCalculator()
-print(nurcal.qushish(10, 20))
-print(nurcal.ayirish(10, 20))
-print(nurcal)
-
-print("Nuriddin Kalkulyator imkoniyatlari: ", dir(nurcal))
+# turini tekshirish
+print("Turi", type(ishchi))
+print("Turi", type(ishchi.ism))
+print("Turi", type(ishchi.yosh))
 
 
+## ko'plik obyektlar
+ishchi_1 = Ishchi("Tesha", "Boltayev", "Qilich o'gli", 5)
+ishchi_2 = Ishchi("Guli", "Anorava", "Anor o'gli", 7)
+
+ishchi_1.fish()
+ishchi_2.fish()
+
+## Meros
+class Ishchi:
+    def __init__(self, ism, familiya, sharif, yosh):
+        self.ism = ism
+        self.familiya = familiya
+        self.sharif = sharif
+        self.yosh = yosh
+
+    def fish(self):
+        print("{} {} {}, {} yoshda".format(self.familiya, self.ism, self.sharif, self.yosh))
+
+class Shafyor(Ishchi):
+    def __init__(self, ism, familiya, sharif, yosh, ser_nomer):
+        self.ism = ism
+        self.familiya = familiya
+        self.sharif = sharif
+        self.yosh = yosh
+        self.ser_nomer = ser_nomer
+
+    def sertfikat_nomeri(self):
+        print("Haydovchilik guvohnomasi nomeri: ",self.ser_nomer)
 
 
-
-
-
-
+shafyor = Shafyor("Sardor", "Ibragimov", "Xo'lmo'min o'g'li", 26, "AA4567Q")
+shafyor.fish()
+shafyor.sertfikat_nomeri()
