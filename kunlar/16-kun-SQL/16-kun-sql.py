@@ -3,37 +3,36 @@ from ishchi import Ishchi
 
 
 # baza yaratish
-conn = sqlite3.connect("ishchilar_baza")
-cur = conn.cursor()
+baza = sqlite3.connect("ishchilar_baza")
+ochiq_baza = baza.cursor()
 
 def jadval_yaratish():
-    cur.execute('DROP TABLE IF EXISTS ishchilar')
-    cur.execute("""CREATE TABLE ishchilar (
-                id INTEGER PRIMARY KEY,
+    ochiq_baza.execute('DROP TABLE IF EXISTS ishchilar')
+    ochiq_baza.execute("""CREATE TABLE ishchilar (
                 ism TEXT,
                 familiya TEXT,
                 sharif TEXT,
                 yosh INTEGER)
                 """)
-    conn.commit()
+    baza.commit()
 
 def ishchi_qushish(ishchi):
-    cur.execute("INSERT INTO ishchilar (ism, familiya, sharif, yosh) VALUES (?, ?, ?, ?)",
+    ochiq_baza.execute("INSERT INTO ishchilar (ism, familiya, sharif, yosh) VALUES (?, ?, ?, ?)",
                 (ishchi.ism, ishchi.familiya, ishchi.sharif, ishchi.yosh))
-    conn.commit()
+    baza.commit()
 
 def ishchilarni_ruyxati():
-    cur.execute("SELECT * FROM ishchilar")
-    for qator in cur:
+    ochiq_baza.execute("SELECT * FROM ishchilar")
+    for qator in ochiq_baza:
         print(qator)
 
 def malumot_uchirish(yosh):
-    cur.execute("DELETE FROM ishchilar WHERE yosh=?", (yosh,))
-    conn.commit()
+    ochiq_baza.execute("DELETE FROM ishchilar WHERE yosh=?", (yosh,))
+    baza.commit()
 
 def malumot_uzgartirish(eski, yangi):
-    cur.execute("UPDATE ishchilar SET yosh=? WHERE yosh=?", (yangi, eski))
-    conn.commit()
+    ochiq_baza.execute("UPDATE ishchilar SET yosh=? WHERE yosh=?", (yangi, eski))
+    baza.commit()
 
 
 
@@ -62,7 +61,7 @@ print("Ishchilarni amulomotini yangilash, 47 yoshdagilarni 55 yoshga o'tkazish")
 malumot_uzgartirish(47, 55)
 ishchilarni_ruyxati()
 
-conn.close()
+baza.close()
 
 
 
