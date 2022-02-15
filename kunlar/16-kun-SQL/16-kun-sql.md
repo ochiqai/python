@@ -3,7 +3,7 @@
 _Databaza_ bu malumotlarni saqlash uchun mo'ljallanga fayl. Databazalar kompyuter doimiy xotirasida saqlanadi, 
 o'shaning uchun programma ishlashdan to'xtasa ham baza saqlanib turaveradi.
 
-Databza programmalari shunday tuziladiki, ularga malumot kiritish va olish juda tez bajariladi, 
+Databaza programmalari shunday tuziladiki, ularga malumot kiritish va olish juda tez bajariladi, 
 xattoki juda katta fayllar uchun ham. Bunday tezlikka databaza programmlari _indekslash_ orqali erishadi.
 
 Databaza programmlari juda ko'p: Oracle, MySQL, Microsoft SQL Server, PostgreSQL, va SQLite. Biz
