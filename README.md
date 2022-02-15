@@ -45,6 +45,8 @@
   12. [Regular-ifodalar](https://github.com/ochiqai/python/blob/main/kunlar/12-kun-Regular-ifodalar/12-kun-regular-ifodalar.md)
   13. [Net programma](https://github.com/ochiqai/python/blob/main/kunlar/13-kun-Net-Programma/13-net-programma.md)
   14. [Veb servis](https://github.com/ochiqai/python/blob/main/kunlar/14-kun-Veb-servis/14-kun-veb-servis.md)
+  15. [OOP](https://github.com/ochiqai/python/blob/main/kunlar/15-kun-OOP/15-kun-oop.md)
+  16. [SQL](https://github.com/ochiqai/python/blob/main/kunlar/16-kun-SQL/16-kun-sql.md)
 ## 1-10 kunlar shpargalkasi [link](https://github.com/ochiqai/python/blob/shpargalka/biblateka/python_shpagralka.pdf)
 
 ### Savol va muhokama uchun: [link](https://github.com/ochiqai/python/discussions)
