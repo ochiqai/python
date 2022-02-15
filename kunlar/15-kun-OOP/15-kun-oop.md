@@ -75,9 +75,9 @@ Quyidagilarni o'rganishimiz mumkin
 - `Ishchi` klasi aniqlandi
 - Unda iikita metod bor: `__init__` va `fish`. 
 - `__init__`da attributlar e'lon qilingan. Mn: ism, familiya va yoshi.
-- `fish` metodi attributlardan foydalanib ishning to'liq ismini chiqaradi.
-- Etibor qilishimiz klassni aniqlash degani obyektni yaratdik degani emas. Klass bu xuddi andoza o'xshaydi.
-Mn: g'isht quyayotganimizda qolipdan foydalanamiz. Qolipning o'zi klassga misol bo'ladi.
+- `fish` metodi attributlardan foydalanib ishchining to'liq ismini chiqaradi.
+- Diqqat! Klassni aniqlash degani obyektni yaratdik degani emas. Klass bu xuddi andozaga 
+  o'xshaydi. Mn: g'isht quyayotganimizda qolipdan foydalanamiz. Qolipning o'zi klassga misol bo'ladi.
 
 
 Endi bu classni chaqiramiz xuddi funksiyaga o'xshatib, yani
@@ -122,7 +122,7 @@ Turi <class 'int'>
 
 Biz yuqorida `class`ni elon qildik va u shunchaki qolip vazifasizini ham bajarishini bildik. 
 Keyin `class` qolipi orqali obyekt yaratishni ham ko'rdik. Qachonki programma ishlashdan tugaganida 
-hamma `class`ga tegishli maumotlar o'chib ketadi. Odatda biz o'zgavruvchilar yaratilishi va 
+hamma `class`ga tegishli malumotlar o'chib ketadi. Odatda biz o'zgavruvchilar yaratilishi va 
 programma ishlab bo'lgandan keyin o'chib ketishligi haqida gapirmaymiz. Lekin obyektlar murakkablashgan sari
 bu haqida o'ylashimizga to'g'ri keladi. Asosan obyekt yaratilish bosqichida.
 
@@ -180,7 +180,7 @@ ishchi_2.fish()
 
 ## Meros
 
-OOP ning yana bir afzallik tarafi chundaki, yangi class boshqa classdan meros olish mumkin. Bunda, 
+OOP ning yana bir afzallik tarafi shundaki, yangi class boshqa classdan meros olish mumkin. Bunda, 
 meros berayotgan klass `ona class` deb, merosni olayotgan klass esa `bola class` deb ataladi.
 
 Masalan `Ishchi class`ni kengaytirish orqali yangi class yaratamiz
@@ -241,7 +241,7 @@ Jumdladan quyidagilarni o'rgandik:
  ona classga tegishlig bo'lgan barcha attributlar va metodlarni o'z ichiga oladi, hamda qo'shimcha atributlar 
  va metodlarga ega bo'ladi 
 - metod class ichida elon qilingan funksiya
-- obyekt classning chaqirishdan hosil bo'ladi.
+- obyekt classning chaqirilishidan hosil bo'ladi.
 
 
 
