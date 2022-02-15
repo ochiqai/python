@@ -45,6 +45,7 @@ for suz in suzlar:
 print(lugat_ing2uzb)
 
 
+
 ing_suz = input("so'zni kiriting: ")
 tarjima = lugat_ing2uzb[ing_suz]
 print("tarjimasi: ", tarjima)
