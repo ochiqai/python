@@ -13,9 +13,10 @@
 
    `django-admin startproject django_project`
 
-
-   <img src="firstphoto.png">
-
+<p align="center">
+    <img src="D:\Python\python\django\kunlar\02-kun\image\django_install.png">
+</p>
+   
  
    E'tibor bersangiz 02-kun faylimiz ichida `django_project` hosil bo'ldi.
 
@@ -26,10 +27,12 @@
 Qora ekranga quyidagicha yozamiz.
 `python manage.py runserver` <br>
 
+<p align="center">
+   <img src="D:\Python\python\django\kunlar\02-kun\image\django_working.png">
+</p>
 
-<img src="second.png">
 
 `http://127.0.0.1:8000/` quyidagi manzilni internetda ishlatib ko'ramiz.
-
-<img src="third.png" height="300">
-
+<p align="center">
+<img src="D:\Python\python\django\kunlar\02-kun\image\project_url.png">
+</p>
