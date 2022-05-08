@@ -12,6 +12,8 @@
 3. Quyidagi buyruq orqali yangi project yaratamiz.
 
    `django-admin startproject django_project`
+ <br>
+bu yerda `django_project` proyektimiz nomi hisoblanadi.
    
 <p align="center">
     <img src="./image/django_install.png">
@@ -24,15 +26,16 @@
    Birinchi `manage.py` fayli joylashgan papkaga `cd papka_nomi` buyrug'i orqali boramiz. <br>
  
 
-Qora ekranga quyidagicha yozamiz.
+5. Qora ekranga quyidagicha yozamiz.
 `python manage.py runserver` <br>
+
+
+<p align="center">
+<img src="./image/project_url.png">
+</p>
+
+`http://127.0.0.1:8000/` quyidagi manzilni internetda ishlatib ko'ramiz.
 
 <p align="center">
    <img src="./image/django_working.png">
-</p>
-
-
-`http://127.0.0.1:8000/` quyidagi manzilni internetda ishlatib ko'ramiz.
-<p align="center">
-<img src="./image/project_url.png">
 </p>
