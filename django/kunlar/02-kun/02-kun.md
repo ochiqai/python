@@ -12,9 +12,9 @@
 3. Quyidagi buyruq orqali yangi project yaratamiz.
 
    `django-admin startproject django_project`
-
+   
 <p align="center">
-    <img src="D:\Python\python\django\kunlar\02-kun\image\django_install.png">
+    <img src="./image/django_install.png">
 </p>
    
  
@@ -28,11 +28,11 @@ Qora ekranga quyidagicha yozamiz.
 `python manage.py runserver` <br>
 
 <p align="center">
-   <img src="D:\Python\python\django\kunlar\02-kun\image\django_working.png">
+   <img src="./image/django_working.png">
 </p>
 
 
 `http://127.0.0.1:8000/` quyidagi manzilni internetda ishlatib ko'ramiz.
 <p align="center">
-<img src="D:\Python\python\django\kunlar\02-kun\image\project_url.png">
+<img src="./image/project_url.png">
 </p>
