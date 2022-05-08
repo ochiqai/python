@@ -8,8 +8,17 @@
 2. Django versiyasi tekshirish.
 
     `python -m django --version`
+3. Djangoda mavjud bo'lgan buyruqlarni ko'rishni quyidagicha amalga oshiramiz.
 
-3. Quyidagi buyruq orqali yangi project yaratamiz.
+<p align="center">
+    <img src="./image/django_admin.png">
+</p>
+<br>
+djangoda mavjud kichik buyruqlar
+<p align="center">
+    <img src="./image/django_buyruqlari.png">
+</p>
+4. Quyidagi buyruq orqali yangi project yaratamiz.
 
    `django-admin startproject django_project`
  <br>
@@ -22,11 +31,11 @@ bu yerda `django_project` proyektimiz nomi hisoblanadi.
  
    E'tibor bersangiz 02-kun faylimiz ichida `django_project` hosil bo'ldi.
 
-4. Djangoni o'rnatib bo'lgach serverda ishlatib ko'ramiz.
+5. Djangoni o'rnatib bo'lgach serverda ishlatib ko'ramiz.
    Birinchi `manage.py` fayli joylashgan papkaga `cd papka_nomi` buyrug'i orqali boramiz. <br>
  
 
-5. Qora ekranga quyidagicha yozamiz.
+6. Qora ekranga quyidagicha yozamiz.
 `python manage.py runserver` <br>
 
 
