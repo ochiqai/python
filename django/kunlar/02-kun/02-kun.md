@@ -48,3 +48,6 @@ bu yerda `django_project` proyektimiz nomi hisoblanadi.
 <p align="center">
    <img src="./image/django_working.png">
 </p>
+
+`http://127.0.0.1:8000/` quyidagi manzildan `127.0.0.1` ning o'rniga `localhost` so'zi bilan almashtirsak ham, bir xil ishlaydi. Ya'ni `http://localhost:8000/`
+
