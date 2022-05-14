@@ -1,7 +1,7 @@
 * django muhitini o'rnatib bo'lgach, `blog` nomli app yaratamiz.
 `python manage.py startapp blog` bu buyruq orqali `blog` nomli yangi app yaratamiz.
 <p align="center">
-    <img src="./image/blog.png">
+    <img src="./image/blogApp.png">
 </p>
 
 `blog`da mavjud ma'lumotlar quyidagilar.
