@@ -1,4 +1,7 @@
-## Django: o'rnatish va ishga tushirish
+## [Django: o'rnatish va ishga tushirish](#django--o-rnatish-va-ishga-tushirish)
+  * [Djangoni o'rnatish](#djangoni-o-rnatish)
+  * [Ishga tushirish](#ishga-tushirish)
+
 
 ### Djangoni o'rnatish 
 
