@@ -1,4 +1,4 @@
-#### Djangoni o'rnatish va ishga tushirish.
+## Djangoni o'rnatish va ishga tushirish.
 
 
 1. Terminalga quyidagicha yozish orqali djangoni o'rnatamiz.

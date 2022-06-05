@@ -1,3 +1,5 @@
+## Django Apps va _blog_ nomli app qilish
+ 
 * django muhitini o'rnatib bo'lgach, `blog` nomli app yaratamiz.
 `python manage.py startapp blog` bu buyruq orqali `blog` nomli yangi app yaratamiz.
 <p align="center">
