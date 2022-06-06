@@ -239,3 +239,40 @@ Buning uchun birinchi `templates` ichidagi `blog` faylidan `base.html` nomli yan
 <p align="center">
     <img src="./image/about_view.png">
 </p>
+
+* `Bootstrap`dan foydalanish.
+
+https://getbootstrap.com/docs/5.2/getting-started/rtl/#starter-template quyidagi manzilga borib, saytimizni chiroyliroq ko'rinishga keltirish uchun ma'lum qismini o'zimizga ko'chirib olamiz.
+
+<p align="center">
+    <img src="./image/head_bootstrap.png">
+</p>
+
+<p align="center">
+    <img src="./image/head_copy.png">
+</p>
+* Yuqorida ko'rsatilgan qismdan nusxa olib, `base.html` faylimizning `head` qismiga tashlaymiz. `title` dan nusxa olmadik, chunki `base.html`da `title` qismi mavjud.
+
+
+* Huddi shunday qilib `body` qismidagi kodlarni `base.html` faylimizning `body` qismimizga nusxa olamiz.
+
+<p align="center">
+    <img src="./image/body_js.png">
+</p>
+
+<p align="center">
+    <img src="./image/body_copy.png">
+</p>
+
+* `bootstrap` ni ishlatganimizdan so'ng, ko'p o'zgarishlar bo'ladi.
+
+* `body` qismidagi `block content` alohida `div`ga olib `class`ga `container` nomini berib serverimizni ishlatib ko'ramiz.
+```python
+<div class="container">
+{% block content %}  {% endblock content %}
+</div>
+```
+<p align="center">
+    <img src="./image/home_bts.png">
+</p>
+

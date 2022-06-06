@@ -1,0 +1,10 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    {% for xabar in xabarlar %}
+        <h1>{{ xabar.sarlavha}}</h1>
+    {% endfor %}
+    <h1>Blog home</h1>
+{% endblock content %}
+
+
