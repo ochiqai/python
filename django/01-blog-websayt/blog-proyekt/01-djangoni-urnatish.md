@@ -99,7 +99,7 @@ Ushbu manzil olib brovserda ishlatsak, quyidagini ko'rishimiz mumkin:
 <p align="center">
    <img src="./image/django_working.png">
 </p>
-Yani hozirgi yaratgan proyektimiz ishlayapti demakdir!
+Ya'ni hozirgi yaratgan proyektimiz ishlayapti demakdir!
 
 Diqqat! `http://127.0.0.1:8000/` adressdagi, `127.0.0.1` ning o'rniga `localhost` bilan almashtirsak ham
 bo'ladi - bir xil ishlaydi (`http://localhost:8000/`).
