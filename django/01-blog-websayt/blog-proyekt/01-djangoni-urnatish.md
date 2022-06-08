@@ -1,53 +1,105 @@
-## Djangoni o'rnatish va ishga tushirish.
+## [Django: o'rnatish va ishga tushirish](#django--o-rnatish-va-ishga-tushirish)
+  * [Djangoni o'rnatish](#djangoni-o-rnatish)
+  * [Ishga tushirish](#ishga-tushirish)
 
 
-1. Terminalga quyidagicha yozish orqali djangoni o'rnatamiz.
+### Djangoni o'rnatish 
 
-    `pip install django`
+
+1. Terminalda quyidagi kommandani ishlatish orqali djangoni o'rnatamiz:
+    ```console
+    ochiqai@com:~$ pip install django
+    ```
+    
 
 2. Django versiyasi tekshirish.
+    ```console
+    ochiqai@com:~$ python -m django --version
+    ```
+    
+3. Djangoda mavjud bo'lgan buyruqlarni ko'rishni quyidagicha amalga oshiramiz:
 
-    `python -m django --version`
-3. Djangoda mavjud bo'lgan buyruqlarni ko'rishni quyidagicha amalga oshiramiz.
+    ```console
+    ochiqai@com:~$ django-admin
+    ```
+   
+    <details>
+    <summary>django kommandalari</summary>
+   
+    ```console
+    [django]
+    check
+    compilemessages
+    createcachetable
+    dbshell
+    diffsettings
+    dumpdata
+    flush
+    inspectdb
+    loaddata
+    makemessages
+    makemigrations
+    migrate
+    runserver
+    sendtestemail
+    shell
+    showmigrations
+    sqlflush
+    sqlmigrate
+    sqlsequencereset
+    squashmigrations
+    startapp
+    startproject
+    test
+    testserver
+    ```  
+    </details>
 
-<p align="center">
-    <img src="./image/django_admin.png">
-</p>
 <br>
-djangoda mavjud kichik buyruqlar
-<p align="center">
-    <img src="./image/django_buyruqlari.png">
-</p>
-4. Quyidagi buyruq orqali yangi project yaratamiz.
 
-   `django-admin startproject django_project`
- <br>
-bu yerda `django_project` proyektimiz nomi hisoblanadi.
+### Ishga tushirish
+
+Quyidagi kommanda orqali yangi proyekt yaratamiz:
+
+```console
+ochiqai@com:~$ django-admin startproject django_project
+```
+
+`django_project` - bu proyekt nomi hisoblanadi. Kommanda ishlagandan so'ng, django_project deb nomlangan papka 
+ko'rishimiz mumkin. Misol uchun, aytaylik siz 02-kun papka ichidasiz va yuqoridagi kommandani ishlatdingiz shunda 
+`django_project` degan papkani ko'rishingiz mumkin:
    
 <p align="center">
     <img src="./image/django_install.png">
 </p>
-   
- 
-   E'tibor bersangiz 02-kun faylimiz ichida `django_project` hosil bo'ldi.
 
-5. Djangoni o'rnatib bo'lgach serverda ishlatib ko'ramiz.
-   Birinchi `manage.py` fayli joylashgan papkaga `cd papka_nomi` buyrug'i orqali boramiz. <br>
- 
+Proyektni ishga tushurish uchun, quyidalarni bajaramiz 
 
-6. Qora ekranga quyidagicha yozamiz.
-`python manage.py runserver` <br>
+  1. Serverni ishlatamiz. Birinchi `manage.py` fayli joylashgan papkaga boramiz `cd django_project`. 
 
+        ```console
+        ochiqai@com:~$ cd django_project
+        ```
+
+  2. Keyin quyidagini ishlatamiz
+
+        ```console
+        ochiqai@com:~$ python manage.py runserver
+        ```
+
+Va ekranga quyidagiga o'xshash yozuvlarni ko'rishimiz mumkin:
 
 <p align="center">
 <img src="./image/project_url.png">
 </p>
 
-`http://127.0.0.1:8000/` quyidagi manzilni internetda ishlatib ko'ramiz.
+U yerda bizga sever qayerda ishlayotgani ko'rsatuvchi adress beriladi: `http://127.0.0.1:8000/`.
+Ushbu manzil olib brovserda ishlatsak, quyidagini ko'rishimiz mumkin:
 
 <p align="center">
    <img src="./image/django_working.png">
 </p>
+Ya'ni hozirgi yaratgan proyektimiz ishlayapti demakdir!
 
-`http://127.0.0.1:8000/` quyidagi manzildan `127.0.0.1` ning o'rniga `localhost` so'zi bilan almashtirsak ham, bir xil ishlaydi. Ya'ni `http://localhost:8000/`
-
+Diqqat! `http://127.0.0.1:8000/` adressdagi, `127.0.0.1` ning o'rniga `localhost` bilan almashtirsak ham
+bo'ladi - bir xil ishlaydi (`http://localhost:8000/`).
