@@ -14,7 +14,7 @@
     <img src="./image/img_1.png">
 </p>
 
-* `Terminal`ning so'ngi qismiga e'tibor beradigan bo'lsak, qy=uyidagilar paydo bo'ladi `django.db.utils.OperationalError: no such table: auth_user`.Bunda biz ishga tushurmoqchi bo'lgan `superuser` ishlamadi.Chunki biz `database` yaratib olishimiz kerak bo'ladi.
+* `Terminal`ning so'ngi qismiga e'tibor beradigan bo'lsak, quyidagilar paydo bo'ladi `django.db.utils.OperationalError: no such table: auth_user`.Bunda biz ishga tushurmoqchi bo'lgan `superuser` ishlamadi.Chunki biz `database` yaratib olishimiz kerak bo'ladi.
 * `Database` yaratib olish uchun biz avvalo `migration` commandasi kirtib olishimiz kerak.Buning yana biz `python manage.py makemigrations` kirtib olamiz va quyidagilar paydo bo'ladi.
 
 <p align="center">
