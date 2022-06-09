@@ -5,23 +5,30 @@
 * Biz nima qildik? `blog-> templates-> blog-> template.html` . `blog` nomli appimizdan templateslar uchun `templates` nomli papka yaratdik, va `templates` papka ichidan `blog` nomli papka yaratib oldik. Bu yerda biz templateslar uchun htmlga oid fayllar bilan ishlaymiz.
 * Templateslar uchun yaratgan `blog` papka ichidan `home.html` va `about.html` nomli yangi html kengaytmali fayllarni yaratib olamiz.
 * `home.html` fayli ichida quyidagi ishni amalga oshiramiz.
-```python
+```
 <!DOCTYPE html>
 <html>
 <head>
     <title></title>
 </head>
 <body>
-
     <h1>Blog home!</h1>
-
 </body>
 </html>
 ```
-* `blog` nomli appimiz ichidagi `apps.py` nomli faylidan class nomidan nusxa olib, `django_project` loyihamiz ichidagi `settings.py` ga `INSTALLED_APPS` qismiga quyidagicha appimizni qo'shib qo'yamiz. (34-qator)
-<p align="center">
-    <img src="./image/installed_app.png">
-</p>
+* `blog` nomli appimiz ichidagi `apps.py` nomli faylidan class nomidan nusxa olib, `django_project` loyihamiz ichidagi `settings.py` ga `INSTALLED_APPS` qismiga quyidagicha appimizni qo'shib qo'yamiz. 
+
+```console
+INSTALLED_APPS = [
+    'blog.apps.BlogConfig',
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+]
+```
 
 * Endi `blog` papka ichidagini `views.py` fayliga borib quyidagi ishni amalga oshiramiz.
 
@@ -32,7 +39,7 @@ def home(request):
     return render(request,"blog/home.html")
 ```
 
-* Terminalga borib serverni ishlatib ko'ramiz.
+* Terminalga borib `python manage.py runserver` komandasi orqali serverni ishlatib ko'ramiz.
 
 <p align="center">
     <img src="./image/blog_home.png">
@@ -40,7 +47,7 @@ def home(request):
 
 * Endi `about.html` ga borib quyidagi ishni bajaramiz.
 Ya'ni `About Page` so'zini chiqarib ko'ramiz.
-```python
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -103,7 +110,7 @@ def home(request):
 
 `home.html` ga quyidagi ishni bajaramiz.
 
-```python
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -130,7 +137,7 @@ Quyidagi ishlarni bajarsangiz `title` o'zgarganini ko'rasiz.
 * `home.html` ga quyidagicha yozamiz.
 
 
-```python
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -151,7 +158,7 @@ Quyidagi ishlarni bajarsangiz `title` o'zgarganini ko'rasiz.
 
 * `about.html` ga quyidagicha yozamiz.
 
-```python
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -188,7 +195,7 @@ Buning uchun birinchi `templates` ichidagi `blog` faylidan `base.html` nomli yan
 
 * `base.html` ga quyidagicha ishni amalga oshiramiz.
 
-```python
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -248,21 +255,47 @@ https://getbootstrap.com/docs/5.2/getting-started/rtl/#starter-template quyidagi
     <img src="./image/head_bootstrap.png">
 </p>
 
-<p align="center">
-    <img src="./image/head_copy.png">
-</p>
+```html
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.rtl.min.css" integrity="sha384-dc2NSrAXbAkjrdm9IYrX10fQq9SDG6Vjz7nQVKdKcJl3pC+k37e7qJR5MVSCS+wR" crossorigin="anonymous">
+
+    {% if title %}
+        <title>django-blog/{{title}}</title>
+    {% else %}
+        <title>django-blog/</title>
+    {% endif %}
+</head>
+```
 * Yuqorida ko'rsatilgan qismdan nusxa olib, `base.html` faylimizning `head` qismiga tashlaymiz. `title` dan nusxa olmadik, chunki `base.html`da `title` qismi mavjud.
 
 
 * Huddi shunday qilib `body` qismidagi kodlarni `base.html` faylimizning `body` qismimizga nusxa olamiz.
 
-<p align="center">
-    <img src="./image/body_js.png">
-</p>
+```html
+<body>
 
-<p align="center">
-    <img src="./image/body_copy.png">
-</p>
+    <div class="container">
+    {% block content %}  {% endblock content %}
+    </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+    -->
+
+</body>
+```
 
 * `bootstrap` ni ishlatganimizdan so'ng, ko'p o'zgarishlar bo'ladi.
 
