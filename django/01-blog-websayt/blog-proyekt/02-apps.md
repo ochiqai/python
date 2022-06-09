@@ -14,8 +14,7 @@ proyekt bir nechta applardan tashkil topishligi mumkin. Endi app tushunachasi bi
 tanishamiz. App - bu nomidan ko'rinib turibdiki aniq bir vazifani qiladigan programma.
 
 <p align="center">
-    <img src="./image/proyekt_app.png" width="150" 
-     height="200">
+    <img src="./image/proyekt_app.png" width="200" height="300">
 </p>
 
 
@@ -134,13 +133,13 @@ ochiqai@com:~$ python manage.py runserver
 ```
 
 <p align="center">
-    <img src="./image/serverni_ishlatish.png">
+    <img src="./image/serverni_ishlatish.png" width="500">
 </p>
 
 `http://127.0.0.1:8000/` manzilga boramiz, quyidagicha ko'rinish hosil bo'ladi.
 
 <p align="center">
-    <img src="./image/homePage.png">
+    <img src="./image/homePage.png" width="300">
 </p>
 
 
@@ -192,7 +191,7 @@ nima qilamiz? Hozirgacha qilgan ishimizni yana takrorlaymiz!:
    Va quyidagi yangi sahifamizni ko'rishimiz mumkin:
 
    <p align="center">
-       <img src="./image/ochiqai.png">
+       <img src="./image/ochiqai.png" width="300">
    </p>
 
 Serverni to'xtatish uchun terminalda turib `Ctrl + C` ni bossak server to'xtaydi.
