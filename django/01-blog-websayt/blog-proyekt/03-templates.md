@@ -1,5 +1,5 @@
 ## Django Templates 
-  * [Kirish](#nimage-templates)
+  * [Nimage templates](#nimage-templates)
   * [Templates yaratish jarayoni.](#templates-yaratish-jarayoni)
   * [Blogga xabarlar qo'yish](#blogga-xabarlar-qo-yish)
   * [Sayt sarlavhasi bilan ishlash](#sayt-sarlavhasi-bilan-ishlash)
