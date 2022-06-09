@@ -1,6 +1,6 @@
 ## Django Templates 
   * [Nimage templates](#nimage-templates)
-  * [Templates yaratish jarayoni.](#templates-yaratish-jarayoni)
+  * [Templates yaratish jarayoni](#templates-yaratish-jarayoni)
   * [Blogga xabarlar qo'yish](#blogga-xabarlar-qo-yish)
   * [Sayt sarlavhasi bilan ishlash](#sayt-sarlavhasi-bilan-ishlash)
   * [Takrorlanishga qarshi](#takrorlanishga-qarshi)
@@ -15,7 +15,7 @@ Bu amallarni funksiya yordamida bajarsak, kodlarimiz tushunarsiz va tartibsiz bo
 Bu kabi muammolar bo'lmasligi uchun biz `templates`lardan foydalanamiz.
 
 
-### Templates yaratish jarayoni.
+### Templates yaratish jarayoni
 
 `blog` appini davom ettiramiz. `blog` papkasidan, templatelar uchun  yangi `templates` nomli papka yaratamiz.
 Uning ichidan `blog` appimizga tegishli yangi `blog` nomli papka yaratib olamiz. Papka nomi app nomi bilan 
