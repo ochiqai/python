@@ -1,9 +1,26 @@
 ## Django Templates 
 
+#### Kirish
+
+Avvalgi darsimizda biror matnni foydalanuvchiga ko'rinadigan qilib ko'rgandik. 
+Bunda biz funksiya yordamida amalga oshirgan edik. 
+Keyinchalik darsturimiz kattalashib ketgach, biz ko'plab kod yozishimizga to'g'ri keladi.
+Bu amallarni funksiya yordamida bajarsak, kodlarimiz tushunarsiz va tabtibsiz bo'lib qoladi. 
+Bu kabi muammolar bo'lmasligi uchun biz `templates`lardan foydalanamiz.
+
+
+#### Templates yaratish jarayoni.
+
 * 03-kunda biz `blog` nomli app yaratib olgandik. `blog` nomli papkamizdan, templatelar uchun  yangi `templates` nomli papka yaratib olamiz.
-* Yaratgan `templates` nomli papkamiz ichidan yangi `blog` nomli papka yaratib olamiz.
-* Biz nima qildik? `blog-> templates-> blog-> template.html` . `blog` nomli appimizdan templateslar uchun `templates` nomli papka yaratdik, va `templates` papka ichidan `blog` nomli papka yaratib oldik. Bu yerda biz templateslar uchun htmlga oid fayllar bilan ishlaymiz.
-* Templateslar uchun yaratgan `blog` papka ichidan `home.html` va `about.html` nomli yangi html kengaytmali fayllarni yaratib olamiz.
+* Yaratgan `templates` nomli papkamiz ichidan `blog` appimizga tegishli yangi `blog` nomli papka yaratib olamiz.
+
+<p align="center">
+    <img src="./image/templates_folder.png">
+</p>
+
+`blog` appimizga tegishli barcha `templates`larni shu yerda bajaramiz.
+
+* Foydalanuchiga asosiy sahifada ko'rinadigan `Blog home!` matnini ko'rsatish jarayonini ko'rib chiqamiz. Buning uchun yangi `home.html` faylini yaratib olamiz. (templates papka ichidagi blog papkasi ichidan) 
 * `home.html` fayli ichida quyidagi ishni amalga oshiramiz.
 ```
 <!DOCTYPE html>
@@ -20,7 +37,7 @@
 
 ```console
 INSTALLED_APPS = [
-    'blog.apps.BlogConfig',
+    'blog.apps.BlogConfig', <--- [shu qatorni qo'shib qo'yamiz.]
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -29,6 +46,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 ]
 ```
+
+* Yaratgan applarimizni shu yerda qo'shib ketishimiz kerak. Bu yerdan biz yaratgan appimizga bog'lanib, ma'lumotlarni uzatadi.
 
 * Endi `blog` papka ichidagini `views.py` fayliga borib quyidagi ishni amalga oshiramiz.
 
@@ -39,13 +58,16 @@ def home(request):
     return render(request,"blog/home.html")
 ```
 
+Qachonki funksiyani chaqirganimizda `render` orqali `blog` papka ichidagi `home.html`dagi ma'lumotlarni foydalanuvchiga qartaradi.
 * Terminalga borib `python manage.py runserver` komandasi orqali serverni ishlatib ko'ramiz.
 
 <p align="center">
     <img src="./image/blog_home.png">
 </p>
 
-* Endi `about.html` ga borib quyidagi ishni bajaramiz.
+`home.html` joylaygan papkadan `about.html` nomli yangi fayl hosil qilib olamiz.
+
+`about.html` ga borib quyidagi ishni bajaramiz.
 Ya'ni `About Page` so'zini chiqarib ko'ramiz.
 ```html
 <!DOCTYPE html>
@@ -247,7 +269,7 @@ Buning uchun birinchi `templates` ichidagi `blog` faylidan `base.html` nomli yan
     <img src="./image/about_view.png">
 </p>
 
-* `Bootstrap`dan foydalanish.
+#### Boostrapdan foydalanish.
 
 https://getbootstrap.com/docs/5.2/getting-started/rtl/#starter-template quyidagi manzilga borib, saytimizni chiroyliroq ko'rinishga keltirish uchun ma'lum qismini o'zimizga ko'chirib olamiz.
 
@@ -255,6 +277,7 @@ https://getbootstrap.com/docs/5.2/getting-started/rtl/#starter-template quyidagi
     <img src="./image/head_bootstrap.png">
 </p>
 
+* Yuqorida ko'rsatilgan qismdan nusxa olib, `base.html` faylimizning `head` qismiga tashlaymiz. `title` dan nusxa olmadik, chunki `base.html`da `title` qismi mavjud.
 ```html
 <head>
 
@@ -272,10 +295,8 @@ https://getbootstrap.com/docs/5.2/getting-started/rtl/#starter-template quyidagi
     {% endif %}
 </head>
 ```
-* Yuqorida ko'rsatilgan qismdan nusxa olib, `base.html` faylimizning `head` qismiga tashlaymiz. `title` dan nusxa olmadik, chunki `base.html`da `title` qismi mavjud.
 
-
-* Huddi shunday qilib `body` qismidagi kodlarni `base.html` faylimizning `body` qismimizga nusxa olamiz.
+* Huddi shunday qilib `body` qismidagi kodlarni `base.html` faylimizning `body` qismiga nusxa olib tashlaymiz.
 
 ```html
 <body>
