@@ -1,11 +1,14 @@
 ## Django Apps 
-  * [Kirish](#kirish)
-  * [Blog App yaratish](#blog-app-yaratish)
-  * [OchiqAI sahifasini qo'shish](#ochiqai-sahifasini-qo-shish)
+ * [Kirish](#kirish)
+ * [Blog App yaratish](#blog-app-yaratish)
+ * [OchiqAI sahifasini yaratish](#ochiqai-sahifasini-yaratish)
+ * [Eslatmalar](#eslatmalar)
+
+
 
 #### Kirish
 Bundan oldingi bobda django muhitini o'rnatdik va dango proyekt yaratdik. Hozir app 
-haqida gaplashamiz. Boshida bu terminlar shalkash ko'rinadi. Proyektlar qilish bilan 
+haqida gaplashamiz. Boshida bu terminlar chalkash ko'rinadi. Proyektlar qilish bilan 
 yaxshi tushunib boraveramiz. Umuman olganda django orqali proyekt yaratganimizda, 
 proyekt bir nechta applardan tashkil topishligi mumkin. Endi app tushunachasi bilan 
 tanishamiz. App - bu nomidan ko'rinib turibdiki aniq bir vazifani qiladigan programma.
@@ -144,9 +147,10 @@ ochiqai@com:~$ python manage.py runserver
 
 
 
-### OchiqAI sahifasini qo'shish
+### OchiqAI sahifasini yaratish
+
 Shu paytgacha biz bosh sahifani ko'rib chiqdik. Endi aytaylik yangi sahifa qo'shmoqchimiz, 
-nima qilamiz? Hozirgacha qilgan ichimizni yana takrorlaymiz!:
+nima qilamiz? Hozirgacha qilgan ishimizni yana takrorlaymiz!:
 
 1. `views.py` fayliga ochiqai funksiyasini qo'shamiz:
    ```python
