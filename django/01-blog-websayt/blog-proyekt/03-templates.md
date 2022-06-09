@@ -1,12 +1,12 @@
 ## Django Templates 
-  * [Nimage templates](#nimage-templates)
+  * [Nimaga templates](#nimaga-templates)
   * [Templates yaratish jarayoni](#templates-yaratish-jarayoni)
   * [Blogga xabarlar qo'yish](#blogga-xabarlar-qo-yish)
   * [Sayt sarlavhasi bilan ishlash](#sayt-sarlavhasi-bilan-ishlash)
   * [Takrorlanishga qarshi](#takrorlanishga-qarshi)
   * [Blog bosh sahifasini yaxshilash](#blog-bosh-sahifasini-yaxshilash)
 
-### Nimage templates
+### Nimaga templates
 
 Avvalgi darsimizda biror matnni foydalanuvchiga ko'rinadigan qilib ko'rgandik. 
 Bunda biz funksiya yordamida amalga oshirgan edik. 
