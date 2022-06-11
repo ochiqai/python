@@ -136,7 +136,7 @@ Ishlab turgan serverdan, `http://127.0.0.1:8000/` dan so'ng `about` so'zini yozi
 
 `views.py`ga quyidagicha o'zgarishlar qilamiz:
  1. Har bir blogning sarlavhasi, muallifi, matni va qachon yozilganligi haqida malumot bo'ladi. Ushbu narsalarni 
-    mujasammlashtirgan o'zgaruvchi xosil qilamiz. Uni nomini `xabarlar` deb ataymiz:  
+    mujasammlashtirgan o'zgaruvchi xosil qilamiz. Uni nomini `bloglar` deb ataymiz:  
 
     ```python
     bloglar = [
@@ -191,7 +191,7 @@ Ishlab turgan serverdan, `http://127.0.0.1:8000/` dan so'ng `about` so'zini yozi
         <title></title>
     </head>
     <body>
-            {% for xabar in xabarlar %}
+            {% for xabar in bloglar %}
                 <h1>{{ xabar.sarlavha}}</h1>
             {% endfor %}
             <h1>Blog home</h1>
@@ -203,7 +203,7 @@ Ishlab turgan serverdan, `http://127.0.0.1:8000/` dan so'ng `about` so'zini yozi
     Serverni ishlatib ko'rsak quyidagi oyna hosil bo'ladi.
 
 <p align="center">
-    <img src="./image/post.png" width="400">
+    <img src="./image/sarlavhalar.png" width="400">
 </p>
 
 ### Sayt sarlavhasi bilan ishlash
@@ -221,7 +221,7 @@ Ishlab turgan serverdan, `http://127.0.0.1:8000/` dan so'ng `about` so'zini yozi
         {% endif %}
 </head>
 <body>
-        {% for xabar in xabarlar %}
+        {% for xabar in bloglar %}
             <h1>{{ xabar.sarlavha}}</h1>
         {% endfor %}
         <h1>Blog home</h1>
@@ -256,11 +256,11 @@ def about(request):
 Bu yerda `"ochiqai"` yozuvi `home.html` va `about.html`ga ketayapti.
 
 <p align="center">
-    <img src="./image/home_title.png" width="350">
+    <img src="./image/homePageSarlavhasi.png" width="350">
 </p>
 
 <p align="center">
-    <img src="./image/title_about.png" width="350">
+    <img src="./image/aboutPageSarlavhasi.png" width="350">
 </p>
 
 E'tibor bersangiz `title` qismimizning sarlavhasini o'zgartirdik.
@@ -300,7 +300,7 @@ Shu bilan asosiy htmlni yaratib oldik. Endi, boshqa fayllarni shu faylga solisht
 {% extends 'blog/base.html' %}
 
 {% block content %}
-    {% for xabar in xabarlar %}
+    {% for xabar in bloglar %}
         <h1>{{ xabar.sarlavha}}</h1>
     {% endfor %}
     <h1>Blog home</h1>
@@ -322,7 +322,7 @@ Shu bilan asosiy htmlni yaratib oldik. Endi, boshqa fayllarni shu faylga solisht
 Serverni qayta ishlatsangiz avvalgidek ishlayveradi.
 
 <p align="center">
-    <img src="./image/home_view.png" width="350">
+    <img src="./image/uzgarishsizHomePage.png" width="350">
 </p>
 
 <p align="center">
@@ -392,16 +392,16 @@ alohida `div`ga olib `class`ga `container` yuklaymiz va serverni ishlatib ko'ram
 ```
 
 <p align="center">
-    <img src="./image/home_bts.png" width="400">
+    <img src="./image/homeBootstrap.png" width="400">
 </p>
 
-Foydalanuvchiga `views.py`dagi `xabarlar ` qismidan `muallif`, `sarlavha` va `matn`  ma'lumotlarini taqdim qilish ko'ramiz. 
+Foydalanuvchiga `views.py`dagi `bloglar` qismidan `muallif`, `sarlavha` va `matn`  ma'lumotlarini taqdim qilish ko'ramiz. 
 Buning uchun `home.html`ga quyidagi o'zgartirishni kiritamiz holos.
 ```html
 {% extends 'blog/base.html' %}
 
 {% block content %}
-    {% for xabar in xabarlar %}
+    {% for xabar in bloglar %}
         <h1>{{ xabar.muallif}}</h1>
         <h2>{{ xabar.sarlavha}}</h2>
         <h2>{{ xabar.matn}}</h2>
@@ -500,9 +500,24 @@ Yuqorida `header` va `main` teglarida mavjud kodlarni qo'shdik va `container` di
 
 * `blog` appimiz ichidan `static` nomli papka yaratib olamiz. `static` papkadan esa `blog` nomli papka yaratib olamiz. Shu joydan `blog` appimizga tegishli `css` kodlarini barajaramiz. Va `main.css` nomli `css` faylini yaratib olamiz.
 
-<p align="center">
-    <img src="./image/main_css.png" width="600">
-</p>
+```
+django_project      
+│   manage.py
+└───blog
+    │   manage.py
+    └───static
+        │ 
+        └───blog
+            │ 
+            └───main.css
+    │   __init__.py
+    │   admin.py
+    │   apps.py
+    │   models.py
+    │   tests.py
+    │   views.py
+ 
+```
 
 `main.css`da quyidagi kodlarni `copy` qilib tashlaymiz.
 
@@ -686,7 +701,7 @@ Yuqorida biz `base.html`ga `{% load static %}` va `<link rel="stylesheet" type="
 * Serverimizni to'xtatib qayta ishlatib ko'rsak quyidagi oyna hosil bo'ladi.
 
 <p align="center">
-    <img src="./image/homePageWithCss.png" width="400">
+    <img src="./image/homeWithCss.png" width="400">
 </p>
 
 * Block contentlarimiz ajralib chiroyli ko'rinishi uchun `home.html`ga quyidagi o'zgartirishlarni qilib o'tamiz.
@@ -695,7 +710,7 @@ Yuqorida biz `base.html`ga `{% load static %}` va `<link rel="stylesheet" type="
 {% extends 'blog/base.html' %}
 
 {% block content %}
-    {% for xabar in xabarlar %}
+    {% for xabar in bloglar %}
         <article class="media content-section">
           <div class="media-body">
             <div class="article-metadata">
@@ -714,7 +729,7 @@ Yuqorida biz `base.html`ga `{% load static %}` va `<link rel="stylesheet" type="
 Serverimizni qaytadan yangilasak, quyidagi oyna hosil bo'ladi.
 
 <p align="center">
-    <img src="./image/homePageblogs.png" width="400">
+    <img src="./image/homePageBlogs.png" width="400">
 </p>
 
 ```html
@@ -759,6 +774,6 @@ So'ngi bajaradigan ishimiz `base.html` yuqorida `<-----` bilan ko'rsatilgan qato
 * Serverni yangilasak quyidagi oyna hosil bo'ladi.
 
 <p align="center">
-    <img src="./image/saytKurinishi.png" width="400">
+    <img src="./image/sungiKurinish.png" width="400">
 </p>
 
