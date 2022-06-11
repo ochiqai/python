@@ -1,0 +1,17 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    {% for xabar in bloglar %}
+        <article class="media content-section">
+          <div class="media-body">
+            <div class="article-metadata">
+              <a class="mr-2" href="#">{{ xabar.muallif }}</a>
+              <small class="text-muted">{{ xabar.sana }}</small>
+            </div>
+            <h2><a class="article-title" href="#">{{ xabar.sarlavha}}</a></h2>
+            <p class="article-content">{{ xabar.matn}}</p>
+          </div>
+        </article>
+    {% endfor %}
+    <h1>Blog home</h1>
+{% endblock content %}
