@@ -509,7 +509,7 @@ django_project
         │ 
         └───blog
             │ 
-            └───main.css
+            └───main.css <--- [ushbu fayl qo'shildi]
     │   __init__.py
     │   admin.py
     │   apps.py
@@ -704,74 +704,75 @@ Yuqorida biz `base.html`ga `{% load static %}` va `<link rel="stylesheet" type="
     <img src="./image/homeWithCss.png" width="400">
 </p>
 
-* Block contentlarimiz ajralib chiroyli ko'rinishi uchun `home.html`ga quyidagi o'zgartirishlarni qilib o'tamiz.
+* Blok kontentlarimiz ajralib chiroyli ko'rinishi uchun `home.html`ga 
+quyidagi o'zgartirishlarni qilib o'tamiz:
 
-```html
-{% extends 'blog/base.html' %}
+    ```html
+    {% extends 'blog/base.html' %}
+    
+    {% block content %}
+        {% for xabar in bloglar %}
+            <article class="media content-section">
+              <div class="media-body">
+                <div class="article-metadata">
+                  <a class="mr-2" href="#">{{ xabar.muallif }}</a>
+                  <small class="text-muted">{{ xabar.sana }}</small>
+                </div>
+                <h2><a class="article-title" href="#">{{ xabar.sarlavha}}</a></h2>
+                <p class="article-content">{{ xabar.matn}}</p>
+              </div>
+            </article>
+        {% endfor %}
+        <h1>Blog home</h1>
+    {% endblock content %}
+    ```
 
-{% block content %}
-    {% for xabar in bloglar %}
-        <article class="media content-section">
-          <div class="media-body">
-            <div class="article-metadata">
-              <a class="mr-2" href="#">{{ xabar.muallif }}</a>
-              <small class="text-muted">{{ xabar.sana }}</small>
-            </div>
-            <h2><a class="article-title" href="#">{{ xabar.sarlavha}}</a></h2>
-            <p class="article-content">{{ xabar.matn}}</p>
-          </div>
-        </article>
-    {% endfor %}
-    <h1>Blog home</h1>
-{% endblock content %}
-```
-
-Serverimizni qaytadan yangilasak, quyidagi oyna hosil bo'ladi.
+Serverimizni qaytadan yangilasak, quyidagi sahifani ko'ramiz:
 
 <p align="center">
     <img src="./image/homePageBlogs.png" width="400">
 </p>
 
 ```html
-            <div class="container">
-              <a class="navbar-brand mr-4" href="/">Django Blog</a>   <----- 
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarToggle">
-                <div class="navbar-nav mr-auto">
-                  <a class="nav-item nav-link" href="/">Home</a>  <-----
-                  <a class="nav-item nav-link" href="/about">About</a>   <-----
-                </div>
-                <!-- Navbar Right Side -->                <div class="navbar-nav">
-                  <a class="nav-item nav-link" href="#">Login</a>
-                  <a class="nav-item nav-link" href="#">Register</a>
-                </div>
-              </div>
+<div class="container">
+  <a class="navbar-brand mr-4" href="/">Django Blog</a>   <----- 
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarToggle">
+    <div class="navbar-nav mr-auto">
+      <a class="nav-item nav-link" href="/">Home</a>  <-----
+      <a class="nav-item nav-link" href="/about">About</a>   <-----
+    </div>
+    <!-- Navbar Right Side -->                <div class="navbar-nav">
+      <a class="nav-item nav-link" href="#">Login</a>
+      <a class="nav-item nav-link" href="#">Register</a>
+    </div>
+  </div>
 ```
 So'ngi bajaradigan ishimiz `base.html` yuqorida `<-----` bilan ko'rsatilgan qatorlarni quyidagicha o'zgartiramiz.
 
 ```html
-            <div class="container">
-              <a class="navbar-brand mr-4" href="{% url 'blog-home' %}">Django Blog</a>
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarToggle">
-                <div class="navbar-nav mr-auto">
-                  <a class="nav-item nav-link" href="{% url 'blog-home' %}">Home</a>
-                  <a class="nav-item nav-link" href="{% url 'blog-about' %}">About</a>
-                </div>
-                <!-- Navbar Right Side -->
-                <div class="navbar-nav">
-                  <a class="nav-item nav-link" href="#">Login</a>
-                  <a class="nav-item nav-link" href="#">Register</a>
-                </div>
-              </div>
-            </div>
+<div class="container">
+  <a class="navbar-brand mr-4" href="{% url 'blog-home' %}">Django Blog</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarToggle">
+    <div class="navbar-nav mr-auto">
+      <a class="nav-item nav-link" href="{% url 'blog-home' %}">Home</a>
+      <a class="nav-item nav-link" href="{% url 'blog-about' %}">About</a>
+    </div>
+    <!-- Navbar Right Side -->
+    <div class="navbar-nav">
+      <a class="nav-item nav-link" href="#">Login</a>
+      <a class="nav-item nav-link" href="#">Register</a>
+    </div>
+  </div>
+</div>
 ```
 
-* Serverni yangilasak quyidagi oyna hosil bo'ladi.
+* Serverni yangilasak quyidagini ko'ramiz: 
 
 <p align="center">
     <img src="./image/sungiKurinish.png" width="400">
