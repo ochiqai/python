@@ -1,5 +1,9 @@
 #### User Ragistration (Saytdan ro'yhatdan o'tish)
 
+* [Kirish.](#kirish)
+* [Email qismini qo'shish](#email-qismini-qo-shish)
+* [Bootstrap4 dan foydalanish](#bootstrap4-dan-foydalanish)
+
 #### Kirish.
 
 * Youtbe, Twitter va boshqa saytlarda ragistration (ro'yhatdan o'tish) bo'limiga duch kelganmiz, 
@@ -238,6 +242,8 @@ def register(request):
 <p align="center">
     <img src="./image/email_qushildi.png" width="450">
 </p>
+
+#### Bootstrap4 dan foydalanish
 
 * Registration `form` ni chiroyliroq ko'rinishi uchun djangoda mavjud `crispy-forms`dan foydalanamiz.
 `django-crispy-forms`ni o'rnatib olamiz `pip install django-crispy-forms`.
