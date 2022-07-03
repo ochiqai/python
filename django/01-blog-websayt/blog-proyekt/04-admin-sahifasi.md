@@ -36,7 +36,7 @@ olishimiz kerak. Quyidagi etaplarni bajaramiz:
  * `terminal`da quyidagilar paydo bo'ladi
 
     <p align="center" width="450">
-        <img src="./image/img_1.png">
+        <img src="./image/img_superuser.png">
     </p>
 
  * `Terminal`ning so'ngi qismiga e'tibor beradigan bo'lsak, quyidagilar paydo bo'ladi: 
