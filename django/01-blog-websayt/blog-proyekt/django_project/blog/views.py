@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from .models import Xabar
 
 bloglar = [
     {
@@ -33,7 +34,7 @@ bloglar = [
 
 def home(request):
     kontekst = {
-        "bloglar": bloglar
+        "bloglar": Xabar.objects.all()
     }
     return render(request, "blog/home.html", kontekst)
 
