@@ -6,7 +6,8 @@
  * [Tayanch tushunchalar](#tayanch tushunchalar)
 
 ### Terminal tushunchasi
-* Terminal bu - `yozuv` ko'rinishdagi `interface` bo'lib, unda kompyuterni boshqarishga imkon yaratadi. Bu kabi terminallardan eng mashhurlari 'Linux terminal', 'Apple'dagi `Bash and Z shell` va 'Windows' opiratsion tizimida esa `PowerShell interface` dan foydalanib kelinmoqda. Biz darsmiz davomida terminal buyruqlarini `PyCharm` dasturidagi terminaldan foydalanamiz.
+Terminal bu - `yozuv` ko'rinishdagi `interface` bo'lib, unda kompyuterni boshqarishga imkon yaratadi. 
+Bu kabi terminallardan eng mashhurlari 'Linux terminal', 'Apple'dagi `Bash and Z shell` va 'Windows' operatsion tizimida esa `PowerShell interface` dan foydalanib kelinmoqda. Biz darsmiz davomida terminal buyruqlarini `PyCharm` dasturidagi terminaldan foydalanamiz.
 
 ### Terminalni ishga tushurish
 * Terminalni ishga tushurushda biz avvalo kompyuter qaysi operatsion sistemada ekanligi e'tibor qaratib olmamiz. Agar `Windows` bo'lsa, `pusk` tugmasi orqali `Windows PowerShell`qidirib topib olamiz va ishga tushuramiz.
