@@ -1,2 +1,1 @@
-Lokalniy hosil qilingan yangi branchni Githubga joylash:
-- 
+Mahalliy hosil qilingan yangi branchni Githubga joylash:
