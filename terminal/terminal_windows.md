@@ -192,7 +192,7 @@ Mode                LastWriteTime         Length Name
 <li>diff - fayllarni farqini ko'rsatadi</li>
 <li>mv - fayl nomini o'zgartirish uchun</li>
 <li>cat - fayl ichki qismi ko'rsatish uchun</li>
-<li>cp [cp eski_fayl - yangi_fayl] - fayllarni nusxa ko'chirish uchun</li>
+<li>cp [cp eski_fayl  yangi_fayl] - fayllarni nusxa ko'chirish uchun</li>
 </ul>
 
 
