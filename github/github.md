@@ -1,4 +1,4 @@
-## GitHub darslari
+## Gitga darslari
 <p align="center">
     <img src=".\GitHub_images\GitHub.png">
 </p>
