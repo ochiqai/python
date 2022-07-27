@@ -83,7 +83,7 @@ birinchi manzilga `remote:      https://github.com/ochiqai/python/pull/new/Pr` b
 Borgan manzilimizda bu ko'rinishdagi oyna hosil bo'ladi.
 
 <p>
-    <img src=".\images\Pr.png">
+    <img src="./images/PR_testing.png">
 </p>
 
 Yuqorida oynada biz branch bog'lash uchun, komment qoldirishimz va reviewers taggida qaysi userlar bu fayl ko'rish ekanligi belgilaymiz.
