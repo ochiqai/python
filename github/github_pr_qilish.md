@@ -113,7 +113,7 @@ Shunda so'ng biz, `Start a review` bosamiz, kommentlarni ko'rish uchun esa ortga
     <img src="./images/Pr_4.png">
 </p>
 
->>> We have finished
+>>> Biz tugatdik
 
 ### Tayanch tushunchalar
 
