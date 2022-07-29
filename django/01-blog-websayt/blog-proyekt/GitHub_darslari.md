@@ -48,8 +48,8 @@ git add
 git commit -m " "
 git push 
 ```
+olib tashlandi.
 
->>>keep going!!!🔥
 
 * Hop, dastlab biz githubdan ro'yxatdan o'tib olishimiz kerak. Chunki hali bizni Git tanimaydi😂.
 Shuning uchun ham biz terminalga o'tib `git init`ni kiritib olamiz. `git` buyrug'idan keyin har doim
@@ -73,7 +73,7 @@ PS D:\ochiqai\python\django\01-blog-websayt\blog-proyekt\GitHub_darslari> git br
   03templates
   django_admin
   main
-* terminal             `*` bu belgi - qaysi branchda ekanligimizni ko'rsatadi.
+* terminal 
 ```
 
 * Agar yangi branch hosil qilishni istasak `git checkout -b [name]` kiritib olamiz.
@@ -105,7 +105,7 @@ remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
 To https://github.com/ochiqai/python.git
    7f7c250..abcdac3  terminal -> terminal
 ```
-
+consuleda yozuvlar olib tashlandi
 * `my_project` fayli GitHubga o'rnatildi.
 
 <p align="center">
