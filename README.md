@@ -18,6 +18,15 @@
 * Hozircha eng muhim bo'lgan 10 kunlik darsni yozib chiqdik. 
 
 
+## Terminal
+  1. [Terminalga kirish WINDOWS](https://github.com/ochiqai/python/blob/main/terminal/terminal_windows.md)
+
+
+## Git/Github
+  1. [Gitga kirish](yozilayapti)
+  2. [Githubga joylash](yozilayapti)
+  3. [PR ochish](https://github.com/ochiqai/python/blob/main/github/github_pr_qilish.md)
+  4. [PR dan keyingi ishlar](PRda)
 
 ## Python 
 
@@ -49,6 +58,7 @@
   16. [SQL](https://github.com/ochiqai/python/blob/main/python/16-kun-SQL/16-kun-sql.md)
 
 #### Takrorlash: [1-10 kunlar](https://github.com/ochiqai/python/blob/shpargalka/biblateka/python_shpagralka.pdf)
+
 
 ## Django
    1. [Django: ishga tushirish](http)
