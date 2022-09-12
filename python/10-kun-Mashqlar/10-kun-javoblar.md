@@ -11,14 +11,50 @@
    4. 4.0
    5. 3.0
    6. 2017
+   
+   <details><summary>Javob</summary>
+   
+   ```python
+   print(type(100))
+   ```
+   </details>
 
 2. Konsolga `"Salom Python"` deb chiqaring.
 
+   <details><summary>Javob</summary>
+   
+   ```python
+   print("Salom Python")
+   ```
+   </details>
+
 3. Konsolga `"Salom 'Python'"` deb chiqaring.
 
-4. Konsolga `"Salom *Python*"` deb chiqaring.
+   <details><summary>Javob</summary>
+   
+   ```python
+   print("Salom 'Python'")
+   ```
+   </details>
+
+4. Konsolga `"Salom *Python*"` deb chiqaring. 
+
+   <details><summary>Javob</summary>
+   
+   ```python
+   print("Salom *Python*")
+   ```
+   </details>
 
 5. O'zgaruvchidan foydalanib `"Salom Python"` ni konsolga chiqaring.
+
+   <details><summary>Javob</summary>
+   
+   ```python
+   xabar = "Salom Python"
+   print(xabar)
+   ```
+   </details>
 
 6. Define two variables `a = 11` and `b = 599`. Quyidagilarni hsioblab konsolga chiqaring:
 
@@ -39,15 +75,51 @@
 
 8. Programma tuzing. U foydalanuvchidan ismni kiritishni so'rasin. Keyin, kiritilganni konsolga chiqarsin.
 
+   <details><summary>Javob</summary>
+   
+   ```python
+   ism = input("ismingizni kiriting: ")
+   print(ism)
+   ```
+   </details>
+   
 9. Berilgan ushbu stringda `a = "salomlar"`, quyidagi amallarni bajaring:
     
-    1. Harflarni katta harfga o'tkazing
-    2. Harflarni kichik hargga o'tkazing
-    3. `'l'` harfi necha marta takrorlanayotganini aniqlang
-    4. `'a'` harfichi?
-    5. `'m'` harfi indeksini toping 
+       1. Harflarni katta harfga o'tkazing
+       2. Harflarni kichik hargga o'tkazing
+       3. `'l'` harfi necha marta takrorlanayotganini aniqlang
+       4. `'a'` harfichi?
+       5. `'m'` harfi indeksini toping 
 
-    Quyidagi tayyor funksiyalardan foydalaning. `upper(), lower(), count(), and find()` 
+       Quyidagi tayyor funksiyalardan foydalaning. `upper(), lower(), count(), and find()` 
+      
+      <details><summary>Javob</summary>
+      
+      ```python
+      a = "salomlar"
+      
+      # 1. Harflarni katta harfga o'tkazish.
+      print(a.upper())
+
+      # 2. Harflarni kichik hargga o'tkazish.
+      print(a.lower())
+
+      # 3. 'l' harfi necha marta takrorlanayotganini aniqlash.
+      print(a.count('l'))
+
+      # 4. 'l' harfi necha marta takrorlanayotganini aniqlash.
+      # for orqali aniqlash.
+      t = 0
+      for i in a:
+          if i == 'a':
+              t += 1
+      print(t)
+      
+      # 5. 'm' harfni indeksini topish.
+      print(a.find('m'))
+      ```
+      </details>
+
 
 10. Programma tuzing. U foydalanuvchi ismi va qaysi mamlakatdan ekanligini so'rasin. Keyin konsolga quyidagini chiqarsin
 
@@ -93,7 +165,25 @@
 
     Yani, kiritilgan ism va familyani hamda ularning birinchi harflarini olingda to'rtburchak qavsga olib chiqaring - 1 qatorda chiqsin.
 
+       <details><summary>Javob</summary>
+       
+       ```python
+       ism = input("Ismingizni kiriting: ")
+       familya = input("familyangizni kiriting: ")
+       print(f"{ism.title()} {familya.title()} [{ism[0].title()}{familya[0].title()}]")
+       ```
+       </details>
+
 14. `oyatvasuralar` stringidan `oyat` va `sura` ni ajratib konsolga chiqaring.
+
+       <details><summary>Javob</summary>
+       
+       ```python
+       suz = 'oyatvasuralar'
+       print(suz[0:4])
+       print(suz[6:10])
+       ```
+       </details>
 
 15. Quyidagi amallarni hisoblang va konsolga chiqaring.
 
@@ -183,15 +273,71 @@
     - `not (son1 != son6)`
 
 21. Programma yozing. U foydalanuvchidan son kiritishni so'rasin. Agar, son musbat (noldan katta) bo'lsa `"musbat"` deb konsolga chiqarsin. Agar, manfiy (noldan kichik) bo'lsa `"manfiy"` deb chiqarsin. Agar ikkalasi ham bo'lmasa, `0` chiqarsin.
-     
+    
+       <details><summary>Javob</summary>
+       
+       ```python
+       son = int(input("son kiriting: "))
+       if son > 0:
+           print("musbat")
+       elif son < 0:
+           print("manfiy")
+       else:
+       print(0)
+       ```
+       </details>
+
+
 22. Programma tuzig. U foydalanuvchidan harflarni kiritishni so'rasin. Agar harf unli bo'lsa, `"bu harf unli"` deb, aks holda `"bu undosh harf"` deb chiqarsin. Eslatma. Unli harflar: `a, i, u, o  e`.
      
+       <details><summary>Javob</summary>
+       
+       ```python
+       harf = input("harf kiriting: ")
+       unli_harflar = ['a', 'i', 'u', 'o', 'e']
+       if harf in unli_harflar:
+           print("bu harf unli")
+       else:
+           print("bu undosh harf")
+       ```
+       </details>
+
 23. Programma tuzing. U foydalanuvchidan sonlarni kiritishni so'rasin. Agar juft bo'lsa `"JUFT"`, aks holda `"TOQ"` deb chiqarsin. Eslatma. Son 2 ga bo'linsa, demak u juft son.
-     
+    
+       <details><summary>Javob</summary>
+       
+       ```python
+       son = int(input("son kiriting: "))
+       if son % 2 == 0:
+           print("JUFT")
+       else:
+           print("TOQ")
+       ```
+       </details>
+ 
 24. Programma tuzing. U foydalanuvchidan yoshini so'rasin. Agar yoshi 15 dan katta bo'lsa, `Siz topshirishingiz mumkin`, aks holda `Mumkin emas` deb konsolga chiqarsin.
-     
+   
+       <details><summary>Javob</summary>
+       
+       ```python
+       yosh = int(input("Yoshingiz nechida: "))
+       if yosh > 15:
+           print("Siz topshirishingiz mumkin")
+       else:
+           print("Mumkin emas")
+       ```
+       </details>
+  
 25. Shunday list yarating, unda siz yoqtirgan 3 ta mamlakat yoki kitob yoki ism yoki sonlar bo'lsin. Va u listni `print()` orqali konsolga chiqaring.
      
+       <details><summary>Javob</summary>
+       
+       ```python
+       davlatlar = ["UZBEKISTAN", "RUSSIA", "USA"]
+       print(davlatlar)
+       ```
+       </details>
+
 26. Quyidagi berilgan
 	```python
 	viloyatlar = ['Samarqand', 'Toshkent', 'Surxondaryo', 'Qashqadaryo']
@@ -201,10 +347,42 @@
 	- har bir elementni chiqaring.
 	- faqat boshidagi 3 elementni chiqaring.
 	- oxirgi elementni chiqaring.
-	- Birinchi elementni `"Andijon"` ga o'zgartiring.
+- Birinchi elementni `"Andijon"` ga o'zgartiring.
+       
+  <details><summary>Javob</summary>
+       
+   ```python
+   viloyatlar = ['Samarqand', 'Toshkent', 'Surxondaryo', 'Qashqadaryo']
+       
+   # har bir elementni chiqaring.
+   for i in viloyatlar:
+       print(i)
+   # faqat boshidagi 3 elementni chiqaring.
+   for i in range(3):
+       print(viloyatlar[i])
+   # oxirgi elementni chiqaring.
+   print(viloyatlar[-1])
+   # Birinchi elementni `"Andijon"` ga o'zgartiring.
+   viloyatlar[0] = 'Andijon'
+   print(viloyatlar)
+   ```
+   </details>
+
 
 27. 26-mashqda listni biz birdaniga yaratdik, to'rtburchak `[]` va `,` lardan foydalanib. Endi listni `append` funksiyasi orqali qiling. Keyin, listni hamma elementlarini konsolga chiqaring.
      
+       <details><summary>Javob</summary>
+       
+       ```python
+       viloyatlar = []
+       viloyatlar.append("Toshkent")
+       viloyatlar.append("Surxondaryo")
+       viloyatlar.append("Samarqand")
+       print(viloyatlar)
+       ```
+       </details>
+
+
 28. Quyidagi list berilgan
 
     ```python
@@ -217,6 +395,17 @@
     [1, 2, 3, 4, 5, 6, 7, 8, 9]
     ```
 
+       <details><summary>Javob</summary>
+       
+       ```python
+       sonlar = [1, 2, 3,  4, 5]
+
+       for i in range(6,10):
+           sonlar.append(i)
+       print(sonlar)
+       ```
+       </details>
+
 29. Quyidagi list berilgan:
 
     ```python
@@ -225,8 +414,32 @@
     
     Programma qiling. U foydalanuvchidan son kiritishni so'rasin. Agar kiritlgan son listda mavjud bo'lsa, `"bor"` deb chiqsin, aks holda "`yo'q`" deb chiqsin.
 
+       <details><summary>Javob</summary>
+       
+       ```python
+       sonlar = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+       a = int(input('sonni kiriting = '))
+       
+       if a in sonlar:
+           print('bor')
+       else:
+           print('yoq')
+       ```
+       </details>
+
 30. `while` takrorlash operatoridan foydalanib, konsolga `salom python` deb 50 marta chiqaring.
-     
+    
+       <details><summary>Javob</summary>
+       
+       ```python
+       t = 0
+       while t < 50:
+           print('salom python ')
+       t += 1
+       ```
+       </details>
+ 
 31. Quyidagi list berilgan,
 
     ```python
@@ -235,12 +448,61 @@
     
     `for` takrorlash operatori orqali list elementlarini konsolga chiqaring. 
 
+       <details><summary>Javob</summary>
+       
+       ```python
+       sonlar = [2, 4, 6, 7, 10, 11]
+       for i in sonlar:
+           print(i)
+       ```
+       </details>
+
 32. `while` takrorlovchi operatori orqali, shunday list hosil qilingki unda `1` dan `199` gacha bo'lgan sonlar bo'lsin. Eslatma, `append()` dan foydalanishingiz mumkin.
-     
+    
+       <details><summary>Javob</summary>
+       
+       ```python
+       sonlar = []
+       t = 1
+       while t < 200:
+           sonlar.append(t)
+           t += 1
+       print(sonlar)
+       ```
+       </details>
+ 
 33. Programma qiling, foydalanuvchidan 5 ta yoqtirgan sonni so'rasin. Ularni `son` degan listga yuklab boring. `while` da foydalaning. 
-     
+   
+       <details><summary>Javob</summary>
+       
+       ```python
+       son = []
+       t = 1
+       while t < 6:
+           print(t, '-', end=' ')
+           a = int(input('sonni kiriting = '))
+           son.append(a)
+           t += 1
+
+       print(son)
+       ```
+       </details>
+  
 34. Shunday programma qilingki, unda list elementlari 1 dan 20 gacha bo'lgan sonlarning kvadrati bo'lsin. Mn, `[1, 4, 9, 16, 25, ...]`.
-     
+   
+       <details><summary>Javob</summary>
+       
+       ```python
+       a = []
+       t = 1
+       
+       while t < 21:
+           a.append(t ** 2)
+           t += 1
+       print(a)
+       ```
+       </details>
+  
 35.  Quyidagi list berilgan,
 
 
@@ -248,7 +510,24 @@
 sonlar = [.2, .4, .6, .7, .10, .11]
 ```
 
-    List har bir elementini 100 ga ko'paytiring va konsolga chiqaring.     
+List har bir elementini 100 ga ko'paytiring va konsolga chiqaring.     
+
+
+
+   <details><summary>Javob</summary>
+
+   ```python
+   sonlar = [.2, .4, .6, .7, .10, .11]
+   yangi_sonlar = []
+   i = 0
+   while i < len(sonlar):
+       son = sonlar[i] * 100
+       yangi_sonlar.append(son)
+       i = i + 1
+
+   print(yangi_sonlar)
+   ```
+   </details>
 
 36.  Quyidagi list berilgan,
 
@@ -260,39 +539,268 @@ sonlar = [.2, .4, .6, .7, .10, .11]
 elementlar yuqoridagi list elemenlarini 100 ga ko'paytirishdan hosil qilinsin,
 Yani, `yangi_sonlar = [20, 40, 60, 70, 10, 110]`
 
+   <details><summary>Javob</summary>
+
+   ```python
+   sonlar = [.2, .4, .6, .7, .10, .11]
+   yangi_sonlar = []
+   i = 0
+   while i < len(sonlar):
+       son = int(sonlar[i] * 100)
+       yangi_sonlar.append(son)
+       i = i + 1
+
+   print(yangi_sonlar)
+   ```
+   </details>
+
 37. `salom_python()` nomli funksiya yarating. Chaqirilganda, konsolga `Salom Python` xabari chiqsin.
      
+       <details><summary>Javob</summary>
+    
+       ```python
+       def salom_python():
+           print('Salom Python?')
+       salom_python()
+       ```
+       </details>
+
+
 38. `foydalanuchikiritgan(x)` nomli funksiya yarating. Foydalanuvchi kiritganini olib, konsolga `Siz x ni kiritdingiz` deb chiqsin. 
+
+       <details><summary>Javob</summary>
+    
+       ```python
+       def foydalanuvchi_kiritgan(x):
+           print("Siz", x,"ni kiritingiz")
+       foydalanuvchi_kiritgan(input('Son kiriting = '))
+       ```
+       </details>
+
 
 39. Quyidagi `yigindi(a, b, c, d)` nomli funksiya yarating. Va u argumentlar yig'indisini qaytarsin. Mn: `yigindi(1, 0, 2, 10)` deb chaqirilganda 13 ni qaytarsin.
 
+       <details><summary>Javob</summary>
+    
+       ```python
+       def yigindi(a, b, c, d):
+           print(a + b + c + d)
+    
+       yigindi(1, 0, 2, 10)
+       ```
+       </details>
+
+
 40. `yoshhisobi(yil)` nomli funksiya yarating. Va u `yil` parametri tug'ilgan yilni olsinda, yoshni qaytarsin. Mn: `1989` uchun `Siz 32 yoshdasiz` deb chiqarsin.  
+
+       <details><summary>Javob</summary>
+    
+       ```python
+       def yosh_hisobi(yil):
+       yoshi = 2022 - yil
+       return yoshi
+
+       x = yosh_hisobi(int(input('tug`ulgan yilingizni kiriting = ')))
+       print('siz', x, 'yoshdasiz')
+       ```
+       </details>
+
 
 41. Sonlardan iborat list berilgan. Undan eng katta sonni qaytaring. Mn `a = [1, 30, 2]` uchun 30 qaytarsin.
      
+       <details><summary>Javob</summary>
+    
+       ```python
+       a = [1, 30, 2]
+       print(max(a))
+       ```
+       </details>
+
+
 42. Sonlardan iborat list berilgan. Undan eng kichik sonni qaytaring. Mn `a = [1, 30, 2]` uchun 1 qaytarsin.
+
+       <details><summary>Javob</summary>
+    
+       ```python
+       a = [5, 7, 9, 10]
+       print(min(a))
+       ```
+       </details>
+  
 
 43. `ikki_max` nomli funksiya tuzing. Argument sifatida ikkita sonni olsin va ulardan kattasini qaytarsin. `if-else` dan foydalaning. (Bilamizki, Pythonda `max` degan funksiya mavjud, lekin undan foydalanmang).
 
+       <details><summary>Javob</summary>
+    
+       ```python
+       def ikki_max(a, b):
+       if a > b:
+           print(a)
+       else:
+           print(b)
+
+       x = ikki_max(4, 10)
+       ```
+       </details>
+
+
 44. `uch_max` nomli funksiya yarating. Uchta argument olsin va eng kattasini qaytarsin.
+
+       <details><summary>Javob</summary>
+    
+       ```python
+       def uch_max(a, b, c):
+           print(max(a, b, c))
+
+       uch_max(10, 20, 30)
+       ```
+       </details>
+
 
 45. `uzunlik` nomli funksiya yarating. Argument sifatida `list` yoki `string` turiga tegishli o'zgaruvchi qabul qilib uning uzunligini qaytarsin. (Bilamizki, Pythonda `len` degan funksiya mavjud, lekin undan foydalanmang).
 
+       <details><summary>Javob</summary>
+    
+       ```python
+       def uzunlik(x):
+           t = 0
+           for i in x:
+               t += 1
+           print(t)
+
+       x = uzunlik(str(input()))
+       ```
+       </details>
+
+
 46. `unlimi` nomli funksiya yarating. Funksiya argumenti sifatida stringda bo'lgan bitta harf olsin mn., 'a', 'b'. Agar argument unli bo'lsa, funksiya `True` aks holda `False` qaytarsin. 
+
+       <details><summary>Javob</summary>
+    
+       ```python
+       def unlimi(a):
+           if a == 'a' or a == 'A' or a == 'i' or a == 'I' or a == 'o' or a == 'O' or a == 'E' or a == 'e' or a == 'U' or a == 'u':
+               print('True')
+           else:
+               print('False')
+       x = unlimi(input('harfni kiriting = '))
+       ```
+       </details>
+
 
 47. `tarjima` degan funksiya yarating. `book` deb argumentga berilganda `kitob` deb qaytarsin.
 
+       <details><summary>Javob</summary>
+    
+       ```python
+       
+       ```
+       </details>
+
+
 48. `yigindi` nomli funksiya yarating va u berilgan `list` yig'indisini topsin. Mn, `yigindi([1, 2, 4])` desak `7` qaytarish kerak. Shunga o'xshash, `kupaytma` degan funksiya ham yarating, va u verilgan list elementlarini bir-biriga ko'paytirsin. Mn, `kupaytma([1, 2, 3])`  `6` qaytarsin.  
+
+       <details><summary>Javob</summary>
+    
+       ```python
+       def yigindi(a):
+           t = 0
+           for i in a:
+               t += i
+           print(t)
+       
+       x = yigindi(list(map(int, input().split())))
+       
+       def kopaytma(a):
+           t = 1
+           for i in a:
+               t *= i
+           print(t)
+
+       y = kopaytma(list(map(int, input().split())))
+       ```
+       </details>
+
 
 49. `teskarisi` nomli funksiya yarating. Argument sifatida string olsin, va uni teskarisini chiqarsin. Mn, `teskarisi('salom')` desak `molas` deb qaytarsin.
 
+       <details><summary>Javob</summary>
+    
+       ```python
+       def teskari(x):
+           return x[::-1]
+       
+       print(teskari("salom"))
+       ```
+       </details>
+
+
 50. `palindrommi` nomli funksiya yarating. Palindrom deb o'ngga ham chapga ham bir xil o'qiladigan so'zlarga aytiladi; mn., katak, non. Funksiya argument sifatida  string olsin va uni palindrom ekanligini aniqlasin. Agar palindrom bo'lsa `True`, aks holda `False` qaytarsin.
+
+       <details><summary>Javob</summary>
+    
+       ```python
+       def palindrommi(x):
+           if x == x[::-1]:
+               print(True)
+           else:
+               print(False)
+    
+       palindrommi("katak")
+       ```
+       </details>
+
 
 51. `azomi` nomli funksiya yarating. Bunda funksiya 2 ta argument qabul qilsin: biri list va ikkinchisi qiymat bo'lsin. Funksiya berilga qiymat listda bor yo'qligi aniqlansin. Agar bo'lsa `True` aks holda `False` qaytarsin. (Bilamizki mana xuddi shu maqsadda `in` operatori mavjud, lekin undan foydalanmang).
 
+       <details><summary>Javob</summary>
+    
+       ```python
+       def azomi(l, x):
+           i = 0
+           while i < len(l):
+               if x == l[i]:
+                   return True
+                   break
+               i = i + 1
+           return False
+
+
+       print(azomi(['Ali', 'Bobur', 'Ibrohim'], 'Alisher'))
+       ```
+       </details>
+
+
 52. `bir_xil` nomli funksiya yarating. Argument sifatida 2 ta list olsin. Va ular ustida shunday amal bajarsinki, agar kamida 1 ta element ikkala listda ham bo'lsa funksiya `True` aks holda `False` qaytarsin. Bunda yuqorida `azomi` funksiyasidan foydalansangiz ham bo'ladi. Mn, `bir_xil([1,2,3], [10, 777, 1])` deb ishlatsak `True` qaytarsin.
 
+       <details><summary>Javob</summary>
+    
+       ```python
+       def bir_xil(list1, list2):
+           i = 0
+           while i < len(list1):
+               if list1[i] in list2:
+                   return True
+                   break
+               i = i + 1
+           return False
+       print(bir_xil([1,2,3], [10, 777, 1]))
+       ```
+       </details>
+
+
 53. `n_takror_harf` nomli funksiya yarating. Argument sifatida butun son `n`, va string `harf` parametrlari bo'lsin. `n_takror_harf(5, 'a')` deb chaqirsak, `aaaaa` deb string qaytarsin. 
+
+       <details><summary>Javob</summary>
+    
+       ```python
+       def n_takror_harf(a, b):
+           print(a * b)
+
+       n_takror_harf(5, 'a')
+       ```
+       </details>
+
 
 54. `histogram` degan funksiya yarating. U argument sifatida list olsin, va histogramni konsolga chiqarsin. Mn, histogram( [1, 3, 5, 2] ) uchun quyidagini chiqarsin:
 
@@ -303,15 +811,109 @@ Yani, `yangi_sonlar = [20, 40, 60, 70, 10, 110]`
     **
     ```
 
+       <details><summary>Javob</summary>
+    
+       ```python
+       def histogram(l_list):
+           i = 0
+           while i < len(l_list):
+               print('*' * l_list[i])
+               i = i + 1
+
+       histogram([1, 3, 5, 2])
+       ```
+       </details>
+
+
 55. Yuqorida, `ikki_max` va `uch_max` funksiyalari faqat 2 va 3 ta son uchun ishlaydi. Lekin tasavvur qiling bizda 100-1000 lab sonlar bor. Unda kattasini qanday qidiramiz (topamiz). `max_list` degan funksiya yarating, va u argumentga list olsinda, litsda elementlardan eng kattasini qaytarsin. Mn, `max_list( [1,20, 45, 90, 32, 100] )` desak 100 qaytarsin.
+
+       <details><summary>Javob</summary>
+    
+       ```python
+       def max_list(l_list):
+           print(max(l_list))
+
+       max_list([1,20, 45, 90, 32, 100])
+       ```
+       </details>
+
 
 56. `listdan_songa(list_suzlar)` nomli funksiya yarating. Va u har bir sonning uzunligini list qilib qaytarsin. Mn, `list_suzlar = ['salom', 'yaxshi', 'bir']` desak, `[5, 6, 3]` ni qaytarsin.
 
+       <details><summary>Javob</summary>
+    
+       ```python
+       def listdan_songa(list_suzlar):
+           sonli_list = []
+           i = 0
+           while i < len(list_suzlar):
+               sonli_list.append(len(list_suzlar[i]))
+               i = i + 1
+           return sonli_list
+       
+       print(listdan_songa( ['salom', 'yaxshi', 'bir']))
+       ```
+       </details>
+
+
 57. `eng_uzun_suz` nomli funksiya yarating. Bunda funksiya argumentiga list olsin va eng uzun so'z uzunligini qaytarsin. Mn, `list_suzlar = ['salom', 'yaxshi', 'bir']` desak, `6` ni qaytarsin.
+
+       <details><summary>Javob</summary>
+    
+       ```python
+       def listdan_songa(list_suzlar):
+           sonli_list = []
+           i = 0
+           while i < len(list_suzlar):
+               sonli_list.append(len(list_suzlar[i]))
+               i = i + 1
+           return max(sonli_list)
+
+       print(listdan_songa( ['salom', 'yaxshi', 'bir']))
+       ```
+       </details>
+
 
 58. `filter_uzun_suzlar` nomli funksiya yarating. Ikkita argument qabul qilsin. 1-si bir necha so'zlardan tashkil topgan list. 2-si butun son `n`. Funksiya uzunlig `n`dan katta bo'lgan so'zlar listini qayatarsin. Mn, `list_suzlar = ['salom', 'yaxshi', 'bir']` `filter_uzun_suzlar(list_suzlar, 3)` desak `['salom', 'yaxshi']` ni qaytarsin.
 
+       <details><summary>Javob</summary>
+    
+       ```python
+       def filter_uzun_suzlar(l,n):
+           filter_list = []
+           i = 0
+           while i < len(l):
+               if len(l[i]) > n:
+               filter_list.append(l[i])
+               i = i + 1
+           return filter_list
+       list_suzlar = ['salom', 'yaxshi', 'bir']
+ 
+       print(filter_uzun_suzlar(list_suzlar,3))
+       ```
+       </details>
+
+
 59. `panagrammi` nomli funksiya yarating. Argumentga string olsin va agar berilgan string panagram bo'lsa `True`, aks holda `False` qaytarsin. Eslatma: panagram degani berilgan gapda hamma harflar ishtirok etgan bo'ladi. 
+
+       <details><summary>Javob</summary>
+    
+       ```python
+       harflar = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+       katta_harflar = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+       def panagrammi(suz):
+           indeks = 0
+           while indeks < len(harflar):
+               if (harflar[indeks] in suz or katta_harflar[indeks] in suz) == False:
+                   return False
+               indeks = indeks + 1
+           return True
+
+       javob = panagrammi("abcdefghijklmn opqrsTuvwxyz")
+       print(javob)
+       ```
+       </details>
+
 
 60. Ekranga quyidagini chiqaring. 
     ```python
@@ -324,6 +926,16 @@ Yani, `yangi_sonlar = [20, 40, 60, 70, 10, 110]`
     7 ta quy
     ```
 
+       <details><summary>Javob</summary>
+    
+       ```python
+       i = 1
+       while i < 8:
+           print(i, 'ta quy')
+           i = i + 1
+       ```
+       </details>
+
 61. Quyidagi dictionary ni olingda 
     ```python
     {
@@ -334,7 +946,28 @@ Yani, `yangi_sonlar = [20, 40, 60, 70, 10, 110]`
     ```
     `uz_ingliz` nomli funksiya yarating. Va argumentga `Bu kitob qimmat` ni olsinda o'zbekcha tarjimasini qaytarsin.
 
+       <details><summary>Javob</summary>
+    
+       ```python
+
+       ```
+       </details>
+
+
 62. `harf_soni` nomli funksiya yarating. Berilgan stringdan harflarni necha martadan ishtirok etganini qaytarsin. dictionarydan foydalaning.  Mn, `harf_soni("aaaabbbc")` ni ishlatsak, `{'a': 4, 'b': 3, 'c': 1}` ni qaytarsin.
+
+       <details><summary>Javob</summary>
+    
+       ```python
+       from collections import Counter
+       
+       def harf_soni(x):
+           print(Counter(x))
+
+       harf_soni("aaaabbbc")
+       ```
+       </details>
+
 
 63. Kriptografiyada, Sezr sifri degan oddiy enkriptsiya usuli mavjud. Bunda, berilgan harf boshqa harf bilan almashtiriladi. Boshqa harf o'zidan keyingi 1 yoki ixtiyoriy harfdan keyin kelguvchi harf bilan almashtirilishi mumkin. Mn, `ada` so'zi `beb` sifrlanishi mumkin. Qadimda Sezr ushbu sifrlashni o'zining generallari bilan mahfiy muloqot qilish uchun ishlatgan. Vazifa shundan iboratki, quyidagi dictionary berilgan, bunda har bir harf keying 13 harfdan keyin kelguvchi harf bilan almashtirilishi ko'rsatilayapti. 
 
@@ -347,7 +980,17 @@ Yani, `yangi_sonlar = [20, 40, 60, 70, 10, 110]`
 
   2 ta funksiya yarating. Birini `enkoder` deb atang, bunda u quyidagi so'zni sifrlasin: `men ertaga qaytaman`. 2-sini esa `dekoder` deb atang, sifrlagan so'zingizni yana o'z holiga qaytarsin.
 
+
+   <details><summary>Javob</summary>
+
+   ```python
+
+   ```
+   </details>
+
+
 64. `>, <, >=, <=` belgilarni int va stringlarni taqqoslash uchun ishlating. Nima bo'ldi?
+
 
 65. Quyidagi arifmetik progressiyani  `while` orqali hosil qiling, 
 
@@ -355,17 +998,45 @@ Yani, `yangi_sonlar = [20, 40, 60, 70, 10, 110]`
     -2, 1, 4, 7, 10, 13
     ```
 
+       <details><summary>Javob</summary>
+    
+       ```python
+       i = -2
+       while i<=13:
+           print(i, end=' ')
+           i = i + 3
+       ```
+       </details>
+
+
 66. Quyifagi arifmetik progressiyani  `for` orqali hosil qiling, 
 
     ```python
     -2, 1, 4, 7, 10, 13
     ```
     
+       <details><summary>Javob</summary>
+    
+       ```python
+       for i in range(-2, 14, 3):
+           print(i, end=' ') 
+       ```
+       </details>
+
+
 67. Quyidagi arifmetik progressiyani  `range` orqali hosil qiling, 
 
     ```python
     -2, 1, 4, 7, 10, 13
     ```
+
+       <details><summary>Javob</summary>
+    
+       ```python
+       print(list(range(-2, 14, 3)))
+       ```
+       </details>
+
 
 68. Quyidagi kodda nima sintaks xato? Ishlatmay topishga harakat qiling.
 
@@ -382,6 +1053,8 @@ Yani, `yangi_sonlar = [20, 40, 60, 70, 10, 110]`
     # snippet 3:
     greeting = “hi”
     ```
+
+
 
 69.  `son` nomli funksiya yarating. `int`, `float` va `str` turlarni argument sifatida olsin, qolgan turlar argument sifatida berilsa xato bersin. Mn,
 
@@ -405,6 +1078,7 @@ Yani, `yangi_sonlar = [20, 40, 60, 70, 10, 110]`
 	    ValueError: could not convert string to int or float
 	    ```
 
+
 70. `harflar = tuple('salom')` berilgan. `harflar[0]` nima qaytaradi. `harflar[0] = S` qilsak nima bo'ladi?
 
 71. Berilgan `tub_sonlar = (2, 3, 5, 7, 11)`. Quyidagi holatlarni tekshiring.
@@ -413,6 +1087,7 @@ Yani, `yangi_sonlar = [20, 40, 60, 70, 10, 110]`
     * nima bo'ladi agar `primes[-6]`?
     * nima bo'ladi agar `primes[:5]`?
     * nima bo'ladi agar `primes[-6:]`?
+    
 
 72. Berilgan `nums = (1, 2)`. Quyidagi holatlarni tekshiring. 
 
@@ -435,6 +1110,24 @@ Yani, `yangi_sonlar = [20, 40, 60, 70, 10, 110]`
 74. Berilgan `fruits = {'banana':12, 'papaya':5, 'mango':10, 'apple':100}`. Tekshiring `a, *b, c = fruits`?
 
 75. Berilgan `sonlar = [1, 4, 6, 22, 3, 5, 4, 3, 6, 2, 1, 51, 3, 1]`. Shunday qilingki, faqat sonlar bir martadan ishtirok etsin va ketma-ketlik saqlanib qolsin. Mn, `[1, 4, 6, 22, 3, 5, 2, 51]`.
+
+       <details><summary>Javob</summary>
+       
+       ```python
+       sonlar = [1, 4, 6, 22, 3, 5, 4, 3, 6, 2, 1, 51, 3, 1]
+       
+       yangi_sonlar = []
+       
+       i = 0
+       while i < len(sonlar):
+           if (sonlar[i] in yangi_sonlar) != True:
+               yangi_sonlar.append(sonlar[i])
+           i = i + 1
+       
+       print(yangi_sonlar)
+       ```
+       </details>
+
 
 76. Quyidagining natijasi nima bo'ladi? `print('concatena'+'tion')`
 
@@ -553,10 +1246,10 @@ Yani, `yangi_sonlar = [20, 40, 60, 70, 10, 110]`
 
     ```python
     def is_negative(number):
-    if number < 0:
-        return True
-    else:
-        return False
+        if number < 0:
+            return True
+        else:
+            return False
     ```
 
 85. Quyidagi programmani to'ldiring. Yani `pass` o'rniga shunday o'qzgaritish qilingki funksiya `L` listning 2-chi elementini qaytarsin.
@@ -567,7 +1260,42 @@ Yani, `yangi_sonlar = [20, 40, 60, 70, 10, 110]`
         pass
     ```      
 
+       <details><summary>Javob</summary>
+       
+       ```python
+       def ikkinchini_tanla(L):
+           ikkinchi_element = L.pop(1)
+           return ikkinchi_element
+
+       print(ikkinchini_tanla(["olma", "nok", "gilos", "banan"]))
+       ```
+       </details>
+
+
 86. List berilgan `L = ["Mario", "Bowser", "Luigi"]`. Shunday programma tuzingki, `["Luigi", "Bowser", "Mario"]` bo'lsin. Yani, birinchi va oxirgi elementlar almashsin.
+
+       <details><summary>Javob</summary>
+       
+       ```python
+       L = ["Mario", "Bowser", "Luigi"]
+       
+       birinchi_element = L.pop(0)
+       ohirgi_element = L.pop()
+       # L listga birinchi elementni ohirga o'tkazib oldik.
+       L.append(birinchi_element)
+       # L listning ohirgi elementini yangi listning birinchi elementiga qushib olamiz.
+       yangi_list = []
+       yangi_list.append(ohirgi_element)
+       # Yangi listga L listdagi elementlarni qushib ketaveramiz.
+       i = 0
+       while i < len(L):
+           yangi_list.append(L[i])
+           i = i + 1
+
+       print(yangi_list)
+       ```
+       </details>
+
 
 87. Quyidagi listlarning uzunligini toping.
 
@@ -582,6 +1310,14 @@ Yani, `yangi_sonlar = [20, 40, 60, 70, 10, 110]`
     ```pthon
     [1, 2, 3, 4] > 2
     ```
+
+       <details><summary>Javob</summary>
+       
+       ```python
+       TypeError: '>' not supported between instances of 'list' and 'int'
+       ```
+       </details>
+
 
 89. Quyidagi dictionaryning birinchi elementini oling.
 
@@ -600,6 +1336,17 @@ Yani, `yangi_sonlar = [20, 40, 60, 70, 10, 110]`
     ```python
     sonlar = {'bir':1, 'ikki':2, 'uch':3}
     ```
+
+       <details><summary>Javob</summary>
+       
+       ```python
+       sonlar = {'bir':1, 'ikki':2, 'uch':3}
+
+       for key, value in sonlar.items():
+           print(key, value)
+       ```
+       </details>
+
 
 92. Quyidagi stringlarning uzunligini toping. Keyin kodini pycharmda yozingda natijangizni solishtiring.
 
@@ -661,6 +1408,14 @@ Yani, `yangi_sonlar = [20, 40, 60, 70, 10, 110]`
 	    for x in range(1, 11, 3):
 		print(x)
 	    ```
+
+       <details><summary>Javob</summary>
+       
+       ```python
+       IndentationError: expected an indented block
+       ```
+       </details>
+
 
 101. Quyidagini ishlatsak konsolga nima chiqadi:
 
@@ -731,6 +1486,16 @@ Yani, `yangi_sonlar = [20, 40, 60, 70, 10, 110]`
 
 112. Berilgan `name = "Ahmad Dilshodov"`, qanday qilib `"Ahmad"` stringi `name` o'zgaruvchisida bor yo'qligini qanday tushuntiramiz?
 
+       <details><summary>Javob</summary>
+       
+       ```python
+       name = "Ahmad Dilshodov"
+       
+       print('Ahmad' in name)
+       ```
+       </details>
+
+
 113. Quyidagilarning farqi nima `10 / 3` va `10 // 3`?
 
 114. `10 ** 6` natijasi qanday?
@@ -757,7 +1522,39 @@ Yani, `yangi_sonlar = [20, 40, 60, 70, 10, 110]`
 
 125. `fizz_buzz` nomli funksiya yarating. Bitta parameterdan tashkil topsin. Agar argument `3` ga bo'linadigan bo'lsa, `"Fizz"` deb qaytarsin. Agar `5` ga bo'linsa `"Buzz"` ni qaytarsin. Agar ham `3` ham `5` ga bo'linadigan bo'lsa, `"FizzBuzz"` qaytarsin. Hech qanday shart bajarilmasa, argument qiymatining o'zini qaytarsin. 
 
+       <details><summary>Javob</summary>
+       
+       ```python
+       def fizz_buzz(son):
+           if son % 3 == 0 and son % 5 == 0:
+               return "FizzBuzz"
+           elif son % 3 == 0:
+               return "Fizz"
+           elif son % 5 == 0:
+               return "Buzz"
+           else:
+               return son
+    
+       print(fizz_buzz(55))
+       ```
+       </details>
+
 126. `tezlik` nomli funksiya yarating va u bitta parameter olsin tezlikni bildirish uchun. Agar berilgan tezlik `70` dan kichik bo'lsa `"OK."` deb qaytarsin. Agar tezlik `70` dan katta bo'lsa `"Ogohlantirish."` ni qaytarsin. Agar `80` dan katta bo'lsa, `"Litzensiyadan mahrum qilinsin."`
+
+       <details><summary>Javob</summary>
+       
+       ```python
+       def tezlik(v):
+           if v <= 70:
+               return 'OK.'
+           elif v > 70 and v < 80:
+               return 'Ogohlantirish.'
+           else:
+               return 'Litzensiyadan mahrum qilinsin.'
+       print(tezlik(82))
+       ```
+       </details>
+
 
 127. `sonlar` nomli funksiya yarating. Va `chegara` degan parameter olsin. Shunday qilsinki, funskiya 0 dan `chegara`gacha bo'lgan sonlarni qaytarsin va ularining toq yoki juftligini ham qaytarsin. Masalan `chegara` qiymati `3` bo'lsa, quyidagicha bo'lsin:
 
@@ -768,7 +1565,41 @@ Yani, `yangi_sonlar = [20, 40, 60, 70, 10, 110]`
 		3 Toq
 		```
 
+       <details><summary>Javob</summary>
+       
+       ```python
+       def sonlar(chegara):
+           i = 0
+           while i <= chegara:
+               if i % 2 == 0:
+                   print(i, "Juft")
+               else:
+                   print(i, "Toq")
+               i = i + 1
+
+       sonlar(3)
+       ```
+       </details>
+
+
 128. `sonlar` nomli funksiya yarating. Va `chegara` degan parameter olsin. Shunday qilsinki, funskiya 0 dan `chegara`gacha bo'lgan sonlarning faqat 3 va 5 ga bo'linadiganlarini qaytarsin. Va ularning yig'indisini ham qaytarsin. Mn, `chegara=20` it should return the sum of 3, 5, 6, 9, 10, 12, 15, 18, 20.
+
+       <details><summary>Javob</summary>
+       
+       ```python
+       def sonlar(chegara):
+           i = 1
+           s = 0
+           while i <= chegara:
+               if i % 3 == 0 or i % 5 == 0:
+               s = s + i
+               i = i + 1
+           return s
+
+       print(sonlar(20))
+       ```
+       </details>
+
 
 129. `yulduzlar` nomli funksiya yarating. Va u `qator` nomili parameter olsin. Agar `qator`ga 6 berilsa. Quyidagini chiqarsin:
      ```python
@@ -780,6 +1611,20 @@ Yani, `yangi_sonlar = [20, 40, 60, 70, 10, 110]`
      ****** 
      ```
 
+       <details><summary>Javob</summary>
+       
+       ```python
+       def yulduzlar(qator):
+       i = 1
+       while i < qator+1:
+           print('*' * i)
+           i = i + 1
+
+       yulduzlar(6)
+       ```
+       </details>
+
+
 
 130. `yulduzkam` nomli funksiya yarating. Va u `qator` nomili parameter olsin. Agar `qator`ga 6 berilsa. Quyidagini chiqarsin:
         ```python
@@ -790,6 +1635,21 @@ Yani, `yangi_sonlar = [20, 40, 60, 70, 10, 110]`
         **
         *
         ```
+     
+       <details><summary>Javob</summary>
+       
+       ```python
+       def yulduzkam
+     (qator):
+           while qator > 0:
+               print("*" * qator)
+               qator = qator - 1
+
+       yulduzcha(6)
+       ```
+       </details>
+
+
 131. `yulduzcha` nomli funksiya yarating. Va u `qator` nomili parameter olsin. Agar `qator`ga 6 berilsa. Quyidagini chiqarsin:
         ```python
         ******
@@ -799,7 +1659,22 @@ Yani, `yangi_sonlar = [20, 40, 60, 70, 10, 110]`
         ******
         ******
         ```
-132. Create a functi	on that takes two numbers as arguments and return their sum.
+     
+       <details><summary>Javob</summary>
+       
+       ```python
+       def yulduzcha(qator):
+       i = 0
+       while i < qator:
+           print("******")
+           i = i + 1
+       
+       yulduzcha(6)
+       ```
+       </details>
+
+
+132. Create a function that takes two numbers as arguments and return their sum.
         ```python
         Examples
         addition(3, 2) ➞ 5
