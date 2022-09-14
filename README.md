@@ -65,6 +65,7 @@
    2. [Apps](https://github.com/ochiqai/python/blob/main/django/01-blog-websayt/blog-proyekt/02-apps.md)
    3. [Templates](https://github.com/ochiqai/python/blob/main/django/01-blog-websayt/blog-proyekt/03-templates.md)
    4. [Admin Sahifasi](https://github.com/ochiqai/python/blob/main/django/01-blog-websayt/blog-proyekt/04-admin-sahifasi.md)
+   5. [Databaza](https://github.com/ochiqai/python/blob/main/django/01-blog-websayt/blog-proyekt/05-database.md) 
 
 
 ### Savol va muhokama uchun: [link](https://github.com/ochiqai/python/discussions)
