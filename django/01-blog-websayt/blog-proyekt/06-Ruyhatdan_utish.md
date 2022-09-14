@@ -1,24 +1,27 @@
-#### User Ragistration (Saytdan ro'yhatdan o'tish)
+# User Registration (Saytdan ro'yhatdan o'tish)
 
-* [Kirish.](#kirish)
+* [Kirish](#kirish)
 * [Email qismini qo'shish](#email-qismini-qo-shish)
 * [Bootstrap4 dan foydalanish](#bootstrap4-dan-foydalanish)
 
-#### Kirish.
 
-* Youtbe, Twitter va boshqa saytlarda ragistration (ro'yhatdan o'tish) bo'limiga duch kelganmiz, 
+## Kirish
+
+Youtube, Twitter va boshqa saytlarda registration (ro'yhatdan o'tish) bo'limiga duch kelganmiz, 
 ro'yhatdan o'tish orqali esa saytdan kengroq foydalanish imkonini beradi. 
-Misol uchun foydalanuvchi saytda o'z accountini yarata oladi, post qoldiradi va online biror mahsulot harid qilmoqchi bo'lsak ro'yhatdan o'tishimizga to'g'ri keladi.
+Misol uchun foydalanuvchi saytda o'z akkountini yaratish orqali, post qoldirish va online biror mahsulot harid qilishga ega bo'ladi.
 
-* Ragistration qismini yaratish uchun birinchi navbatda yangi `app` yaratib olamiz. <br>
+Registration qismini yaratish uchun birinchi navbatda yangi `app` yaratib olamiz. Ya'ni <br>
 `django_project` loyihamiz ichidan `users`nomli yangi app yaratib olamiz.
 
 ```console
 python manage.py startapp users
 ```
+
 bunda `users` yangi app nomi.
 
-* Yaratgan appimizni `django_project` loyihamizdagi `settings.py` faylining `INSTALLED_APPS` qismiga qo'shib qo'yishimiz kerak.
+
+Yaratgan appimizni `django_project` loyihamizdagi `settings.py` faylining `INSTALLED_APPS` qismiga qo'shib qo'yishimiz kerak:
 
 
 ```python
@@ -33,9 +36,11 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 ]
 ```
+
 `'users.apps.UsersConfig',` qismini kiritib o'tdik.
 
-* `users` appimizning `views.py` fayliga borib quyidagi ishlarni bajaramiz.
+`users` appimizning `views.py` fayliga borib quyidagi ishlarni bajaramiz.
+
 
 ```python
 from django.shortcuts import render
@@ -46,10 +51,13 @@ def register(request):
     form = UserCreationForm()
     return render(request, 'users/register.html', {'form': form})
 ```
-Yuqorida djangoda mavjud tayyor formalardan foydalandik va `register` funksiyasida `register.html`faylini manzilini ko'rsatib `render` orqali uzatayabmiz. Va endi biz `register.html` yaratib olishimiz kerak.
-* `users`appimizning ichidan `templates` papkasini yaratib olamiz va uning ichidan `users` papkasini va uning ichidan esa `register.html` faylini yaratib olamiz.
 
-```
+Yuqorida djangoda mavjud tayyor formalardan foydalandik va `register` funksiyasida `register.html`faylini manzilini ko'rsatib 
+`render` orqali uzatayabmiz. Va endi biz `register.html` yaratib olishimiz kerak.
+`users`appimizning ichidan `templates` papkasini yaratib olamiz va uning ichidan `users` papkasini va uning ichidan esa 
+`register.html` faylini yaratib olamiz.
+
+```console
 django_project      
 │   manage.py
 └───blog
@@ -71,7 +79,7 @@ django_project
     └─── migrations
         │templates
             └─── users
-                  └─── register.html
+                  └─── register.html 
 ```
 
 `register.html`da quyidagi ishlarni bajaramiz.
@@ -114,15 +122,17 @@ urlpatterns = [
 ]
 ```
 
-* Serverni ishlatib `python manage.py runserver` quyidagi manzilni ishlatib ko'ramiz.
+Serverni ishlatib `python manage.py runserver` quyidagi manzilni ishlatib ko'ramiz:
 
-`http://127.0.0.1:8000/register/`
+ - `http://127.0.0.1:8000/register/`
 
 <p align="center">
     <img src="./image/register_qismi.png" width="450">
 </p>
 
-* Foydalanuchi ro'yhatdan o'tgandan so'ng `Sign Up` tugmasini bosganida foydalanuvchi uchun account yaratilishini ko'rib chiqamiz. `users` appimizning `views.py` qismiga quyidagicha o'zgartiramiz.
+
+Foydalanuchi ro'yhatdan o'tgandan so'ng `Sign Up` tugmasini bosganida foydalanuvchi uchun akkaount yaratilishini ko'rib chiqamiz.
+`users` appimizning `views.py` qismiga quyidagicha o'zgartiramiz.
 
 ```python
 from django.shortcuts import render, redirect
@@ -141,7 +151,7 @@ def register(request):
     return render(request, 'users/register.html', {'form': form})
 ```
 
-* `blog`appimizdagi templates qismiga borib `base.html`ning `block content`qismiga borib quyidagicha ish bajaramiz.
+`blog`appimizdagi templates qismiga borib `base.html`ning `block content`qismiga borib quyidagicha kod yozamiz.
 
 ```html
 <div class="col-md-8">
@@ -156,21 +166,23 @@ def register(request):
 </div>
 ```
 
-* Serverni ishga tushurib `http://127.0.0.1:8000/register/` qismiga borib `Username` va `Password` qismiga ma'lumotlar kiritamiz.
+Serverni `http://127.0.0.1:8000/register/` qismiga borib `Username` va `Password` qismiga ma'lumotlar kiritamiz.
 
 <p align="center">
     <img src="./image/foydalanuvchi_ruyhatdan_utayotgan_qismi.png" width="450">
 </p>
 
-* `Sign Up` tugmasini bosish orqali quyidagi oynani ko'rishimiz mumkin.
+
+`Sign Up` tugmasini bosish orqali quyidagi oynani ko'rishimiz mumkin:
 
 <p align="center">
     <img src="./image/ruyhatdan_utib_bulingan_qismi.png" width="450">
 </p>
 
-* E'tibor bersangiz `Account created for Nuriddin!` xabari chiqdi. 
 
-* `form.save()` qismini `users` appimizning `views.py` fayliga quyidagicha qo'shib qo'ysak, biror yangi foydalanuvchini ro'yhatdan o'tkazib saytimizning admin bo'limining foydalanuvchilar qismida (`Users`) ko'rinishiz mumkin.
+E'tibor bersangiz `Account created for Nuriddin!` xabari chiqdi. 
+
+`form.save()` qismini `users` appimizning `views.py` fayliga quyidagicha qo'shib qo'ysak, biror yangi foydalanuvchini ro'yhatdan o'tkazib saytimizning admin bo'limining foydalanuvchilar qismida (`Users`) ko'rinish mumkin.
 
 ```python
 from django.shortcuts import render, redirect
@@ -190,17 +202,17 @@ def register(request):
     return render(request, 'users/register.html', {'form': form})
 ```
 
-* Serverni ishlatib register qismiga borib `http://127.0.0.1:8000/register/` `Username` qismiga `Bobur`ni va parolini kiritib `Sign Up` tugmasini bosib, saytimizning `admin` bo'limiga borib `Users` qismida `Bobur` ismini saqlanganini ko'rishimiz mumkin.
+Serverni ishlatib register qismiga borib `http://127.0.0.1:8000/register/` `Username` qismiga `Bobur`ni va parolini kiritib `Sign Up` tugmasini bosib, saytimizning `admin` bo'limiga borib `Users` qismida `Bobur` ismini saqlanganini ko'rishimiz mumkin.
 
 <p align="center">
     <img src="./image/foydalanuvchi_admin_qismida.png" width="450">
 </p>
 
-#### Email qismini qo'shish
+## Email qismini qo'shish
 
-* `Registration`ga `email` qismini qo'shishni ko'ramiz. Foydalanuvchi ro'yhatdan o'tayotganda endi elektron pochtasini ham kiritib o'tishi kerak bo'ladi.
+`Registration`ga `email` qismini qo'shishni ko'ramiz. Foydalanuvchi ro'yhatdan o'tayotganda endi elektron pochtasini ham kiritib o'tishi kerak bo'ladi.
 
-* `users` appimizga `forms.py` nomli yangi fayl ochib olamiz.
+`users` appimizga `forms.py` nomli yangi fayl ochib olamiz.
 Va `forms.py`ga quyidagi ishlarni bajaramiz.
 
 ```python
@@ -237,15 +249,17 @@ def register(request):
     return render(request, 'users/register.html', {'form': form})
 ```
 
-* Serverni ishlatib register qismiga kirsak `http://127.0.0.1:8000/register/` `Email` qismini ham qo'shilganini ko'rishimiz mumkin.
+Serverni ishlatib register qismiga kirsak `http://127.0.0.1:8000/register/` `Email` qismini ham qo'shilganini ko'rishimiz mumkin.
 
 <p align="center">
     <img src="./image/email_qushildi.png" width="450">
 </p>
 
-#### Bootstrap4 dan foydalanish
 
-* Registration `form` ni chiroyliroq ko'rinishi uchun djangoda mavjud `crispy-forms`dan foydalanamiz.
+
+## Bootstrap4 dan foydalanish
+
+Registration `form` ni chiroyliroq ko'rinishi uchun djangoda mavjud `crispy-forms`dan foydalanamiz.
 `django-crispy-forms`ni o'rnatib olamiz `pip install django-crispy-forms`.
 
 ```console
@@ -254,7 +268,7 @@ WARNING: You are using pip version 22.0.4; however, version 22.1.2 is available.
 You should consider upgrading via the 'C:\Users\MSI\AppData\Local\Programs\Python\Python310\python.exe -m pip install --upgrade pip' command.
 ```
 
-* `django_project` loyihamizning `settings.py` faylining `INSTALLED_APPS` qismiga `crispy_forms`ni quyidagicha qo'shib qo'yamiz.
+`django_project` loyihamizning `settings.py` faylining `INSTALLED_APPS` qismiga `crispy_forms`ni quyidagicha qo'shib qo'yamiz.
 
 ```python
 INSTALLED_APPS = [
@@ -270,9 +284,7 @@ INSTALLED_APPS = [
 ]
 ```
 
-* Va `settings.py`ning eng ohirgi qatoriga borib `CRISPY_TEMPLATE_PACK = 'bootstrap4'`ni qo'shib qo'yamiz.
-
-* `register.html`ga quyidagicha o'zgartirish kiritamiz.
+Va `settings.py`ning eng ohirgi qatoriga borib `CRISPY_TEMPLATE_PACK = 'bootstrap4'`ni qo'shib qo'yamiz. `register.html`ga quyidagicha o'zgartirish kiritamiz.
 
 ```html
 {% extends "blog/base.html" %}
@@ -298,7 +310,7 @@ INSTALLED_APPS = [
 {% endblock content %}
 ```
 
-* Serverni qayta ishlatib `python manage.py runserver` register qismini ochib olsak `http://127.0.0.1:8000/register/` quyidagicha o'zgarishni ko'rishimiz.
+Serverni qayta ishlatib `python manage.py runserver` register qismini ochib olsak `http://127.0.0.1:8000/register/` quyidagicha o'zgarishni ko'rishimiz.
 
 <p align="center">
     <img src="./image/bootstrap_form_registrayion.png" width="450">
