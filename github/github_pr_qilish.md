@@ -113,6 +113,18 @@ Shunda so'ng biz, `Start a review` bosamiz, kommentlarni ko'rish uchun esa ortga
     <img src="./images/Pr_4.png">
 </p>
 
+githubdagi o'zgarishlani kompyuterimizga yuklash uchun `git pull`dan foydalanamiz.
+```console
+PS D:\ochiqai\python\github> git pull
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 2), reused 3 (delta 2), pack-reused 0
+Unpacking objects: 100% (3/3), 457 bytes | 3.00 KiB/s, done.
+From https://github.com/ochiqai/python
+   0ed90a1..9ff2438  main       -> origin/main
+Already up to date.
+```
+Bu yerda biz oxirgi o'zgarishlarni yukladik.
 >>> Biz tugatdik
 
 ### Tayanch tushunchalar
