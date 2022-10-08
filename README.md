@@ -23,10 +23,11 @@
 
 
 ## Git/Github
-  1. [Gitga kirish](yozilayapti)
-  2. [Githubga joylash](yozilayapti)
-  3. [PR ochish](https://github.com/ochiqai/python/blob/main/github/github_pr_qilish.md)
-  4. [PR dan keyingi ishlar](PRda)
+  1. [Gitga kirish](./github/Gitga_kirish.md)
+  2. [Githubga joylash](./github/githubga_joylash.md)
+  3. [PR ochish](./github/github_pr_qilish.md)
+  4. [PR dan keyingi ishlar](./github/PRdan_keyingi_qadam.md)
+
 
 ## Python 
 
