@@ -19,7 +19,7 @@
 
 
 ## Terminal
-  1. [Terminalga kirish WINDOWS](https://github.com/ochiqai/python/blob/main/terminal/terminal_windows.md)
+  1. [Terminalga kirish WINDOWS](./terminal/terminal_windows.md)
 
 
 ## Git/Github
