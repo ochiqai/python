@@ -51,7 +51,7 @@
   9. [Tuple](./python/09-kun-Tuple/09-kun.md)
     - [Javoblar](./python/09-kun-Tuple/09-kun-javoblar.md)
   10. [Mashqlar](./python/10-kun-Mashqlar/10-kun.md)
-    - [Javoblar](.python/10-kun-Mashqlar/10-kun-javoblar.md)
+    - [Javoblar](./python/10-kun-Mashqlar/10-kun-javoblar.md)
   11. [Fayllar bilan ishlash](./python/11-kun-Fayl/11-kun-fayl.md)
   12. [Regular-ifodalar](./python/12-kun-Regular-ifodalar/12-kun-regular-ifodalar.md)
   13. [Net programma](./python/13-kun-Net-Programma/13-net-programma.md)
