@@ -63,11 +63,11 @@
 
 ## Django
    1. [Django: ishga tushirish](./django/01-blog-websayt/blog-proyekt/01-djangoni-urnatish.md)
-   2. [Apps](./01-blog-websayt/blog-proyekt/02-apps.md)
-   3. [Templates](https://github.com/ochiqai/python/blob/main/django/01-blog-websayt/blog-proyekt/03-templates.md)
-   4. [Admin Sahifasi](https://github.com/ochiqai/python/blob/main/django/01-blog-websayt/blog-proyekt/04-admin-sahifasi.md)
+   2. [Apps](./django/01-blog-websayt/blog-proyekt/02-apps.md)
+   3. [Templates](./django/01-blog-websayt/blog-proyekt/03-templates.md)
+   4. [Admin Sahifasi](./django/01-blog-websayt/blog-proyekt/04-admin-sahifasi.md)
    5. [Databaza](./django/01-blog-websayt/blog-proyekt/05-database.md)
-   6. [Foydalanuvchi registratsiyasi](https://github.com/ochiqai/python/blob/main/django/01-blog-websayt/blog-proyekt/06-Ruyhatdan_utish.md)
+   6. [Foydalanuvchi registratsiyasi](./django/01-blog-websayt/blog-proyekt/06-Ruyhatdan_utish.md)
 
 ### Savol va muhokama uchun: [link](https://github.com/ochiqai/python/discussions)
 
