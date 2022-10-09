@@ -31,7 +31,7 @@
 
 ## Python 
 
-  1. [Programma nima?](https://github.com/ochiqai/python/blob/main/python/01-kun-Programma/01-kun.md) 
+  1. [Programma nima?](./python/01-kun-Programma/01-kun.md) 
     - PyCharmni o'rnatish [Win](https://github.com/ochiqai/python/blob/main/biblateka/pycharm_windows.md) [LINUX](no)
     - [Javoblar](https://github.com/ochiqai/python/blob/main/python/01-kun-Programma/01-kun-javoblar.md)
   2. [O'zgaruvchi](https://github.com/ochiqai/python/blob/main/python/02-kun-O'zgaruvchi/02-kun.md) 
