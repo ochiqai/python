@@ -18,15 +18,15 @@
 * Hozircha eng muhim bo'lgan 10 kunlik darsni yozib chiqdik. 
 
 
-## Terminal
-  1. [Terminalga kirish WINDOWS](./terminal/terminal_windows.md)
+  
 
 
 ## Git/Github
-  1. [Gitga kirish](./github/Gitga_kirish.md)
-  2. [Githubga joylash](./github/githubga_joylash.md)
-  3. [PR ochish](./github/github_pr_qilish.md)
-  4. [PR dan keyingi ishlar](./github/PRdan_keyingi_qadam.md)
+  1.[Terminalga kirish WINDOWS](./terminal/terminal_windows.md)
+  2.[Gitga kirish](./github/Gitga_kirish.md)
+  3.[Githubga joylash](./github/githubga_joylash.md)
+  4.[PR ochish](./github/github_pr_qilish.md)
+  5.[PR dan keyingi ishlar](./github/PRdan_keyingi_qadam.md)
 
 
 ## Python 
