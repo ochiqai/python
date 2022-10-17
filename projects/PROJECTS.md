@@ -21,4 +21,18 @@ v1 v3 ga yaqinroq
 v1 v2 ga yaqinroq
 ```
 
+## Project #2: Yuzlarni rasmdan aniqlash
+Shunday funksiya qilishimiz kerakki, berilgan rasmdan yuzlarni aniqlash kerak.
+Aniqlash deganda koordinatalarini olishimiz kerak.
+
+Foydalanadigan asosiy library `insightface` deb ataladi. 
+
+Qo'shimcha librarylar:
+```commandline
+pip install insightface
+pip install onnxruntime
+pip install opencv-python
+```
+
+
 
