@@ -76,8 +76,8 @@ django_project
     │   models.py
     │   tests.py
     │   views.py
-    └─── migrations
-        │templates
+    |   migrations
+    └───templates
             └─── users
                   └─── register.html 
 ```
@@ -86,14 +86,13 @@ django_project
 
 ```html
 {% extends "blog/base.html" %}
-{% load crispy_forms_tags %}
 {% block content %}
     <div class="content-section">
         <form method="POST">
             {% csrf_token %}
             <fieldset class="form-group">
                 <legend class="border-bottom mb-4">Join Today</legend>
-                {{ form|crispy }}
+                {{ form }}
             </fieldset>
             <div class="form-group">
                 <button class="btn btn-outline-info" type="submit">Sign Up</button>
@@ -310,7 +309,7 @@ Va `settings.py`ning eng ohirgi qatoriga borib `CRISPY_TEMPLATE_PACK = 'bootstra
 {% endblock content %}
 ```
 
-Serverni qayta ishlatib `python manage.py runserver` register qismini ochib olsak `http://127.0.0.1:8000/register/` quyidagicha o'zgarishni ko'rishimiz.
+Serverni qayta ishlatib `python manage.py runserver` register qismini ochib olsak `http://127.0.0.1:8000/register/` quyidagicha o'zgarishni ko'rishimiz mumkin.
 
 <p align="center">
     <img src="./image/bootstrap_form_registrayion.png" width="450">
