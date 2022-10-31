@@ -25,11 +25,13 @@ print(yuz_rasmlar.__len__())
 
 
 asosiy_rasm = yuz_rasmlar[0]
-for i in range(23):
-    yaqinlik = vector_taq(asosiy_rasm, yuz_rasmlar[i+1])
+uxshashlar = []
+for i in range(24):
+    yaqinlik = vector_taq(asosiy_rasm, yuz_rasmlar[i])
+    yaqinlik = round(yaqinlik, ndigits=3)
     print(i, yaqinlik)
-
-
+    uxshashlar.append(yaqinlik)
+np.savez("natija/oddiy_natija", oddiy_usul=uxshashlar)
 
 
 
