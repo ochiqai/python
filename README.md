@@ -19,9 +19,6 @@
 
 
 
- 
-
-
 ## Python 
 
   1. [Programma nima?](./python/01-kun-Programma/01-kun.md) 
@@ -55,7 +52,7 @@
 #### Takrorlash: [1-10 kunlar](./biblateka/python_shpagralka.pdf)
 
 
-## Git/Github va Terminal
+## Git/Github 
   0. [Terminalga kirish WINDOWS](./terminal/terminal_windows.md)
   1. [Gitga kirish](./github/Gitga_kirish.md)
   2. [Githubga joylash](./github/githubga_joylash.md)
