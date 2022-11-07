@@ -62,6 +62,15 @@
   3. [PR ochish](./github/github_pr_qilish.md)
   4. [PR dan keyingi ishlar](./github/PRdan_keyingi_qadam.md)
 
+## Proyektlar
+  1. [Conda orqali muhit(environment) yaratish](yozilyapti)
+  2. [Kerakli kutubxonalarda ishlash](yozilyapti)
+  3. [Kutubxonalarni install qilish](yozilyapti)
+  4. [Numpy va matplotibda ishlash](yozilyapti)
+  5. [Vektorlarni solishtirish](yozilyapti)
+  6. [Yuzlarni pikselarini solishtirish](yozilyapti)
+  7. [Yuzlarni AI orqali vektorlarini olish](yozilyapti)
+  8. [AI vektorlarini solishtirish](yozilyapti)
 
 
 ## Django
