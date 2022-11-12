@@ -63,16 +63,18 @@
   4. [PR dan keyingi ishlar](./github/PRdan_keyingi_qadam.md)
 
 ## Proyektlar
-  1. [Condani o'rnatish](yozilyapti)
-  2. [Conda orqali muhit yaratish](yozilyapti)
-  3. [Kutubxonalarni o'rnatish](yozilyapti)
-  4. [Kerakli kutubxonalarda ishlash](yozilyapti)
-  5. [NumPy da ishlash](yozilyapti)
-  6. [Matplotlibda da ishlash](yozilyapti)
-  7. [Vektorlarni solishtirish](yozilyapti)
-  8. [Yuzlarni rasmdan aniqlash](yozilyapti)
-  9. [Yuzlarni piksellar orqali solishtirish](yozilyapti)
-  10. [Yuzlarni AI orqali vektorlarga o'tkazish va solishtirish](yozilyapti)
+  1. Yuzlarni solishtirish <br>
+     1.0 [Condani o'rnatish](yozilayapti) <br>
+     1.1 [Conda orqali muhit yaratish](yozilyapti) <br>
+     1.2 [Kutubxonalarni o'rnatish](yozilyapti) <br>
+     1.3 [Kerakli kutubxonalarda ishlash](yozilyapti)<br>
+     1.4 [NumPy da ishlash](yozilyapti)<br>
+     1.5 [Matplotlibda da ishlash](yozilayapti)<br>
+     1.6 [Vektorlarni solishtirish](yozilyapti)<br>
+     1.7 [Yuzlarni rasmdan aniqlash](yozilayapti)<br>
+     1.8 [Yuzlarni piksellar orqali solishtirish](yozilyapti)<br>
+     1.9 [Yuzlarni AI orqali vektorlarga o'tkazish va solishtirish](yozilyapti)
+
 
 
 ## Django
