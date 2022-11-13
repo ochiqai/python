@@ -40,29 +40,29 @@ def vector_taq(a, b):
 # # v2 = [3]
 # # v3 = [1.5]
 #
-# v1 = [1, 2, 3, 4, 5]
-# v2 = [1, 2, 3, 4, 5]
-# v3 = [1, 2, 3, 4, 6]
-# v4 = [100, 2, 3, 4, 5]
-#
-#
-# natija1 = vector_taq(v1, v2)
-# natija2 = vector_taq(v1, v3)
-# natija3 = vector_taq(v1, v4)
-#
-# print(natija1)
-# print(natija2)
-# print(natija3)
-#
-#
-# # print(cosine_similarity(np.array(v1).reshape(1, -1), np.array(v2).reshape(1, -1)))
-#
-# print("Tayyoridan foydalandik")
-#
-# natija1 = cosine_similarity(np.array(v1).reshape(1, -1), np.array(v2).reshape(1, -1))[0][0]
-# natija2 = cosine_similarity(np.array(v1).reshape(1, -1), np.array(v3).reshape(1, -1))[0][0]
-# natija3 = cosine_similarity(np.array(v1).reshape(1, -1), np.array(v4).reshape(1, -1))[0][0]
-#
-# print(natija1)
-# print(natija2)
-# print(natija3)
+v1 = [1, 2, 3, 4, 5]
+v2 = [1, 2, 3, 4, 5]
+v3 = [1, 2, 3, 4, 6]
+v4 = [100, 2, 3, 4, 5]
+
+
+natija1 = vector_taq(v1, v2)
+natija2 = vector_taq(v1, v3)
+natija3 = vector_taq(v1, v4)
+
+print(natija1)
+print(natija2)
+print(natija3)
+
+
+# print(cosine_similarity(np.array(v1).reshape(1, -1), np.array(v2).reshape(1, -1)))
+
+print("Tayyoridan foydalandik")
+
+natija1 = cosine_similarity(np.array(v1).reshape(1, -1), np.array(v2).reshape(1, -1))[0][0]
+natija2 = cosine_similarity(np.array(v1).reshape(1, -1), np.array(v3).reshape(1, -1))[0][0]
+natija3 = cosine_similarity(np.array(v1).reshape(1, -1), np.array(v4).reshape(1, -1))[0][0]
+
+print(natija1)
+print(natija2)
+print(natija3)
