@@ -28,7 +28,7 @@ print(arr)
 ```
 * Dastlabki qadamda biz NumPy o'rnatib olamiz.
 ```pyhton
-pip install numpy
+conda install numpy
 ```
 * Keyingi qadamda biz Numpydan foydalanishni boshlaymiz.
 > kutubnona chaqirish : import numpy as np
@@ -37,11 +37,11 @@ pip install numpy
 
 ## Arraylar bilan ishlash
 ___
-> Arrarlarni o'chamlari cheklanmagan : ([1, 2, 3, 4, n])
+> Arraylarni o'chamlari cheklanmagan : ([1, 2, 3, 4, n])
 
 * Arraylarning ishlatilishi listlar bilan ishlashga o'xshab ketadi. Uni typeni aniqlash uchun quyidagini kiritamiz.
 ```python
-import numpy as np
+
 
 arr = np.array([1, 2, 3, 4, 5])
 
@@ -51,19 +51,19 @@ print(type(arr))
 # natija : <class 'numpy.ndarray'>
 ```
 * Arraylar obyetlardan tashkil topgan. Bu obyektlar `ndarray` deb ataladi va u `dimensions` lardan tashkil topgan. Xalq tilida
-bular 0-d, 1-d, 2-d, 3-d va hklar deb yuritilib kelinadi.
+bular 0D, 1D, 2D, 3D (uning ma'nosi 1 o'lchamli, 2 o'lchamli, 3 o'lchamli manoda keladi) va hklar deb yuritilib kelinadi.
 * Bularning eng sodda ko'rinish: `0-d array`
 ```python
-import numpy as np
+
 
 arr = np.array(42)
 
 print(arr)
 # natijasi: 42 
 ```
-* `1-d array`
+* `1D array`
 ```python
-import numpy as np
+
 
 arr = np.array([1, 2, 3, 4, 5])
 
@@ -72,9 +72,9 @@ print(arr)
 ```
 > arr = np.array([1, 2, 3, 4, 5]) # arraylarni hosil qilishda numpy yoki qisaqacha np kiritib, array yoziladi va () qavs ichiga `[ ]` kiritiladi. Arrayni obyetlari oshib borgan sari `[]` ham qo'shimcha kiritiladi.
 
-* `2-d array`
+* `2D array`
 ```python
-import numpy as np
+
 
 arr = np.array([
     [1, 2, 3], 
@@ -85,9 +85,9 @@ print(arr)
 # natija : [[1 2 3]
 #           [4 5 6]]
 ```
-* `3-d array`
+* `3D array`
 ```python
-import numpy as np
+
 
 arr = np.array([
     [[1, 2, 3], [4, 5, 6]], 
@@ -128,25 +128,25 @@ Yuqoridagi 1 - holatda arraylar 0 natija qaytaradi.
 ```
 ## Arraylarning bir qancha funksiyalari
 ___
-* Arraylarni indexni aniqlsh uchun huddi listda qilingan amalarni bajarmiz
+* Arraylarni indexni aniqlsh uchun huddi listda qilingan amalarni bajaramiz
 ```python
-import numpy as np
+
 
 arr = np.array([1, 2, 3, 4])
 
 print(arr[0])
 # natija : 1
 
-# 2-d
-import numpy as np
+# 2D
+
 
 arr = np.array([[1,2,3,4,5], [6,7,8,9,10]])
 
-print('1-qatorning 2- elementini oladi: ', arr[0, 1])
+print('1-qatorning 2-elementini oladi: ', arr[0, 1])
 # natija : 2
 
-# 3-d
-import numpy as np
+# 3D
+
 
 arr = np.array([
     [[1, 2, 3], [4, 5, 6]],     
@@ -166,7 +166,7 @@ print(arr[0, 1, 2])
 
 * Arraylar o'lchamini aniqlsh uchun `shape`dan foydalanamiz.
 ```python
-import numpy as np
+
 
 arr = np.array([
     [1, 2, 3], 
@@ -176,12 +176,12 @@ arr = np.array([
 print(arr.shape)
 # natija : (2, 3)
 # bu yerda 2 - qatorlar soni
-# bu yerda 3 - ustinlar soni hisonlanadi.
+# bu yerda 3 - ustunlar soni hisoblanadi.
 ```
 * Yodda tuting:
 ```Console
                         1 - holat
-import numpy as np
+
 
 arr = np.array([
     [],
@@ -190,7 +190,7 @@ arr = np.array([
 print(arr.shape)
 Natija : 2 qaytaradi yani bu yerda 2 qator mavjud degani
                         2 - holat
-import numpy as np
+
 
 arr = np.array([
     [1],
@@ -200,9 +200,9 @@ arr = np.array([
 print(arr.shape)
 Natija : (2, 1) yani 2 qator 1 ta ustunda iborat bo'ladi.
 ```
-* Arraylarning yigindisini topish uchun esa `sum`dan foydalanamiz
+* Arraylarning yig'indisini topish uchun esa `sum`dan foydalanamiz
 ```python
-import numpy as np
+
 
 arr = np.array([1, 2, 3, 4, 5])
 
@@ -210,7 +210,7 @@ print(arr.sum())
 # Natija : 15
 ```
 
->>> Deep Learning 
+ 
 
 ## Tayanch tushunchalar
 ___
