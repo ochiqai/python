@@ -1,13 +1,29 @@
-### Pytohnda vektorlar haqida tushuncha va ularning taqqoslanishi.
+### Pythonda vektorlar haqida tushuncha va ularning taqqoslanishi.
 
+
+
+- [Vektor nima?](#vektor-nima)
+- [Vektor yaratish](#vektor-yaratish)
+- [Python vektorida asosiy operatsiyalar](#python-vektorida-asosiy-operatsiyalar)
+- [1. Python vektorida qo'shish operatsiyasini bajarish](#1-python-vektorida-qoshish-operatsiyasini-bajarish)
+- [2. Python vektorida ayirish operatsiyasini bajarish](#2-python-vektorida-ayirish-operatsiyasini-bajarish)
+- [3. Python vektorida ko'paytirish operatsiyasini bajarish](#3-python-vektorida-kopaytirish-operatsiyasini-bajarish)
+- [4. Python vektorida bo'lish operatsiyasini bajarish](#4-python-vektorida-bolish-operatsiyasini-bajarish)
+- [Vektor Dot](#vektor-dot)
+- [Vektorlarni taqqoslash](#vektorlarni-taqqoslash)
+- [Vektorlarni taqqoslash uchun tayyor kutibxonadan foydalanish](#vektorlarni-taqqoslash-uchun-tayyor-kutibxonadan-foydalanish)
 
 #### Vektor nima?
 
 Oddiy so'z bilan aytganda vektorni bir o'lchovli massiv deb hisoblash mumkin. Python tiliga kelsak, vektor ro'yxatlarning bir o'lchovli massividir. U elementlarni Python ro'yxatiga o'xshash tarzda egallaydi.
 
-#### Pythonda vektor yaratish
+* Massiv: <br>
 
-Python NumPy moduli vektor yaratish uchun ishlatiladi. Bir o'lchovli massiv, ya'ni vektor yaratish uchun numpy.array() usulidan foydalanamiz.
+Dasturlash tillarida ro’yxat yoki jadval ko’rinishidagi ma’lumotlarni massiv deb atashadi. Massiv so’zining ma’nosi o’lcham, o’lchov demakdir. Massivning barcha elementlari bitta turga mansub bo’lib, ular bitta nom bilan nomlanadi va bir-birlaridan nomerlari (indekslari) bilan farq qiladi.
+
+#### Vektor yaratish
+
+Python NumPy moduli vektor yaratish uchun ishlatiladi. Bir o'lchovli massiv, ya'ni vektor yaratish uchun numpy.array() metodidan foydalanamiz.
 
 Syntax:
 
@@ -17,16 +33,19 @@ numpy.array(list)
 
 Example 1: Gorizontal vektor
 
+
 ```python
 import numpy as np 
 
-lst = [10,20,30,40,50] 
+lst = [10, 20, 30, 40, 50] 
 
 vctr = np.array(lst) 
 
 print("List buyicha yaratilgan vektor:") 
 print(vctr)
 ```
+
+
 Output:
 ```terminal
 List buyicha yaratilgan vektor:
@@ -71,15 +90,15 @@ Quyidagilar vektorda bajarilishi mumkin bo'lgan asosiy operatsiyalar ro'yxati -
 
 #### 1. Python vektorida qo'shish operatsiyasini bajarish
 
-Bunda ikki vektorning elementlari buyicha amal bajariladi va ikkala vektorning ham uzunligi bir xil buladi.
+Bunda ikki vektorning elementlari bo'yicha amal bajariladi va ikkala vektorning ham uzunligi bir xil bo'ladi.
 
 Example:
 
 ```python
 import numpy as np 
 
-lst1 = [10,20,30,40,50] 
-lst2 = [1,2,3,4,5]
+lst1 = [10, 20, 30, 40, 50] 
+lst2 = [1, 2, 3, 4, 5]
 
 
 vctr1 = np.array(lst1) 
@@ -92,7 +111,7 @@ print(vctr1)
 print("list 2 dan vektor yaratildi:") 
 print(vctr2) 
 
-vctr_add = vctr1+vctr2
+vctr_add = vctr1 + vctr2
 print("Vektorlarning yig'indisi: ",vctr_add)
 ```
 
@@ -112,8 +131,8 @@ Example:
 ```python
 import numpy as np 
 
-lst1 = [10,20,30,40,50] 
-lst2 = [1,2,3,4,5]
+lst1 = [10, 20, 30, 40, 50] 
+lst2 = [1, 2, 3, 4, 5]
 
 
 vctr1 = np.array(lst1) 
@@ -154,8 +173,8 @@ Quyidagi kodni ko'rib chiqing!
 ```python
 import numpy as np 
 
-lst1 = [10,20,30,40,50] 
-lst2 = [1,2,3,4,5]
+lst1 = [10, 20, 30, 40, 50] 
+lst2 = [1, 2, 3, 4, 5]
 
 vctr1 = np.array(lst1) 
 
@@ -192,8 +211,8 @@ Example:
 ```python
 import numpy as np 
  
-lst1 = [10,20,30,40,50] 
-lst2 = [10,20,30,40,50]
+lst1 = [10, 20, 30, 40, 50] 
+lst2 = [10, 20, 30, 40, 50]
  
 vctr1 = np.array(lst1) 
  
@@ -228,8 +247,8 @@ Example:
 ```python
 import numpy as np 
 
-lst1 = [10,20,30,40,50] 
-lst2 = [1,1,1,1,1]
+lst1 = [10, 20, 30, 40, 50] 
+lst2 = [1, 1, 1, 1, 1]
 
 
 vctr1 = np.array(lst1) 
