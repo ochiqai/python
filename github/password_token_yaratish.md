@@ -37,13 +37,17 @@
 
 * Yaratib o'tgan yangi tokenimizni ko'rishingiz mumkin.
 <br>
-`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`
+
+   *  `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`
 
 <p align="center">
     <img src="./images/yangi_token.png" width="600">
 </p>
 
 * Bu tokendan nusxa olib kerakli joyga saqlab qo'yishimiz lozim.
-Foydalanuvchi uchun githubdagi parolni talab qilsa foydalanamiz. 
-<br>
-Masalan `Password for 'https://Nuriddin-Dev@github.com':`
+Foydalanuvchi uchun githubdagi parolni talab qilsa foydalanamiz.
+Masalan <br>
+
+    ```shell
+    Password for 'https://Nuriddin-Dev@github.com':
+    ```
