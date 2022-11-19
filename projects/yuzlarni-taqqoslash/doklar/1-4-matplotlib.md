@@ -16,7 +16,7 @@
 
 * Misol uchun ekranga shunday chiqaramiz
 <p>
-    <img src="./matplotlib_images/mat_1.png">
+    <img src="./rasm/matplotlib_images/mat_1.png">
 </p>
 
 * Dastlabki qadamda biz maplotibni o'rnatib olamiz.
@@ -48,7 +48,7 @@ plt.show()
 * Natijasi: Shu holatda namayon bo'ladi. Bunda `x o'qi(0, 6)`, `y o'qi(0, 250)` tashkil etadi.
 
 <p>
-    <img src="./matplotlib_images/img_1.png">
+    <img src="./rasm/matplotlib_images/img_1.png">
 </p>
 
 * Biz bundan tashqari biz x va y o'qlarga bir qancha qiymatlar berib ham foydalanishimiz mumkin.
@@ -60,7 +60,7 @@ plt.plot(xpoints, ypoints)
 plt.show()
 ```
 <p>
-    <img src="./matplotlib_images/img_2.png">
+    <img src="./rasm/matplotlib_images/img_2.png">
 </p>
 
 * Biz bazi vaqtlarda x o'qi tushurib qoldirishimiz ham mumkin bo'ladi. Bunday holatda agar y o'qi nechta qiymat olishiga qarab
@@ -73,7 +73,7 @@ plt.plot(ypoints)
 plt.show()
 ```
 <p>
-    <img src="./matplotlib_images/img_3.png">
+    <img src="./rasm/matplotlib_images/img_3.png">
 </p>
 
 ## Line
@@ -92,7 +92,7 @@ plt.show()
 * Pastdagi natijadan ko'rinib turibdiki, y1 va y2 o'qlarni yaratib olib ikkita `plt.plot()` ham qilib oldik.
 
 <p>
-    <img src="./matplotlib_images/img_4.png">
+    <img src="./rasm/matplotlib_images/img_4.png">
 </p>
 
 * Bundan tashqari biz ikkta x o'qi va ikkita y o'qini ham berib o'tishimiz mumkin.
@@ -107,7 +107,7 @@ plt.show()
 
 ```
 <p>
-    <img src="./matplotlib_images/img_5.png">
+    <img src="./rasm/matplotlib_images/img_5.png">
 </p>
 
 ## Labels
@@ -127,14 +127,14 @@ plt.show()
 ```
 * Natijasi:
 <p>
-    <img src="./projects/matplotlib_images/img_6.png">
+    <img src="./rasm/matplotlib_images/img_6.png">
 </p>
 
 * Agar biz diagrammamizga grid line qo'shmoqchi bo'lsak, `plt.grid()` foydalanmiz.
 * Misol uchun diagramma shunday shaklga keladi.
 
 <p>
-    <img src="./matplotlib_images/img_7.png">
+    <img src="./rasm/matplotlib_images/img_7.png">
 </p>
 
 ## Subplot 
@@ -160,14 +160,14 @@ plt.show()
 ```
 
 <p>
-    <img src="./matplotlib_images/img_8.png">
+    <img src="./rasm/matplotlib_images/img_8.png">
 </p>
 
 * Agar biz `plt.subplot()` qavs ichiga miqdor bermasdan yozsak, natijada ikki bo'lak birlashadi.
 
 * Natijasi: Shunday ko'rinishga ega bo'ladi.
 <p>
-    <img src="D:./projects/matplotlib_images/img_9.png">
+    <img src="./rasm/matplotlib_images/img_9.png">
 </p>
 
 ## Tayanch tushunchalar
