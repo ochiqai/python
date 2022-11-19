@@ -15,10 +15,8 @@
 * Matplotlib bu - pythondagi kutubxonalardan biri bo'lib, grafikalarni yasashga hizmat qiladi.
 
 * Misol uchun ekranga shunday chiqaramiz
-
 <p>
-    <img src="D:\ochiqai\python\projects\matplotib_images\img.png">
-
+    <img src="./matplotlib_images/mat_1.png">
 </p>
 
 * Dastlabki qadamda biz maplotibni o'rnatib olamiz.
@@ -31,7 +29,7 @@ pip install matplotlib yoki conda install matplotlib
 ___
 ## Pyplot 
 * Pyplot bu - bizga line graflarni chizishga imkon beruvchi funksiyalardan biri. Keyingi ishlarda uni deyarli hamma vaqtda qo'llaymiz.
-`import matplotlib.pyplot as plt` qilinadi. Keyin diagrammalarimizda biz arralardan foydalanamiz, shuning uchun numpyni ham import qilib
+`import matplotlib.pyplot as plt` qilinadi. Keyin diagrammalarimizda biz arreylardan foydalanamiz, shuning uchun numpyni ham import qilib
 olamiz `import numpy as np`. Diagramma asosi ikki o'qdan tashkil topadi 1- x o'qi, misol uchun `x = np.array([0, 6])`
 2 - y o'qi, misol uchun `y = np.array([0, 250])`. Keyin ikkala o'qlarni plt.plotda birlashtiramiz `plt.plot(x, y)`.
 So'nggi qadamda diagrammamizni ekranga chiqarib olamiz, buning uchun `plt.show()` komandasidan foydalanamiz.
@@ -50,7 +48,7 @@ plt.show()
 * Natijasi: Shu holatda namayon bo'ladi. Bunda `x o'qi(0, 6)`, `y o'qi(0, 250)` tashkil etadi.
 
 <p>
-    <img src="D:\ochiqai\python\projects\matplotib_images\img_1.png">
+    <img src="./matplotlib_images/img_1.png">
 </p>
 
 * Biz bundan tashqari biz x va y o'qlarga bir qancha qiymatlar berib ham foydalanishimiz mumkin.
@@ -62,7 +60,7 @@ plt.plot(xpoints, ypoints)
 plt.show()
 ```
 <p>
-    <img src="D:\ochiqai\python\projects\matplotib_images\img_2.png">
+    <img src="./matplotlib_images/img_2.png">
 </p>
 
 * Biz bazi vaqtlarda x o'qi tushurib qoldirishimiz ham mumkin bo'ladi. Bunday holatda agar y o'qi nechta qiymat olishiga qarab
@@ -75,12 +73,12 @@ plt.plot(ypoints)
 plt.show()
 ```
 <p>
-    <img src="D:\ochiqai\python\projects\matplotib_images\img_3.png">
+    <img src="./matplotlib_images/img_3.png">
 </p>
 
 ## Line
 
-* Yuqoridagi misollarda biz bittalik linelarni ko'rib chiqdik, endi ir diagrammada bir dan ko'p ham bo'lishi mumkin, keling birgalikda ko'ramiz
+* Yuqoridagi misollarda biz bittalik linelarni ko'rib chiqdik, endi bir diagrammada bir dan ko'p ham bo'lishi mumkin, keling birgalikda ko'ramiz
 * Misol uchun
 ```console
 y1 = np.array([3, 8, 1, 10])
@@ -94,10 +92,10 @@ plt.show()
 * Pastdagi natijadan ko'rinib turibdiki, y1 va y2 o'qlarni yaratib olib ikkita `plt.plot()` ham qilib oldik.
 
 <p>
-    <img src="D:\ochiqai\python\projects\matplotib_images\img_4.png">
+    <img src="./matplotlib_images/img_4.png">
 </p>
 
-* Bundan tashqari biz ikkta x o'qi va ikkita y o'qini ham brib o'tishimiz mumkin.
+* Bundan tashqari biz ikkta x o'qi va ikkita y o'qini ham berib o'tishimiz mumkin.
 ```console
 x1 = np.array([0, 1, 2, 3])
 y1 = np.array([3, 8, 1, 10])
@@ -109,12 +107,12 @@ plt.show()
 
 ```
 <p>
-    <img src="D:\ochiqai\python\projects\matplotib_images\img_5.png">
+    <img src="./matplotlib_images/img_5.png">
 </p>
 
 ## Labels
 
-* Bundan tashqari biz giagrammalar ichiki qismi title hamda x va y o'qlariga nom berishimiz ham mumkin.
+* Bundan tashqari biz diagrammalar ichiki qismi title hamda x va y o'qlariga nom berishimiz ham mumkin.
 ```Console
 x = np.array([2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020])
 y = np.array([240, 200, 290, 315, 220, 100, 160, 410, 600, 330, 220])
@@ -129,14 +127,14 @@ plt.show()
 ```
 * Natijasi:
 <p>
-    <img src="D:\ochiqai\python\projects\matplotib_images\img_6.png">
+    <img src="./projects/matplotlib_images/img_6.png">
 </p>
 
 * Agar biz diagrammamizga grid line qo'shmoqchi bo'lsak, `plt.grid()` foydalanmiz.
 * Misol uchun diagramma shunday shaklga keladi.
 
 <p>
-    <img src="D:\ochiqai\python\projects\matplotib_images\img_7.png">
+    <img src="./matplotlib_images/img_7.png">
 </p>
 
 ## Subplot 
@@ -162,14 +160,14 @@ plt.show()
 ```
 
 <p>
-    <img src="D:\ochiqai\python\projects\matplotib_images\img_8.png">
+    <img src="./matplotlib_images/img_8.png">
 </p>
 
 * Agar biz `plt.subplot()` qavs ichiga miqdor bermasdan yozsak, natijada ikki bo'lak birlashadi.
 
 * Natijasi: Shunday ko'rinishga ega bo'ladi.
 <p>
-    <img src="D:\ochiqai\python\projects\matplotib_images\img_9.png">
+    <img src="D:./projects/matplotlib_images/img_9.png">
 </p>
 
 ## Tayanch tushunchalar
