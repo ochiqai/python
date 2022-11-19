@@ -45,3 +45,5 @@
 
 * Bu tokendan nusxa olib kerakli joyga saqlab qo'yishimiz lozim.
 Foydalanuvchi uchun githubdagi parolni talab qilsa foydalanamiz. 
+<br>
+Masalan `Password for 'https://Nuriddin-Dev@github.com':`
