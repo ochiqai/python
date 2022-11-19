@@ -283,14 +283,14 @@ Masalan:
 Euclidean, Cosine, Hamming, Manhattan va boshqalar.
 
 <p align="center">
-    <img src="./image/vektor_taqqoslash_usullari.jpg">
+    <img src="./rasm/vektor_taqqoslash/vektor_taqqoslash_usullari.jpg">
 </p>
 
 
 Biz `cosine similarity` formulasi orqali vektorlarni taqqoslashni ko'rib o'tamiz.
 
 <p align="center">
-    <img src="./image/cosine_formulasi.png">
+    <img src="./rasm/vektor_taqqoslash/cosine_formulasi.png">
 </p>
 
 * Formuladagi amallarni pythonda tartib buyicha bajarib ko'ramiz.
@@ -448,3 +448,5 @@ print(natija3)
 0.9958591954639383
 0.2070951535546416
 ```
+
+ 
