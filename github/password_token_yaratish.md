@@ -36,8 +36,6 @@
 </p>
 
 * Yaratib o'tgan yangi tokenimizni ko'rishingiz mumkin.
-<br>
-
    *  `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`
 
 <p align="center">
