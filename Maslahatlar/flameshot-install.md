@@ -17,6 +17,6 @@ Bundan tashqari, siz ushbu tasvirni izohlash vositalarining ko'pchiligining rang
 
 `Install` qismiga kirib `sudo snap install flameshot` ushbu qismidan nusxa olib terminalimizga borib ishlatib dasturimizni o'rnatamiz.
 
-<p align="center">
-    <img src="./rasmlar/flameshot_terminal_comandasi.png" width="650">
-</p>
+```shell
+nuriddin@MSI:~$ sudo snap install flameshot
+```
