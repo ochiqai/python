@@ -67,13 +67,12 @@
      1.0 [Condani o'rnatish](yozilayapti) <br>
      1.1 [Conda orqali muhit yaratish](yozilyapti) <br>
      1.2 [Kutubxonalarni o'rnatish](yozilyapti) <br>
-     1.3 [Kerakli kutubxonalarda ishlash](yozilyapti)<br>
-     1.4 [NumPy da ishlash](yozilyapti)<br>
-     1.5 [Matplotlibda da ishlash](yozilayapti)<br>
-     1.6 [Vektorlarni solishtirish](yozilyapti)<br>
-     1.7 [Yuzlarni rasmdan aniqlash](yozilayapti)<br>
-     1.8 [Yuzlarni piksellar orqali solishtirish](yozilyapti)<br>
-     1.9 [Yuzlarni AI orqali vektorlarga o'tkazish va solishtirish](yozilyapti)
+     1.3 [NumPy da ishlash](yozilyapti)<br>
+     1.4 [Matplotlibda da ishlash](yozilayapti)<br>
+     1.5 [Vektorlarni solishtirish](yozilyapti)<br>
+     1.6 [Yuzlarni rasmdan aniqlash](yozilayapti)<br>
+     1.7 [Yuzlarni piksellar orqali solishtirish](yozilyapti)<br>
+     1.8 [Yuzlarni AI orqali vektorlarga o'tkazish va solishtirish](yozilyapti)
 
 
 
