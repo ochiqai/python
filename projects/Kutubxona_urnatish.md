@@ -9,13 +9,14 @@ Bular asosan ma'lum maqsad uchun yaratilgan kutubxonalar sanaladi. Misol uchun `
 `matplotlib` esa visual diagrammalarni hosil qilish uchun mo'ljallangan dastur hisoblanadi.
 
 ## Kutubxonani o'rnatish va foydalanish
-* keling unda ularni birma - bir yuklab olishni ko'rib chiqamiz. Yuklab olish uchun:
-```md
-pip install numpy yoki conda install numpy 
+* Keling unda ularni birma - bir yuklab olishni ko'rib chiqamiz. Yuklab olish uchun:
+```shell
+conda install numpy 
 ```
 qilib kiritib olishigiz kerak bo'ladi.
+Agar siz sizda conda bo'lmasa `pip install numpy`dan foydalanishingiz mumkin.
 * Natijasi esa: Terminalda shu ko'rinishda ko'rinadi
-```
+```shell
 Collecting numpy
   Downloading numpy-1.23.5-cp310-cp310-win_amd64.whl (14.6 MB)
      |████████████████████████████████| 14.6 MB 26 kB/s
@@ -26,14 +27,14 @@ You should consider upgrading via the 'C:\Users\user\PycharmProjects\pythonProje
 ct\pythonProject\4_dars\venv\Scripts\python.exe -m pip install --upgrade pip' command.
 
 ```
-* Mana numpy ham yuklab olindi va u ishlatish uchun tayyor hisoblanadi. Uni ishaltish uchun esa
-```md
+* Mana numpy ham o'rnatib olindi va u ishlatish uchun tayyor hisoblanadi. Uni ishaltish uchun esa
+```shell
 import numpy as np
 ```
 * Yuqoridagi shaklda chaqirib olinadi va undan foydalanish mumkin bo'ladi.
 * Misol uchun:
 
-```md
+```shell
 import numpy as np
 
 arr = np.array([1, 2, 3, 4])
@@ -44,10 +45,10 @@ print(arr)
 
 * Bundan tashqari esa `matplotlib` ham shunday shaklda yuklab olishimiz mumkin bo'ladi.
 ```md
-pip install matplotlib yoki conda install matplotlib
+conda install matplotlib
 ```
 * Va uning natijasi esa:
-```md
+```shell
 Collecting matplotlib 
   Downloading matplotlib-3.6.2-cp310-cp310-win_amd64.whl (7.2 MB) 
      |████████████████████████████████| 7.2 MB 2.2 MB/s
@@ -77,10 +78,10 @@ WARNING: You are using pip version 21.1.2; however, version 22.3.1 is available.
 You should consider upgrading via the 'C:\Users\user\PycharmProjects\pythonProject1\pythonProject\pythonPr
 oject\4_dars\venv\Scripts\python.exe -m pip install --upgrade pip' command.
 ```
-* Uni ham ishlatishimi uchun ham `import matplotlib` dan foydalnamiz.
+* Uni ham ishlatishimiz uchun ham `import matplotlib` dan foydalanamiz.
 * Misol sifatida
 
-```md
+```shell
 import matplotlib.pyplot as plt
 import numpy as np
 
@@ -90,6 +91,9 @@ ypoints = np.array([0, 250])
 plt.plot(xpoints, ypoints)
 plt.show()
 ```
+* Agar kutubxonani o'chirmoqchi bo'lsak `conda uninstall [kutubxona nomi]` dan foydalanamiz.
+
+
 * Bunda tashqari yana ko'plab kutubxonalar mavjud va ular ham shu shaklda yuklab olib, foydalanish mumkin bo'ladi.
 
 
