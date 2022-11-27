@@ -12,7 +12,7 @@ Bundan tashqari, siz ushbu tasvirni izohlash vositalarining ko'pchiligining rang
   * `https://snapcraft.io/flameshot` 
 
 <p align="center">
-    <img src="./rasmlar/frameshot.png" width="650">
+    <img src="./rasmlar/flameshot.png" width="650">
 </p>
 
 `Install` qismiga kirib `sudo snap install flameshot` ushbu qismidan nusxa olib terminalimizga borib ishlatib dasturimizni o'rnatamiz.
@@ -20,3 +20,29 @@ Bundan tashqari, siz ushbu tasvirni izohlash vositalarining ko'pchiligining rang
 ```shell
 nuriddin@MSI:~$ sudo snap install flameshot
 ```
+
+#### Flameshotni ishlatish
+
+* Flameshotni o'rnatib bo'lgandan so'ng, unga kirganizda ekranimizning yuqori burchagida paydo bo'ladi. Quyida ko'rsatilganidek ishlatib ko'ramiz.
+
+<p align="center">
+    <img src="./rasmlar/flameshot1.png" width="650">
+</p>
+
+* Flameshotdan foydalanish jarayoni.
+
+<p align="center">
+    <img src="./rasmlar/flameshot_foydalanish_jarayoni.png" width="650">
+</p>
+
+* Rasmni saqlash.
+
+<p align="center">
+    <img src="./rasmlar/rasm_saqlash.png" width="650">
+</p>
+
+* Tayyorlangan rasm ko'rinishi.
+
+<p align="center">
+    <img src="./rasmlar/flameshot_foydalanish.png" width="650">
+</p>
