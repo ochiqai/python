@@ -46,3 +46,9 @@ nuriddin@MSI:~$ sudo snap install flameshot
 <p align="center">
     <img src="./rasmlar/flameshot_foydalanish.png" width="650">
 </p>
+
+* Dasturni o'chirish komandasi
+
+```shell
+nuriddin@MSI:~$ sudo snap remove flameshot
+```
