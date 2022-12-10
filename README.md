@@ -21,12 +21,6 @@
   
 
 
-## Git/Github
-  1. [Terminalga kirish WINDOWS](./terminal/terminal_windows.md)
-  2. [Gitga kirish](./github/Gitga_kirish.md)
-  3. [Githubga joylash](./github/githubga_joylash.md)
-  4. [PR ochish](./github/github_pr_qilish.md)
-  5. [PR dan keyingi ishlar](./github/PRdan_keyingi_qadam.md)
 
 
 ## Python 
@@ -60,6 +54,31 @@
   16. [SQL](./python/16-kun-SQL/16-kun-sql.md)
 
 #### Takrorlash: [1-10 kunlar](./biblateka/python_shpagralka.pdf)
+
+
+## Git/Github
+  1. [Terminalga kirish WINDOWS](./terminal/terminal_windows.md)
+  2. [Gitga kirish](./github/Gitga_kirish.md)
+  3. [Githubga joylash](./github/githubga_joylash.md)
+  4. [PR ochish](./github/github_pr_qilish.md)
+  5. [PR dan keyingi ishlar](./github/PRdan_keyingi_qadam.md)
+  6. [PR review qoidalari](./github/PR_review_qoidasi.md) 
+
+
+
+## Proyektlar
+  1. Yuzlarni solishtirish <br>
+     1.0 [Condani o'rnatish](yozilayapti) <br>
+     1.1 [Conda orqali muhit yaratish](yozilyapti) <br>
+     1.2 [Kutubxonalarni o'rnatish](yozilyapti) <br>
+     1.3 [NumPy da ishlash](yozilyapti)<br>
+     1.4 [Matplotlibda da ishlash](yozilayapti)<br>
+     1.5 [Vektorlarni solishtirish](yozilyapti)<br>
+     1.6 [Yuzlarni rasmdan aniqlash](yozilayapti)<br>
+     1.7 [Yuzlarni piksellar orqali solishtirish](yozilyapti)<br>
+     1.8 [Yuzlarni AI orqali vektorlarga o'tkazish va solishtirish](yozilyapti)
+
+
 
 
 ## Django
