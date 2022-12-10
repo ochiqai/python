@@ -133,5 +133,6 @@ dmypy.json
 
 
 # python related
-.idea/
-.idea/
+*.idea/*
+*.idea/*
+.idea/misc.xml
