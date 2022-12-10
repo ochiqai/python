@@ -58,6 +58,7 @@
   2. [Githubga joylash](./github/githubga_joylash.md)
   3. [PR ochish](./github/github_pr_qilish.md)
   4. [PR dan keyingi ishlar](./github/PRdan_keyingi_qadam.md)
+  5. [PR review qoidalari](./github/PR_review_qoidalari.md)
 
 ## Proyektlar
   1. Yuzlarni solishtirish <br>
