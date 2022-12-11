@@ -62,15 +62,15 @@
 
 ## Proyektlar
   1. Yuzlarni solishtirish <br>
-     1.0 [Condani o'rnatish](yozilayapti) <br>
-     1.1 [Conda orqali muhit yaratish](yozilyapti) <br>
-     1.2 [Kutubxonalarni o'rnatish](yozilyapti) <br>
-     1.3 [NumPy da ishlash](yozilyapti)<br>
-     1.4 [Matplotlibda da ishlash](yozilayapti)<br>
-     1.5 [Vektorlarni solishtirish](yozilyapti)<br>
-     1.6 [Yuzlarni rasmdan aniqlash](yozilayapti)<br>
-     1.7 [Yuzlarni piksellar orqali solishtirish](yozilyapti)<br>
-     1.8 [Yuzlarni AI orqali vektorlarga o'tkazish va solishtirish](yozilyapti)
+     1.0 [Condani o'rnatish](./projects/yuzlarni-taqqoslash/doklar/1-0-conda-urnatish.md) <br>
+     1.1 [Conda orqali muhit yaratish](./projects/yuzlarni-taqqoslash/doklar/1-1-conda-muhit-yaratish.md) <br>
+     1.2 [Kutubxonalarni o'rnatish](./projects/yuzlarni-taqqoslash/doklar/1-2-kutubxona-urnatish.md) <br>
+     1.3 [NumPy da ishlash](./projects/yuzlarni-taqqoslash/doklar/1-3-numpy.md)<br>
+     1.4 [Matplotlibda da ishlash](./projects/yuzlarni-taqqoslash/doklar/1-4-matplotlib.md)<br>
+     1.5 [Vektorlarni solishtirish](./projects/yuzlarni-taqqoslash/doklar/1-5-vektorlarni-solishtirish.md)<br>
+     1.6 [Yuzlarni rasmdan aniqlash](./projects/yuzlarni-taqqoslash/doklar/1-6-yuzni-%20rasmdan-aniqlash.md)<br>
+     1.7 [Yuzlarni piksellar orqali solishtirish](./projects/yuzlarni-taqqoslash/doklar/1-7-yuzlarni-solishtirish-piksellar.md)<br>
+     1.8 [Yuzlarni AI orqali vektorlarga o'tkazish va solishtirish](./projects/yuzlarni-taqqoslash/doklar/1-8-yuzlarni-solishtirish-AI.md)
 
 
 
