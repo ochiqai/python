@@ -4,7 +4,7 @@
 
      `https://docs.conda.io/projects/conda/en/latest/user-guide/install/linux.html` linkdan foydalanib yukalb olamiz.
 
-    * Quyidagi qismiga kiramiz. (Linux uchun)
+    * Quyidagi qismiga kiramiz.
 
     ![dowload_conda.png](./rasm/conda_yuklash.png) 
   
