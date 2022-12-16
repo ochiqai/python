@@ -1,0 +1,16 @@
+name: Mukhriddinoff
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.8.10
+  - matplotlib
+  - numpy
+  - scikit-learn
+  - py-opencv=4.6.0
+  - cython=0.29.32
+  - scipy=1.9.3
+  - pip
+  - pip:
+      - insightface==0.6.2
+      - onnxruntime==1.13.1
