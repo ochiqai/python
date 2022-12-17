@@ -1,73 +1,63 @@
 ## Yuzlarni rasmdan aniqlash
 
+<!-- TOC -->
+  * [Yuzlarni rasmdan aniqlash](#yuzlarni-rasmdan-aniqlash)
+    * [Foydalanadigan kutibxonalar](#foydalanadigan-kutibxonalar)
+    * [Model joyini aniqlash](#model-joyini-aniqlash)
+    * [Rasmni o'qib olish](#rasmni-oqib-olish)
+    * [Yuz qismlari va koordinatalarini aniqlash](#yuz-qismlari-va-koordinatalarini-aniqlash)
+    * [Aniqlangan yuzlarni chizib olish](#aniqlangan-yuzlarni-chizib-olish)
+<!-- TOC -->
 
 ### Foydalanadigan kutibxonalar
 
-* Kerakli kutibxonalarni `import` qilib olamiz.
+* Kerakli kutibxonalarni yuklab (`import`) olamiz.
 
     ```python
-    import cv2
-    import insightface
-    from insightface.app.common import Face
-    from insightface.app import FaceAnalysis
-    import matplotlib.pyplot as plt
+    import cv2 # rams ustida amallar uchun
+    import insightface # yuzni aniqlash uchun
+    from insightface.app.common import Face # yuz klassi uchun
+    from insightface.app import FaceAnalysis # yuz uchun
+    import matplotlib.pyplot as plt # vizualizatsiya uchun
     ```
 
-### Model joyini aniqlash
+### Model olish va joyini aniqlash
 
-* Biz foydalanadigan modul yuz qismini aniqlab beradigan funksiya kabi tushunsak bo'ladi.
-
-* Rasmdan yuzni aniqlab olish uchun kerak bo'ladigan model joyini aniqlaymiz.
+Biz foydalanadigan modul yuz qismini aniqlab beradigan funksiya kabi tushunsak bo'ladi.
+Avvalo quiyidagi klassni chaqiramiz
 
   ```python
-  import cv2
-  import insightface
-  from insightface.app.common import Face
-  from insightface.app import FaceAnalysis
-  import matplotlib.pyplot as plt
-  
-  
   app = FaceAnalysis()
   ```
-  * `app = FaceAnalysis()` yozib olib dasturimizni ishlatib, model joyini aniqlab olamiz. 
+Bu kod bir nechta modellarni yuklaydi. Shundan yuzni aniqlaydigan (`detection`) model joyini bilib olamiz:
 
   ```shell
-  find model: /home/nuriddin/.insightface/models/buffalo_l/2d106det.onnx landmark_2d_106 ['None', 3, 192, 192] 0.0 1.0
-  Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+  ...
   find model: /home/nuriddin/.insightface/models/buffalo_l/det_10g.onnx detection [1, 3, '?', '?'] 127.5 128.0
-  Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
-  find model: /home/nuriddin/.insightface/models/buffalo_l/genderage.onnx genderage ['None', 3, 96, 96] 0.0 1.0
+  ...
   ``` 
-  * Yuqorida `detection` qismida `model joyi` berilgan. Va uni `model_joyi` o'zgaruvchisiga ta'minlab olamiz.
 
-```python
-import cv2
-import insightface
-from insightface.app.common import Face
-from insightface.app import FaceAnalysis
-import matplotlib.pyplot as plt
+Yuqorida `detection` qismida `model joyi` berilgan. Va uni `model_joyi` o'zgaruvchisiga yuklaymiz:
 
-# app = FaceAnalysis()
+  ```python
+  model_joyi = "/home/nuriddin/.insightface/models/buffalo_l/det_10g.onnx"
+  ```
 
-model_joyi = "/home/nuriddin/.insightface/models/buffalo_l/det_10g.onnx"
-```
-
-* Model joyini aniqlab oldi, endi uni `insightface` orqali chaqirib olamiz va modelimizni `yuz aniqlagich` o'zgaruvchiisiga ta'minlab olamiz.
+Model joyini aniqlab oldik, endi uni `insightface` orqali chaqirib olamiz va modelimizni 
+`yuz aniqlagich` o'zgaruvchisiga yuklaymiz.
 
   ```python
   yuz_aniqlagich = insightface.model_zoo.get_model(model_joyi)
   ```
-* Rasmni `640 vs 640` o'lchamga keltirib olamiz.
+Rasmni `640 vs 640` o'lchamga keltirib olamiz. Bunda ixtiyoriy kiritilgan rasm (640, 640) o'lchamga o'tkaziladi.
 
   ```python
-  yuz_aniqlagich = insightface.model_zoo.get_model(model_joyi)
-  # (640, 640) ixtiyoriy kiritilgan rasmni ushbu o'lchamga o'tkazadi.
   yuz_aniqlagich.prepare(ctx_id=0, input_size=(640, 640))
   ```
   
 ### Rasmni o'qib olish
 
-* Foydalanadigan rasmning joyini aniqlab olamiz, `cv2` kutubxonasining `imread` komandasi orqali o'qib olamiz.
+* Aytaylik bizda rasm bor, `uz_prez.jpg`. `cv2` kutubxonasining `imread` funksiyasi orqali o'qib olamiz.
 
   ```python
   rasm_joyi = "rasmlar/uz_prez.jpg"
@@ -77,7 +67,7 @@ model_joyi = "/home/nuriddin/.insightface/models/buffalo_l/det_10g.onnx"
 
 ### Yuz qismlari va koordinatalarini aniqlash
 
-* `yuz_aniqlagich` modelining `detect` komandasi orqali yuz qismlari, koordinatalarini aniqlab olamiz.
+* `yuz_aniqlagich` modelining `detect` funksiya orqali yuz qismlari, koordinatalarini aniqlab olamiz.
 
   ```python
   yuz_koordinatalari, yuz_qismlari = yuz_aniqlagich.detect(rasm)
@@ -89,23 +79,30 @@ model_joyi = "/home/nuriddin/.insightface/models/buffalo_l/det_10g.onnx"
   yuz_koordinatalari_uzgartirilgan = []
   ```
 
-*  Yuz koordinatalari o'rganish
+*  Yuz koordinatalari qanday berilganini tushunib olishimiz kerak
 
     ```python
-    >>> yuz_koordinatalari.shape
+    print(yuz_koordinatalari.shape)
+    ```
+    ```commandline
     (19, 5)
     ```
-      * `shape` komandasi orqali nimalar mavjudligini bilib oldik. `19` rasmlar sonini anglatadi, `5` esa nimani anglatishini tushunib olishimiz uchun, birinchi rasmni o'zini chiqarib ko'raylik.
+* `shape` funsksiya orqali nimalar mavjudligini bilib oldik. `19` rasmlar sonini anglatadi, 
+  `5` esa nimani anglatishini tushunib olishimiz uchun, birinchi rasmni o'zini chiqarib ko'raylik.
 
   ```shell
-  >>> yuz_koordinatalari[0,:]
+  print(yuz_koordinatalari[0,:])
+  ```
+  ```commandline
   array([479.86224  ,  41.49642  , 578.2567   , 165.86041  ,   0.9085071],
         dtype=float32)
   ```
 
-* Yuqorida dastlabki 4 ta son birinchi rasmimizning koordinatalarini anglatadi. `0.9085071` bu sonni esa koordinatalarning ishonchlilik darajasi deb qarasak bo'ladi. 
+* Yuqorida dastlabki 4 ta son birinchi yuzning koordinatalarini anglatadi. 
+`0.9085071` bu sonni esa koordinatalarning ishonchlilik darajasi deb qarasak bo'ladi. 
 
-* Quyidagi jarayonni bajarib o'tamiz.
+* Hozirgacha bo'lgan malumotlarni `Face` klasiga mutonosib qilishimiz kerak, chunki vizualizatsiya qilishimiz uchun
+kerak bo'ladi:
 
     ```python
     for i in range(yuz_koordinatalari.shape[0]):
@@ -117,23 +114,22 @@ model_joyi = "/home/nuriddin/.insightface/models/buffalo_l/det_10g.onnx"
         yuz_koordinatalari_uzgartirilgan.append(yuz)
     ```
     
-    * `yuz_koordinatalari.shape[0]` - bu yuzlar soni qarab son qaytaradi(4 ta yuzni aniqlasa `4` qaytaradi va h.k).
-    * `koordinata = yuz_koordinatalari[i, 0:4]` - rasm koordinatalar qismi.
+    * `yuz_koordinatalari.shape[0]` - bu yuzlar soniga qarab son qaytaradi (4 ta yuzni aniqlasa `4` qaytaradi va h.k).
+    * `koordinata = yuz_koordinatalari[i, 0:4]` - rasmdagi yuz koordinatalar qismi.
     * `ishonch = yuz_koordinatalari[i, 4]` - ishonchlilik qismi. (0.9085071)
-    * `koordinata`, `ishonch` va `yuz_qismlari` ni aniqlab olib `Face` kutibxonasiga yuqoridagidek yozib olib, uni `yuz` o'zgaruvchisiga ta'minlab oldik.
+    * `koordinata`, `ishonch` va `yuz_qismlari` ni aniqlab olib `Face` klassiga yozib olib, uni `yuz` o'zgaruvchisiga yuklaymiz.
     * `yuz_koordinatalari_uzgartirilgan` listiga `append` orqali har bir `yuz`ni qo'shib boramiz.
 
 ### Aniqlangan yuzlarni chizib olish
 
-* Rasmdan yuzlarni aniqlagach uni alohida chizib olamiz. 
+* Rasmdan yuzlarni aniqlab bo'lgandan keyin, vizualizatsiya qilamiz. Bunda yuz va yuz qism tasvirlanadi. 
 
   ```python
-  app = FaceAnalysis()
   chizilgan_rasm = app.draw_on(rasm, yuz_koordinatalari_uzgartirilgan)
   ```
   * `app.draw_on` bizga aniqlangan yuzlarni chizib, rasm ko'rinishida qaytaradi.
 
-  * Rasmni `rgb`ga o'tkazib olib, `matplotlib` yordamida `chizilgan_rasm`ni ko'rishimiz mumikin.
+  * Rasmni `rgb`ga o'tkazib olib, `matplotlib` yordamida `chizilgan_rasm`ni ko'rishimiz mumkin.
 
   ```python
   chizilgan_rasm = cv2.cvtColor(chizilgan_rasm, cv2.COLOR_BGR2RGB)
@@ -151,7 +147,7 @@ model_joyi = "/home/nuriddin/.insightface/models/buffalo_l/det_10g.onnx"
   import matplotlib.pyplot as plt
   
   
-  # app = FaceAnalysis()
+  app = FaceAnalysis()
   # /home/ochiqai/.insightface/models/buffalo_l/det_10g.onnx
   
   model_joyi = "/home/ochiqai/.insightface/models/buffalo_l/det_10g.onnx"
@@ -173,10 +169,7 @@ model_joyi = "/home/nuriddin/.insightface/models/buffalo_l/det_10g.onnx"
       yuz = Face(bbox=koordinata, kps=yuz_qism, det_score=ishonch)
       yuz_koordinatalari_uzgartirilgan.append(yuz)
   
-  
-  app = FaceAnalysis()
   chizilgan_rasm = app.draw_on(rasm, yuz_koordinatalari_uzgartirilgan)
-  
   chizilgan_rasm = cv2.cvtColor(chizilgan_rasm, cv2.COLOR_BGR2RGB)
   plt.imshow(chizilgan_rasm)
   plt.show()
@@ -184,7 +177,7 @@ model_joyi = "/home/nuriddin/.insightface/models/buffalo_l/det_10g.onnx"
   
 * Dasturni ishlatamiz, va natijani ko'rishimiz mumkin.
 
-<p align="center">
-    <img src="./rasm/rasmdan_yuzni_aniqlash/rasmdan_yuzni_aniqlash.png">
-</p>
+  <p align="center">
+      <img src="./rasm/rasmdan_yuzni_aniqlash/rasmdan_yuzni_aniqlash.png">
+  </p>
 
