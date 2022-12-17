@@ -185,6 +185,6 @@ model_joyi = "/home/nuriddin/.insightface/models/buffalo_l/det_10g.onnx"
 * Dasturni ishlatamiz, va natijani ko'rishimiz mumkin.
 
 <p align="center">
-    <img src="./rasm/yuzni_rasmdan_aniqlash/rasmdan_yuzni_aniqlash.png">
+    <img src="./rasm/rasmdan_yuzni_aniqlash/rasmdan_yuzni_aniqlash.png">
 </p>
 
