@@ -57,8 +57,8 @@ jarayon davomida indekslardan foydalanmiz va ular butun sonda bo'lishi kerak.
 
 * Natija:
 
-  <p>
-      <img src="rasm/piksel_namuna_11.png">
+  <p align="center">
+      <img src="rasm/piksel_namuna_1.png">
   </p>
 
 * Keyingi qadamda biz rasmlarni vektorlarga o'tkazib olamiz, undan oldin esa rasmlarni bir xil razmerga 
@@ -77,7 +77,7 @@ o'tkazib olamiz. Buning uchun `resize`dan foydalanamiz
 
 * Natijasi :
 
-  <p>
+  <p align="center">
       <img src="rasm/piksel_namuna_2.png">
   </p>
 
@@ -124,7 +124,7 @@ yani piksellarga mos ravishda rasmlarni ko'rish uchun.
   test_rasm = cv2.resize(test_rasm, (50, 50))- bu rasmni bir xil shaklga keltirish uchun
   test_piksellar = test_rasm.reshape((1, 7500))- bu matritsadan vektorga utkazish uchun 
   ```
-  <p>
+  <p align="center">
       <img src="rasm/test_prez.png">
   </p>
 
@@ -183,7 +183,7 @@ ko'rish uchun kirtamiz,
       plt.show()
   ```
 
-<p>
+<p align="center">
     <img src="rasm/piksel_namuna_5.png">
 </p>
 
@@ -214,12 +214,12 @@ ham kiritishimz mumkin, bu yaqinlikni yaxshiroq qilib chiqarishga imkon yaratadi
 * Namunalar quydagicha ko'rinish oladi:
 1. To'g'ri rasm
 
-  <p>
+  <p align="center">
       <img src="rasm/piksel_namuna_3.png">
   </p>
 
 2. Noto'g'ri rasm
 
-  <p>
+  <p align="center">
       <img src="rasm/piksel_namuna_4.png">
   </p>
