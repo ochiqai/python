@@ -72,7 +72,8 @@
      1.7 [Yuzlarni piksellar orqali solishtirish](./projects/yuzlarni-taqqoslash/doklar/1-7-yuzlarni-solishtirish-piksellar.md)<br>
      1.8 [Yuzlarni AI orqali vektorlarga o'tkazish va solishtirish](./projects/yuzlarni-taqqoslash/doklar/1-8-yuzlarni-solishtirish-AI.md)
 
-     
+
+
 ## Django
    1. [Django: ishga tushirish](./django/01-blog-websayt/blog-proyekt/01-djangoni-urnatish.md)
    2. [Apps](./django/01-blog-websayt/blog-proyekt/02-apps.md)

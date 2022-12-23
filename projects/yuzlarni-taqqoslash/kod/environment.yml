@@ -3,14 +3,15 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - python=3.8.10
+  - python=3.9
   - matplotlib
   - numpy
   - scikit-learn
-  - py-opencv=4.6.0
-  - cython=0.29.32
-  - scipy=1.9.3
-  - onnxruntime=1.13.1
+  - cython
+  - scipy
   - pip
   - pip:
-      - insightface==0.6.2
+      - opencv-python
+      - onnxruntime
+      - insightface==0.7.2
+
