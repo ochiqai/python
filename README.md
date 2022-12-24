@@ -22,7 +22,8 @@
 ## Python 
 
   1. [Programma nima?](./python/01-kun-Programma/01-kun.md) 
-    - PyCharmni o'rnatish [Win](./biblateka/pycharm_windows.md) [LINUX](no)
+    - Local ishlash uchun: PyCharm [Win](./biblateka/pycharm_windows.md) [LINUX](no)
+    - Onlayn ishash uchun: Google colab [Colab](./biblateka/google-colab-ishlash/google-colab-ochish.md))
     - [Javoblar](./python/01-kun-Programma/01-kun-javoblar.md)
   2. [O'zgaruvchi](./python/02-kun-O'zgaruvchi/02-kun.md) 
     - [Javoblar](./python/02-kun-O'zgaruvchi/02-kun-javoblar.md)
