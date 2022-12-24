@@ -69,7 +69,7 @@
      1.3 [NumPy da ishlash](./projects/yuzlarni-taqqoslash/doklar/1-3-numpy.md)<br>
      1.4 [Matplotlibda da ishlash](./projects/yuzlarni-taqqoslash/doklar/1-4-matplotlib.md)<br>
      1.5 [Vektorlarni solishtirish](./projects/yuzlarni-taqqoslash/doklar/1-5-vektorlarni-solishtirish.md)<br>
-     1.6 [Yuzlarni rasmdan aniqlash](./projects/yuzlarni-taqqoslash/doklar/1-6-yuzni-%20rasmdan-aniqlash.md)<br>
+     1.6 [Yuzlarni rasmdan aniqlash](./projects/yuzlarni-taqqoslash/doklar/1-6-yuzni-rasmdan-aniqlash.md)<br>
      1.7 [Yuzlarni piksellar orqali solishtirish](./projects/yuzlarni-taqqoslash/doklar/1-7-yuzlarni-solishtirish-piksellar.md)<br>
      1.8 [Yuzlarni AI orqali vektorlarga o'tkazish va solishtirish](./projects/yuzlarni-taqqoslash/doklar/1-8-yuzlarni-solishtirish-AI.md)
 
