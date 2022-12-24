@@ -97,9 +97,15 @@ def vector_taq(a, b):
         print("Elementlar soni teng bo'lish kerak!")
 
 
-for yuz in yuz_koordinatalari_piksellar:
-    piksellar_bazadagi = yuz[0]
-    yaqinlik = vector_taq(test_piksellar.tolist()[0], piksellar_bazadagi.tolist()[0])
+# test: 0 rasm, 1-18: bazadagi
+for idx, yuz in enumerate(yuz_koordinatalari_piksellar):
+    if idx == 0:
+        test_piksellar = yuz[0]
+        continue
+    else:
+        piksellar_bazadagi = yuz[0]
+        yaqinlik = vector_taq(test_piksellar.tolist()[0], piksellar_bazadagi.tolist()[0])
+
     plt.imshow(yuz[1])
     if yaqinlik > 0.855:
         plt.title("Bu Shavkat Mirziyoyev")
