@@ -1,0 +1,18 @@
+name: yuz_taqqoslash
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - matplotlib
+  - numpy
+  - scikit-learn
+  - cython
+  - scipy
+  - pip
+  - pip:
+      - opencv-python
+      - onnxruntime
+      - insightface==0.7.2
+      - gradio
+
