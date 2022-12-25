@@ -4,6 +4,8 @@ import insightface
 from insightface.app.common import Face
 from insightface.app import FaceAnalysis
 import numpy as np
+import os
+
 
 
 def ildiz(x):
@@ -128,16 +130,26 @@ def model_yuklash(turi):
     model:
         berilgan tur bo'yicha modelni qaytaradi
     """
-    _ = FaceAnalysis()
+    home = os.path.expanduser('~')
+
+    if not os.path.exists(os.path.join(home, ".insightface")):
+        _ = FaceAnalysis()
+
     if turi == 'aniqlagich':
-        joyi = "/home/ochiqai/.insightface/models/buffalo_l/det_10g.onnx"
+        joyi = os.path.join(
+            home,
+            ".insightface/models/buffalo_l/det_10g.onnx"
+        )
         aniqlagich = insightface.model_zoo.get_model(joyi)
         # (640, 640) ixtiyoriy kiritilgan rasmni ushbu o'lchamga o'tkazadi.
         aniqlagich.prepare(ctx_id=0, input_size=(640, 640))
         return aniqlagich
 
     elif turi == 'embedding':
-        joy = "/home/ochiqai/.insightface/models/buffalo_l/w600k_r50.onnx"
+        joy = os.path.join(
+            home,
+            ".insightface/models/buffalo_l/w600k_r50.onnx"
+        )
         embedding = insightface.model_zoo.get_model(joy)
         embedding.prepare(ctx_id=0)
         return embedding
