@@ -83,7 +83,7 @@ o'tkazib olamiz. Buning uchun `resize`dan foydalanamiz
 
 * Yani bunda rasm shakli 50x50 shaklga keldi.
 
-* Endigi navbatda biz rasmizni matritsadan vektorga o'tgazib olamiz. Buning uchun `reshape`dan 
+* Endigi navbatda biz rasmni matritsadan vektorga o'tgazib olamiz. Buning uchun `reshape`dan 
 foydalanamiz. Kodimizga `rasm_y.reshape(1, 7500)` kiritib olamiz. `7500` qayerdam keldi ?
 Bu rasmnimizni shakli yani `rasm_y.shape()` natijasi : `[50, 50, 3]` bu ichidagilar ko'paytirib 7500 hosil qilinadi.
 `pikselar = rasm_y.reshape(1, 7500)` buni vektorda ko'rishiga keladi. `yuz_koordinatalari_piksellar = []` list yaratib olamiz.
