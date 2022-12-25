@@ -128,8 +128,8 @@ yani piksellarga mos ravishda rasmlarni ko'rish uchun.
       <img src="rasm/test_prez.png">
   </p>
 
-* Biz bu rasmlarni o'zaro solishtirish uchun `taqqoslaydigan funksiyamizni` chqarib olamiz. 
-U bizda oldindan mavjuda, bu `vektorlarni taqqoslash` deb ataladi, agar siz bu haqida to'liqroq ma'lumot olmoqchi 
+* Biz bu rasmlarni o'zaro solishtirish uchun `taqqoslaydigan funksiyamizni` chaqirib olamiz. 
+U bizda oldindan mavjud, bu `vektorlarni taqqoslash` deb ataladi, agar siz bu haqida to'liqroq ma'lumot olmoqchi 
 bo'lsangiz [vektorlarni taqqoslash](#./projects/yuzlarni-taqqoslash/kod/project-1/vector_taq_01.py) md shaklini o'qishingiz mumkin.
 
 * Funksiyamizni olib kelamiz :
