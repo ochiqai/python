@@ -130,7 +130,7 @@ yani piksellarga mos ravishda rasmlarni ko'rish uchun.
 
 * Biz bu rasmlarni o'zaro solishtirish uchun `taqqoslaydigan funksiyamizni` chqarib olamiz. 
 U bizda oldindan mavjuda, bu `vektorlarni taqqoslash` deb ataladi, agar siz bu haqida to'liqroq ma'lumot olmoqchi 
-bo'lsangiz [vektorlarni taqqoslash](#./projects/yuzlarni-taqqoslash/kod/project-1/vector_taq_01.py) md shaklini o'qishingiz mumkin.
+bo'lsangiz [Vektorlarni solishtirish](./projects/yuzlarni-taqqoslash/doklar/1-5-vektorlarni-solishtirish.md) md shaklini o'qishingiz mumkin.
 
 * Funksiyamizni olib kelamiz :
 
