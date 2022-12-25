@@ -172,7 +172,7 @@ bo'lsangiz [vektorlarni taqqoslash](#./projects/yuzlarni-taqqoslash/kod/project-
 * Bularni endi `test_prez.jng` bilan solishtirib ko'ramiz.
 * Yuzlani birma - bir chiqarib olishimiz uchun `for yuz in yuz_koordinatalari_piksellar: 
 piksellar_bazadagi = yuz[0]` keyin rasmlar orasidagi yaqinlikni olish uchun `    yaqinlik = vector_taq(test_piksellar.tolist()[0], piksellar_bazadagi.tolist()[0])
-` bunda piksellar listga o'rkaziladi `tolist()` orqali. `plt.imshow(yuz[1]), plt.show()` kiritamiz natijalarni
+` bunda piksellar listga o'rkaziladi `tolist()` orqali. `plt.imshow(yuz[1]), plt.show()` natijalarni
 ko'rish uchun kirtamiz,
 
   ```shell
