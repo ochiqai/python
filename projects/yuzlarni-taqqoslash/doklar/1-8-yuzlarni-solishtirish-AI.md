@@ -234,7 +234,7 @@ for idx, (yuz, yuz_koord) in enumerate(zip(yuz_koordinatalari_piksellar, yuz_koo
       <img src="rasm/piksel_namuna_3.png">
   </p>
 
-2. Noto'g'ri rasm
+2. To'g'ri rasm
 
   <p align="center">
       <img src="rasm/piksel_namuna_4.png">
