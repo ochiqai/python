@@ -34,11 +34,11 @@ for y in yuz_koordinatalari_uzgartirilgan:
   ```
 
 shunday ko'rinishga keltirib olamiz. Bular butun songa `int` orqali o'tkazilgan, chunki
-jarayon davomida indekslardan foydalanmiz va ular butun sonda bo'lishi kerak.
+jarayon davomida indekslardan foydalanamiz va ular butun sonda bo'lishi kerak.
 
 * Koordinatalarini olish uchun esa:
 `rasm_y = rasm[y1:y2, x1:x2]` kiritib olamiz, bu yerda x1, x2, y1, y2 tomonlarni ko'rsatadi.
-`rasm = cv2.cvtColor(rasm, cv2.COLOR_BGR2RGB)` buni ham qo'shamiz, bu rasmlarni tinoqlar chiqishiga imkon yaratadi.
+`rasm = cv2.cvtColor(rasm, cv2.COLOR_BGR2RGB)` buni ham qo'shamiz, bu rasmlarni tiniqroq chiqishiga imkon yaratadi.
 
   ```shell
   rasm = cv2.cvtColor(rasm, cv2.COLOR_BGR2RGB)
@@ -83,11 +83,11 @@ o'tkazib olamiz. Buning uchun `resize`dan foydalanamiz
 
 * Yani bunda rasm shakli 50x50 shaklga keldi.
 
-* Endigi navbatda biz rasmizni matritsadan vektorga o'tgazib olamiz. Buning uchun `reshape`dan 
+* Endigi navbatda biz rasmimizni matritsadan vektorga o'tgazib olamiz. Buning uchun `reshape`dan 
 foydalanamiz. Kodimizga `rasm_y.reshape(1, 7500)` kiritib olamiz. `7500` qayerdam keldi ?
 Bu rasmnimizni shakli yani `rasm_y.shape()` natijasi : `[50, 50, 3]` bu ichidagilar ko'paytirib 7500 hosil qilinadi.
-`pikselar = rasm_y.reshape(1, 7500)` buni vektorda ko'rishiga keladi. `yuz_koordinatalari_piksellar = []` list yaratib olamiz.
-`    yuz_koordinatalari_piksellar.append([piksellar, rasm_y])` bu esa vektorlarni to'plab uchun hizmat qiladi va `rasm_y` ham kiritilgan
+`pikselar = rasm_y.reshape(1, 7500)` bu vektorga o'tkazadi. `yuz_koordinatalari_piksellar = []` list yaratib olamiz.
+`    yuz_koordinatalari_piksellar.append([piksellar, rasm_y])` bu esa vektorlarni to'plash uchun hizmat qiladi va `rasm_y` ham kiritilgan
 yani piksellarga mos ravishda rasmlarni ko'rish uchun.
 
   ```shell
@@ -117,7 +117,7 @@ yani piksellarga mos ravishda rasmlarni ko'rish uchun.
 ## Rasmlarni solishtirish
 
 * Bunda biz chetdan biror bir rasm olish orqali yuqoridagi aniqlangan rasm piksellari bilan solishtirib chiqamiz.
-* Yuklab oligan rasmni ham yuqoridagi ko'rinishga keltiramiz.
+* Yuklab olingan rasmni ham yuqoridagi ko'rinishga keltiramiz.
   ```shell
   rasm_joyi = "rasmlar/test_prez.jpg" - bu rasmini joyi
   test_rasm = cv2.imread(rasm_joyi) # [0, 255] - bu rasmni o'qib olish uchun
@@ -129,7 +129,7 @@ yani piksellarga mos ravishda rasmlarni ko'rish uchun.
   </p>
 
 * Biz bu rasmlarni o'zaro solishtirish uchun `taqqoslaydigan funksiyamizni` chqarib olamiz. 
-U bizda oldindan mavjuda, bu `vektorlarni taqqoslash` deb ataladi, agar siz bu haqida to'liqroq ma'lumot olmoqchi 
+U bizda oldindan mavjud, bu `vektorlarni taqqoslash` deb ataladi, agar siz bu haqida to'liqroq ma'lumot olmoqchi 
 bo'lsangiz [vektorlarni taqqoslash](#./projects/yuzlarni-taqqoslash/kod/project-1/vector_taq_01.py) md shaklini o'qishingiz mumkin.
 
 * Funksiyamizni olib kelamiz :
@@ -207,7 +207,7 @@ orqali `indexini va yuz qismlarini kordinatalarini` aniqlab olamiz .`get`metodi 
           plt.title("Bu boshqa odam")
   ```
 
-ham kiritishimz mumkin, bu yaqinlikni yaxshiroq qilib chiqarishga imkon yaratadi.
+ham kiritishimiz mumkin, bu yaqinlikni yaxshiroq qilib chiqarishga imkon yaratadi.
 
   ```shell
 for idx, (yuz, yuz_koord) in enumerate(zip(yuz_koordinatalari_piksellar, yuz_koordinatalari_uzgartirilgan)):
