@@ -48,11 +48,16 @@ def dastur(test_rasm):
         yaqinlik = vector_taq(test_embedding.tolist(), baza_list[idx].tolist())
         yaqinliklar.append(yaqinlik)
         # 0.007, 0.12, 0.4
-    max_yaqinlik = max(yaqinliklar) # 0.4
-    for i in range(len(yaqinliklar)):
-        if yaqinliklar[i] == max_yaqinlik: # i = 2
-            return ASLIDA[i], yaqinlik
-    return "Bu inson prezident emas"
+    max_value = -float('inf')
+    max_index = -1  # 88
+    for i, value in enumerate(yaqinliklar):
+        if value > max_value:
+            max_value = value
+            max_index = i
+    if yaqinlik < 0:
+        return "Bu inson prezident emas", yaqinlik
+    return ASLIDA[max_index], yaqinlik
+
 
 # gradio
 with gr.Blocks() as demo:
