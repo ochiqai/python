@@ -73,6 +73,8 @@
      1.7 [Yuzlarni piksellar orqali solishtirish](./projects/yuzlarni-taqqoslash/doklar/1-7-yuzlarni-solishtirish-piksellar.md)<br>
      1.8 [Yuzlarni AI orqali vektorlarga o'tkazish va solishtirish](./projects/yuzlarni-taqqoslash/doklar/1-8-yuzlarni-solishtirish-AI.md)<br>
      1.9 [Refaktorlash](./projects/yuzlarni-taqqoslash/doklar/1-9-refaktorlash.md)
+  2. Prezident <br>
+     1.0 [Gradio](/tayyormas)
 
 
 
