@@ -56,34 +56,35 @@ def yaqinlik(rasm1, rasm2):
     embedding_modul = model_yuklash(
         turi="embedding"
     )
-    rasm1_koordinatalar_formati = aniqlash(
+    yuz_aniqlagich_rasm1 = aniqlash(
         model=yuz_aniqlagich_modul,
         rasm=rasm1
     )
-    rasm2_koordinatalar_formati = aniqlash(
+    rasm1_koordinatalar_formati = yuz_aniqlagich_rasm1[0]
+    yuz_aniqlagich_rasm2 = aniqlash(
         model=yuz_aniqlagich_modul,
         rasm=rasm2
     )
-    rasm1_embedding = embedding_modul.get(rasm1, rasm1_koordinatalar_formati[0])
-    rasm2_embedding = embedding_modul.get(rasm2, rasm2_koordinatalar_formati[0])
+    rasm2_koordinatalar_formati = yuz_aniqlagich_rasm2[0]
+    rasm1_embedding = embedding_modul.get(rasm1, rasm1_koordinatalar_formati)
+    rasm2_embedding = embedding_modul.get(rasm2, rasm2_koordinatalar_formati)
     yaqinlik_embedding = vector_taq(rasm1_embedding.tolist(), rasm2_embedding.tolist())
     # --------------------piksel qismi ------------------
-    rasm1_piksel = piksel_olish(
+    piksellar_rasm_1 = piksel_olish(
         rasm=rasm1,
         kordinatalar=rasm1_koordinatalar_formati
     )
-    rasm2_piksel = piksel_olish(
+    piksellar_rasm_2 = piksel_olish(
         rasm=rasm2,
         kordinatalar=rasm2_koordinatalar_formati
     )
-    yaqinlik_piksellar = vector_taq(rasm1_piksel[0], rasm2_piksel[0])
-    return yaqinlik_embedding, yaqinlik_piksellar
-
+    yaqinlik_piksel = vector_taq(piksellar_rasm_1[0], piksellar_rasm_2[0])
+    return yaqinlik_embedding, yaqinlik_piksel
 
 with gr.Blocks() as demo:
     name = gr.Image(label="Birinchi rasm")
     name2 = gr.Image(label="Ikkinchi rasm")
-    output = gr.Textbox(label="Embedding nitijasi yaqinligi")
+    output = gr.Textbox(label="Embedding natijasi yaqinligi")
     output2 = gr.Textbox(label="Piksel nitijasi yaqinligi")
     greet_btn = gr.Button("Dasturni ishlating")
     greet_btn.click(fn=yaqinlik, inputs=[name, name2], outputs=[output, output2])
