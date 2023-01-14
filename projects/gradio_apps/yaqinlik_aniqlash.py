@@ -54,16 +54,15 @@ def piksel_olish(rasm, kordinatalar):
     piksellar.append([piksellar_i.tolist()[0], yuz])
     return piksellar
 
-def yaqinlik(rasm1_joy, rasm2_joy):
+def dastur(rasm1, rasm2):
     """
-
-    :param rasm1: str
-        rasm joyi. masalan: home/1.jpg
+    :param rasm1:
+        gradio orqali birinchi rasm kiritiladi
     :param rasm2:
+        gradio orqali ikkinchi rasm kiritiladi
     :return:
+        embeddinglar va piksellar orqali ikkita rasmning yaqinligi
     """
-    rasm1 = rasm_olish(rasm1_joy)
-    rasm2 = rasm_olish(rasm2_joy)
     yuz_aniqlagich_modul = model_yuklash(
         turi="aniqlagich"
     )
@@ -86,7 +85,7 @@ def yaqinlik(rasm1_joy, rasm2_joy):
     rasm2_embedding = embedding_modul.get(rasm2, rasm2_koordinatalar_formati)
     yaqinlik_embedding = vector_taq(rasm1_embedding.tolist(), rasm2_embedding.tolist())
 
-    # # --------------------piksel qismi ------------------
+#--------------------piksel orqali aniqlash------------------
     piksellar_rasm_1 = piksel_olish(
         rasm=rasm1,
         kordinatalar=rasm1_koordinatalar_formati
@@ -98,17 +97,11 @@ def yaqinlik(rasm1_joy, rasm2_joy):
     yaqinlik_piksel = vector_taq(piksellar_rasm_1[0][0], piksellar_rasm_2[0][0])
     return yaqinlik_embedding, yaqinlik_piksel
 
-# rasm1 = "/home/ochiqai/work/ochiqai/git/python/projects/gradio_apps/rasmlar/1.jpg"
-# rasm2 = "/home/ochiqai/work/ochiqai/git/python/projects/gradio_apps/rasmlar/1.jpg"
-#
-# print(yaqinlik(rasm1, rasm2))
-
 with gr.Blocks() as demo:
-    name = gr.Image(label="Birinchi rasm")
-    name2 = gr.Image(label="Ikkinchi rasm")
-    output = gr.Textbox(label="Embedding natijasi yaqinligi")
-    output2 = gr.Textbox(label="Piksel nitijasi yaqinligi")
+    kiritish1 = gr.Image(label="Birinchi rasm")
+    kiritish2 = gr.Image(label="Ikkinchi rasm")
+    chiqish1 = gr.Textbox(label="Embedding natijasi yaqinligi")
+    chiqish2 = gr.Textbox(label="Piksel nitijasi yaqinligi")
     greet_btn = gr.Button("Dasturni ishlating")
-    greet_btn.click(fn=yaqinlik, inputs=[name, name2], outputs=[output, output2])
-
+    greet_btn.click(fn=dastur, inputs=[kiritish1, kiritish2], outputs=[chiqish1, chiqish2])
 demo.launch()
