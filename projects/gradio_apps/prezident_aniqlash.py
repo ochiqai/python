@@ -5,11 +5,19 @@ from projects.gradio_apps.refaktor.yuzbib import (
     model_yuklash, aniqlash, vector_taq
 )
 
-ASLIDA = {
-    0:  "Bu O'zbekiston prezidenti Shavkat Mirziyoyev",
+##### Proyekt:
+
+
+####
+
+
+BAZA = {
+    0: "Bu O'zbekiston prezidenti Shavkat Mirziyoyev",
     1: "Bu Rassiya prezidenti Vladimir Putin",
     2: "Bu Amerika prezidenti Joe Biden",
 }
+
+
 
 def kordinata_format(model, rasm):
     """
@@ -69,12 +77,13 @@ def dastur(test_rasm):
         yaqinliklar.append(yaqinlik)
 
     max_index = max_joyi(yaqinliklar)
-    for indeks, value in ASLIDA.items():
-        # [0.02, 0.3, -0,2]
-        if yaqinliklar[max_index]<0.1:
-            return "Bu inson prezident emas"
-        elif max_index == indeks:
-            return ASLIDA[max_index]
+
+    limit = 0.15
+    if yaqinliklar[max_index] < limit:
+        return "Bu inson bazadagi prezidentlarga mos kelmadi"
+
+    return BAZA[max_index] + "yaqinlik: {}".format(yaqinliklar[max_index])
+
 
 # gradio qismi
 with gr.Blocks() as demo:
