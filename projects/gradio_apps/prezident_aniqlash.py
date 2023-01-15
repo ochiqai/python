@@ -30,8 +30,10 @@ def kordinata_format(model, rasm):
 def max_joyi(yaqinliklar):
     """
         sonlar ichidagi maksimal sonni indeksini qaytaradi
-    :param yaqinliklar:
-    :return:
+    :param yaqinliklar: list
+        yaqinliklar
+    :return: int
+        indeks
     """
     max_value = -float('inf')
     max_index = -1
@@ -68,9 +70,11 @@ def dastur(test_rasm):
 
     max_index = max_joyi(yaqinliklar)
     for indeks, value in ASLIDA.items():
-        if max_index == indeks:
+        # [0.02, 0.3, -0,2]
+        if yaqinliklar[max_index]<0.1:
+            return "Bu inson prezident emas"
+        elif max_index == indeks:
             return ASLIDA[max_index]
-    return "Bu inson prezident emas"
 
 # gradio qismi
 with gr.Blocks() as demo:
@@ -79,8 +83,4 @@ with gr.Blocks() as demo:
     tugma = gr.Button("Bosing")
     tugma.click(fn=dastur, inputs=name, outputs=output_text)
 demo.launch(share=True)
-
-
-
-
 
