@@ -46,4 +46,4 @@ kutubxonalar yoziladi.
    ![img.png](./rasm/muhitni_pycharmga_qushish.png)
 
    * Yuqorida `Conda Environment` qismiga borib, va `ochiqai2` muhitimizni tanlab olib `ok` tugmasini bosamiz.
-6. Muhitni o'chirish uchun esa `conda env remove -n ochiqai2` deb buyruq beramiz.
+6. Muhitni o'chirish uchun `conda env remove -n ochiqai2` deb buyruq beramiz.
