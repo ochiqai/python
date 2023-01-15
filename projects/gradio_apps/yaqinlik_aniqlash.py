@@ -54,6 +54,39 @@ def piksel_olish(rasm, kordinatalar):
     piksellar.append([piksellar_i.tolist()[0], yuz])
     return piksellar
 
+def kordinata_formati(model, rasm):
+    """
+    Funksiya berilgan rasmning kordinatasini qaytaradi
+    :param model:
+        aniqlagich model (detection)
+    :param rasm:
+        rasm
+    :return: list
+        rasm kordinatasi
+    """
+    yuz_aniqlagich = aniqlash(
+        model=model,
+        rasm=rasm
+    )
+    kordinata = yuz_aniqlagich[0]
+    return kordinata
+
+def piksel(rasm, kordinatalar):
+    """
+    Funksiya rasm pikselini qaytaradi
+    :param rasm:
+        rasm
+    :param kordinatalar:
+        rasm kordinatasi
+    :return:
+        rasm pikseli
+    """
+    rasm_pikseli = piksel_olish(
+        rasm=rasm,
+        kordinatalar=kordinatalar
+    )
+    return rasm_pikseli
+
 def dastur(rasm1, rasm2):
     """
     :param rasm1:
@@ -69,31 +102,19 @@ def dastur(rasm1, rasm2):
     embedding_modul = model_yuklash(
         turi="embedding"
     )
-    yuz_aniqlagich_rasm1 = aniqlash(
-        model=yuz_aniqlagich_modul,
-        rasm=rasm1
-    )
-    yuz_aniqlagich_rasm2 = aniqlash(
-        model=yuz_aniqlagich_modul,
-        rasm=rasm2
-    )
 
-    rasm1_koordinatalar_formati = yuz_aniqlagich_rasm1[0]
-    rasm2_koordinatalar_formati = yuz_aniqlagich_rasm2[0]
+    rasm1_koordinatalar_formati = kordinata_formati(yuz_aniqlagich_modul, rasm1)
+    rasm2_koordinatalar_formati = kordinata_formati(yuz_aniqlagich_modul, rasm2)
 
     rasm1_embedding = embedding_modul.get(rasm1, rasm1_koordinatalar_formati)
     rasm2_embedding = embedding_modul.get(rasm2, rasm2_koordinatalar_formati)
     yaqinlik_embedding = vector_taq(rasm1_embedding.tolist(), rasm2_embedding.tolist())
 
 #--------------------piksel orqali aniqlash------------------
-    piksellar_rasm_1 = piksel_olish(
-        rasm=rasm1,
-        kordinatalar=rasm1_koordinatalar_formati
-    )
-    piksellar_rasm_2 = piksel_olish(
-        rasm=rasm2,
-        kordinatalar=rasm2_koordinatalar_formati
-    )
+
+    piksellar_rasm_1 = piksel(rasm1, rasm1_koordinatalar_formati)
+    piksellar_rasm_2 = piksel(rasm2, rasm2_koordinatalar_formati)
+
     yaqinlik_piksel = vector_taq(piksellar_rasm_1[0][0], piksellar_rasm_2[0][0])
     return yaqinlik_embedding, yaqinlik_piksel
 
