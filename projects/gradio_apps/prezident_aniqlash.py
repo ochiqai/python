@@ -1,15 +1,15 @@
 import gradio as gr
 import cv2
 
-ASLIDA = [
-    "Bu O'zbekiston prezidenti Shavkat Mirziyoyev",
-    "Bu Rassiya prezidenti Vladimir Putin",
-    "Bu Amerika prezidenti Joe Biden",
-]
-
 from projects.gradio_apps.refaktor.yuzbib import (
     model_yuklash, aniqlash, vector_taq
 )
+
+ASLIDA = {
+    0:  "Bu O'zbekiston prezidenti Shavkat Mirziyoyev",
+    1: "Bu Rassiya prezidenti Vladimir Putin",
+    2: "Bu Amerika prezidenti Joe Biden",
+}
 
 def kordinata_format(model, rasm):
     """
@@ -26,6 +26,20 @@ def kordinata_format(model, rasm):
         rasm=rasm
     )
     return kordinata[0]
+
+def max_joyi(yaqinliklar):
+    """
+        sonlar ichidagi maksimal sonni indeksini qaytaradi
+    :param yaqinliklar:
+    :return:
+    """
+    max_value = -float('inf')
+    max_index = -1
+    for i, value in enumerate(yaqinliklar):
+        if value > max_value:
+            max_value = value
+            max_index = i
+    return max_index
 
 baza_rasm_1 = cv2.imread("./prezident_image_baza/mirziyoyev.jpg")
 baza_rasm_2 = cv2.imread("./prezident_image_baza/putin.jpg")
@@ -51,15 +65,12 @@ def dastur(test_rasm):
     for idx in range(0, len(baza_embeddinglar)):
         yaqinlik = vector_taq(test_embedding.tolist(), baza_embeddinglar[idx].tolist())
         yaqinliklar.append(yaqinlik)
-    max_value = -float('inf')
-    max_index = -1  # 88
-    for i, value in enumerate(yaqinliklar):
-        if value > max_value:
-            max_value = value
-            max_index = i
-    if yaqinlik < 0:
-        return "Bu inson prezident emas", yaqinlik
-    return ASLIDA[max_index], yaqinlik
+
+    max_index = max_joyi(yaqinliklar)
+    for indeks, value in ASLIDA.items():
+        if max_index == indeks:
+            return ASLIDA[max_index]
+    return "Bu inson prezident emas"
 
 # gradio qismi
 with gr.Blocks() as demo:
