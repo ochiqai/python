@@ -2,7 +2,8 @@ import gradio as gr
 import cv2
 
 from projects.gradio_apps.refaktor.yuzbib import (
-    model_yuklash, aniqlash, vector_taq, rasm_olish
+    model_yuklash, aniqlash, vector_taq, rasm_olish,
+    piksel_olish
 )
 
 
@@ -24,39 +25,9 @@ from projects.gradio_apps.refaktor.yuzbib import (
 
 
 
-def piksel_olish(rasm, kordinatalar):
+def kordinata_olish(model, rasm):
     """
-    Berilgan rasmdan kordinatalar bo'yicha yuz rasmini qirqib,
-    undan pilsellarni olib listga o'tkazamiz
-
-    Parameters
-    ----------
-    rasm : numpy
-    kordinatalar : list
-
-    Returns
-    -------
-    list
-        kordinatalar bo'yicha barcha yuzga tegishli piksellar
-    """
-    rasm = cv2.cvtColor(rasm, cv2.COLOR_BGR2RGB)
-    piksellar = []
-
-    kord = kordinatalar["bbox"]
-    x1 = int(kord[0])
-    y1 = int(kord[1])
-    x2 = int(kord[2])
-    y2 = int(kord[3])
-    yuz = rasm[y1:y2, x1:x2]
-    yuz = cv2.resize(yuz, (50, 50))
-    # matrixdan vectorga o'tdik
-    piksellar_i = yuz.reshape((1, 3*50*50))
-    piksellar.append([piksellar_i.tolist()[0], yuz])
-    return piksellar
-
-def kordinata_formati(model, rasm):
-    """
-    Funksiya berilgan rasmning kordinatasini qaytaradi
+    berilgan rasmning kordinatasini qaytaradi
     :param model:
         aniqlagich model (detection)
     :param rasm:
@@ -71,30 +42,34 @@ def kordinata_formati(model, rasm):
     kordinata = yuz_aniqlagich[0]
     return kordinata
 
-def piksel(rasm, kordinatalar):
+def embedding_olish(rasm, model_aniq, model_emb):
     """
-    Funksiya rasm pikselini qaytaradi
-    :param rasm:
-        rasm
-    :param kordinatalar:
-        rasm kordinatasi
-    :return:
-        rasm pikseli
-    """
-    rasm_pikseli = piksel_olish(
-        rasm=rasm,
-        kordinatalar=kordinatalar
-    )
-    return rasm_pikseli
 
-def dastur(rasm1, rasm2):
+    Parameters
+    ----------
+    model
+    kordinatalar
+
+    Returns
+    -------
+
     """
-    :param rasm1:
-        gradio orqali birinchi rasm kiritiladi
-    :param rasm2:
-        gradio orqali ikkinchi rasm kiritiladi
-    :return:
-        embeddinglar va piksellar orqali ikkita rasmning yaqinligi
+    koordinatalar = kordinata_olish(model_aniq, rasm)
+    embedding = model_emb.get(rasm, koordinatalar)
+    return embedding, koordinatalar
+
+def yaqinlik_olish(rasm1, rasm2):
+    """
+    Parameters
+    ----------
+    rasm1: rasm
+        matritsa [h, w, 3]
+    rasm2: rasm
+        matritsa [h, w, 3]
+    Returns
+    -------
+    float
+        yaqinlik qaytradi, 0.2
     """
     yuz_aniqlagich_modul = model_yuklash(
         turi="aniqlagich"
@@ -103,26 +78,35 @@ def dastur(rasm1, rasm2):
         turi="embedding"
     )
 
-    rasm1_koordinatalar_formati = kordinata_formati(yuz_aniqlagich_modul, rasm1)
-    rasm2_koordinatalar_formati = kordinata_formati(yuz_aniqlagich_modul, rasm2)
-
-    rasm1_embedding = embedding_modul.get(rasm1, rasm1_koordinatalar_formati)
-    rasm2_embedding = embedding_modul.get(rasm2, rasm2_koordinatalar_formati)
+    rasm1_embedding, rasm1_koordinatalar = embedding_olish(rasm1, yuz_aniqlagich_modul, embedding_modul)
+    rasm2_embedding, rasm2_koordinatalar = embedding_olish(rasm2, yuz_aniqlagich_modul, embedding_modul)
     yaqinlik_embedding = vector_taq(rasm1_embedding.tolist(), rasm2_embedding.tolist())
 
-#--------------------piksel orqali aniqlash------------------
+    # --------------------piksel orqali aniqlash------------------
 
-    piksellar_rasm_1 = piksel(rasm1, rasm1_koordinatalar_formati)
-    piksellar_rasm_2 = piksel(rasm2, rasm2_koordinatalar_formati)
+    rasm1_piksellar = piksel_olish(rasm1, rasm1_koordinatalar)
+    rasm2_piksellar = piksel_olish(rasm2, rasm2_koordinatalar)
+    yaqinlik_piksel = vector_taq(rasm1_piksellar[0][0], rasm2_piksellar[0][0])
 
-    yaqinlik_piksel = vector_taq(piksellar_rasm_1[0][0], piksellar_rasm_2[0][0])
     return yaqinlik_embedding, yaqinlik_piksel
 
 with gr.Blocks() as demo:
-    kiritish1 = gr.Image(label="Birinchi rasm")
-    kiritish2 = gr.Image(label="Ikkinchi rasm")
-    chiqish1 = gr.Textbox(label="Embedding natijasi yaqinligi")
-    chiqish2 = gr.Textbox(label="Piksel nitijasi yaqinligi")
+    gr.Markdown(
+    """
+    
+    # Yuzlarni taqqoslash  
+    <br>
+    """
+    )
+
+    rasm1 = gr.Image(label="Birinchi rasm")
+    rasm2 = gr.Image(label="Ikkinchi rasm")
+    chiqish_embedding = gr.Textbox(label="Embedding natijasi yaqinligi")
+    chiqish_piksel = gr.Textbox(label="Piksel nitijasi yaqinligi")
     greet_btn = gr.Button("Dasturni ishlating")
-    greet_btn.click(fn=dastur, inputs=[kiritish1, kiritish2], outputs=[chiqish1, chiqish2])
+    greet_btn.click(fn=yaqinlik_olish, inputs=[rasm1, rasm2], outputs=[chiqish_embedding, chiqish_piksel]),
+
+
 demo.launch()
+
+
