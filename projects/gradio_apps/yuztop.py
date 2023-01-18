@@ -50,8 +50,8 @@ with gr.Blocks() as demo:
         # Rasmdan yuzni aniqla
         """
     )
-    name = gr.Image(label="Rasm")
-    output_rasm = gr.Image(label="Yuzlar aniqlangan rasm")
+    name = gr.Image(label="Rasm").style(width=250)
+    output_rasm = gr.Image(label="Yuzlar aniqlangan rasm").style(width=250)
     output_text = gr.Textbox(label="Malumot")
     tugma = gr.Button("Bosing")
     tugma.click(fn=yuz_aniqlagich, inputs=name, outputs=[output_rasm, output_text])
