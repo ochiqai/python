@@ -1,5 +1,5 @@
-import gradio as gr
 import cv2
+import gradio as gr
 
 from projects.gradio_apps.refaktor.yuzbib import (
     model_yuklash, aniqlash, vector_taq
@@ -30,35 +30,17 @@ BAZA = {
 
 
 
-def kordinata_format(model, rasm):
-    """
-    Berilgan rasmni kordinatasini aniqlaydi
-    Parameters
-    ----------
-    model: class 'insightface.model_zoo.retinaface.RetinaFace'
-        aniqlagich model (detection)
-    rasm: class 'numpy.ndarray'
-    Returns
-    -------
-    list
-        kordinata
-    """
-    kordinata = aniqlash(
-        model=model,
-        rasm=rasm
-    )
-    return kordinata[0]
-
 def max_joyi(yaqinliklar):
     """
     Listdagi maksimal sonni indeksini aniqlaydi
     Parameters
     ----------
     yaqinliklar: list
-
+        float turidagi sonlar to'plami
     Returns
     -------
-    maksimal indeks: int
+    int
+        maksimal indeks
     """
     max_value = -float('inf')
     max_index = -1
@@ -77,10 +59,10 @@ def prezident_aniqlagich(test_rasm):
     Parameters
     ----------
     test_rasm: numpy
-    rasm
+       rasm
     Returns
     -------
-
+    str
     """
     # modellarni yuklash
     aniqlagich_model = model_yuklash(turi="aniqlagich")
@@ -92,12 +74,12 @@ def prezident_aniqlagich(test_rasm):
     # bazadagi rasmlarning embeddingni olish
     baza_embeddinglar = []
     for baza_rasm in baza_rasmlar:
-        baza_rasm_kordinata = kordinata_format(aniqlagich_model, baza_rasm)
+        baza_rasm_kordinata = aniqlash(aniqlagich_model, baza_rasm)
         baza_embedding = embedding_model.get(baza_rasm, baza_rasm_kordinata)
         baza_embeddinglar.append(baza_embedding)
 
     # test rasm embedding olish
-    test_rasm_kordinata = kordinata_format(aniqlagich_model, test_rasm)
+    test_rasm_kordinata = aniqlash(aniqlagich_model, test_rasm)
     test_embedding = embedding_model.get(test_rasm, test_rasm_kordinata)
 
     yaqinliklar = []
