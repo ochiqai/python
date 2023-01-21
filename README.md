@@ -75,7 +75,7 @@
      1.9 [Refaktorlash](./projects/yuzlarni-taqqoslash/doklar/1-9-refaktorlash.md)
 
   2. [Rasmdan yuzlarni topish (Gradio)](./projects/gradio_apps/yuztop.py) <br>
-  3. [Prezident (Gradio)](link) <br>
+  3. [Prezident (Gradio)](./projects/gradio_apps/prezident_aniqlash.py) <br>
   4. [Rasmlar o'xshashligi (Gradio)](link)  <br>
 
 

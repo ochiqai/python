@@ -91,13 +91,13 @@ def vector_taq(a, b):
 
 def aniqlash(model, rasm):
     """
-    Yuz aniqlash modelini olib, rasmdan yuzlarni aniqlab kordinatalarini qaytarish
+    Berilgan rasmni kordinatasini aniqlaydi
 
     Parameters
     ----------
-    model : pytorch
-        aniqlash modeli
-    rasm_joyi : str
+    model: class 'insightface.model_zoo.retinaface.RetinaFace'
+        aniqlagich model (detection)
+    rasm: class 'numpy.ndarray'
 
     Returns
     -------
@@ -115,7 +115,7 @@ def aniqlash(model, rasm):
         yuz = Face(bbox=koordinata, kps=yuz_qism, det_score=ishonch)
         kordinatalar_format.append(yuz)
 
-    return kordinatalar_format
+    return kordinatalar_format[0]
 
 
 def model_yuklash(turi):
