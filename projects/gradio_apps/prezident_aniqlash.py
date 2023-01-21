@@ -5,11 +5,22 @@ from projects.gradio_apps.refaktor.yuzbib import (
     model_yuklash, aniqlash, vector_taq
 )
 
-##### Proyekt:
+#----------------------- Proyekt: ------------------------------------
+# Rasm kiritiladi, uni bazadagi rasmlar bilan solishtiradi.
+#   Agar: kiritilgan rasm bazada mavjud bo'lsa
+#       'Qaysi davlatning prezidenti va ism familya' matnni qaytaradi
+#   Aks holsa: kiritilgan rasm bazada mavjud bo'lmasa
+#       'Bu inson bazadagi prezidentlarga mos kelmadi' matnni qaytaradi
+#----------------------------------------------------------------------
 
 
-####
-
+#---------------------- Algoritim -------------------------------------
+#    1. Kerakli modellarni yuklaymiz. (detection, embedding)
+#    2. Rasmlarning kordinatasi (test rasm, bazadagi rasmlar)
+#    3. Rasmlarning embeddinglarini olamiz
+#    4. Vektorlarni taqqoslash funksiyasi orqali yaqinliklarni aniqlab olamiz
+#    5. Yaqinliklarning maksimal qiymatini aniqlaymiz
+#----------------------------------------------------------------------
 
 BAZA = {
     0: "Bu O'zbekiston prezidenti Shavkat Mirziyoyev",
@@ -22,10 +33,10 @@ BAZA = {
 def kordinata_format(model, rasm):
     """
         Funksiya rasmning kordinatasini qaytaradi
-    :param model:
+    :param model: str
          aniqlagich model
-    :param rasm:
-        rasm
+    :param rasm: str
+        rasm joyi
     :return:
         rasm kordinatasi
     """
@@ -56,17 +67,27 @@ baza_rasm_2 = cv2.imread("./prezident_image_baza/putin.jpg")
 baza_rasm_3 = cv2.imread("./prezident_image_baza/bayden.jpg")
 
 def dastur(test_rasm):
+    """
+    :param test_rasm: str
+        rasm joyi
+    :return: str
+        matn (Bu O'zbekiston prezidenti Shavkat Mirziyoyev)
+    """
+
     # modellarni yuklash
     aniqlagich_model = model_yuklash(turi="aniqlagich")
     embedding_model = model_yuklash(turi="embedding")
+
     # bazadagi rasmlar
     baza_rasmlar = [baza_rasm_1, baza_rasm_2, baza_rasm_3]
+
     # bazadagi rasmlarning embeddingni olish
     baza_embeddinglar = []
     for baza_rasm in baza_rasmlar:
         baza_rasm_kordinata = kordinata_format(aniqlagich_model, baza_rasm)
         baza_embedding = embedding_model.get(baza_rasm, baza_rasm_kordinata)
         baza_embeddinglar.append(baza_embedding)
+
     # test rasm embedding olish
     test_rasm_kordinata = kordinata_format(aniqlagich_model, test_rasm)
     test_embedding = embedding_model.get(test_rasm, test_rasm_kordinata)
@@ -77,7 +98,6 @@ def dastur(test_rasm):
         yaqinliklar.append(yaqinlik)
 
     max_index = max_joyi(yaqinliklar)
-
     limit = 0.15
     if yaqinliklar[max_index] < limit:
         return "Bu inson bazadagi prezidentlarga mos kelmadi"
