@@ -66,7 +66,7 @@ baza_rasm_1 = cv2.imread("./prezident_image_baza/mirziyoyev.jpg")
 baza_rasm_2 = cv2.imread("./prezident_image_baza/putin.jpg")
 baza_rasm_3 = cv2.imread("./prezident_image_baza/bayden.jpg")
 
-def dastur(test_rasm):
+def prezident_aniqlagich(test_rasm):
     """
     :param test_rasm: str
         rasm joyi
@@ -107,9 +107,9 @@ def dastur(test_rasm):
 
 # gradio qismi
 with gr.Blocks() as demo:
-    name= gr.Image(label="Test rasm")
+    test_rasm = gr.Image(label="Test rasm")
     output_text = gr.Textbox(label="Malumot")
     tugma = gr.Button("Bosing")
-    tugma.click(fn=dastur, inputs=name, outputs=output_text)
+    tugma.click(fn=prezident_aniqlagich, inputs=test_rasm, outputs=output_text)
 demo.launch(share=True)
 
