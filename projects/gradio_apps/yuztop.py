@@ -1,5 +1,5 @@
 import gradio as gr
-
+import cv2
 from projects.gradio_apps.refaktor.yuzbib import (
     model_yuklash, aniqlash, chizish
 )
