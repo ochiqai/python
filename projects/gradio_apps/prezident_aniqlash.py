@@ -32,13 +32,16 @@ BAZA = {
 
 def kordinata_format(model, rasm):
     """
-        Funksiya rasmning kordinatasini qaytaradi
-    :param model: str
-         aniqlagich model
-    :param rasm: str
-        rasm joyi
-    :return:
-        rasm kordinatasi
+    Berilgan rasmni kordinatasini aniqlaydi
+    Parameters
+    ----------
+    model: class 'insightface.model_zoo.retinaface.RetinaFace'
+        aniqlagich model (detection)
+    rasm: class 'numpy.ndarray'
+    Returns
+    -------
+    list
+        kordinata
     """
     kordinata = aniqlash(
         model=model,
@@ -48,11 +51,14 @@ def kordinata_format(model, rasm):
 
 def max_joyi(yaqinliklar):
     """
-        sonlar ichidagi maksimal sonni indeksini qaytaradi
-    :param yaqinliklar: list
-        yaqinliklar
-    :return: int
-        indeks
+    Listdagi maksimal sonni indeksini aniqlaydi
+    Parameters
+    ----------
+    yaqinliklar: list
+
+    Returns
+    -------
+    maksimal indeks: int
     """
     max_value = -float('inf')
     max_index = -1
@@ -68,12 +74,14 @@ baza_rasm_3 = cv2.imread("./prezident_image_baza/bayden.jpg")
 
 def prezident_aniqlagich(test_rasm):
     """
-    :param test_rasm: str
-        rasm joyi
-    :return: str
-        matn (Bu O'zbekiston prezidenti Shavkat Mirziyoyev)
-    """
+    Parameters
+    ----------
+    test_rasm: numpy
+    rasm
+    Returns
+    -------
 
+    """
     # modellarni yuklash
     aniqlagich_model = model_yuklash(turi="aniqlagich")
     embedding_model = model_yuklash(turi="embedding")
