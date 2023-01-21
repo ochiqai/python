@@ -74,6 +74,9 @@
      1.7 [Yuzlarni piksellar orqali solishtirish](yozilyapti)<br>
      1.8 [Yuzlarni AI orqali vektorlarga o'tkazish va solishtirish](yozilyapti)
 
+  2. [Rasmdan yuzlarni topish (Gradio)](./projects/gradio_apps/yuztop.py) <br>
+  3. [Prezident (Gradio)](link) <br>
+  4. [Rasmlar o'xshashligi (Gradio)](./projects/gradio_apps/yaqinlik_aniqlash.py)  <br>
 
 
 ## Django
