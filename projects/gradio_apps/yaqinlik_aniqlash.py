@@ -24,47 +24,22 @@ from projects.gradio_apps.refaktor.yuzbib import (
 #-------------------------------------------------------------
 
 
-
-def kordinata_olish(model, rasm):
-    """
-    berilgan rasmning kordinatasini qaytaradi
-    :param model:
-        aniqlagich model (detection)
-    :param rasm:
-        rasm
-    :return: list
-        rasm kordinatasi
-    """
-    yuz_aniqlagich = aniqlash(
-        model=model,
-        rasm=rasm
-    )
-    kordinata = yuz_aniqlagich[0]
-    return kordinata
-
 def embedding_olish(rasm, model_aniq, model_emb):
     """
-
-    Parameters
-    ----------
-    model
-    kordinatalar
-
-    Returns
-    -------
-
+    Rasmdan yuz kordinatalari va embeddinglarini qaytaradi
     """
-    koordinatalar = kordinata_olish(model_aniq, rasm)
+    koordinatalar = aniqlash(model_aniq, rasm)[0]
     embedding = model_emb.get(rasm, koordinatalar)
     return embedding, koordinatalar
 
 def yaqinlik_olish(rasm1, rasm2):
     """
+    2 ta rasm o'rtasidagi yaqinlik
     Parameters
     ----------
-    rasm1: rasm
+    rasm1: np, uint8
         matritsa [h, w, 3]
-    rasm2: rasm
+    rasm2: np, uint8
         matritsa [h, w, 3]
     Returns
     -------
@@ -98,15 +73,12 @@ with gr.Blocks() as demo:
     <br>
     """
     )
-
     rasm1 = gr.Image(label="Birinchi rasm")
     rasm2 = gr.Image(label="Ikkinchi rasm")
     chiqish_embedding = gr.Textbox(label="Embedding natijasi yaqinligi")
     chiqish_piksel = gr.Textbox(label="Piksel nitijasi yaqinligi")
     greet_btn = gr.Button("Dasturni ishlating")
     greet_btn.click(fn=yaqinlik_olish, inputs=[rasm1, rasm2], outputs=[chiqish_embedding, chiqish_piksel]),
-
-
 demo.launch()
 
 
