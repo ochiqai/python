@@ -181,8 +181,21 @@ def chizish(rasm, kordinatalar):
 
 
 def _chizish(rasm, faces):
+    """
 
+    Parameters
+    ----------
+    rasm: numpy
+    faces: list
+
+    Returns
+    -------
+
+    """
+    if type(faces) != list:
+        faces = [faces]
     chimg = rasm.copy()
+
     for i in range(len(faces)):
         face = faces[i]
         box = face.bbox.astype(np.int_)
