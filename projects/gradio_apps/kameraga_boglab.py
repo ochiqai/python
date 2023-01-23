@@ -1,52 +1,78 @@
 import cv2
 import gradio as gr
-import numpy as np
-
 from projects.gradio_apps.refaktor.yuzbib import (
-    model_yuklash, aniqlash, chizish, vector_taq
+    model_yuklash, aniqlash, vector_taq
 )
-#
-# aniqlagich_model = model_yuklash(turi="aniqlagich")
-# embedding_model = model_yuklash(turi="embedding")
-#
-# baza_rasm = cv2.imread("/home/ubuntuuser/proyektlar/python/projects/gradio_apps/refaktor/rasmlar/Orif.png")
-#
-# baza_rasm_kordinata = aniqlash(aniqlagich_model, baza_rasm)
-# baza_embedding = embedding_model.get(baza_rasm, baza_rasm_kordinata)
-#
-# #
-rasm1 = "/home/ubuntuuser/proyektlar/python/projects/gradio_apps/refaktor/rasmlar/Nuriddin.jpg"
-def embedding_olish(rasm, model_aniq, model_emb):
+#----------------------- Proyekt: ------------------------------------
+# Kamera orqali rasm kiritiladi, uni bazadagi rasmlar bilan solishtiradi.
+#   Agar: kiritilgan rasm bazada mavjud bo'lsa
+#       uni kimligini qaytaradi
+#   Aks holsa: kiritilgan rasm bazada mavjud bo'lmasa
+#       'Bu inson bazadagi odamlarga mos kelmadi' matnni qaytaradi
+#----------------------------------------------------------------------
+
+
+#---------------------- Algoritim -------------------------------------
+#    1. Kerakli modellarni yuklaymiz. (detection, embedding)
+#    2. Rasmlarning kordinatasi (rasm, bazadagi rasmlar)
+#    3. Rasmlarning embeddinglarini olamiz
+#    4. Vektorlarni taqqoslash funksiyasi orqali yaqinliklarni aniqlab olamiz
+
+#----------------------------------------------------------------------
+
+font = cv2.FONT_HERSHEY_SIMPLEX
+org = (40, 50)
+fontScale = 0.8
+color = (255, 0, 0)
+thickness = 1
+
+baza_rasm = cv2.imread("./gradio_apps/refaktor/rasmlar/Orif.png")
+
+def kamera(rasm):
     """
-    Rasmdan yuz kordinatalari va embeddinglarini qaytaradi
+    Kameradan rasmni olib bazadagi rasm bilan solishtiradi
+    Parameters
+    ----------
+    rasm:'numpy.ndarray'
+
+    Returns
+    -------
+    natija qaytariladi
     """
-    koordinatalar = aniqlash(model_aniq, rasm)[0]
-    embedding = model_emb.get(rasm, koordinatalar)
-    return embedding, koordinatalar
 
-
-
-
-
-
-
-def flip(rasm):
-
-    yuz_aniqlagich_modul = model_yuklash(turi="aniqlagich")
+    aniqlagich_model = model_yuklash(turi="aniqlagich")
     embedding_modul = model_yuklash(turi="embedding")
+    rasm_kordinatalar = aniqlash(
+        model=aniqlagich_model,
+        rasm=rasm
+    )
+    baza_rasm_kordinata = aniqlash(aniqlagich_model, baza_rasm)
 
-    rasm1_embedding, rasm1_koordinatalar = embedding_olish(rasm1, yuz_aniqlagich_modul, embedding_modul)
-    rasm_embedding, rasm_koordinatalar = embedding_olish(rasm, yuz_aniqlagich_modul, embedding_modul)
-    yaqinlik_embedding = vector_taq(rasm1_embedding.tolist(), rasm_embedding.tolist())
+    rasm_embedding = embedding_modul.get(rasm, rasm_kordinatalar)
+    baza_rasm_embedding = embedding_modul.get(baza_rasm, baza_rasm_kordinata)
 
-    return rasm ,yaqinlik_embedding
+    yaqinlik = vector_taq(rasm_embedding.tolist(), baza_rasm_embedding.tolist())
+    if yaqinlik > 0.15:
+
+        natija = cv2.putText(rasm, "Salom Orif " + str(yaqinlik), org, font,
+                           fontScale, color, thickness, cv2.LINE_AA)
+
+    else:
+        natija = cv2.putText(rasm, "Bu inson bazadagi odamlarga mos kelmadi" + str(yaqinlik), org, font,
+                             fontScale, color, thickness, cv2.LINE_AA)
+    return natija
 
 demo = gr.Interface(
-    flip,
+    kamera,
     gr.Image(source="webcam", streaming=True),
     "image",
-
     live=True
-
 )
+
 demo.launch()
+
+
+
+
+
+
