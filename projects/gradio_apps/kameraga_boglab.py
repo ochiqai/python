@@ -1,7 +1,8 @@
 import cv2
 import gradio as gr
+import os
 from projects.gradio_apps.refaktor.yuzbib import (
-    model_yuklash, aniqlash, vector_taq
+    model_yuklash, aniqlash, vector_taq, chizish
 )
 #----------------------- Proyekt: ------------------------------------
 # Kamera orqali rasm kiritiladi, uni bazadagi rasmlar bilan solishtiradi.
@@ -19,14 +20,14 @@ from projects.gradio_apps.refaktor.yuzbib import (
 #    4. Vektorlarni taqqoslash funksiyasi orqali yaqinliklarni aniqlab olamiz
 
 #----------------------------------------------------------------------
-
 font = cv2.FONT_HERSHEY_SIMPLEX
 org = (40, 50)
 fontScale = 0.8
 color = (255, 0, 0)
 thickness = 1
 
-baza_rasm = cv2.imread("./gradio_apps/refaktor/rasmlar/Orif.png")
+
+baza_rasm = cv2.imread("./refaktor/rasmlar/Orif.png")
 
 def kamera(rasm):
     """
@@ -54,11 +55,11 @@ def kamera(rasm):
     yaqinlik = vector_taq(rasm_embedding.tolist(), baza_rasm_embedding.tolist())
     if yaqinlik > 0.15:
 
-        natija = cv2.putText(rasm, "Salom Orif " + str(yaqinlik), org, font,
+        natija = cv2.putText(rasm, "Salom Orif " + str(f'{yaqinlik:2f}'), org, font,
                            fontScale, color, thickness, cv2.LINE_AA)
 
     else:
-        natija = cv2.putText(rasm, "Bu inson bazadagi odamlarga mos kelmadi" + str(yaqinlik), org, font,
+        natija = cv2.putText(rasm, "Bu inson bazadagi odamlarga mos kelmadi" + str(f'{yaqinlik:2f}'), org, font,
                              fontScale, color, thickness, cv2.LINE_AA)
     return natija
 
