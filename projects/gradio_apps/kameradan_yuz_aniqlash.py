@@ -1,44 +1,49 @@
 import gradio as gr
 
-
 from projects.gradio_apps.refaktor.yuzbib import (
     model_yuklash, aniqlash, chizish
 )
 
 #------------- Dastur haqida ----------------------
-#  Kameradan yuz qismini aniqlash
+#  Kamera orqali kiradigan rasmdan, yuz qismini aniqlash.
 #--------------------------------------------------
 
 #------------- Algoritm ---------------------------
-#   1. Kerakli modullarni yuklash. (detection)
-#   2. Kordinata aniqlanadi.
-#   3. rasm_chizilgan funksiyasini yuklash.
+#   -Kirish:
+#       Rasmlarni kameradan olamiz.
+#   -Rasmdan yuz qismini aniqlash:
+#        1. Kerakli modulni yuklab olamiz. (detection)
+#        2. Rasm kordinatasini aniqlab olamiz.
+#   -Chiqish:
+#       Chizilgan rasm (yuz qismi aniqlanadi va unga turtburchak chiziq chiziladi)
 #--------------------------------------------------
-
-
 
 def kamera(rasm):
     """
-    Kamera orqali kiritilgan rasmni yuz qismini aniqlaydi.
+    Kamera orqali kiritilgan rasmning yuz qismini aniqlaydi.
     Parameters
     ----------
-    rasm: numpy
-
+    rasm: <class 'numpy.ndarray'>
+        kamera orqali kiradigan rasm
     Returns
     -------
-    rasm : numoy
-        chizilgan rasm
+    rasm : <class 'numpy.ndarray'>
+        chizilgan rasm (yuz qismiga turburchak chiziq chizilgan rasm)
     """
+    # detection modul yuklash
     aniqlagich_model = model_yuklash(turi="aniqlagich")
+    # rasm kordinnatasini olish
     kordinatalar = aniqlash(
         model=aniqlagich_model,
         rasm=rasm
     )
+    # yuz qismini chizib olish
     rasm_chizilgan = chizish(
         rasm=rasm,
         kordinatalar=kordinatalar
     )
     return rasm_chizilgan
+
 
 demo = gr.Interface(
     kamera,
@@ -48,3 +53,4 @@ demo = gr.Interface(
 )
 
 demo.launch()
+
