@@ -46,3 +46,10 @@ kutubxonalar yoziladi.
    ![img.png](./rasm/muhitni_pycharmga_qushish.png)
 
    * Yuqorida `Conda Environment` qismiga borib, va `ochiqai2` muhitimizni tanlab olib `ok` tugmasini bosamiz.
+
+
+6. Conda muhitini o'chirish.
+
+   ```shell
+   conda env remove -n MUHIT_NOMI
+   ```
