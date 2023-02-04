@@ -1,13 +1,12 @@
 import cv2
 import gradio as gr
-import os
 from projects.gradio_apps.refaktor.yuzbib import (
-    model_yuklash, aniqlash, vector_taq, chizish
+    model_yuklash, aniqlash, vector_taq
 )
 #----------------------- Proyekt: ------------------------------------
 # Kamera orqali rasm kiritiladi, uni bazadagi rasmlar bilan solishtiradi.
 #   Agar: kiritilgan rasm bazada mavjud bo'lsa
-#       uni kimligini qaytaradi
+#       uni kimligini rasm balantida chap tarafda ko'rsatadi
 #   Aks holsa: kiritilgan rasm bazada mavjud bo'lmasa
 #       'Bu inson bazadagi odamlarga mos kelmadi' matnni qaytaradi
 #----------------------------------------------------------------------
@@ -38,28 +37,29 @@ def kamera(rasm):
 
     Returns
     -------
-    natija qaytariladi
+    natija  : 'numpy.ndarray'
+        yuz kimga tegishligi yozilgan rasm
     """
 
     aniqlagich_model = model_yuklash(turi="aniqlagich")
-    embedding_modul = model_yuklash(turi="embedding")
+    embedding_model = model_yuklash(turi="embedding")
     rasm_kordinatalar = aniqlash(
         model=aniqlagich_model,
         rasm=rasm
     )
     baza_rasm_kordinata = aniqlash(aniqlagich_model, baza_rasm)
 
-    rasm_embedding = embedding_modul.get(rasm, rasm_kordinatalar)
-    baza_rasm_embedding = embedding_modul.get(baza_rasm, baza_rasm_kordinata)
+    rasm_embedding = embedding_model.get(rasm, rasm_kordinatalar)
+    baza_rasm_embedding = embedding_model.get(baza_rasm, baza_rasm_kordinata)
 
     yaqinlik = vector_taq(rasm_embedding.tolist(), baza_rasm_embedding.tolist())
     if yaqinlik > 0.15:
 
-        natija = cv2.putText(rasm, "Salom Orif " + str(f'{yaqinlik:2f}'), org, font,
+        natija = cv2.putText(rasm, "Salom Orif " + str(f'{yaqinlik:.2f}'), org, font,
                            fontScale, color, thickness, cv2.LINE_AA)
 
     else:
-        natija = cv2.putText(rasm, "Bu inson bazadagi odamlarga mos kelmadi" + str(f'{yaqinlik:2f}'), org, font,
+        natija = cv2.putText(rasm, "Bu inson bazadagi odamlarga mos kelmadi" + str(f'{yaqinlik:.2f}'), org, font,
                              fontScale, color, thickness, cv2.LINE_AA)
     return natija
 
