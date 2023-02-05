@@ -53,3 +53,11 @@ kutubxonalar yoziladi.
    ```shell
    conda env remove -n MUHIT_NOMI
    ```
+
+* Masalan:
+
+   ```shell
+   conda env remove -n ochiqai
+   ```
+  
+  `ochiqai` - muhit nomi
