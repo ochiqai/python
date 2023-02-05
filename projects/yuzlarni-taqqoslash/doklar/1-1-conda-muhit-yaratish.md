@@ -54,7 +54,7 @@ kutubxonalar yoziladi.
    conda env remove -n MUHIT_NOMI
    ```
 
-* Masalan:
+   * Masalan:
 
    ```shell
    conda env remove -n ochiqai
