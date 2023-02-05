@@ -28,7 +28,7 @@ def kamera(rasm):
     Returns
     -------
     rasm : <class 'numpy.ndarray'>
-        chizilgan rasm (yuz qismiga turburchak chiziq chizilgan rasm)
+        rasm_chizilgan (yuz qismiga turburchak chiziq chizilgan rasm)
     """
     # detection modul yuklash
     aniqlagich_model = model_yuklash(turi="aniqlagich")
