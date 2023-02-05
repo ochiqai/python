@@ -76,7 +76,7 @@
   2. [Rasmdan yuzlarni topish (Gradio)](./projects/gradio_apps/yuztop.py) 
   3. [Prezident (Gradio)](./projects/gradio_apps/prezident_aniqlash.py) 
   4. [Rasmlar yaqinligi (Gradio)](./projects/gradio_apps/yaqinlik_aniqlash.py)  <br>
-  5. [Kameradan yuzni aniqlash](./projects/gradio_apps/kameradan_yuz_aniqlash.py)  <br>
+  5. [Kameradan yuzni aniqlash (Gradio)](./projects/gradio_apps/kameradan_yuz_aniqlash.py)  <br>
 
 
 ## Django
