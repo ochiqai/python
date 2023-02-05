@@ -59,5 +59,3 @@ kutubxonalar yoziladi.
    ```shell
    conda env remove -n ochiqai
    ```
-  
-  `ochiqai` - muhit nomi
