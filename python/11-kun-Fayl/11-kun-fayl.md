@@ -135,7 +135,6 @@ Yuqorida biz har doim fayl ochganimizda `close` qilib yopardik, va bu narsa esda
 with open(r"kundalik.txt", "r") as fayl_och:
     text = fayl_och.read()
 print(text)
-fayl_och.close()
 ```
 Umuman olganda juda o'xshaydi, taqqoslashni o'zingiz qilasiz.
 
