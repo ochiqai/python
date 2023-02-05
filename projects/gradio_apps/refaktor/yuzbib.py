@@ -207,8 +207,7 @@ def _chizish(rasm, faces):
                 color = (0, 0, 255)
                 if l == 0 or l == 3:
                     color = (0, 255, 0)
-                cv2.circle(chimg, (kps[l][0], kps[l][1]), 1, color,
-                           2)
+                cv2.circle(chimg, (kps[l][0], kps[l][1]), 1, color, 2)
     return chimg
 
 def embedding_olish(model, rasm, kordinatalar):
