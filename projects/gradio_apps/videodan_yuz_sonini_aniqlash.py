@@ -1,49 +1,46 @@
 import cv2
-# import gradio as gr
-
 
 from projects.gradio_apps.refaktor.yuzbib import (
-    model_yuklash, aniqlash
+    model_yuklash, aniqlash, vector_taq
 )
-
-video_joy = "/home/nuriddin/ochiqai/python/projects/gradio_apps/video/video.mp4"
-cap = cv2.VideoCapture(video_joy)
-_, rasm = cap.read()
-# rasm: <class 'numpy.ndarray'>
-# len(rasm) = 1280
 
 aniqlagich_model = model_yuklash(turi="aniqlagich")
 embedding_model = model_yuklash(turi="embedding")
-kordinatalar = aniqlash(aniqlagich_model, rasm)
-embedding = embedding_model.get(rasm, kordinatalar) #embedding: <class 'numpy.ndarray'>, len(embedding):512
 
 
-i = 0
-fayl_och = open("embeddinglar.txt", "w")
-while i < len(embedding):
-    embedding_str = str(embedding[i])
-    fayl_och.write(embedding_str)
-    fayl_och.write(" ")
-    i = i + 1
+video_joy = "/home/nuriddin/ochiqai/python/projects/gradio_apps/video/as.mp4"
+cap = cv2.VideoCapture(video_joy)
+
+embedding_baza = {}
+yaqinliklar = []
+s = 2
+while (True):
+    # Capture image frame-by-frame
+    ret, frame = cap.read()
+    if ret:
+        kordinata = aniqlash(aniqlagich_model, frame)
+        embedding = embedding_model.get(frame, kordinata)
+        embedding.tolist()
+        if len(embedding_baza) == 0:
+            embedding_baza['1'] = embedding
+        else:
+            for key in embedding_baza:
+                yaqinlik = vector_taq(embedding_baza[key], embedding)
+                if yaqinlik < 0.15:
+                    embedding_baza['s'] = embedding
+                    s = s + 1
+
+        # Display the resulting frame
+        cv2.imshow('frame', frame)
+        if cv2.waitKey(1) & 0xFF == ord('q'):
+            break
+    else:
+        break
 
 
-# file_open = open("embeddinglar.txt", "r")
-# tekst = file_open.readlines()
-# print(tekst)
 
+    # When everything done, release the capture
+cap.release()
+cv2.destroyAllWindows()
 
-# def kamera(cap):
-#
-#     return embedding
-#
-#
-# demo = gr.Interface(
-#     kamera,
-#     gr.Image(source="webcam", streaming=True),
-#     "text",
-#     live=True
-# )
-#
-# demo.launch()
-
-
+print(len(embedding_baza))
